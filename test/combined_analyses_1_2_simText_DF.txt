@@ -1,0 +1,163 @@
+DataSet	Human Name	GenesFixed	LLM Name.x	LLM Analysis.x	LLM Name.y	LLM Analysis.y	NameSim	textSim	NameSimManual	AnalysesSimManual
+Diff. expressed gene set	ADIPOGENESIS	ABCA1 ABCB8 ACAA2 ACADL ACADM ACADS ACLY ACO2 ACOX1 ADCY6 ADIG ADIPOQ ADIPOR2 AGPAT3 AIFM1 AK2 ALDH2 ALDOA ANGPT1 ANGPTL4 APLP2 APOE ARAF ARL4A ATL2 ATP1B3 ATP5PO BAZ2A BCKDHA BCL2L13 BCL6 C3 CAT CAVIN1 CAVIN2 CCNG2 CD151 CD302 CD36 CDKN2C CHCHD10 CHUK CIDEA CMBL CMPK1 COL15A1 COL4A1 COQ3 COQ5 COQ9 COX6A1 COX7B COX8A CPT2 CRAT CS CYC1 CYP4B1 DBT DDT DECR1 DGAT1 DHCR7 DHRS7 DHRS7B DLAT DLD DNAJB9 DNAJC15 DRAM2 ECH1 ECHS1 ELMOD3 ELOVL6 ENPP2 EPHX2 ESRRA ESYT1 ETFB FABP4 FAH FZD4 G3BP2 GADD45A GBE1 GHITM GPAM GPAT4 GPD2 GPHN GPX3 GPX4 GRPEL1 HADH HIBCH HSPB8 IDH1 IDH3A IDH3G IFNGR1 IMMT ITGA7 ITIH5 ITSN1 JAGN1 LAMA4 LEP LIFR LIPE LPCAT3 LPL LTC4S MAP4K3 MCCC1 MDH2 ME1 MGLL MGST3 MIGA2 MRAP MRPL15 MTARC2 MTCH2 MYLK NABP1 NDUFA5 NDUFAB1 NDUFB7 NDUFS3 NKIRAS1 NMT1 OMD ORM1 PDCD4 PEMT PEX14 PFKFB3 PFKL PGM1 PHLDB1 PHYH PIM3 PLIN2 POR PPARG PPM1B PPP1R15B PRDX3 PREB PTCD3 PTGER3 QDPR RAB34 REEP5 REEP6 RETN RETSAT RIOK3 RMDN3 RNF11 RREB1 RTN3 SAMM50 SCARB1 SCP2 SDHB SDHC SLC19A1 SLC1A5 SLC25A1 SLC25A10 SLC27A1 SLC5A6 SLC66A3 SNCG SOD1 SORBS1 SOWAHC SPARCL1 SQOR SSPN STAT5A STOM SUCLG1 SULT1A1 TALDO1 TANK TKT TOB1 TST UBC UBQLN1 UCK1 UCP2 UQCR10 UQCR11 UQCRC1 UQCRQ VEGFB YWHAG	Fatty Acid Metabolism and Oxidative Phosphorylation	"The primary biological process performed by this system of interacting proteins is fatty acid metabolism and oxidative phosphorylation. The proteins involved in these processes are essential for energy production and storage in cells.
+
+Fatty Acid Metabolism:
+Key proteins involved in fatty acid metabolism include ACADM, ACADS, ACAA2, ACADL, ACOX1, ELOVL6, FABP4, and CPT2. These proteins are involved in the breakdown of fatty acids (beta-oxidation) and the synthesis of fatty acids (elongation). For example, ACADM and ACADS are involved in the breakdown of medium-chain and short-chain fatty acids, respectively, while ACOX1 is involved in peroxisomal beta-oxidation. ELOVL6 is involved in the elongation of fatty acids, and FABP4 is involved in the transport of fatty acids.
+
+Oxidative Phosphorylation:
+Key proteins involved in oxidative phosphorylation include ATP5PO, COX6A1, COX7B, COX8A, CYC1, NDUFA5, NDUFAB1, NDUFB7, NDUFS3, SDHB, SDHC, and UQCR10. These proteins are part of the electron transport chain (ETC) and are responsible for the generation of ATP through the transfer of electrons. For example, COX6A1, COX7B, and COX8A are subunits of cytochrome c oxidase, the final enzyme in the ETC. NDUFA5, NDUFAB1, NDUFB7, and NDUFS3 are subunits of NADH dehydrogenase (complex I), while SDHB and SDHC are subunits of succinate dehydrogenase (complex II). UQCR10 is a subunit of ubiquinol-cytochrome c reductase (complex III).
+
+Additionally, proteins such as AIFM1, AK2, ALDH2, and CAT are involved in maintaining cellular redox balance and preventing oxidative stress. AIFM1 is an oxidoreductase that can protect cells from oxidative stress, while AK2 is involved in the regulation of cellular energy metabolism. ALDH2 is involved in the detoxification of aldehydes, and CAT is an antioxidant enzyme that catalyzes the decomposition of hydrogen peroxide.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is fatty acid metabolism and oxidative phosphorylation, which are essential for energy production and storage in cells. The proteins involved in these processes also play a role in maintaining cellular redox balance and preventing oxidative stress."	Fatty Acid Metabolism and Oxidative Phosphorylation	"The most prominent biological process performed by this system of interacting proteins is fatty acid metabolism and oxidative phosphorylation. The proteins involved in these processes are essential for energy production and storage in cells.
+
+Reasoning and Supporting Information:
+
+1. Fatty Acid Metabolism: Several proteins in the list are involved in fatty acid metabolism, including ACAA2, ACADL, ACADM, ACADS, ACOX1, CPT2, ELOVL6, FABP4, and LPL. These proteins play crucial roles in the breakdown, synthesis, and transport of fatty acids, which are essential for energy production and storage in cells.
+
+2. Oxidative Phosphorylation: Many proteins in the list are involved in oxidative phosphorylation, a process that generates ATP, the primary energy currency of cells. Key proteins include ATP5PO, COX6A1, COX7B, COX8A, CYC1, NDUFA5, NDUFAB1, NDUFB7, NDUFS3, SDHB, SDHC, UQCR10, UQCR11, UQCRC1, and UQCRQ. These proteins are components of the electron transport chain, which is responsible for the transfer of electrons and the generation of ATP.
+
+3. Lipid Metabolism and Transport: Proteins such as ABCA1, CD36, and SCARB1 are involved in lipid metabolism and transport. These proteins play essential roles in the uptake, transport, and efflux of lipids, which are crucial for maintaining cellular lipid homeostasis.
+
+4. Regulation of Metabolic Processes: Several proteins, such as PPARG, SREBF1, and STAT5A, are transcription factors that regulate the expression of genes involved in lipid and glucose metabolism. These proteins modulate cellular responses to changes in nutrient availability and energy demands.
+
+5. Antioxidant Defense: Proteins such as CAT, GPX3, GPX4, PRDX3, and SOD1 are involved in antioxidant defense mechanisms. These proteins protect cells from oxidative stress by neutralizing reactive oxygen species, which can damage cellular components and impair cellular functions.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is fatty acid metabolism and oxidative phosphorylation. These processes are essential for energy production and storage in cells and are regulated by various proteins involved in lipid metabolism, transport, and antioxidant defense."	1	0.980899228	Exact Match	Very similar
+Diff. expressed gene set	ALLOGRAFT REJECTION	AARS1 ABCE1 ABI1 ACHE ACVR2A AKT1 APBB1 B2M BCAT1 BCL10 BCL3 BRCA1 C2 CAPG CARTPT CCL11 CCL13 CCL19 CCL2 CCL22 CCL4 CCL5 CCL7 CCND2 CCND3 CCR1 CCR2 CCR5 CD1D CD2 CD247 CD28 CD3D CD3E CD3G CD4 CD40 CD40LG CD47 CD7 CD74 CD79A CD80 CD86 CD8A CD8B CD96 CDKN2A CFP CRTAM CSF1 CSK CTSS CXCL13 CXCL9 CXCR3 DARS1 DEGS1 DYRK3 EGFR EIF3A EIF3D EIF3J EIF4G3 EIF5A ELANE ELF4 EREG ETS1 F2 F2R FAS FASLG FCGR2B FGR FLNA FYB1 GALNT1 GBP2 GCNT1 GLMN GPR65 GZMA GZMB HCLS1 HDAC9 HIF1A HLA-A HLA-DMA HLA-DMB HLA-DOA HLA-DOB HLA-DQA1 HLA-DRA HLA-E HLA-G ICAM1 ICOSLG IFNAR2 IFNG IFNGR1 IFNGR2 IGSF6 IKBKB IL10 IL11 IL12A IL12B IL12RB1 IL13 IL15 IL16 IL18 IL18RAP IL1B IL2 IL27RA IL2RA IL2RB IL2RG IL4 IL4R IL6 IL7 IL9 INHBA INHBB IRF4 IRF7 IRF8 ITGAL ITGB2 ITK JAK2 KLRD1 KRT1 LCK LCP2 LIF LTB LY75 LY86 LYN MAP3K7 MAP4K1 MBL2 MMP9 MRPL3 MTIF2 NCF4 NCK1 NCR1 NLRP3 NME1 NOS2 NPM1 PF4 PRF1 PRKCB PRKCG PSMB10 PTPN6 PTPRC RARS1 RIPK2 RPL39 RPL3L RPL9 RPS19 RPS3A RPS9 SIT1 SOCS1 SOCS5 SPI1 SRGN ST8SIA4 STAB1 STAT1 STAT4 TAP1 TAP2 TAPBP TGFB1 TGFB2 THY1 TIMP1 TLR1 TLR2 TLR3 TLR6 TNF TPD52 TRAF2 TRAT1 UBE2D1 UBE2N WARS1 WAS ZAP70	Immune Response Regulation	"The system of interacting proteins primarily performs the regulation of immune response. The proteins involved in this system can be categorized into several groups based on their functions:
+
+1. Cytokines and their receptors: IL10, IL11, IL12A, IL12B, IL12RB1, IL13, IL15, IL16, IL18, IL18RAP, IL1B, IL2, IL27RA, IL2RA, IL2RB, IL2RG, IL4, IL4R, IL6, IL7, IL9, IFNAR2, IFNG, IFNGR1, IFNGR2, LIF, and TNF. These proteins are responsible for cell signaling and communication, which are essential for immune response regulation.
+
+2. Chemokines and their receptors: CCL11, CCL13, CCL19, CCL2, CCL22, CCL4, CCL5, CCL7, CCND2, CCND3, CCR1, CCR2, CCR5, CXCL13, CXCL9, and CXCR3. These proteins are involved in the recruitment and migration of immune cells to the site of infection or inflammation.
+
+3. T cell activation and signaling: CD2, CD247, CD28, CD3D, CD3E, CD3G, CD4, CD40, CD40LG, CD7, CD8A, CD8B, CD96, CRTAM, ICOSLG, ITGAL, ITGB2, LCK, LCP2, ZAP70, and TRAT1. These proteins play a crucial role in the activation and regulation of T cells, which are essential for adaptive immune response.
+
+4. Antigen presentation and processing: B2M, CD1D, HLA-A, HLA-DMA, HLA-DMB, HLA-DOA, HLA-DOB, HLA-DQA1, HLA-DRA, HLA-E, HLA-G, TAP1, TAP2, and TAPBP. These proteins are involved in the presentation of antigens to T cells, which is a critical step in the initiation of adaptive immune response.
+
+5. Innate immune response: CD47, F2R, FAS, FASLG, FCGR2B, NCR1, TLR1, TLR2, TLR3, and TLR6. These proteins are involved in the recognition and response to pathogens, which is essential for the activation of the immune system.
+
+6. Signal transduction and transcription factors: AKT1, EGFR, ETS1, FGR, HIF1A, IKBKB, IRF4, IRF7, IRF8, JAK2, LYN, MAP3K7, MAP4K1, NCK1, PRKCB, PRKCG, PTPN6, PTPRC, SOCS1, SOCS5, STAT1, and STAT4. These proteins are involved in the transduction of signals from the cell surface to the nucleus, leading to the activation of transcription factors and the regulation of gene expression.
+
+7. Proteases and inhibitors: ACHE, CTSS, ELANE, GZMA, GZMB, MMP9, PRF1, and TIMP1. These proteins are involved in the degradation of extracellular matrix and the regulation of immune cell migration and activation.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of immune response, which involves the coordination of various cellular processes such as cell signaling, antigen presentation, T cell activation, and innate immune response."	Immune Response Regulation	"The system of interacting proteins primarily performs the regulation of immune response. The proteins involved in this system can be categorized into several groups based on their functions:
+
+1. Cytokines and their receptors: IL10, IL11, IL12A, IL12B, IL12RB1, IL13, IL15, IL16, IL18, IL18RAP, IL1B, IL2, IL27RA, IL2RA, IL2RB, IL2RG, IL4, IL4R, IL6, IL7, IL9, IFNAR2, IFNG, IFNGR1, IFNGR2, LIF, LTB, and TNF. These proteins are involved in the regulation of immune cell proliferation, differentiation, and activation.
+
+2. Chemokines and their receptors: CCL11, CCL13, CCL19, CCL2, CCL22, CCL4, CCL5, CCL7, CCND2, CCND3, CCR1, CCR2, CCR5, CXCL13, CXCL9, and CXCR3. These proteins are responsible for the recruitment and migration of immune cells to the site of infection or inflammation.
+
+3. T cell activation and signaling: CD1D, CD2, CD247, CD28, CD3D, CD3E, CD3G, CD4, CD40, CD40LG, CD7, CD74, CD79A, CD80, CD86, CD8A, CD8B, CD96, CRTAM, CSK, ELF4, ETS1, FAS, FASLG, FCGR2B, FGR, FLNA, FYB1, HCLS1, ICAM1, ICOSLG, ITGAL, ITGB2, ITK, JAK2, LCK, LCP2, LY75, LY86, LYN, MAP3K7, MAP4K1, NCK1, NCR1, PTPN6, PTPRC, SIT1, SOCS1, SOCS5, SPI1, STAT1, STAT4, TRAF2, TRAT1, UBE2D1, UBE2N, WAS, and ZAP70. These proteins are involved in the activation, differentiation, and function of T cells, which play a crucial role in adaptive immunity.
+
+4. Antigen processing and presentation: B2M, HLA-A, HLA-DMA, HLA-DMB, HLA-DOA, HLA-DOB, HLA-DQA1, HLA-DRA, HLA-E, HLA-G, TAP1, TAP2, and TAPBP. These proteins are responsible for the processing and presentation of antigens to T cells, initiating the adaptive immune response.
+
+5. Innate immune response: C2, CAPG, CARTPT, CD47, CTSS, DEGS1, DYRK3, EGFR, EIF3A, EIF3D, EIF3J, EIF4G3, EIF5A, ELANE, F2, F2R, GBP2, GCNT1, GLMN, GPR65, GZMA, GZMB, HDAC9, HIF1A, IKBKB, IL1B, INHBA, INHBB, IRF4, IRF7, IRF8, KLRD1, KRT1, MBL2, MMP9, MRPL3, MTIF2, NCF4, NLRP3, NME1, NOS2, NPM1, PF4, PRF1, PRKCB, PRKCG, PSMB10, RARS1, RIPK2, RPL39, RPL3L, RPL9, RPS19, RPS3A, RPS9, SRGN, ST8SIA4, STAB1, TLR1, TLR2, TLR3, TLR6, TPD52, and UBE2D1. These proteins are involved in the recognition, phagocytosis, and destruction of pathogens, as well as the activation of the adaptive immune response.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of immune response, which includes the activation and function of both innate and adaptive immunity. The proteins involved in this system work together to recognize, respond to, and eliminate pathogens, as well as to maintain immune homeostasis."	1	0.985689475	Exact Match	Very similar
+Diff. expressed gene set	ANDROGEN RESPONSE	ABCC4 ABHD2 ACSL3 ACTN1 ADAMTS1 ADRM1 AKAP12 AKT1 ALDH1A3 ANKH APPBP2 ARID5B AZGP1 B2M B4GALT1 BMPR1B CAMKK2 CCND1 CCND3 CDC14B CDK6 CENPN DBI DHCR24 DNAJB9 ELK4 ELL2 ELOVL5 FADS1 FKBP5 GNAI3 GPD1L GSR GUCY1A1 H1-0 HERC3 HMGCR HMGCS1 HOMER2 HPGD HSD17B14 IDI1 INPP4B INSIG1 IQGAP2 ITGAV KLK2 KLK3 KRT19 KRT8 LIFR LMAN1 MAF MAK MAP7 MERTK MYL12A NCOA4 NDRG1 NGLY1 NKX3-1 PA2G4 PDLIM5 PGM3 PIAS1 PLPP1 PMEPA1 PTK2B PTPN21 RAB4A RPS6KA3 RRP12 SAT1 SCD SEC24D SELENOP SGK1 SLC26A2 SLC38A2 SMS SORD SPCS3 SPDEF SRF SRP19 STEAP4 STK39 TARP TMEM50A TMPRSS2 TNFAIP8 TPD52 TSC22D1 UAP1 UBE2I UBE2J1 VAPA XRCC5 XRCC6 ZBTB10 ZMIZ1	Lipid Metabolism and Cellular Stress Response Regulation	"The primary biological process performed by this system of interacting proteins is the regulation of lipid metabolism and cellular stress response. The proteins involved in this process are:
+
+1. ACSL3: Acyl-CoA synthetase long-chain family member 3, involved in fatty acid metabolism by catalyzing the formation of acyl-CoA from fatty acids.
+2. DHCR24: 24-dehydrocholesterol reductase, involved in cholesterol biosynthesis by converting desmosterol to cholesterol.
+3. ELOVL5: Elongation of very long-chain fatty acids protein 5, involved in the elongation of long-chain fatty acids.
+4. FADS1: Fatty acid desaturase 1, involved in the synthesis of polyunsaturated fatty acids.
+5. HMGCR: 3-hydroxy-3-methylglutaryl-CoA reductase, the rate-limiting enzyme in cholesterol biosynthesis.
+6. HMGCS1: 3-hydroxy-3-methylglutaryl-CoA synthase 1, involved in the early steps of cholesterol biosynthesis.
+7. IDI1: Isopentenyl-diphosphate delta-isomerase 1, involved in the synthesis of isoprenoids, which are precursors for cholesterol and other lipids.
+8. INPP4B: Inositol polyphosphate-4-phosphatase type II, involved in phosphoinositide signaling and regulation of lipid metabolism.
+9. SCD: Stearoyl-CoA desaturase, involved in the synthesis of monounsaturated fatty acids.
+10. SELENOP: Selenoprotein P, involved in selenium transport and protection against oxidative stress.
+
+Additionally, several proteins in this system are involved in cellular stress response regulation:
+
+1. DNAJB9: DnaJ homolog subfamily B member 9, involved in protein folding and protection against cellular stress.
+2. FKBP5: FK506-binding protein 5, involved in the regulation of glucocorticoid receptor signaling and cellular stress response.
+3. GSR: Glutathione reductase, involved in maintaining cellular redox balance and protection against oxidative stress.
+4. H1-0: Histone H1.0, involved in chromatin structure and regulation of gene expression in response to cellular stress.
+5. NDRG1: N-myc downstream-regulated gene 1, involved in cellular stress response and regulation of cell growth and differentiation.
+6. SGK1: Serum/glucocorticoid-regulated kinase 1, involved in cellular stress response and regulation of ion transport and cell survival.
+
+These proteins work together to maintain lipid homeostasis and protect cells from various stressors, such as oxidative stress and misfolded proteins. The interactions between these proteins allow for the fine-tuning of lipid metabolism and stress response pathways, ensuring proper cellular function and adaptation to changing conditions."	Cholesterol Biosynthesis and Regulation	"The most prominent biological process performed by this system of interacting proteins is cholesterol biosynthesis and regulation. This conclusion is based on the presence of several key proteins involved in this process, including HMGCR, HMGCS1, DHCR24, IDI1, INSIG1, and SREBF1.
+
+1. HMGCR (3-hydroxy-3-methylglutaryl-CoA reductase) is the rate-limiting enzyme in cholesterol biosynthesis, catalyzing the conversion of HMG-CoA to mevalonate. Its activity is regulated by feedback inhibition from cholesterol and its derivatives, as well as by phosphorylation by AMP-activated protein kinase (AMPK).
+
+2. HMGCS1 (3-hydroxy-3-methylglutaryl-CoA synthase 1) is another key enzyme in cholesterol biosynthesis, catalyzing the condensation of acetyl-CoA and acetoacetyl-CoA to form HMG-CoA.
+
+3. DHCR24 (24-dehydrocholesterol reductase) catalyzes the final step in cholesterol biosynthesis, converting desmosterol to cholesterol.
+
+4. IDI1 (isopentenyl-diphosphate delta isomerase 1) is involved in the isoprenoid biosynthesis pathway, which is essential for the production of cholesterol and other isoprenoids.
+
+5. INSIG1 (insulin-induced gene 1) is a key regulator of cholesterol homeostasis, binding to HMGCR and SREBF1 (sterol regulatory element-binding transcription factor 1) to inhibit cholesterol synthesis and uptake when cellular cholesterol levels are high.
+
+6. SREBF1 is a transcription factor that regulates the expression of genes involved in cholesterol and fatty acid biosynthesis, including HMGCR and HMGCS1. Its activity is regulated by proteolytic cleavage in response to cellular cholesterol levels.
+
+In addition to cholesterol biosynthesis and regulation, this system of interacting proteins is also involved in other important cellular processes, such as protein folding and degradation (DNAJB9, UBE2I, UBE2J1), cell cycle regulation (CCND1, CCND3, CDK6, CDC14B), and signal transduction (AKT1, CAMKK2, GNAI3, GUCY1A1, PTK2B, RPS6KA3, SGK1). However, the prominence of key proteins in cholesterol biosynthesis and regulation suggests that this is the most significant process performed by this system."	0.790150305	0.965318413	Similar concept	Different emphasis
+NeST	Extended mismatch repair complex	ERCC1 ERCC4 MLH1 MLH3 MSH2 MSH3 MSH6 PMS1 PMS2 SLX4	DNA Repair and Mismatch Repair	"The system of interacting proteins ERCC1, ERCC4, MLH1, MLH3, MSH2, MSH3, MSH6, PMS1, PMS2, and SLX4 primarily perform DNA repair and mismatch repair processes. 
+
+1. ERCC1 and ERCC4: These proteins form a heterodimeric endonuclease complex involved in nucleotide excision repair (NER). NER is a critical process that removes bulky DNA lesions caused by UV radiation and chemical mutagens. ERCC1 is responsible for DNA damage recognition, while ERCC4 provides the catalytic activity for DNA incision.
+
+2. MLH1, MLH3, PMS1, and PMS2: These proteins are part of the MutL family and play essential roles in mismatch repair (MMR). MMR is a process that corrects base-pair mismatches and insertion/deletion loops that arise during DNA replication. MLH1 forms heterodimers with PMS2 (MutLα), MLH3 (MutLγ), and PMS1 (MutLβ), which are involved in different aspects of MMR. MutLα is the primary complex responsible for MMR, while MutLγ and MutLβ have specialized roles in meiotic recombination and mutation avoidance, respectively.
+
+3. MSH2, MSH3, and MSH6: These proteins belong to the MutS family and are crucial for mismatch recognition in MMR. MSH2 forms heterodimers with MSH6 (MutSα) and MSH3 (MutSβ). MutSα recognizes base-pair mismatches and small insertion/deletion loops, while MutSβ recognizes larger insertion/deletion loops. Both complexes initiate the MMR process by binding to the mismatch and recruiting MutL proteins.
+
+4. SLX4: This protein acts as a scaffold for multiple DNA repair nucleases, including ERCC4. SLX4 is involved in the repair of DNA interstrand crosslinks, which are highly toxic lesions that covalently link both DNA strands. By interacting with ERCC4 and other nucleases, SLX4 coordinates the incisions required for crosslink repair.
+
+In summary, the primary biological process performed by this system of interacting proteins is DNA repair and mismatch repair. These proteins work together to maintain genomic integrity by recognizing and repairing various types of DNA damage and replication errors."	DNA Mismatch Repair and Excision Repair	"The primary biological process performed by this system of interacting proteins is DNA mismatch repair and excision repair. These processes are crucial for maintaining genomic stability and preventing mutations.
+
+1. ERCC1 and ERCC4: These proteins form a heterodimeric endonuclease complex involved in nucleotide excision repair (NER). ERCC1 is responsible for DNA damage recognition, while ERCC4 provides the catalytic activity for DNA incision. Together, they remove DNA lesions caused by UV radiation and other genotoxic agents, preventing mutations and maintaining genomic stability.
+
+2. MLH1, MLH3, PMS1, and PMS2: These proteins are part of the MutL family and play essential roles in DNA mismatch repair (MMR). MLH1 forms heterodimers with PMS2 (MutLα), MLH3 (MutLγ), and PMS1 (MutLβ). MutLα is the primary complex involved in MMR, while MutLγ and MutLβ have specialized roles in meiotic recombination and mutation avoidance, respectively. These complexes coordinate with MutS family proteins (MSH2, MSH3, and MSH6) to recognize and repair DNA mismatches, insertions, and deletions, ensuring accurate DNA replication and preventing mutations.
+
+3. MSH2, MSH3, MSH6: These proteins belong to the MutS family and are involved in DNA mismatch repair (MMR). MSH2 forms heterodimers with MSH6 (MutSα) and MSH3 (MutSβ). MutSα recognizes base mismatches and small insertion/deletion loops, while MutSβ recognizes larger insertion/deletion loops. These complexes initiate the MMR process by binding to DNA mismatches and recruiting MutL family proteins to repair the errors.
+
+4. SLX4: This protein acts as a scaffold for multiple structure-specific endonucleases, including ERCC1-ERCC4, and is involved in the repair of DNA interstrand crosslinks, double-strand breaks, and replication fork collapse. SLX4 interacts with ERCC1 and ERCC4, coordinating their activities in nucleotide excision repair and ensuring the efficient removal of DNA lesions.
+
+In conclusion, the primary biological process performed by this system of interacting proteins is DNA mismatch repair and excision repair, which are essential for maintaining genomic stability and preventing mutations. The proteins work together in a coordinated manner to recognize and repair DNA errors, ensuring accurate DNA replication and preventing the accumulation of mutations that could lead to diseases such as cancer."	0.97264805	0.996672906	Similar concept	Very similar
+NeST	RPA complex associated proteins	ATM ATR BLM BRCA1 XPA XPC	DNA Damage Response and Repair	"Proteins: ATM, ATR, BLM, BRCA1, XPA, XPC
+
+1. ATM and ATR: Key sensors and transducers of DNA damage
+- ATM and ATR are phosphatidylinositol 3-kinase-related kinases (PIKKs) that sense DNA damage and initiate the DNA damage response (DDR) by phosphorylating downstream targets.
+- ATM primarily responds to DNA double-strand breaks (DSBs), while ATR is activated by single-stranded DNA (ssDNA) and stalled replication forks.
+- Both ATM and ATR phosphorylate and activate checkpoint kinases CHK1 and CHK2, leading to cell cycle arrest and allowing time for DNA repair.
+
+2. BLM: Helicase involved in DNA repair and replication
+- BLM is a RecQ helicase that unwinds DNA during replication, repair, and recombination.
+- BLM plays a role in homologous recombination (HR) repair of DSBs, preventing the formation of harmful DNA structures and promoting accurate repair.
+- BLM also resolves replication stress by promoting restart of stalled replication forks and preventing the formation of aberrant DNA structures.
+
+3. BRCA1: Tumor suppressor and mediator of DNA repair
+- BRCA1 is a multifunctional protein involved in DNA repair, cell cycle checkpoint control, and maintenance of genomic stability.
+- BRCA1 plays a crucial role in HR repair of DSBs by interacting with multiple proteins, including RAD51, to promote accurate repair.
+- BRCA1 also participates in non-homologous end joining (NHEJ) repair of DSBs, ensuring proper repair pathway choice.
+
+4. XPA and XPC: Nucleotide excision repair (NER) factors
+- XPA and XPC are essential components of the NER pathway, which removes a wide range of DNA lesions, including UV-induced photoproducts and bulky adducts.
+- XPC recognizes and binds to DNA lesions, initiating the NER process by recruiting other NER factors.
+- XPA plays a central role in damage verification and assembly of the NER pre-incision complex, ensuring accurate repair.
+
+In conclusion, the primary biological process performed by this system of interacting proteins is the DNA damage response and repair. The proteins ATM, ATR, BLM, BRCA1, XPA, and XPC work together to sense, signal, and repair various types of DNA damage, ensuring the maintenance of genomic stability and preventing the accumulation of mutations that could lead to diseases such as cancer."	DNA Damage Response and Repair	"The most prominent biological process performed by this system of interacting proteins is DNA damage response and repair. These proteins play crucial roles in maintaining genomic stability and preventing the accumulation of mutations that can lead to diseases such as cancer.
+
+1. ATM and ATR: These proteins are key kinases involved in the DNA damage response. They are activated by different types of DNA damage, such as double-strand breaks (ATM) and replication stress (ATR). Upon activation, they phosphorylate numerous downstream targets, including other proteins in this system, to initiate the appropriate repair pathways.
+
+2. BLM: This protein is a RecQ helicase that plays a role in DNA repair, replication, and recombination. BLM is involved in resolving complex DNA structures, such as Holliday junctions, and preventing genome instability. Mutations in BLM can lead to Bloom syndrome, a rare disorder characterized by increased cancer susceptibility.
+
+3. BRCA1: This protein is a tumor suppressor involved in multiple DNA repair pathways, including homologous recombination and non-homologous end joining. BRCA1 interacts with several other proteins in this system, such as ATM and ATR, to coordinate the DNA damage response. Mutations in BRCA1 are associated with an increased risk of breast and ovarian cancer.
+
+4. XPA and XPC: These proteins are involved in nucleotide excision repair (NER), a pathway that removes bulky DNA lesions, such as those caused by UV radiation. XPC is responsible for damage recognition, while XPA plays a role in damage verification and recruitment of other NER factors. Defects in XPA or XPC can lead to xeroderma pigmentosum, a rare disorder characterized by extreme sensitivity to sunlight and increased skin cancer risk.
+
+In conclusion, the interacting proteins ATM, ATR, BLM, BRCA1, XPA, and XPC are essential for maintaining genomic stability by coordinating the DNA damage response and participating in various DNA repair pathways. Their dysfunction can lead to genome instability and increased susceptibility to cancer."	1	0.990037394	Exact Match	Very similar
+NeST	MAPK signaling	ERBB2 ERBB4 FGFR2 FGFR4 HRAS KRAS	Receptor Tyrosine Kinase Signaling	"The most prominent biological process performed by this system of interacting proteins is receptor tyrosine kinase (RTK) signaling. This process is critical for cellular communication, growth, and differentiation.
+
+1. ERBB2 and ERBB4: Both proteins belong to the epidermal growth factor receptor (EGFR) family, which are receptor tyrosine kinases. They play a crucial role in cell proliferation and differentiation by binding to specific ligands, leading to the activation of downstream signaling pathways such as the MAPK and PI3K/AKT pathways.
+
+2. FGFR2 and FGFR4: These proteins are members of the fibroblast growth factor receptor (FGFR) family, which are also receptor tyrosine kinases. They are involved in various cellular processes, including cell growth, differentiation, and migration. FGFR2 and FGFR4 bind to fibroblast growth factors (FGFs) and activate downstream signaling pathways, such as the RAS/MAPK and PI3K/AKT pathways.
+
+3. HRAS and KRAS: Both proteins are members of the RAS family of small GTPases, which function as molecular switches in various signaling pathways. They are activated by RTKs, such as ERBB2, ERBB4, FGFR2, and FGFR4, and play a critical role in the regulation of cell growth, differentiation, and survival. HRAS and KRAS are involved in the activation of the MAPK and PI3K/AKT pathways.
+
+In summary, the prominent biological process performed by this system of interacting proteins is receptor tyrosine kinase signaling, which is essential for cellular communication, growth, and differentiation. The proteins ERBB2, ERBB4, FGFR2, and FGFR4 function as RTKs, while HRAS and KRAS are downstream effectors in the signaling pathways. These proteins work together to regulate various cellular processes, including cell proliferation, differentiation, and migration."	Receptor Tyrosine Kinase Signaling	"The most prominent biological process performed by the interacting proteins ERBB2, ERBB4, FGFR2, FGFR4, HRAS, and KRAS is receptor tyrosine kinase (RTK) signaling. This process is critical for cellular growth, differentiation, and survival.
+
+1. ERBB2 and ERBB4: Both proteins belong to the epidermal growth factor receptor (EGFR) family, which are receptor tyrosine kinases. They play a crucial role in cell proliferation and differentiation by binding to specific ligands, leading to the activation of downstream signaling pathways, such as the MAPK and PI3K/AKT pathways. ERBB2 is known to form heterodimers with other EGFR family members, enhancing the signaling capacity of the receptor complex.
+
+2. FGFR2 and FGFR4: These proteins are members of the fibroblast growth factor receptor (FGFR) family, which are also receptor tyrosine kinases. They are involved in various cellular processes, including cell growth, differentiation, and migration. FGFR2 and FGFR4 bind to fibroblast growth factors (FGFs), leading to receptor dimerization and activation of downstream signaling pathways, such as the RAS/MAPK and PI3K/AKT pathways.
+
+3. HRAS and KRAS: Both proteins are members of the RAS family of small GTPases, which function as molecular switches in various signaling pathways, including the RTK signaling pathway. They are involved in transmitting signals from activated RTKs to downstream effectors, such as the RAF/MEK/ERK and PI3K/AKT pathways. HRAS and KRAS are known to play a critical role in cell proliferation, differentiation, and survival.
+
+In conclusion, the interacting proteins ERBB2, ERBB4, FGFR2, FGFR4, HRAS, and KRAS are involved in the receptor tyrosine kinase signaling pathway, which is essential for cellular growth, differentiation, and survival. This process is initiated by the binding of specific ligands to the receptor tyrosine kinases (ERBB2, ERBB4, FGFR2, and FGFR4), leading to the activation of downstream signaling pathways, such as the RAS/MAPK and PI3K/AKT pathways, mediated by the small GTPases HRAS and KRAS."	1	0.9943519	Exact Match	Very similar

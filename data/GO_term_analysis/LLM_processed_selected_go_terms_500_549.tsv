@@ -1,0 +1,960 @@
+GO	Genes	Gene_Count	Term_Description	LLM Name	LLM Analysis
+GO:0060716	PLCD3 WNT2 VASH2 CCN1 FZD5 VASH1 JUNB NSDHL HS6ST1 GGNBP2 OVOL2 HEY1 FBXW8 HEY2 MAPK1 AKT1 PLG RBPJ HES1 TMED2	20	labyrinthine layer blood vessel development	Wnt Signaling Pathway	"The most prominent biological process performed by this system of interacting proteins is the Wnt signaling pathway. This pathway is crucial for cell proliferation, differentiation, and migration during embryonic development and tissue homeostasis.
+
+1. WNT2 and FZD5 interaction: WNT2 is a ligand for the Wnt signaling pathway, and FZD5 is a receptor for Wnt ligands. The interaction between WNT2 and FZD5 activates the Wnt signaling pathway, leading to downstream effects on gene expression and cellular processes.
+
+2. Involvement of PLCD3 and AKT1: PLCD3 is a phospholipase that generates inositol 1,4,5-trisphosphate (IP3) and diacylglycerol (DAG) from phosphatidylinositol 4,5-bisphosphate (PIP2). AKT1 is a serine/threonine kinase that plays a role in cell survival and growth. Both proteins are involved in the Wnt signaling pathway, with PLCD3 acting upstream of AKT1.
+
+3. Role of MAPK1: MAPK1 is a mitogen-activated protein kinase that is involved in the regulation of various cellular processes, including cell proliferation, differentiation, and migration. It is activated by the Wnt signaling pathway and plays a crucial role in mediating its effects.
+
+4. HES1, HEY1, and HEY2 as downstream targets: HES1, HEY1, and HEY2 are transcription factors that are regulated by the Wnt signaling pathway. They play essential roles in cell fate determination and differentiation during development.
+
+5. Involvement of RBPJ: RBPJ is a transcription factor that interacts with the intracellular domain of Notch receptors. It is involved in the regulation of the Wnt signaling pathway and plays a role in cell fate determination and differentiation.
+
+6. VASH1 and VASH2 function: VASH1 and VASH2 are vasohibin proteins that regulate angiogenesis. They are involved in the Wnt signaling pathway and play a role in modulating the balance between angiogenesis and vascular regression.
+
+7. CCN1 and HS6ST1 involvement: CCN1 is a matricellular protein that regulates cell adhesion, migration, and proliferation. HS6ST1 is a heparan sulfate 6-O-sulfotransferase that modifies heparan sulfate proteoglycans. Both proteins are involved in the Wnt signaling pathway and contribute to its regulation.
+
+8. JUNB, OVOL2, and GGNBP2 function: JUNB is a transcription factor that regulates gene expression in response to various stimuli. OVOL2 is a transcription factor that plays a role in epithelial cell differentiation. GGNBP2 is a zinc finger protein that may function as a transcriptional repressor. All three proteins are involved in the Wnt signaling pathway and contribute to its regulation.
+
+9. FBXW8 and TMED2 involvement: FBXW8 is an F-box protein that is part of the SCF ubiquitin ligase complex, which targets proteins for degradation. TMED2 is a transmembrane emp24 domain-containing protein that is involved in vesicular transport. Both proteins are involved in the Wnt signaling pathway and contribute to its regulation.
+
+10. PLG and NSDHL function: PLG is a plasminogen protein that is involved in the degradation of extracellular matrix components. NSDHL is a sterol dehydrogenase that is involved in cholesterol biosynthesis. Both proteins are involved in the Wnt signaling pathway and contribute to its regulation."
+GO:0060117	TMC1 STRC SEC24B PAFAH1B1 PLS1 PDZD7 CLRN1 SLC4A7 SOD1 KCNQ1 SCRIB SLITRK6 TPRN TRIOBP LRTOMT LHFPL5 MYO7A SLC9A3R1 WDPCP WHRN GRXCR2 CLRN2 CDH23	23	auditory receptor cell development	Hair Cell Mechanotransduction	"The most prominent biological process performed by this system of interacting proteins is hair cell mechanotransduction, which is essential for hearing and balance. This process involves the conversion of mechanical stimuli into electrical signals in the inner ear.
+
+1. TMC1 and TPRN: TMC1 is a transmembrane protein that plays a crucial role in mechanotransduction by forming the mechanotransduction channel in hair cells. TPRN is a taperin protein that localizes to the taper region of hair cell stereocilia and is essential for proper functioning of the mechanotransduction machinery.
+
+2. MYO7A, CDH23, and PCDH15: MYO7A is a myosin motor protein that is essential for the development and maintenance of hair cell stereocilia. CDH23 and PCDH15 are cadherin proteins that form tip links, which connect adjacent stereocilia and are essential for mechanotransduction.
+
+3. WHRN and PDZD7: WHRN is a scaffolding protein that interacts with MYO7A and is involved in the organization of the stereocilia actin cytoskeleton. PDZD7 is another scaffolding protein that interacts with WHRN and is involved in the assembly of the mechanotransduction complex.
+
+4. CLRN1 and CLRN2: CLRN1 and CLRN2 are clarin proteins that are involved in the proper localization of the mechanotransduction complex in hair cells.
+
+5. STRC and LHFPL5: STRC is a stereocilin protein that is involved in the cohesion of hair cell stereocilia. LHFPL5 is a tetraspan protein that is essential for the proper localization of the mechanotransduction complex in hair cells.
+
+6. SEC24B and PAFAH1B1: SEC24B is a component of the COPII vesicle coat, which is involved in the transport of proteins from the endoplasmic reticulum to the Golgi apparatus. PAFAH1B1 is a phospholipase A2 that is involved in the regulation of vesicle trafficking and may play a role in the transport of proteins required for hair cell mechanotransduction.
+
+7. SLC4A7, SLC9A3R1, and KCNQ1: SLC4A7 is a sodium bicarbonate transporter that is involved in the regulation of intracellular pH in hair cells. SLC9A3R1 is a sodium-hydrogen exchanger regulatory factor that is involved in the regulation of intracellular pH and may play a role in hair cell mechanotransduction. KCNQ1 is a potassium channel that is involved in the regulation of hair cell membrane potential.
+
+8. SOD1 and GRXCR2: SOD1 is a superoxide dismutase that is involved in the detoxification of reactive oxygen species in hair cells. GRXCR2 is a glutaredoxin protein that is involved in the regulation of the redox state of hair cells and may play a role in the protection of hair cells from oxidative stress.
+
+9. TRIOBP and LRTOMT: TRIOBP is a cytoskeletal protein that is involved in the organization of the actin cytoskeleton in hair cells. LRTOMT is a leucine-rich transmembrane protein that is involved in the development of hair cell stereocilia.
+
+10. PLS1, SCRIB, SLITRK6, and WDPCP: PLS1 is a plastin protein that is involved in the organization of the actin cytoskeleton in hair cells. SCRIB is a scaffolding protein that is involved in the regulation of cell polarity and may play a role in hair cell development. SLITRK6 is a transmembrane protein that is involved in the development of hair cells. WDPCP is a WD repeat-containing protein that is involved in the regulation of planar cell polarity and may play a role in hair cell development."
+GO:0010801	SIRT2 DDIT4 SMAD7 SPRED1 CALM2 DGKQ CALM3 SPRY2 TTC36 SPRED2 PPEF2 CADM4 PARD3 EIF4G1 INPP5K CALM1 DMTN	17	negative regulation of peptidyl-threonine phosphorylation	Negative Regulation of Cellular Signaling	"The most prominent biological process performed by this system of interacting proteins is the negative regulation of cellular signaling pathways. This process is crucial for maintaining cellular homeostasis and preventing aberrant signaling that could lead to diseases such as cancer.
+
+1. SIRT2: Sirtuin 2 is a NAD+-dependent deacetylase that regulates various cellular processes, including cell cycle progression and cellular differentiation. It has been shown to negatively regulate the activity of several signaling proteins, such as NF-κB and FOXO transcription factors, by deacetylating them.
+
+2. DDIT4: DNA damage-inducible transcript 4 is a stress-responsive protein that inhibits the mTOR signaling pathway, a key regulator of cell growth and proliferation. By inhibiting mTOR, DDIT4 contributes to the negative regulation of cellular signaling.
+
+3. SMAD7: SMAD family member 7 is an inhibitory SMAD protein that negatively regulates the TGF-β signaling pathway. It prevents the phosphorylation and activation of receptor-regulated SMADs, thus inhibiting downstream signaling events.
+
+4. SPRED1 and SPRED2: Sprouty-related, EVH1 domain-containing proteins 1 and 2 are negative regulators of the Ras/MAPK signaling pathway. They inhibit the activation of the Ras protein, thereby preventing the activation of downstream signaling components.
+
+5. CALM1, CALM2, and CALM3: Calmodulin 1, 2, and 3 are calcium-binding proteins that regulate various cellular processes, including signal transduction. They can negatively regulate signaling pathways by binding to and inhibiting the activity of target proteins, such as CaMKII and calcineurin.
+
+6. SPRY2: Sprouty homolog 2 is a negative regulator of receptor tyrosine kinase signaling pathways, such as the FGF and EGF pathways. It inhibits the activation of downstream signaling components, including the Ras/MAPK pathway.
+
+7. DGKQ: Diacylglycerol kinase theta is an enzyme that catalyzes the conversion of diacylglycerol to phosphatidic acid, thereby negatively regulating the activity of protein kinase C, a key component of various signaling pathways.
+
+8. INPP5K: Inositol polyphosphate-5-phosphatase K is an enzyme that dephosphorylates phosphatidylinositol 4,5-bisphosphate, a key second messenger in cellular signaling. By reducing the levels of this signaling molecule, INPP5K negatively regulates downstream signaling events.
+
+9. PARD3: Partitioning defective 3 homolog is a scaffold protein that negatively regulates the activity of the small GTPase Cdc42, a key regulator of cell polarity and migration. By inhibiting Cdc42, PARD3 contributes to the negative regulation of cellular signaling.
+
+10. EIF4G1: Eukaryotic translation initiation factor 4 gamma 1 is involved in the regulation of protein synthesis. It has been shown to negatively regulate the PI3K/Akt/mTOR signaling pathway by binding to and inhibiting the activity of the mTORC1 complex.
+
+In conclusion, this system of interacting proteins plays a crucial role in the negative regulation of various cellular signaling pathways, maintaining cellular homeostasis and preventing aberrant signaling that could lead to diseases."
+GO:0050691	USP17L2 IFNLR1 TNFAIP3 LILRB1 IL12B TARBP2 MMP12 RIGI MUL1 IL23R PQBP1 IL15 IL23A HSP90AA1 IL1B ZDHHC1 EIF2AK4 PTPN22 TOMM70 TRIM6 STAT1 ZC3H12A APOBEC3F ZDHHC11 CGAS MAVS TRAF3IP2 DTX3L TRIM44 APOBEC3G IL4 STING1 PYCARD PARP9 SELENOK IL12RB1 IL27 MICB RNF216 SIN3A AIM2 DHX9	42	regulation of defense response to virus by host	Antiviral Immune Response	"The system of interacting proteins primarily performs the biological process of antiviral immune response. This process involves the recognition of viral pathogens, activation of immune signaling pathways, and the regulation of immune responses.
+
+1. Recognition of viral pathogens: RIG-I (retinoic acid-inducible gene I) and cGAS (cyclic GMP-AMP synthase) are key proteins involved in the recognition of viral nucleic acids. RIG-I detects viral RNA, while cGAS senses viral DNA. Both proteins initiate signaling cascades that lead to the activation of immune responses.
+
+2. Activation of immune signaling pathways: MAVS (mitochondrial antiviral signaling protein) and STING1 (stimulator of interferon genes) are adaptor proteins that mediate the signaling cascades initiated by RIG-I and cGAS, respectively. These pathways converge on the activation of transcription factors such as STAT1 (signal transducer and activator of transcription 1), which induces the expression of antiviral genes, including interferons (e.g., IL15) and interferon-stimulated genes (e.g., APOBEC3F and APOBEC3G).
+
+3. Regulation of immune responses: Several proteins in the system modulate the immune response to prevent excessive inflammation and tissue damage. TNFAIP3 (tumor necrosis factor alpha-induced protein 3) and PTPN22 (protein tyrosine phosphatase non-receptor type 22) negatively regulate immune signaling pathways, while IL12B, IL23A, and IL27 are cytokines that promote the differentiation and activation of immune cells. IL4 is an anti-inflammatory cytokine that counterbalances pro-inflammatory responses.
+
+4. Protein modification and degradation: The system includes proteins involved in post-translational modifications, such as ZDHHC1 and ZDHHC11 (zinc finger DHHC-type palmitoyltransferases), which regulate protein localization and function. RNF216 (ring finger protein 216) and TRIM6 (tripartite motif-containing protein 6) are E3 ubiquitin ligases that target proteins for degradation, ensuring the timely termination of immune responses.
+
+5. Nucleic acid metabolism and regulation: TARBP2 (TAR RNA-binding protein 2) and DHX9 (DEAH-box helicase 9) are RNA-binding proteins that regulate RNA stability and processing. ZC3H12A (zinc finger CCCH-type containing 12A) is an RNA-binding protein that destabilizes target mRNAs, modulating gene expression during immune responses.
+
+In summary, the most prominent biological process performed by this system of interacting proteins is the antiviral immune response, which involves the recognition of viral pathogens, activation of immune signaling pathways, and regulation of immune responses."
+GO:0045869	AICDA RESF1 SETDB1 APOBEC3A_B MORC2 TRIM28 APOBEC3C APOBEC3B INPP5K HMGA2 TASOR APOBEC3H MPHOSPH8 APOBEC3F APOBEC3G APOBEC3A	16	negative regulation of single stranded viral RNA replication via double stranded DNA intermediate	APOBEC-mediated DNA Deamination	"The primary biological process performed by this system of interacting proteins is APOBEC-mediated DNA deamination, which plays a crucial role in innate immunity and genome stability. The APOBEC family of proteins (APOBEC3A, APOBEC3B, APOBEC3C, APOBEC3F, APOBEC3G, APOBEC3H) are cytidine deaminases that catalyze the conversion of cytosine to uracil in single-stranded DNA (ssDNA). This process can lead to mutations and DNA damage, which can be both beneficial and detrimental to the cell.
+
+Reasoning and supporting information:
+
+1. APOBEC proteins are central to this system: The APOBEC family members are the primary drivers of the DNA deamination process. They have been implicated in various biological processes, including innate immunity against retroviruses and retrotransposons, as well as somatic hypermutation and class switch recombination in B cells.
+
+2. AICDA is involved in antibody diversification: AICDA (also known as AID) is another cytidine deaminase that is crucial for somatic hypermutation and class switch recombination in B cells. It is functionally related to the APOBEC family and can interact with some of the APOBEC proteins.
+
+3. SETDB1, TRIM28, and TASOR are involved in epigenetic regulation: These proteins are part of the SETDB1/TRIM28/TASOR complex, which is involved in the establishment and maintenance of heterochromatin. This complex can interact with APOBEC proteins, potentially regulating their activity and localization.
+
+4. RESF1 and MORC2 are involved in DNA repair and chromatin remodeling: RESF1 is a DNA repair protein that can interact with APOBEC3A and APOBEC3B, potentially modulating their activity. MORC2 is a chromatin remodeling protein that can interact with APOBEC3A, potentially regulating its access to the target DNA.
+
+5. INPP5K and HMGA2 are involved in cellular signaling and chromatin structure: INPP5K is a phosphatase involved in cellular signaling pathways, while HMGA2 is a chromatin-associated protein that can modulate chromatin structure. Both proteins can interact with APOBEC3B, potentially influencing its activity and localization.
+
+6. MPHOSPH8 is involved in mRNA processing: MPHOSPH8 is an mRNA processing protein that can interact with APOBEC3G, potentially regulating its activity and localization.
+
+In conclusion, the primary biological process performed by this system of interacting proteins is APOBEC-mediated DNA deamination. The proteins in this system are involved in various aspects of this process, including catalysis, regulation, and localization."
+GO:0002092	APELA AHI1 DTNBP1 SELE ARRB2 AP2M1 ANGPT1 MAGI2 INSR PCSK9 SFRP4 ATAD1 SCYL2 NTF3 CD63 WNT3A DRD2 PLCG2 TBC1D5 EGF SYK VEGFA ARRB1 FMR1 GREM1 PICK1 GH1 APLN	28	positive regulation of receptor internalization	Angiogenesis and Neurodevelopment Regulation	"The system of interacting proteins primarily involves the regulation of angiogenesis and neurodevelopment. Angiogenesis is the formation of new blood vessels from pre-existing ones, while neurodevelopment refers to the growth and development of the nervous system.
+
+1. Angiogenesis regulation: Key proteins involved in this process include ANGPT1, VEGFA, and EGF. ANGPT1 (Angiopoietin-1) is essential for blood vessel maturation and stabilization, while VEGFA (Vascular Endothelial Growth Factor A) promotes endothelial cell proliferation and migration. EGF (Epidermal Growth Factor) also contributes to angiogenesis by stimulating cell growth and differentiation.
+
+2. Neurodevelopment regulation: AHI1, DTNBP1, NTF3, FMR1, and WNT3A are crucial proteins in this process. AHI1 (Abelson Helper Integration Site 1) and DTNBP1 (Dystrobrevin Binding Protein 1) are associated with neurodevelopmental disorders such as Joubert syndrome and schizophrenia, respectively. NTF3 (Neurotrophin 3) promotes the survival and differentiation of neurons, while FMR1 (Fragile X Mental Retardation 1) is involved in synaptic plasticity and intellectual development. WNT3A (Wnt Family Member 3A) plays a role in neuronal differentiation and axon guidance.
+
+3. Receptor signaling and regulation: INSR, DRD2, and SYK are key proteins in this aspect. INSR (Insulin Receptor) is involved in glucose homeostasis and cell growth, while DRD2 (Dopamine Receptor D2) is implicated in neurotransmission and neuromodulation. SYK (Spleen Tyrosine Kinase) is involved in immune cell signaling and development.
+
+4. Protein trafficking and endocytosis: AP2M1, CD63, and TBC1D5 are essential proteins in this process. AP2M1 (Adaptor Related Protein Complex 2 Subunit Mu 1) is involved in clathrin-mediated endocytosis, while CD63 (CD63 Molecule) is a membrane protein involved in protein trafficking. TBC1D5 (TBC1 Domain Family Member 5) is a GTPase-activating protein that regulates endosomal trafficking.
+
+5. Modulation of signaling pathways: ARRB1, ARRB2, PLCG2, and PICK1 are crucial proteins in this aspect. ARRB1 (Arrestin Beta 1) and ARRB2 (Arrestin Beta 2) are involved in the desensitization of G protein-coupled receptors, while PLCG2 (Phospholipase C Gamma 2) is involved in the regulation of intracellular calcium levels and protein kinase C activation. PICK1 (Protein Interacting With C Kinase 1) is involved in the regulation of AMPA receptor trafficking and synaptic plasticity.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of angiogenesis and neurodevelopment. The proteins involved in this system play crucial roles in various cellular processes, including receptor signaling, protein trafficking, and modulation of signaling pathways."
+GO:0046385	DCK DCTD TBPL1 RRM1 CMPK2 RRM2 DUT ADK DTYMK DGUOK RRM2B LOC100506422 TYMS GUK1 AK5 SHMT1	16	deoxyribose phosphate biosynthetic process	Deoxyribonucleotide Synthesis and Metabolism	"The primary biological process performed by this system of interacting proteins is deoxyribonucleotide synthesis and metabolism, which is crucial for DNA replication and repair. The proteins involved in this process are:
+
+1. DCK (deoxycytidine kinase) - Catalyzes the phosphorylation of deoxycytidine, contributing to the nucleotide salvage pathway. This enzyme is essential for the activation of nucleoside analogs used in cancer therapy.
+
+2. DCTD (dCMP deaminase) - Converts dCMP to dUMP, which is a precursor for dTMP synthesis. This enzyme plays a role in pyrimidine metabolism and nucleotide biosynthesis.
+
+3. TBPL1 (TATA-box binding protein-like 1) - Involved in transcription regulation, TBPL1 interacts with RRM1 and RRM2, which are key components of ribonucleotide reductase.
+
+4. RRM1 (ribonucleotide reductase M1) - A subunit of ribonucleotide reductase, RRM1 is responsible for the reduction of ribonucleotides to deoxyribonucleotides, which are essential for DNA synthesis.
+
+5. CMPK2 (cytidine/uridine monophosphate kinase 2) - Catalyzes the phosphorylation of dCMP and dUMP, contributing to the synthesis of dCTP and dTTP, respectively.
+
+6. RRM2 (ribonucleotide reductase M2) - Another subunit of ribonucleotide reductase, RRM2 is essential for the reduction of ribonucleotides to deoxyribonucleotides.
+
+7. DUT (deoxyuridine triphosphatase) - Hydrolyzes dUTP to dUMP, preventing the incorporation of dUTP into DNA and maintaining the integrity of the genome.
+
+8. ADK (adenosine kinase) - Phosphorylates adenosine to AMP, contributing to the purine salvage pathway and regulating intracellular adenosine levels.
+
+9. DTYMK (deoxythymidylate kinase) - Catalyzes the phosphorylation of dTMP to dTDP, which is essential for dTTP synthesis and DNA replication.
+
+10. DGUOK (deoxyguanosine kinase) - Catalyzes the phosphorylation of deoxyguanosine, contributing to the nucleotide salvage pathway.
+
+11. RRM2B (ribonucleotide reductase M2B) - A p53-inducible subunit of ribonucleotide reductase, RRM2B is involved in DNA repair and replication under stress conditions.
+
+12. LOC100506422 (uncharacterized protein) - The function of this protein is currently unknown.
+
+13. TYMS (thymidylate synthase) - Catalyzes the conversion of dUMP to dTMP, which is essential for DNA synthesis and repair.
+
+14. GUK1 (guanylate kinase 1) - Catalyzes the phosphorylation of GMP to GDP, contributing to the synthesis of GTP.
+
+15. AK5 (adenylate kinase 5) - Catalyzes the transfer of phosphate between ADP and ATP, contributing to the regulation of intracellular adenine nucleotide levels.
+
+16. SHMT1 (serine hydroxymethyltransferase 1) - Catalyzes the conversion of serine to glycine, providing one-carbon units for the synthesis of dTMP.
+
+In summary, this system of interacting proteins is primarily involved in deoxyribonucleotide synthesis and metabolism, which is essential for DNA replication and repair."
+GO:0035627	ABCA12 SGPP1 OSBP PSAP PLTP ABCA2 CERT1 ABCB1 ABCB4 CPTP ABCA13 PLEKHA8 GLTP VAPA MTTP PLEKHA3	16	ceramide transport	Lipid Transport and Homeostasis	"The primary biological process performed by this system of interacting proteins is lipid transport and homeostasis. This conclusion is based on the following observations:
+
+1. Presence of ATP-binding cassette (ABC) transporters: ABCA12, ABCA2, ABCA13, ABCB1, and ABCB4 are all members of the ABC transporter family, which are known to play crucial roles in lipid transport across cellular membranes. For example, ABCA12 is involved in lipid transport in the skin, while ABCB1 and ABCB4 are involved in the transport of phospholipids and cholesterol.
+
+2. Involvement of lipid transfer proteins: PLTP, CERT1, CPTP, and GLTP are all lipid transfer proteins that facilitate the movement of lipids between cellular compartments. PLTP is involved in the transfer of phospholipids and cholesterol, CERT1 is responsible for the transport of ceramide, CPTP is involved in the transfer of glycerophospholipids, and GLTP is responsible for the transfer of glycolipids.
+
+3. Role of oxysterol-binding protein (OSBP) and related proteins: OSBP and its related proteins, such as SGPP1 and PLEKHA8, are involved in the regulation of lipid metabolism and homeostasis. OSBP is known to bind and transport oxysterols, which are important regulators of cholesterol metabolism. SGPP1 is involved in the regulation of sphingolipid metabolism, while PLEKHA8 is implicated in the regulation of phosphoinositide metabolism.
+
+4. Involvement of proteins associated with lipid storage and transport: PSAP and MTTP are both involved in lipid storage and transport. PSAP is a lysosomal protein that is involved in the catabolism of glycosphingolipids, while MTTP is responsible for the assembly and secretion of lipoproteins, which are essential for the transport of lipids in the bloodstream.
+
+5. Role of vesicle-associated membrane protein-associated protein A (VAPA): VAPA is involved in the regulation of lipid transport and homeostasis by interacting with various lipid transfer proteins and regulating their activity.
+
+6. Involvement of pleckstrin homology domain-containing proteins: PLEKHA3 is another protein containing a pleckstrin homology domain, which is known to bind phosphoinositides and play a role in lipid signaling and membrane trafficking.
+
+In summary, the most prominent biological process performed by this system of interacting proteins is lipid transport and homeostasis, as evidenced by the presence of multiple ABC transporters, lipid transfer proteins, proteins involved in lipid metabolism regulation, and proteins associated with lipid storage and transport."
+GO:0009187	PDE5A PDE9A GUCY2C PDE7B ADCY10 ADCY9 ADCY4 PDE4D GUCY2F CACNB4 NPPA EPHA2 PDE4C PDE4A ADCY3 ADCY5 GUCY1A1 PTH PDE7A PDE8B NPR2 PDE2A GUCY1B1 ADCY7 GUCY1A2 AMPD2 NPPC ADCY1 PDE4B NPPB NPR1 PTHLH PDE8A ADCY8 CNP GUCY2D ADCY6 RORA ADCY2 PDE10A	40	cyclic nucleotide metabolic process	Cyclic Nucleotide Signaling	"The primary biological process performed by this system of interacting proteins is cyclic nucleotide signaling, which plays a crucial role in regulating various cellular functions, including cell growth, differentiation, and apoptosis.
+
+1. Predominance of PDE and ADCY proteins: The presence of multiple phosphodiesterase (PDE) and adenylate cyclase (ADCY) proteins (PDE2A, PDE4A, PDE4B, PDE4C, PDE4D, PDE5A, PDE7A, PDE7B, PDE8A, PDE8B, PDE9A, PDE10A, ADCY1, ADCY2, ADCY3, ADCY4, ADCY5, ADCY6, ADCY7, ADCY8, ADCY9, ADCY10) indicates a strong involvement in cyclic nucleotide signaling. PDEs are responsible for the hydrolysis of cyclic nucleotides, while ADCYs catalyze the formation of cyclic AMP (cAMP) from ATP.
+
+2. Guanylate cyclase proteins: The presence of guanylate cyclase proteins (GUCY1A1, GUCY1A2, GUCY1B1, GUCY2C, GUCY2D, GUCY2F) further supports the involvement in cyclic nucleotide signaling, as these enzymes catalyze the conversion of GTP to cyclic GMP (cGMP).
+
+3. Natriuretic peptide system: The presence of natriuretic peptides (NPPA, NPPB, NPPC) and their receptors (NPR1, NPR2) suggests a role in regulating blood pressure, fluid balance, and electrolyte homeostasis through the production of cGMP.
+
+4. Calcium channel subunit: The presence of the calcium channel subunit CACNB4 implies a connection to calcium signaling, which can be modulated by cyclic nucleotide signaling pathways.
+
+5. AMP deaminase: The presence of AMPD2, an enzyme that catalyzes the conversion of AMP to IMP, suggests a link to purine metabolism and regulation of cellular energy levels, which can be influenced by cyclic nucleotide signaling.
+
+6. Parathyroid hormone-related proteins: The presence of PTH and PTHLH indicates a role in calcium homeostasis and bone metabolism, which can be modulated by cyclic nucleotide signaling pathways.
+
+7. Ephrin receptor: The presence of EPHA2, a receptor tyrosine kinase, suggests a role in cell adhesion, migration, and angiogenesis, which can be regulated by cyclic nucleotide signaling.
+
+8. Nuclear receptor: The presence of RORA, a nuclear receptor, implies a connection to transcriptional regulation and circadian rhythm, which can be modulated by cyclic nucleotide signaling pathways.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is cyclic nucleotide signaling, which regulates various cellular functions through the modulation of cAMP and cGMP levels."
+GO:0002043	BMP4 ITGB1BP1 APELA PPP1R16B IL12B GATA2 MMRN2 DLL4 IL12A NRARP JCAD APLNR EPHA2 ACVRL1 AGTR1 FGF2 THBS1 FGFBP1 PDCD10 SEMA5A VEGFA NGFR HMOX1 BMPER	24	blood vessel endothelial cell proliferation involved in sprouting angiogenesis	Angiogenesis Regulation	"The most prominent biological process performed by this system of interacting proteins is the regulation of angiogenesis. Angiogenesis is the formation of new blood vessels from pre-existing ones, which is crucial for various physiological processes such as wound healing, embryonic development, and tissue repair.
+
+1. Key proteins involved in angiogenesis: VEGFA, FGF2, BMP4, DLL4, and THBS1 are well-known regulators of angiogenesis. VEGFA and FGF2 are potent angiogenic factors that promote endothelial cell proliferation, migration, and tube formation. BMP4 and DLL4 are involved in the Notch signaling pathway, which plays a critical role in blood vessel formation and maturation. THBS1 is an endogenous inhibitor of angiogenesis, modulating the balance between pro- and anti-angiogenic factors.
+
+2. Receptor proteins and signaling pathways: EPHA2, ACVRL1, AGTR1, APLNR, and NRARP are receptor proteins that participate in various signaling pathways regulating angiogenesis. EPHA2 is a receptor for ephrin-A ligands, which are involved in vascular development and remodeling. ACVRL1 is a receptor for the TGF-β superfamily, which regulates endothelial cell differentiation and vascular stability. AGTR1 and APLNR are G-protein-coupled receptors that mediate the effects of angiotensin II and apelin, respectively, both of which are involved in blood vessel formation and maintenance. NRARP is a Notch target gene that modulates Notch signaling, influencing endothelial cell fate and vessel branching.
+
+3. Extracellular matrix (ECM) proteins and their regulators: MMRN2, ITGB1BP1, and BMPER are involved in the regulation of ECM components, which play a crucial role in angiogenesis. MMRN2 is an ECM protein that binds growth factors and modulates their availability. ITGB1BP1 is an integrin-binding protein that regulates cell adhesion and migration. BMPER modulates BMP signaling by binding to BMPs and regulating their activity.
+
+4. Other proteins with roles in angiogenesis: IL12A, IL12B, GATA2, HMOX1, NGFR, PDCD10, SEMA5A, and FGFBP1 have diverse roles in angiogenesis. IL12A and IL12B are subunits of IL-12, a cytokine that inhibits angiogenesis by suppressing VEGF production. GATA2 is a transcription factor that regulates the expression of genes involved in endothelial cell differentiation and function. HMOX1 is an enzyme that degrades heme, producing anti-angiogenic byproducts. NGFR is a receptor for nerve growth factor, which can modulate angiogenesis. PDCD10 is involved in vascular development and stabilization. SEMA5A is a semaphorin that regulates endothelial cell migration and vessel patterning. FGFBP1 is a binding protein that modulates FGF2 availability and activity.
+
+5. APELA and PPP1R16B: APELA is a peptide hormone that binds to APLNR and modulates blood vessel formation. PPP1R16B is a regulatory subunit of protein phosphatase 1, which is involved in various cellular processes, including cell migration and adhesion, both of which are crucial for angiogenesis.
+
+In conclusion, this system of interacting proteins plays a critical role in the regulation of angiogenesis through the modulation of growth factors, receptor signaling pathways, ECM components, and other cellular processes."
+GO:0150077	NUPR1 CST7 MMP3 LRRK2 DAGLA IL18 MMP9 IGF1 STAP1 IL1B TREM2 CD200R1L CCL3 CD200 TAFA3 NR1D1 ATM TNFRSF1B PTGS2 PLCG2 CD200R1 IL33 GRN IL4 CTSC TNF SYT11 LDLR TTBK1 IL6 PTPRC MMP8 CX3CL1 SPHK1	34	regulation of neuroinflammatory response	Inflammation and Extracellular Matrix Remodeling	"The primary biological process performed by this system of interacting proteins is inflammation and extracellular matrix remodeling. This is supported by the presence of several key proteins involved in these processes.
+
+1. Inflammation: The presence of cytokines and chemokines such as IL18, IL1B, IL33, IL4, IL6, TNF, and CCL3 indicates a role in inflammatory processes. These proteins are known to regulate immune cell recruitment, activation, and signaling, contributing to the inflammatory response.
+
+Reasoning: Inflammatory cytokines and chemokines are essential for immune cell communication and regulation. Their presence in this system suggests a prominent role in inflammation.
+
+Supporting information: IL18, IL1B, IL33, IL4, IL6, and TNF are well-known pro-inflammatory cytokines, while CCL3 is a chemokine involved in immune cell recruitment.
+
+2. Extracellular Matrix Remodeling: The presence of matrix metalloproteinases (MMP3, MMP8, and MMP9) and cathepsin (CTSC) suggests a role in extracellular matrix remodeling. These proteins are involved in the degradation of extracellular matrix components, which is crucial for tissue repair and remodeling.
+
+Reasoning: Extracellular matrix remodeling is essential for maintaining tissue integrity and function. The presence of MMPs and CTSC in this system indicates a role in this process.
+
+Supporting information: MMP3, MMP8, and MMP9 are enzymes that degrade various extracellular matrix components, while CTSC is a lysosomal protease involved in the degradation of extracellular matrix proteins.
+
+3. Cell Signaling and Regulation: Several proteins in this system, such as LRRK2, DAGLA, STAP1, PLCG2, SPHK1, and ATM, are involved in cell signaling and regulation. These proteins play roles in various signaling pathways, including those related to inflammation and extracellular matrix remodeling.
+
+Reasoning: Cell signaling and regulation are crucial for coordinating cellular responses to various stimuli. The presence of these proteins suggests a role in modulating the inflammatory response and extracellular matrix remodeling.
+
+Supporting information: LRRK2, DAGLA, STAP1, PLCG2, and SPHK1 are involved in various signaling pathways, while ATM is a key regulator of DNA damage response and cell cycle regulation.
+
+4. Immune Cell Regulation: Proteins such as CD200, CD200R1, CD200R1L, PTPRC, and TREM2 are involved in immune cell regulation, particularly in modulating the activation and function of microglia and other immune cells.
+
+Reasoning: Immune cell regulation is essential for maintaining a balanced immune response and preventing excessive inflammation. The presence of these proteins suggests a role in modulating immune cell activation and function.
+
+Supporting information: CD200, CD200R1, and CD200R1L are involved in the regulation of microglial activation, while PTPRC is a protein tyrosine phosphatase involved in immune cell signaling, and TREM2 is a receptor involved in microglial phagocytosis and inflammation.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is inflammation and extracellular matrix remodeling, as evidenced by the presence of key proteins involved in these processes. This system also plays roles in cell signaling, regulation, and immune cell modulation, which are crucial for coordinating cellular responses to various stimuli and maintaining tissue integrity."
+GO:0072677	HRH1 PTGER4 SCG2 CCL4L2 ADAM8 CCL7 CCL26 CCL3 CCL11 CCL4 LGALS3 CCL4L1 DAPK2 CCL21 CD300A CCL2 CCL1 CCL24 IL4 CCL13 CCL8 CCL5 EPX CX3CL1	24	eosinophil migration	Chemotaxis and Inflammation Regulation	"1. Chemokine involvement: The majority of the proteins in this system are chemokines (CCL1, CCL2, CCL3, CCL4, CCL4L1, CCL4L2, CCL5, CCL7, CCL8, CCL11, CCL13, CCL21, CCL24, CCL26, and CX3CL1). Chemokines are small cytokines that play a crucial role in the recruitment and activation of immune cells, such as leukocytes, to sites of inflammation or injury.
+
+2. Receptor interactions: HRH1 and PTGER4 are receptors for histamine and prostaglandin E2, respectively. Both histamine and prostaglandin E2 are involved in the regulation of inflammation and immune responses. The interaction of these receptors with chemokines suggests a coordinated regulation of inflammation and immune cell recruitment.
+
+3. Secretogranin II (SCG2) involvement: SCG2 is a member of the granin family of proteins, which are involved in the regulated secretion of peptide hormones and neurotransmitters. Its interaction with chemokines may indicate a role in the secretion and regulation of these immune mediators.
+
+4. Matrix metalloproteinase (ADAM8) involvement: ADAM8 is a metalloproteinase involved in the proteolytic processing of various proteins, including cytokines and chemokines. Its interaction with chemokines in this system suggests a role in the regulation of chemokine activity and availability.
+
+5. Galectin-3 (LGALS3) involvement: LGALS3 is a member of the galectin family, which are carbohydrate-binding proteins involved in various biological processes, including cell adhesion, migration, and immune cell regulation. Its interaction with chemokines may contribute to the regulation of immune cell recruitment and activation.
+
+6. Death-associated protein kinase 2 (DAPK2) involvement: DAPK2 is a serine/threonine kinase involved in apoptosis and autophagy. Its interaction with chemokines may suggest a role in the regulation of cell death and survival in the context of inflammation and immune responses.
+
+7. CD300A involvement: CD300A is an immunoreceptor expressed on various immune cells, including granulocytes, monocytes, and natural killer cells. Its interaction with chemokines may contribute to the regulation of immune cell activation and function.
+
+8. Eosinophil peroxidase (EPX) involvement: EPX is a granule protein found in eosinophils, which are involved in allergic reactions and immune responses against parasites. Its interaction with chemokines may indicate a role in the recruitment and activation of eosinophils during inflammation.
+
+9. Interleukin-4 (IL4) involvement: IL4 is a cytokine that plays a critical role in the regulation of immune responses, particularly in the context of allergic inflammation. Its interaction with chemokines may contribute to the coordination of immune cell recruitment and activation during inflammation.
+
+In conclusion, this system of interacting proteins is primarily involved in the regulation of chemotaxis and inflammation, with a focus on immune cell recruitment, activation, and function."
+GO:0060231	BMP4 PAX8 WT1 PELO WNT9B CTNNB1 CITED1 GATA3 PAX2 STAT1 SIX2 WNT4 SMO FZD7 BASP1 SALL1 LIF GREM1 TCF15 GDNF	20	mesenchymal to epithelial transition	Kidney Development and Differentiation	"The interacting proteins in this system primarily contribute to kidney development and differentiation. Key proteins involved in this process include BMP4, PAX8, WT1, WNT9B, CTNNB1, GATA3, PAX2, SIX2, WNT4, SMO, FZD7, SALL1, LIF, GREM1, TCF15, and GDNF.
+
+1. BMP4, WNT9B, WNT4, and GREM1 are involved in nephron formation and branching morphogenesis. BMP4 and GREM1 are antagonistic, with BMP4 promoting nephron formation and GREM1 inhibiting it. WNT9B and WNT4 are essential for nephron differentiation and branching morphogenesis, respectively.
+
+2. PAX8 and PAX2 are transcription factors that play a crucial role in kidney development. PAX8 is involved in the specification of renal progenitor cells, while PAX2 is essential for the differentiation of renal vesicles into nephrons.
+
+3. WT1 is a transcription factor that regulates the expression of several genes involved in kidney development, including PAX2 and GDNF. WT1 mutations are associated with Wilms' tumor, a pediatric kidney cancer.
+
+4. GATA3 is a transcription factor that regulates the differentiation of renal tubular epithelial cells. It is essential for the proper development of the distal nephron.
+
+5. SIX2 is a transcription factor that maintains the self-renewal of nephron progenitor cells. It prevents premature differentiation and ensures the formation of a sufficient number of nephrons.
+
+6. SMO, FZD7, and CTNNB1 are involved in the Hedgehog and Wnt signaling pathways, which are essential for kidney development. SMO is a component of the Hedgehog pathway, while FZD7 and CTNNB1 are part of the Wnt pathway. Both pathways regulate cell proliferation, differentiation, and migration during kidney development.
+
+7. SALL1 is a transcription factor that is essential for the proper development of the renal capsule. Mutations in SALL1 are associated with Townes-Brocks syndrome, which includes kidney abnormalities.
+
+8. LIF and TCF15 are involved in the regulation of nephron progenitor cell differentiation. LIF is a cytokine that promotes nephron progenitor cell differentiation, while TCF15 is a transcription factor that inhibits this process.
+
+9. GDNF is a growth factor that promotes the survival, proliferation, and differentiation of nephron progenitor cells. It is essential for the proper development of the ureteric bud and the branching morphogenesis of the collecting duct system.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is kidney development and differentiation, with key proteins regulating nephron formation, branching morphogenesis, and the differentiation of renal progenitor cells into various cell types within the nephron."
+GO:0036297	RNF168 RAD51D CENPS CENPS-CORT FANCL MCM8 FANCD2 EXO5 XRCC3 HROB RNF8 ATR VCP POLN RFWD3 ERCC6L2 DCLRE1C SLX4 FANCF XPA ERCC4 FAAP24 CENPX FANCC RAD51 FAAP20 RAD51AP2 NEIL3 MCM9 DCLRE1A FANCI FANCM FANCA FAN1 ERCC1 FAAP100 FANCE RAD51AP1 NUCKS1 FANCG FANCB DCLRE1B	42	interstrand cross-link repair	DNA Repair and Replication	"The primary biological process performed by this system of interacting proteins is DNA repair and replication. The proteins involved in this system work together to maintain genomic stability and ensure accurate DNA replication.
+
+1. Homologous Recombination (HR) and Fanconi Anemia (FA) Pathways: RAD51, RAD51D, XRCC3, FANCA, FANCB, FANCC, FANCD2, FANCE, FANCF, FANCG, FANCI, FANCL, FANCM, and FAAP20 are involved in HR and FA pathways, which are crucial for repairing DNA double-strand breaks and interstrand crosslinks, respectively. These pathways are essential for maintaining genomic stability and preventing diseases such as cancer.
+
+2. DNA Damage Response (DDR): ATR, RNF8, RNF168, and RFWD3 play a role in DDR, which is activated upon DNA damage. DDR coordinates cell cycle checkpoints, DNA repair, and apoptosis to maintain genomic integrity.
+
+3. DNA Replication: MCM8 and MCM9 are part of the minichromosome maintenance complex, which is essential for DNA replication initiation and elongation. Accurate replication is crucial for maintaining genomic stability.
+
+4. Nucleotide Excision Repair (NER): XPA, ERCC1, and ERCC4 are involved in NER, which removes bulky DNA lesions caused by UV radiation and chemical mutagens. NER is essential for preventing mutations and maintaining genomic stability.
+
+5. DNA End Resection and Repair: EXO5, DCLRE1A, DCLRE1B, DCLRE1C, and SLX4 are involved in DNA end resection and repair, which is crucial for repairing DNA double-strand breaks and maintaining genomic stability.
+
+6. DNA Damage Recognition and Repair: ERCC6L2, FAAP24, FAAP100, NEIL3, and POLN are involved in recognizing and repairing various types of DNA damage, ensuring accurate DNA replication and preventing mutations.
+
+7. Centromere Assembly and Function: CENPS, CENPS-CORT, CENPX, and NUCKS1 are involved in centromere assembly and function, which is essential for proper chromosome segregation during cell division.
+
+8. Protein Degradation and Quality Control: VCP is involved in protein degradation and quality control, ensuring that damaged or misfolded proteins are removed from the cell.
+
+9. DNA Repair Accessory Proteins: RAD51AP1, RAD51AP2, FAN1, and HROB are accessory proteins that facilitate DNA repair processes, enhancing the efficiency and accuracy of DNA repair.
+
+In conclusion, this system of interacting proteins is primarily involved in DNA repair and replication, ensuring genomic stability and preventing diseases such as cancer."
+GO:0014037	DICER1 NAB2 POU3F2 NDRG1 NF1 MYOC PPP3R1 SOD1 DAG1 ADGRG6 SLC25A46 CDK1 PRX NAB1 FA2H PARD3 SH3TC2 PALS1 NTRK2 ARHGEF10 GPC1 ILK CDK5 EGR2 NCMAP ITGB4 AKT1 ERBB3 MED12 SIRT2 PLEC LAMB2 CNTNAP1 LGI4 AKT2 SKI POU3F1	37	Schwann cell differentiation	Neuronal Development and Maintenance	"The primary biological process performed by this system of interacting proteins is neuronal development and maintenance. The proteins involved in this process are crucial for the proper functioning of the nervous system, including the formation of neurons, synapses, and myelin sheaths.
+
+1. Neuronal differentiation and development: POU3F1 and POU3F2 are transcription factors that play a role in neuronal differentiation and development. NTRK2 is a neurotrophic receptor that promotes neuronal survival and differentiation. CDK5 is a kinase involved in neuronal migration and synapse formation.
+
+2. Myelination: EGR2 is a transcription factor that regulates myelin gene expression, while FA2H is involved in the synthesis of myelin lipids. NDRG1 is involved in the maintenance of myelin sheaths.
+
+3. Synaptic function and plasticity: NCMAP, ILK, and ITGB4 are involved in the formation and maintenance of synapses. AKT1 and AKT2 are kinases that regulate synaptic plasticity and neuronal survival.
+
+4. Axonal transport and guidance: ARHGEF10 and SH3TC2 are involved in axonal transport, while CDK1 and PPP3R1 play roles in axonal guidance.
+
+5. Neuronal survival and stress response: NF1, SOD1, and PRX are involved in the protection of neurons from oxidative stress and apoptosis. SIRT2 is a deacetylase that regulates neuronal survival and stress response.
+
+6. Cell adhesion and signaling: GPC1, DAG1, and ADGRG6 are involved in cell adhesion and signaling, which are essential for neuronal development and maintenance.
+
+7. Protein processing and degradation: DICER1 is involved in the processing of microRNAs, which regulate gene expression in neurons. NAB1 and NAB2 are transcriptional corepressors that modulate gene expression.
+
+8. Cytoskeletal organization: PLEC, PARD3, and PALS1 are involved in the organization of the neuronal cytoskeleton, which is crucial for neuronal morphology and function.
+
+9. Extracellular matrix interactions: LAMB2 and CNTNAP1 are involved in the interaction between neurons and the extracellular matrix, which is essential for neuronal development and maintenance.
+
+10. Growth factor signaling: ERBB3 and MED12 are involved in growth factor signaling pathways, which regulate neuronal survival and differentiation.
+
+In conclusion, this system of interacting proteins plays a critical role in neuronal development and maintenance, with functions ranging from neuronal differentiation and myelination to synaptic function and stress response."
+GO:0042269	SERPINB9 RASGRP1 LILRB1 GFER IL12B ARRB2 KLRC4 CRK HAVCR2 IL12A AP1G1 PIK3R6 LAMP1 CLEC12B HLA-E LEP STAT5B MICA VAV1 HLA-A NCR1 KIR2DL4 CEACAM1 KLRC3 HLA-G KLRK1 KLRC2 IL21 HLA-B CD226 KLRC4-KLRK1 NECTIN2 KLRC1 CRTAM NCR3 CADM1 LGALS9 SERPINB4 KLRB1 KLRD1 LAG3 PVR CD160 RAET1E HLA-F SLAMF6 SH2D1A	47	regulation of natural killer cell mediated cytotoxicity	Natural Killer Cell Activation and Inhibition	"The primary biological process performed by this system of interacting proteins is the regulation of natural killer (NK) cell activation and inhibition. NK cells are essential components of the innate immune system, responsible for detecting and eliminating infected or transformed cells.
+
+1. NK cell activation: Several proteins in the system contribute to NK cell activation, including IL12A, IL12B, IL21, and STAT5B. IL12A and IL12B form a heterodimeric cytokine, IL-12, which promotes NK cell activation and production of IFN-γ. IL21 is another cytokine that enhances NK cell cytotoxicity and IFN-γ production. STAT5B is a transcription factor activated by IL-21, further promoting NK cell activation.
+
+2. NK cell inhibitory receptors: LILRB1, KIR2DL4, KLRC1, KLRC2, KLRC3, KLRC4, KLRD1, and NCR1 are inhibitory receptors expressed on NK cells. These receptors recognize MHC class I molecules (HLA-A, HLA-B, HLA-E, HLA-G, and HLA-F) on target cells, leading to NK cell inhibition and preventing cytotoxicity against healthy cells.
+
+3. NK cell activating receptors: CD226, NCR3, KLRK1, and CRTAM are activating receptors on NK cells. They recognize ligands such as MICA, NECTIN2, RAET1E, and CADM1 on target cells, leading to NK cell activation and cytotoxicity against infected or transformed cells.
+
+4. Immune checkpoint proteins: LAG3, HAVCR2, and CD160 are immune checkpoint proteins that regulate NK cell activity. LAG3 and HAVCR2 are inhibitory receptors, while CD160 can have both activating and inhibitory effects depending on its ligand.
+
+5. Adaptor proteins and signaling molecules: VAV1, CRK, RASGRP1, PIK3R6, and SH2D1A are involved in intracellular signaling pathways that modulate NK cell activation and inhibition. For example, VAV1 and CRK are involved in activating signaling pathways downstream of NK cell receptors, while RASGRP1 and PIK3R6 are involved in both activating and inhibitory pathways.
+
+6. Other proteins: SERPINB9, GFER, ARRB2, LAMP1, CLEC12B, LEP, CEACAM1, LGALS9, SERPINB4, KLRB1, PVR, and SLAMF6 have various roles in NK cell biology, including regulation of granule release, cytokine production, and cell adhesion.
+
+In summary, this system of interacting proteins plays a crucial role in regulating NK cell activation and inhibition, ensuring an effective immune response against infected or transformed cells while preventing damage to healthy cells."
+GO:0043162	NEDD4 CHMP6 VPS37B STAM CHMP2A RNF126 SNF8 VPS25 CHMP2B CHMP5 CHMP4B PTPN23 MVB12A VPS36 TSG101 UBAP1L VPS37D VPS37A VPS28 CHMP1A CHMP7 RNF103-CHMP3 CHMP1B VPS4A TOM1L1 UBAP1 CHMP4A MVB12B HGS PLAA STAM2 CHMP3 HDAC6 CHMP4C RNF115 VPS4B VPS37C	37	ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway	Endosomal Sorting Complex Required for Transport (ESCRT)	"The primary biological process performed by this system of interacting proteins is the Endosomal Sorting Complex Required for Transport (ESCRT). The ESCRT machinery is responsible for the sorting and degradation of membrane proteins, as well as the formation of multivesicular bodies (MVBs) and the release of extracellular vesicles.
+
+1. ESCRT-0 complex: The proteins HGS, STAM, and STAM2 form the ESCRT-0 complex, which is responsible for the initial recognition and clustering of ubiquitinated cargo proteins on the endosomal membrane.
+
+2. ESCRT-I complex: The proteins TSG101, VPS28, VPS37A, VPS37B, VPS37C, VPS37D, UBAP1, and UBAP1L form the ESCRT-I complex. This complex is involved in the recruitment of ubiquitinated cargo proteins and the initiation of membrane deformation.
+
+3. ESCRT-II complex: The proteins SNF8, VPS25, VPS36, and MVB12A form the ESCRT-II complex, which is responsible for the stabilization of membrane deformation and the recruitment of the ESCRT-III complex.
+
+4. ESCRT-III complex: The proteins CHMP1A, CHMP1B, CHMP2A, CHMP2B, CHMP3, CHMP4A, CHMP4B, CHMP4C, CHMP5, CHMP6, CHMP7, and RNF103-CHMP3 form the ESCRT-III complex. This complex is involved in the membrane scission process, leading to the formation of MVBs and the release of extracellular vesicles.
+
+5. VPS4 complex: The proteins VPS4A and VPS4B are ATPases that disassemble the ESCRT-III complex, allowing for the recycling of ESCRT components.
+
+6. Accessory proteins: The proteins NEDD4, RNF115, RNF126, PTPN23, TOM1L1, PLAA, HDAC6, and MVB12B are accessory proteins that regulate the ESCRT machinery through various mechanisms, such as ubiquitination, deubiquitination, and membrane trafficking.
+
+In conclusion, the ESCRT machinery is a highly coordinated system of interacting proteins that play a crucial role in the sorting and degradation of membrane proteins, as well as the formation of MVBs and the release of extracellular vesicles."
+GO:0002837	HRG AHR IL12B HAVCR2 IL12A MR1 HLA-DRB1 FBXO38 SLC22A13 CEACAM1 CD226 NECTIN2 CRTAM CD274 HMGB1 PVR HLA-DRB3 IL4I1 CD160 HSPD1	20	regulation of immune response to tumor cell	Modulation of Immune Response	"The system of interacting proteins primarily modulates immune response through the regulation of cytokine production, cell adhesion, and antigen presentation. Key proteins involved in these processes include HRG, AHR, IL12A, IL12B, HAVCR2, HLA-DRB1, HLA-DRB3, and CD274.
+
+1. Cytokine production and regulation: IL12A and IL12B form the heterodimeric cytokine IL-12, which plays a crucial role in the differentiation of naive T cells into Th1 cells and the activation of natural killer (NK) cells. IL4I1 is an L-amino acid oxidase that modulates immune response by inhibiting T cell proliferation and cytokine production. AHR, a ligand-activated transcription factor, regulates the expression of cytokines and influences immune cell differentiation.
+
+2. Cell adhesion and interaction: Several proteins in this system are involved in cell adhesion and interaction, including CEACAM1, CD226, NECTIN2, CRTAM, and PVR. These proteins facilitate cell-cell communication and modulate immune cell activation. For example, CD226 and NECTIN2 are involved in NK cell activation, while CRTAM and PVR play roles in the adhesion and activation of T cells and dendritic cells.
+
+3. Antigen presentation: HLA-DRB1 and HLA-DRB3 are major histocompatibility complex (MHC) class II molecules that present antigens to CD4+ T cells, initiating an adaptive immune response. MR1 is an MHC class I-like molecule that presents bacterial antigens to mucosal-associated invariant T (MAIT) cells.
+
+4. Immune checkpoint regulation: CD274 (PD-L1) and HAVCR2 (TIM-3) are immune checkpoint proteins that negatively regulate T cell activation, preventing excessive immune responses and maintaining immune homeostasis. CD160 is another immune checkpoint protein that modulates NK and T cell activation.
+
+5. Molecular chaperones and protein degradation: HSPD1 (HSP60) is a molecular chaperone involved in protein folding, while FBXO38 is an E3 ubiquitin ligase that targets proteins for degradation. These proteins ensure proper protein folding and maintain cellular protein homeostasis.
+
+6. Transport and clearance: SLC22A13 is an organic anion transporter involved in the clearance of endogenous and exogenous substances, while HMGB1 is a nuclear protein that can be released extracellularly and acts as a damage-associated molecular pattern (DAMP) molecule, promoting inflammation and immune activation.
+
+In summary, this system of interacting proteins modulates immune response through cytokine production, cell adhesion, antigen presentation, immune checkpoint regulation, molecular chaperones, and transport and clearance."
+GO:0048679	RTN4RL1 PTEN FLNA PTPRF PTN RTN4R PTPRS KLK8 SPP1 IGF1R STK24 SCARF1 CNTF CERS2 RGMA MAP2K2 LRIG2 INPP5F KLF4 KREMEN1 EPHA4 GRN MAP2K1 KIAA0319 FKBP1B BRAF TNR NDEL1	28	regulation of axon regeneration	Neuronal Growth and Differentiation	"The interacting proteins in this system primarily contribute to neuronal growth, differentiation, and synaptic plasticity. Key proteins involved in these processes include RTN4RL1, PTEN, FLNA, PTPRF, PTN, RTN4R, PTPRS, KLK8, SPP1, IGF1R, STK24, SCARF1, CNTF, CERS2, RGMA, MAP2K2, LRIG2, INPP5F, KLF4, KREMEN1, EPHA4, GRN, MAP2K1, KIAA0319, FKBP1B, BRAF, TNR, and NDEL1.
+
+1. RTN4RL1 and RTN4R are both involved in inhibiting neurite outgrowth, with RTN4R acting as a receptor for Nogo proteins, which are known to inhibit axonal regeneration.
+
+2. PTEN, a tumor suppressor, regulates cell growth and survival by negatively regulating the PI3K/AKT signaling pathway, which is essential for neuronal growth and differentiation.
+
+3. FLNA, an actin-binding protein, plays a role in cell adhesion, migration, and signaling, contributing to neuronal development and synaptic plasticity.
+
+4. PTPRF, PTPRS, and PTN are protein tyrosine phosphatases that regulate cell adhesion and neurite outgrowth, with PTN acting as a ligand for PTPRF and PTPRS.
+
+5. KLK8, a serine protease, is involved in synaptic plasticity and long-term potentiation, which are crucial for learning and memory.
+
+6. SPP1, also known as osteopontin, is involved in cell adhesion and migration, contributing to neuronal development.
+
+7. IGF1R, a receptor for insulin-like growth factor 1, plays a role in neuronal growth, differentiation, and survival.
+
+8. STK24, a serine/threonine kinase, is involved in the regulation of microtubule dynamics, which is essential for neuronal growth and differentiation.
+
+9. SCARF1, a scavenger receptor, is involved in the regulation of neurite outgrowth and synapse formation.
+
+10. CNTF, a neurotrophic factor, promotes neuronal survival and differentiation.
+
+11. CERS2, a ceramide synthase, is involved in the regulation of neuronal differentiation and axonal growth.
+
+12. RGMA, a repulsive guidance molecule, is involved in axon guidance and neuronal growth cone collapse.
+
+13. MAP2K1 and MAP2K2, both mitogen-activated protein kinase kinases, are involved in the regulation of neuronal differentiation and survival through the MAPK/ERK signaling pathway.
+
+14. LRIG2, a transmembrane protein, is involved in the regulation of neuronal differentiation and neurite outgrowth.
+
+15. INPP5F, a phosphatidylinositol phosphatase, is involved in the regulation of neuronal differentiation and survival.
+
+16. KLF4, a transcription factor, is involved in the regulation of neuronal differentiation and axonal growth.
+
+17. KREMEN1, a transmembrane protein, is involved in the regulation of neuronal differentiation and synapse formation.
+
+18. EPHA4, a receptor tyrosine kinase, is involved in axon guidance and synapse formation.
+
+19. GRN, a growth factor, is involved in neuronal survival and differentiation.
+
+20. KIAA0319, a transmembrane protein, is involved in neuronal migration and neurite outgrowth.
+
+21. FKBP1B, a peptidyl-prolyl cis-trans isomerase, is involved in the regulation of neuronal differentiation and survival.
+
+22. BRAF, a serine/threonine kinase, is involved in the regulation of neuronal differentiation and survival through the MAPK/ERK signaling pathway.
+
+23. TNR, an extracellular matrix protein, is involved in cell adhesion and neurite outgrowth.
+
+24. NDEL1, a microtubule-associated protein, is involved in neuronal migration and neurite outgrowth."
+GO:0051767	JAK3 LRRK2 MAP2K3 FCER2 EDN1 NOD2 NAMPT STAT1 KDR CCL2 MAP2K6 TLR9 TLR4 IL33 AKAP12 MAP2K4 IFNG GSTP1 SELENOS JAK2 TLR2	21	nitric-oxide synthase biosynthetic process	Inflammatory Signaling Cascade	"The prominent biological process performed by this system of interacting proteins is the inflammatory signaling cascade. This process is crucial for the immune response and cellular communication during inflammation.
+
+1. Activation of JAK-STAT pathway: JAK3 and JAK2 are members of the Janus kinase family, which phosphorylate and activate STAT1. This pathway is essential for cytokine signaling, such as IFNG, which plays a critical role in immune response and inflammation.
+
+2. Toll-like receptor (TLR) signaling: TLR2, TLR4, and TLR9 are involved in the recognition of pathogen-associated molecular patterns (PAMPs) and the activation of the innate immune response. These receptors trigger the production of pro-inflammatory cytokines, such as IL33, and chemokines, such as CCL2, which recruit immune cells to the site of infection.
+
+3. Mitogen-activated protein kinase (MAPK) signaling: MAP2K3, MAP2K4, and MAP2K6 are involved in the activation of MAPK pathways, which regulate various cellular processes, including inflammation. LRRK2 is also implicated in the regulation of MAPK signaling and has been associated with inflammatory diseases.
+
+4. Regulation of vascular function: KDR and EDN1 are involved in the regulation of vascular function during inflammation. KDR is a receptor for vascular endothelial growth factor (VEGF), which promotes angiogenesis, while EDN1 is a potent vasoconstrictor.
+
+5. Nucleotide-binding oligomerization domain (NOD) signaling: NOD2 is involved in the recognition of intracellular bacterial components and the activation of the immune response. NAMPT is an enzyme that regulates NAD+ levels and has been implicated in the regulation of NOD2 signaling.
+
+6. Regulation of oxidative stress: GSTP1 and SELENOS are involved in the regulation of oxidative stress during inflammation. GSTP1 is a glutathione S-transferase that detoxifies reactive oxygen species (ROS), while SELENOS is a selenoprotein that protects cells from oxidative damage.
+
+7. Modulation of immune cell activation: FCER2 is a low-affinity receptor for the Fc portion of immunoglobulin E (IgE) and is involved in the regulation of immune cell activation during inflammation.
+
+8. Regulation of cellular signaling: AKAP12 is a scaffolding protein that modulates the activity of various signaling pathways, including those involved in inflammation.
+
+In conclusion, this system of interacting proteins plays a crucial role in the inflammatory signaling cascade, which is essential for immune response and cellular communication during inflammation."
+GO:0043001	RAB34 NSF SPTBN1 LYPLA1 BBS1 RSC1A1 ATP2C1 MACF1 BLZF1 PHAF1 KRT18 VAMP2 CNST GOLPH3L BBS2 RAB26 GGA2 GGA3 GOLGA4 PKDCC OPTN GOLPH3 CLN3 GOLGA7 AMN KIF13A RAB10 SYS1 GCC2 ANK3 RAB31 VAMP5 VAMP3 GGA1 RACK1 PREPL ACSL3 ARFRP1 CSK	39	Golgi to plasma membrane protein transport	Vesicle Trafficking and Golgi Apparatus Regulation	"1. RAB GTPases involvement: RAB34, RAB26, RAB10, and RAB31 are members of the RAB family of small GTPases, which regulate vesicle trafficking, including vesicle formation, movement, and fusion. Their presence suggests a role in vesicle transport and membrane trafficking.
+
+2. SNARE proteins: VAMP2, VAMP3, and VAMP5 are members of the SNARE protein family, which mediate membrane fusion events during vesicle trafficking. Their presence supports the involvement of this protein system in vesicle transport processes.
+
+3. Golgi apparatus proteins: GOLPH3, GOLPH3L, GOLGA4, GOLGA7, and GCC2 are proteins associated with the Golgi apparatus, which is involved in protein processing, modification, and sorting. Their presence indicates a role in Golgi apparatus regulation and function.
+
+4. Adaptor proteins: GGA1, GGA2, and GGA3 are Golgi-localized, gamma-ear-containing, ARF-binding proteins that function in protein sorting at the trans-Golgi network. Their presence suggests a role in protein sorting and trafficking.
+
+5. Cytoskeleton and motor proteins: MACF1, KIF13A, and ANK3 are involved in cytoskeleton organization and regulation. KIF13A is a kinesin motor protein, which transports vesicles along microtubules. Their presence implies a connection to cytoskeleton dynamics and vesicle transport.
+
+6. Membrane trafficking proteins: ARFRP1, OPTN, and SYS1 are involved in membrane trafficking processes. ARFRP1 is an ARF-like GTPase that regulates vesicle budding and transport. OPTN is involved in vesicle trafficking and autophagy. Their presence supports the role of this protein system in membrane trafficking.
+
+7. Other notable proteins: ATP2C1 is a calcium-transporting ATPase involved in calcium homeostasis. ACSL3 is involved in fatty acid metabolism. CSK is a non-receptor protein-tyrosine kinase involved in cell signaling. These proteins suggest additional cellular processes that may be influenced by this protein system.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is vesicle trafficking and Golgi apparatus regulation, as evidenced by the presence of RAB GTPases, SNARE proteins, Golgi apparatus proteins, adaptor proteins, cytoskeleton and motor proteins, and membrane trafficking proteins."
+GO:0051150	BMP4 SIRT1 EREG MECP2 SOD2 ZEB1 PRDM6 KIT NFATC3 MYOCD FOXO4 GPER1 RBPMS2 ANKRD17 EFEMP2 OLFM2 HEY2 CTH PDGFB NFATC1 PDCD4 SHH FGF9 MED28 DNMT1 ENG SRF NFATC2 FGFR2	29	regulation of smooth muscle cell differentiation	Regulation of Cellular Differentiation and Proliferation	"1. BMP4, a member of the bone morphogenetic protein family, plays a crucial role in embryonic development, cell differentiation, and bone formation. It interacts with SIRT1, a NAD-dependent protein deacetylase, which regulates cellular processes such as aging, inflammation, and stress resistance.
+
+2. EREG, an epidermal growth factor family member, is involved in cell proliferation, differentiation, and migration. It interacts with MECP2, a transcriptional repressor, which modulates gene expression and is associated with Rett syndrome.
+
+3. SOD2, a mitochondrial enzyme, protects cells from oxidative stress by converting superoxide radicals to hydrogen peroxide. ZEB1, a transcription factor, regulates epithelial-mesenchymal transition and is involved in cancer progression.
+
+4. PRDM6, a histone methyltransferase, is involved in the regulation of smooth muscle cell differentiation. KIT, a receptor tyrosine kinase, is essential for hematopoiesis, melanogenesis, and gametogenesis.
+
+5. NFATC3 and NFATC1, members of the nuclear factor of activated T-cells family, regulate gene expression in response to calcium signaling. MYOCD, a transcriptional coactivator, is involved in smooth muscle cell differentiation and vascular development.
+
+6. FOXO4, a forkhead transcription factor, regulates cell cycle progression, apoptosis, and oxidative stress response. GPER1, a G-protein coupled estrogen receptor, mediates rapid non-genomic estrogen signaling.
+
+7. RBPMS2, an RNA-binding protein, is involved in mRNA stability and localization. ANKRD17, an ankyrin repeat-containing protein, is involved in protein-protein interactions and cellular processes such as transcriptional regulation.
+
+8. EFEMP2, an extracellular matrix protein, is involved in cell adhesion and migration. OLFM2, an olfactomedin domain-containing protein, is involved in cell adhesion and neurite outgrowth.
+
+9. HEY2, a transcription factor, is involved in cardiovascular development and Notch signaling. CTH, a cystathionine gamma-lyase, is involved in the transsulfuration pathway and hydrogen sulfide biosynthesis.
+
+10. PDGFB, a platelet-derived growth factor, is involved in cell proliferation, migration, and angiogenesis. NFATC2, another member of the nuclear factor of activated T-cells family, is involved in immune response and gene regulation.
+
+11. PDCD4, a tumor suppressor, is involved in apoptosis and the inhibition of translation initiation. SHH, a sonic hedgehog protein, is involved in cell fate determination and tissue patterning.
+
+12. FGF9, a fibroblast growth factor, is involved in cell proliferation, differentiation, and migration. MED28, a mediator complex subunit, is involved in transcriptional regulation.
+
+13. DNMT1, a DNA methyltransferase, is involved in maintaining DNA methylation patterns during replication. ENG, an endoglin protein, is involved in angiogenesis and vascular remodeling.
+
+14. SRF, a serum response factor, is involved in the regulation of muscle-specific genes and cell growth. FGFR2, a fibroblast growth factor receptor, is involved in cell proliferation, differentiation, and migration.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of cellular differentiation and proliferation. These proteins are involved in various signaling pathways and cellular processes, including embryonic development, cell differentiation, cell cycle progression, apoptosis, oxidative stress response, and angiogenesis."
+GO:0008210	SULT1E1 CYP3A5 UGT2B28 UGT2B7 PLEKHA1 HSD3B1 TIPARP HSD17B12 UGT1A1 CYP19A1 HSD17B7 RDH8 HSD17B11 CYP2C9 CYP1A2 CYP1A1 CYP2D6 HSD17B2 UGT2B10 UGT2B11 CYP1B1 UGT2B4 CYP2C8 UGT2B17 UGT1A3 PDGFRA UGT2B15 CYP3A7-CYP3A51P DHRS11 CYP3A7 CHST10 HSD17B4 CYP3A4 SGPL1 HSD17B10 HSD17B1 AKR1B15 SULT1A1 HSD17B8 UGT1A7	40	estrogen metabolic process	Steroid Hormone Metabolism	"The primary biological process performed by this system of interacting proteins is steroid hormone metabolism. This process involves the synthesis, conversion, and degradation of steroid hormones, which are essential for various physiological functions.
+
+1. Key enzymes in steroid hormone synthesis and conversion:
+   - HSD3B1, HSD17B1, HSD17B2, HSD17B4, HSD17B7, HSD17B8, HSD17B10, HSD17B11, and HSD17B12 are hydroxysteroid dehydrogenases that catalyze the interconversion of steroid hormones, such as androgens, estrogens, and progestogens.
+   - CYP19A1 (aromatase) is responsible for the conversion of androgens to estrogens.
+   - CYP1A1, CYP1A2, CYP1B1, CYP2C8, CYP2C9, CYP2D6, CYP3A4, CYP3A5, and CYP3A7 are cytochrome P450 enzymes that play a role in the oxidation and hydroxylation of steroid hormones.
+
+2. Enzymes involved in steroid hormone conjugation and elimination:
+   - UGT1A1, UGT1A3, UGT1A7, UGT2B4, UGT2B7, UGT2B10, UGT2B11, UGT2B15, UGT2B17, and UGT2B28 are UDP-glucuronosyltransferases that catalyze the glucuronidation of steroid hormones, facilitating their elimination.
+   - SULT1A1 and SULT1E1 are sulfotransferases that catalyze the sulfation of steroid hormones, also aiding in their elimination.
+
+3. Additional proteins involved in steroid hormone metabolism:
+   - AKR1B15 and RDH8 are aldo-keto reductases and retinol dehydrogenases, respectively, which participate in the reduction of steroid hormones.
+   - DHRS11 is a dehydrogenase/reductase that may be involved in the metabolism of steroid hormones.
+   - TIPARP is an ADP-ribosyltransferase that may regulate the activity of nuclear receptors, which are involved in steroid hormone signaling.
+
+4. Proteins indirectly related to steroid hormone metabolism:
+   - PLEKHA1, PDGFRA, and SGPL1 are involved in cellular signaling pathways that may influence steroid hormone synthesis or action.
+   - CHST10 is a carbohydrate sulfotransferase that may indirectly affect steroid hormone metabolism by modifying glycosaminoglycans.
+
+In summary, this system of interacting proteins is primarily involved in the metabolism of steroid hormones, including their synthesis, conversion, and elimination. The most prominent biological process performed by this system is steroid hormone metabolism, which is essential for maintaining hormonal balance and regulating various physiological functions."
+GO:0033233	TOLLIP MAGEA2 HDAC4 SAE1 MUL1 ZMIZ1 FSCB GNL3 MAGEA2B RELA GNL3L CTNNB1 RASD2 HMG20B UBE2I RWDD3 CAPN3 UBA2 PARK7 ARNT PIAS4 PIAS3 EGR1 PIAS1 HMG20A	25	regulation of protein sumoylation	Regulation of Transcription and Protein Stability	"The primary biological process performed by this system of interacting proteins is the regulation of transcription and protein stability. This is supported by the following observations:
+
+1. Transcription regulation: Several proteins in the system are involved in the regulation of transcription. For example, RELA is a subunit of the NF-kB transcription factor complex, which plays a crucial role in regulating immune and inflammatory responses. ARNT is a subunit of the hypoxia-inducible factor (HIF) complex, which regulates the cellular response to hypoxia. EGR1 is a transcription factor that regulates the expression of various genes involved in cell growth, differentiation, and apoptosis. CTNNB1 is a component of the Wnt signaling pathway, which regulates gene expression and cell proliferation.
+
+2. Histone deacetylation: HDAC4 is a histone deacetylase that plays a role in the regulation of gene expression by modifying chromatin structure. HMG20A and HMG20B are members of the high mobility group (HMG) protein family, which are involved in chromatin remodeling and transcription regulation.
+
+3. Protein stability and degradation: Several proteins in the system are involved in the regulation of protein stability and degradation. For example, UBE2I, UBA2, and SAE1 are components of the ubiquitin-conjugating enzyme system, which is responsible for the ubiquitination and subsequent degradation of target proteins. MUL1 is an E3 ubiquitin ligase that is involved in the regulation of mitochondrial dynamics and mitophagy. CAPN3 is a calcium-dependent protease that is involved in the degradation of sarcomeric proteins.
+
+4. Protein-protein interactions and post-translational modifications: Proteins such as TOLLIP, MAGEA2, MAGEA2B, ZMIZ1, FSCB, GNL3, GNL3L, RASD2, RWDD3, and PARK7 are involved in various protein-protein interactions and post-translational modifications, which can modulate the activity, stability, and localization of target proteins.
+
+5. SUMOylation: PIAS1, PIAS3, and PIAS4 are members of the protein inhibitor of activated STAT (PIAS) family, which function as E3 SUMO ligases. SUMOylation is a post-translational modification that can regulate the activity, stability, and localization of target proteins.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of transcription and protein stability. This is supported by the presence of transcription factors, histone deacetylases, ubiquitin-conjugating enzymes, and proteins involved in protein-protein interactions and post-translational modifications."
+GO:0019433	APOC3 LPL PNPLA3 APOC2 LIPE PIK3CG PNPLA4 LIPC PLIN5 CPS1 FGF21 PNLIPRP2 SORL1 APOA5 PNPLA2 AADAC LIPI ABHD5 MGLL DAGLB LIPG GPIHBP1 PLB1 APOA1 APOB GPLD1 PNPLA5 PNPLA1 LIPH DDHD2 APOA4	31	triglyceride catabolic process	Lipid Metabolism and Regulation	"The primary biological process performed by this system of interacting proteins is lipid metabolism and regulation. The proteins involved in this process are responsible for the breakdown, transport, and storage of lipids, as well as the regulation of lipid-related pathways.
+
+1. Lipoprotein metabolism: APOA1, APOA4, APOA5, APOB, APOC2, APOC3, and GPIHBP1 are apolipoproteins and lipoprotein-binding proteins that play crucial roles in the transport and metabolism of lipids, particularly triglycerides and cholesterol. They are essential for the formation and function of lipoprotein particles, which are responsible for lipid transport in the bloodstream.
+
+2. Lipid hydrolysis: LPL, LIPE, PNPLA2, PNPLA3, PNPLA4, PNPLA5, PNPLA1, LIPI, LIPH, and PNLIPRP2 are lipases that catalyze the hydrolysis of triglycerides into glycerol and free fatty acids. These enzymes are essential for the breakdown of lipids and their subsequent utilization for energy production or storage.
+
+3. Lipid storage and mobilization: PLIN5, ABHD5, and MGLL are involved in the regulation of lipid storage and mobilization within cells. PLIN5 is a lipid droplet-associated protein that regulates lipolysis, while ABHD5 is a co-activator of adipose triglyceride lipase (ATGL), which is encoded by the PNPLA2 gene. MGLL is a monoacylglycerol lipase that hydrolyzes monoacylglycerols, further contributing to lipid breakdown.
+
+4. Lipid synthesis and remodeling: LIPC, LIPG, and DAGLB are enzymes involved in the synthesis and remodeling of lipids. LIPC and LIPG are hepatic lipases that play roles in the metabolism of high-density lipoproteins (HDL), while DAGLB is a diacylglycerol lipase involved in the synthesis of endocannabinoids and other lipid signaling molecules.
+
+5. Lipid signaling and regulation: PIK3CG, FGF21, and SORL1 are proteins involved in lipid signaling and regulation. PIK3CG is a phosphoinositide 3-kinase that plays a role in lipid signaling and cellular responses to growth factors. FGF21 is a fibroblast growth factor involved in the regulation of lipid metabolism, while SORL1 is a sorting receptor that modulates lipoprotein metabolism and lipid homeostasis.
+
+6. Other proteins: CPS1, AADAC, GPLD1, PLB1, and DDHD2 are proteins with various functions related to lipid metabolism. CPS1 is involved in the urea cycle, which is important for the detoxification of ammonia generated during amino acid catabolism. AADAC is an arylacetamide deacetylase involved in the hydrolysis of various xenobiotics. GPLD1 is a glycosylphosphatidylinositol-specific phospholipase that releases anchored proteins from the cell membrane. PLB1 is a phospholipase involved in the hydrolysis of phospholipids, while DDHD2 is a phospholipase involved in the metabolism of phosphatidic acid.
+
+In summary, this system of interacting proteins is primarily involved in lipid metabolism and regulation, with key roles in lipoprotein metabolism, lipid hydrolysis, lipid storage and mobilization, lipid synthesis and remodeling, lipid signaling, and regulation."
+GO:0043278	PPP1R1B RGS4 SRR TACR1 GHR PITX3 DRD3 PRKCG OPRK1 SLC1A1 TACR3 PENK PPP1R9B GPI FADD DRD2 CNR1 MAP1LC3A PCSK1 FOSB CXCR4 ADCY8 OPRM1 PRKCE PPP5C PEA15 PPP2R2A AIF1	28	response to morphine	Dopaminergic Signaling Regulation	"The primary biological process performed by this system of interacting proteins is the regulation of dopaminergic signaling. This is supported by the presence of several proteins involved in dopamine receptor signaling and modulation, such as DRD2, DRD3, PPP1R1B, and RGS4.
+
+DRD2 and DRD3 are dopamine receptors, which are involved in the transmission of dopaminergic signals in the central nervous system. PPP1R1B, also known as DARPP-32, is a key regulator of dopamine signaling, acting as an inhibitor of protein phosphatase 1 (PP1) when phosphorylated. This inhibition leads to increased phosphorylation of downstream targets, modulating dopaminergic signaling. RGS4 is a regulator of G-protein signaling, which can modulate the activity of G-protein coupled receptors, such as DRD2 and DRD3.
+
+Other proteins in the system are involved in various aspects of dopaminergic signaling regulation. For example, PRKCG, PRKCE, and PPP5C are protein kinases and phosphatases that can modulate the phosphorylation state of proteins involved in dopamine signaling. PENK and OPRK1 are involved in opioid signaling, which can interact with and modulate dopaminergic signaling. FOSB is a transcription factor that can be activated by dopamine receptor stimulation and regulate the expression of genes involved in dopaminergic signaling.
+
+Additionally, proteins such as SLC1A1, TACR1, TACR3, and CXCR4 are involved in the regulation of neurotransmitter uptake and release, which can indirectly affect dopaminergic signaling. PITX3 is a transcription factor involved in the development of dopaminergic neurons, further supporting the prominence of dopaminergic signaling regulation in this system.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of dopaminergic signaling, as evidenced by the presence of key proteins involved in dopamine receptor signaling, modulation, and related processes."
+GO:0055010	FOXC2 MYBPC3 FOXC1 NKX2-5 HAND1 ZFPM2 DLL4 COL11A1 ISL1 RYR2 MED1 MYH6 TGFBR1 EDNRA TNNC1 BMP10 POU4F1 NOG FOXH1 TPM1 MYL3 SMAD4 CHD7 TNNI3 SMAD7 PKP2 HEY2 DSP TGFB1 NOTCH1 MYL2 FKBP1A BMPR1A TGFB2 LRP2 RBPJ HEG1 TNNT2 NRG1 PROX1 TGFBR3 TNNI1 ENG PTCD2 FGFR2 MYH7	46	ventricular cardiac muscle tissue morphogenesis	Cardiac Development and Function	"The primary biological process performed by this system of interacting proteins is cardiac development and function. The proteins involved in this process are essential for the formation, maintenance, and regulation of the heart and its components.
+
+1. Cardiac muscle development: Proteins such as MYH6, MYH7, MYL2, MYL3, TNNC1, TNNI1, TNNI3, TNNT2, and TPM1 are involved in the formation and function of cardiac muscle. These proteins are essential for the proper contraction and relaxation of the heart muscle, allowing for efficient blood circulation.
+
+2. Cardiac transcription factors: Proteins such as FOXC1, FOXC2, HAND1, ISL1, NKX2-5, and ZFPM2 are transcription factors that regulate the expression of genes involved in heart development and function. These proteins play a crucial role in the differentiation of cardiac cells and the formation of the heart's structure.
+
+3. Cardiac signaling pathways: Proteins such as BMP10, BMPR1A, DLL4, EDNRA, FGFR2, HEG1, NOTCH1, NRG1, RBPJ, and TGFBR1 are involved in various signaling pathways that regulate cardiac development and function. These proteins transmit signals from the extracellular environment to the intracellular components, modulating cellular processes such as proliferation, differentiation, and apoptosis.
+
+4. Extracellular matrix components: Proteins such as COL11A1 and ENG are involved in the formation and maintenance of the extracellular matrix, which provides structural support to the heart and its components. These proteins contribute to the mechanical properties of the heart, allowing it to withstand the forces generated during contraction and relaxation.
+
+5. Cardiac ion channels and transporters: Proteins such as RYR2, PKP2, and DSP are involved in the regulation of ion channels and transporters that control the flow of ions across the cardiac cell membrane. These proteins are essential for maintaining the electrical activity of the heart, which is necessary for proper cardiac function.
+
+6. Cardiac growth factors and inhibitors: Proteins such as TGFB1, TGFB2, TGFBR3, NOG, and SMAD4 are involved in the regulation of cardiac growth and development. These proteins modulate the balance between cell proliferation and apoptosis, ensuring the proper formation and maintenance of the heart's structure.
+
+7. Cardiac gene regulation: Proteins such as MED1, POU4F1, FOXH1, SMAD7, and CHD7 are involved in the regulation of gene expression in cardiac cells. These proteins modulate the transcription and translation of genes involved in heart development and function, ensuring the proper expression of proteins necessary for cardiac function.
+
+In conclusion, this system of interacting proteins plays a crucial role in cardiac development and function, with each protein contributing to the formation, maintenance, and regulation of the heart and its components."
+GO:2000010	SNX33 TNF ABCA12 HSP90AB1 TM9SF4 ERBB4 TMEM35A RIC3 AKT1 MAP1A TYROBP STX3 ABCA7 STX4 RANGRF GPD1L LRIG2 CD247	18	positive regulation of protein localization to cell surface	Regulation of Inflammatory Response and Cell Signaling	"The system of interacting proteins primarily involves the regulation of inflammatory response and cell signaling. The proteins involved in this process are SNX33, TNF, ABCA12, HSP90AB1, TM9SF4, ERBB4, TMEM35A, RIC3, AKT1, MAP1A, TYROBP, STX3, ABCA7, STX4, RANGRF, GPD1L, LRIG2, and CD247.
+
+1. Inflammatory response regulation: TNF, TYROBP, and CD247 are key proteins in this process. TNF is a pro-inflammatory cytokine that plays a central role in inflammation and immune response. TYROBP and CD247 are both involved in the regulation of immune cell activation, specifically in T cells and natural killer cells.
+
+2. Cell signaling: ERBB4, AKT1, and MAP1A are crucial proteins in this process. ERBB4 is a receptor tyrosine kinase involved in various signaling pathways, including cell proliferation, differentiation, and migration. AKT1 is a serine/threonine kinase that plays a role in cell survival, growth, and metabolism. MAP1A is a microtubule-associated protein involved in microtubule stabilization and neuronal development.
+
+3. Protein folding and stability: HSP90AB1 is a heat shock protein that assists in protein folding and stabilization, preventing aggregation and promoting proper protein function.
+
+4. Membrane transport: ABCA12, ABCA7, TM9SF4, and RANGRF are involved in membrane transport processes. ABCA12 and ABCA7 are ATP-binding cassette transporters that play roles in lipid transport and homeostasis. TM9SF4 is a transmembrane protein involved in vesicular trafficking, while RANGRF is involved in the regulation of membrane trafficking and protein transport.
+
+5. Regulation of protein-protein interactions: SNX33, STX3, and STX4 are involved in the regulation of protein-protein interactions. SNX33 is a sorting nexin protein that plays a role in endosomal trafficking. STX3 and STX4 are syntaxins involved in vesicle fusion and exocytosis.
+
+6. Other functions: TMEM35A, RIC3, GPD1L, and LRIG2 have diverse functions. TMEM35A is a transmembrane protein with unknown function. RIC3 is involved in the regulation of ion channel activity. GPD1L is involved in glycerol metabolism and regulation of ion channels, while LRIG2 is a transmembrane protein that negatively regulates growth factor signaling.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of inflammatory response and cell signaling. This is supported by the involvement of key proteins such as TNF, TYROBP, CD247, ERBB4, AKT1, and MAP1A. Other processes, such as protein folding, membrane transport, and regulation of protein-protein interactions, also contribute to the overall function of this system."
+GO:0002717	RASGRP1 IL12B KLRC4 IL12A SH2D1B AP1G1 LAMP1 HLA-E STAT5B VAV1 KIR2DL4 KLRC3 RAET1G HLA-G KLRK1 KLRC2 IL21 CD226 KLRC4-KLRK1 NECTIN2 CRTAM NCR3 CADM1 KLRD1 CLNK LAG3 PVR CD160 RAET1E HLA-F SLAMF6 SH2D1A	32	positive regulation of natural killer cell mediated immunity	Natural Killer Cell Activation	"The primary biological process performed by this system of interacting proteins is the activation and regulation of natural killer (NK) cells, which play a crucial role in the innate immune response against viral infections and tumor cells.
+
+1. NK cell receptors and ligands: Several proteins in the system, such as KIR2DL4, KLRC2, KLRC3, KLRC4, KLRK1, KLRD1, NCR3, and CD226, are known NK cell receptors that interact with specific ligands on target cells. These interactions determine the activation or inhibition of NK cells, contributing to the recognition and elimination of infected or transformed cells.
+
+2. Cytokine production and signaling: IL12A and IL12B form the heterodimeric cytokine IL-12, which is essential for NK cell activation and the production of interferon-gamma (IFN-γ). IL21 is another cytokine that enhances NK cell cytotoxicity and IFN-γ production. STAT5B is a transcription factor activated by cytokine signaling, promoting NK cell proliferation and function.
+
+3. Intracellular signaling and cytoskeleton remodeling: RASGRP1, VAV1, and CLNK are involved in intracellular signaling pathways that regulate NK cell activation and cytoskeleton remodeling, which are necessary for the formation of immunological synapses and the release of cytotoxic granules.
+
+4. Vesicle trafficking and cytotoxic granule release: AP1G1 and LAMP1 are involved in vesicle trafficking and the release of cytotoxic granules containing perforin and granzymes, which induce target cell apoptosis.
+
+5. Immune checkpoint molecules: LAG3, CD160, and SLAMF6 are immune checkpoint molecules that modulate NK cell activation and function, preventing excessive immune responses and maintaining self-tolerance.
+
+6. Cell adhesion and interaction: NECTIN2, CRTAM, CADM1, and PVR are cell adhesion molecules that facilitate the interaction between NK cells and target cells, promoting the formation of immunological synapses and the transmission of activation signals.
+
+7. MHC class I molecules and non-classical MHC molecules: HLA-E, HLA-G, HLA-F, and RAET1E/G are involved in the presentation of peptides to NK cell receptors, modulating NK cell activation and tolerance to self-cells.
+
+8. Signaling lymphocytic activation molecule (SLAM) family proteins: SH2D1A and SH2D1B are adaptor proteins that interact with SLAM family receptors, regulating NK cell activation and cytotoxicity.
+
+In conclusion, this system of interacting proteins is primarily involved in the activation and regulation of NK cells, which are essential components of the innate immune response against viral infections and tumor cells."
+GO:0042402	ALDH7A1 SLC44A1 SMOX MAOA DHPS SLC6A3 LRTOMT DMGDH COMT MOXD1 DBH MAOB SAT1 CHDH HNMT PAOX	16	cellular biogenic amine catabolic process	Catabolism of Biogenic Amines	"The primary biological process performed by this system of interacting proteins is the catabolism of biogenic amines, which are essential for neurotransmission and other cellular functions. The proteins involved in this process include MAOA, MAOB, COMT, DBH, HNMT, and SMOX.
+
+1. Monoamine oxidases (MAOA and MAOB) are crucial for the breakdown of monoamines, such as dopamine, norepinephrine, and serotonin. These enzymes catalyze the oxidative deamination of these neurotransmitters, regulating their levels in the synaptic cleft and preventing excessive accumulation.
+
+2. Catechol-O-methyltransferase (COMT) is involved in the inactivation of catecholamines, including dopamine, norepinephrine, and epinephrine. COMT catalyzes the transfer of a methyl group from S-adenosylmethionine to the catecholamines, producing inactive metabolites.
+
+3. Dopamine beta-hydroxylase (DBH) is responsible for the conversion of dopamine to norepinephrine, a key step in the synthesis of catecholamines. This enzyme is essential for maintaining the balance between dopamine and norepinephrine levels in the nervous system.
+
+4. Histamine N-methyltransferase (HNMT) is involved in the inactivation of histamine, a biogenic amine involved in immune responses, gastric acid secretion, and neurotransmission. HNMT catalyzes the transfer of a methyl group from S-adenosylmethionine to histamine, producing N-methylhistamine.
+
+5. Spermine oxidase (SMOX) is involved in the catabolism of polyamines, such as spermine and spermidine. These molecules are essential for cell growth and differentiation. SMOX catalyzes the oxidation of spermine to spermidine, producing hydrogen peroxide and 3-aminopropanal.
+
+Additionally, other proteins in this system contribute to the transport and metabolism of biogenic amines and their precursors:
+
+6. SLC6A3 is a dopamine transporter responsible for the reuptake of dopamine from the synaptic cleft, regulating its availability for neurotransmission.
+
+7. SLC44A1 is a choline transporter involved in the uptake of choline, a precursor for the synthesis of the neurotransmitter acetylcholine.
+
+8. ALDH7A1, DHPS, DMGDH, and PAOX are involved in the metabolism of amino acids and other molecules, which can indirectly affect the levels of biogenic amines and their precursors.
+
+9. LRTOMT, MOXD1, SAT1, and CHDH are involved in various cellular processes, including the synthesis and metabolism of molecules that can influence the levels of biogenic amines and their precursors."
+GO:0062009	FOXE1 TGFBR2 TBX1 WNT11 DLG1 ITGB6 COL11A2 WNT8A MMP25 SMAD2 SMAD4 CHD7 WNT3A ITGB8 JAG2 WNT5A TGFB2 FZD1 TSHZ1 TGFB3 FZD2 SOX11 LRRC32 TGFBR3 LEF1 WNT7A	26	secondary palate development	WNT/TGFβ Signaling Pathway Regulation	"The primary biological process performed by this system of interacting proteins is the regulation of the WNT and TGFβ signaling pathways. These pathways play crucial roles in cell proliferation, differentiation, and migration, as well as embryonic development and tissue homeostasis.
+
+1. WNT signaling pathway components: WNT11, WNT8A, WNT3A, WNT5A, WNT7A, FZD1, FZD2, and LEF1 are all involved in the WNT signaling pathway. WNT proteins bind to FZD receptors, leading to the activation of downstream signaling cascades. LEF1 is a transcription factor that interacts with β-catenin, a key component of the WNT pathway, to regulate target gene expression.
+
+2. TGFβ signaling pathway components: TGFBR2, TGFBR3, TGFB2, TGFB3, SMAD2, and SMAD4 are all involved in the TGFβ signaling pathway. TGFβ ligands bind to TGFβ receptors, leading to the activation of SMAD proteins, which then translocate to the nucleus and regulate target gene expression.
+
+3. Interactions between WNT and TGFβ pathways: Several proteins in this system, such as FOXE1, TBX1, and SOX11, are transcription factors that can regulate the expression of genes involved in both WNT and TGFβ pathways. Additionally, CHD7 is a chromatin remodeler that can modulate the accessibility of target genes to transcription factors, thereby influencing both pathways.
+
+4. Cell adhesion and extracellular matrix components: ITGB6, ITGB8, COL11A2, and MMP25 are involved in cell adhesion and extracellular matrix remodeling. Integrins ITGB6 and ITGB8 mediate cell-matrix interactions, while COL11A2 is a collagen protein that contributes to the extracellular matrix structure. MMP25 is a matrix metalloproteinase that can degrade extracellular matrix components, affecting cell migration and tissue remodeling.
+
+5. Regulation of cell polarity and signaling: DLG1, JAG2, and LRRC32 are involved in the regulation of cell polarity and signaling. DLG1 is a scaffold protein that maintains cell polarity and modulates signaling pathways. JAG2 is a ligand for Notch receptors, which can cross-talk with WNT and TGFβ pathways. LRRC32 is a transmembrane protein that can modulate TGFβ signaling by sequestering TGFB ligands.
+
+6. TSHZ1 is a transcription factor that can regulate the expression of genes involved in development and tissue differentiation. Its role in this system may be to fine-tune the balance between WNT and TGFβ signaling to ensure proper cellular responses.
+
+In conclusion, this system of interacting proteins primarily regulates the WNT and TGFβ signaling pathways, which are crucial for various cellular processes and developmental events. The proteins in this system work together to modulate these pathways and maintain a balance between them, ensuring proper cellular function and tissue homeostasis."
+GO:0033194	TP53INP1 DAPK1 XRCC1 GPX1 PRKD1 OXR1 TMIGD1 SP1 CD36 MGST1 RNF112 CD38 APOA4 GPX3 AIF1 JAK2 PRKCD TRPM2	18	response to hydroperoxide	Oxidative Stress Response and DNA Repair	"The system of interacting proteins primarily involves the biological processes of oxidative stress response and DNA repair. 
+
+1. Oxidative stress response: Several proteins in the system are involved in the cellular response to oxidative stress, which is crucial for maintaining cellular homeostasis and preventing damage from reactive oxygen species (ROS).
+
+- GPX1 and GPX3: These proteins are glutathione peroxidases, which reduce hydrogen peroxide and lipid hydroperoxides, protecting cells from oxidative damage.
+- OXR1: This protein is involved in the cellular response to oxidative stress and has been shown to protect against oxidative DNA damage.
+- MGST1: Microsomal glutathione S-transferase 1 is involved in the detoxification of electrophilic compounds, including ROS, by conjugation with glutathione.
+
+2. DNA repair: The system includes proteins that play a role in DNA repair, ensuring the maintenance of genomic integrity.
+
+- XRCC1: This protein is involved in the base excision repair pathway, which repairs damaged DNA bases caused by oxidation, alkylation, or deamination.
+- AIF1: Apoptosis-inducing factor 1 is involved in DNA repair and maintenance of mitochondrial function.
+
+3. Cell death regulation: Some proteins in the system are involved in the regulation of cell death, which is essential for maintaining tissue homeostasis and preventing the accumulation of damaged cells.
+
+- DAPK1: Death-associated protein kinase 1 is a pro-apoptotic protein that mediates cell death in response to various stimuli, including oxidative stress.
+- PRKCD: Protein kinase C delta is involved in the regulation of apoptosis and autophagy, which are essential for maintaining cellular homeostasis.
+
+4. Signal transduction: Several proteins in the system are involved in signal transduction pathways, which are crucial for cellular communication and response to external stimuli.
+
+- JAK2: Janus kinase 2 is involved in the JAK-STAT signaling pathway, which regulates various cellular processes, including cell growth, differentiation, and survival.
+- PRKD1: Protein kinase D1 is involved in the regulation of various cellular processes, including cell migration, adhesion, and survival.
+
+5. Transcription regulation: Some proteins in the system are involved in the regulation of gene expression, which is essential for cellular function and response to environmental changes.
+
+- SP1: Specificity protein 1 is a transcription factor that regulates the expression of various genes involved in cellular processes, including cell growth, differentiation, and apoptosis.
+- TP53INP1: Tumor protein p53 inducible nuclear protein 1 is a transcriptional co-regulator that modulates the activity of p53, a crucial tumor suppressor protein.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the oxidative stress response and DNA repair, which are essential for maintaining cellular homeostasis and preventing damage from reactive oxygen species."
+GO:0070206	ITLN1 HLA-G SLC1A5 CLYBL COL1A2 PXDN STEAP4 MIF SIGMAR1 MLKL SCARA5 ASIC1 PNPT1 ALOX5AP P2RX3 SLC1A2 CD74	17	protein trimerization	Immune Response Modulation	"The system of interacting proteins primarily performs the modulation of immune response. This is supported by the following observations:
+
+1. ITLN1 (Intelectin-1) is an extracellular matrix protein that recognizes microbial glycans and plays a role in innate immunity by binding to bacterial cell walls.
+
+2. HLA-G is a non-classical major histocompatibility complex (MHC) class I molecule that modulates immune responses by interacting with inhibitory receptors on immune cells, such as natural killer (NK) cells and T cells.
+
+3. CD74 is a chaperone protein involved in the assembly and transport of MHC class II molecules, which are essential for the presentation of antigens to CD4+ T cells and the initiation of adaptive immune responses.
+
+4. MIF (Macrophage Migration Inhibitory Factor) is a pro-inflammatory cytokine that regulates immune cell migration and activation, contributing to the modulation of immune responses.
+
+5. ALOX5AP (Arachidonate 5-Lipoxygenase-Activating Protein) is involved in the synthesis of leukotrienes, which are lipid mediators that play a role in inflammation and immune cell recruitment.
+
+6. SCARA5 (Scavenger Receptor Class A Member 5) is a cell surface receptor that mediates the endocytosis of modified low-density lipoproteins and contributes to the clearance of apoptotic cells, which is important for maintaining immune homeostasis.
+
+7. SIGMAR1 (Sigma Non-Opioid Intracellular Receptor 1) has been implicated in the regulation of immune responses, particularly in the context of viral infections.
+
+8. MLKL (Mixed Lineage Kinase Domain-Like) is a key protein in the execution of necroptosis, a form of regulated cell death that can trigger inflammation and modulate immune responses.
+
+9. SLC1A5 and SLC1A2 are solute carrier family proteins that transport amino acids, which are essential for the proper functioning of immune cells.
+
+10. PXDN (Peroxidasin) is an extracellular matrix protein with peroxidase activity, which may contribute to the regulation of immune responses by modulating oxidative stress.
+
+11. ASIC1 (Acid-Sensing Ion Channel 1) and P2RX3 (P2X Purinoceptor 3) are ion channels that can be activated by extracellular protons and ATP, respectively, and have been implicated in the regulation of immune cell activation and inflammation.
+
+12. PNPT1 (Polyribonucleotide Nucleotidyltransferase 1) is involved in RNA metabolism and has been implicated in the regulation of antiviral immune responses.
+
+13. COL1A2 (Collagen Type I Alpha 2 Chain) and CLYBL (Citramalyl-CoA Lyase) are involved in extracellular matrix organization and metabolism, respectively, which can indirectly influence immune cell behavior and function.
+
+14. STEAP4 (Six-Transmembrane Epithelial Antigen of Prostate 4) is a metalloreductase that has been implicated in the regulation of inflammation and immune responses, particularly in the context of obesity and metabolic disorders.
+
+In summary, the most prominent biological process performed by this system of interacting proteins is the modulation of immune response, which is supported by the involvement of these proteins in various aspects of innate and adaptive immunity, inflammation, and immune cell regulation."
+GO:0009084	OAT ASL CLN3 GLUD1 NOXRED1 GLS GLS2 GLUD2 PYCR1 GLUL PYCR3 SLC25A12 NAGS PYCR2 ALDH18A1 ASS1 LGSN OTC	18	glutamine family amino acid biosynthetic process	Urea Cycle and Glutamate Metabolism	"1. Urea cycle proteins: OAT, ASL, NAGS, ASS1, and OTC are key enzymes in the urea cycle, which is responsible for the detoxification of ammonia and the production of urea. The urea cycle is essential for maintaining nitrogen homeostasis in the body.
+
+2. Glutamate metabolism proteins: GLUD1, GLUD2, GLUL, GLS, and GLS2 are involved in glutamate metabolism. Glutamate is a critical neurotransmitter and plays a role in nitrogen metabolism. GLUD1 and GLUD2 catalyze the conversion of glutamate to alpha-ketoglutarate, while GLUL, GLS, and GLS2 are involved in the synthesis and degradation of glutamine.
+
+3. Proline and arginine biosynthesis proteins: PYCR1, PYCR2, PYCR3, ALDH18A1, and LGSN are involved in proline and arginine biosynthesis. Proline and arginine are essential amino acids that play important roles in protein synthesis, cell signaling, and cellular metabolism.
+
+4. Mitochondrial transport protein: SLC25A12 is a mitochondrial aspartate-glutamate carrier involved in the transport of aspartate and glutamate across the inner mitochondrial membrane. This transport is crucial for maintaining the balance of these amino acids and their derivatives in the cell.
+
+5. Neuronal ceroid lipofuscinosis protein: CLN3 is associated with neuronal ceroid lipofuscinosis, a group of neurodegenerative disorders. Although its exact function is not well understood, it is thought to be involved in lysosomal function and autophagy.
+
+6. NADH oxidoreductase protein: NOXRED1 is an NADH oxidoreductase involved in the electron transport chain, which is essential for cellular respiration and energy production.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the urea cycle and glutamate metabolism, which are essential for maintaining nitrogen homeostasis and neurotransmitter balance in the body."
+GO:0030889	PTEN CASP3 PKN1 LYN CD300A BTK INPP5D TYROBP ATM CTLA4 TNFRSF13B RC3H1 FCGR2B MNDA PAWR BLK IL10 TNFRSF21	18	negative regulation of B cell proliferation	Apoptosis Regulation and Immune Response	"The primary biological process performed by this system of interacting proteins is the regulation of apoptosis and immune response. The proteins involved in this system have roles in cell signaling, cell death, and immune cell activation.
+
+1. Apoptosis regulation: PTEN, CASP3, and PAWR are key proteins involved in the regulation of apoptosis. PTEN is a tumor suppressor that negatively regulates the PI3K/Akt signaling pathway, which is essential for cell survival. CASP3 is a crucial executioner caspase that plays a central role in the execution phase of apoptosis. PAWR is a pro-apoptotic protein that interacts with several proteins involved in apoptosis, including CASP3.
+
+2. Immune cell signaling: LYN, BTK, INPP5D, and TYROBP are involved in immune cell signaling. LYN and BTK are non-receptor tyrosine kinases that play essential roles in B cell and myeloid cell signaling. INPP5D is a phosphatase that regulates B cell receptor signaling. TYROBP is an adaptor protein that mediates signaling in various immune cells, including natural killer cells and myeloid cells.
+
+3. Immune cell regulation: CD300A, CTLA4, TNFRSF13B, FCGR2B, and IL10 are proteins that regulate immune cell activation and function. CD300A is an inhibitory receptor expressed on myeloid cells. CTLA4 is an inhibitory receptor expressed on T cells that downregulates T cell activation. TNFRSF13B is a receptor for BAFF, which is essential for B cell survival and maturation. FCGR2B is an inhibitory Fc receptor expressed on B cells and myeloid cells. IL10 is an anti-inflammatory cytokine that suppresses the immune response.
+
+4. DNA damage response: ATM is a protein kinase that plays a central role in the DNA damage response and cell cycle regulation. It is activated in response to DNA double-strand breaks and phosphorylates several proteins involved in DNA repair and cell cycle checkpoints.
+
+5. Other proteins: RC3H1, MNDA, and BLK are involved in various cellular processes. RC3H1 is an RNA-binding protein that regulates mRNA stability. MNDA is a myeloid cell nuclear differentiation antigen that may play a role in myeloid cell differentiation. BLK is a non-receptor tyrosine kinase that is involved in B cell development.
+
+6. TNFRSF21 is a member of the tumor necrosis factor receptor superfamily, which is involved in various cellular processes, including cell survival, apoptosis, and inflammation. Its specific role in this system of interacting proteins requires further investigation."
+GO:0006895	KIF16B AP2A1 RAB14 SYS1 AP1AR SORT1 AP4M1 CORO7 GBF1 EPS15 DOP1B VPS13A DOP1A KLHL20 VPS13C MON2 WIPI1	17	Golgi to endosome transport	Intracellular Protein Trafficking	"The primary biological process performed by this system of interacting proteins is intracellular protein trafficking, which involves the transport of proteins between different cellular compartments.
+
+1. KIF16B: Kinesin family member 16B is a motor protein involved in the transport of early endosomes and recycling endosomes, contributing to the regulation of endosomal trafficking.
+
+2. AP2A1: Adaptor protein complex 2 subunit alpha 1 is a component of the clathrin-associated protein complex, which is involved in the formation of clathrin-coated vesicles for endocytosis.
+
+3. RAB14: Ras-related protein Rab-14 is a small GTPase involved in vesicle trafficking, specifically in the regulation of endocytic and exocytic pathways.
+
+4. SYS1: SYS1 Golgi-localized integral membrane protein homolog is involved in the trafficking of proteins between the Golgi apparatus and the endoplasmic reticulum.
+
+5. AP1AR: Adaptor protein complex 1-associated regulatory protein is involved in the regulation of clathrin-mediated endocytosis and protein sorting.
+
+6. SORT1: Sortilin is a sorting receptor involved in the trafficking of proteins between the Golgi apparatus, endosomes, and lysosomes.
+
+7. AP4M1: Adaptor protein complex 4 subunit mu 1 is a component of the AP-4 complex, which is involved in the trafficking of proteins between the trans-Golgi network and endosomes.
+
+8. CORO7: Coronin 7 is involved in the regulation of endosomal trafficking and protein sorting.
+
+9. GBF1: Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor 1 is involved in the regulation of protein transport between the endoplasmic reticulum and the Golgi apparatus.
+
+10. EPS15: Epidermal growth factor receptor substrate 15 is involved in clathrin-mediated endocytosis and vesicle trafficking.
+
+11. DOP1B: Dopey family member 1B is involved in the regulation of endosomal trafficking and protein sorting.
+
+12. VPS13A: Vacuolar protein sorting-associated protein 13A is involved in the regulation of endosomal trafficking and protein sorting.
+
+13. DOP1A: Dopey family member 1A is involved in the regulation of endosomal trafficking and protein sorting.
+
+14. KLHL20: Kelch-like protein 20 is involved in the regulation of protein degradation and trafficking.
+
+15. VPS13C: Vacuolar protein sorting-associated protein 13C is involved in the regulation of endosomal trafficking and protein sorting.
+
+16. MON2: Mon2 homolog is involved in the regulation of endosomal trafficking and protein sorting.
+
+17. WIPI1: WD repeat domain, phosphoinositide interacting 1 is involved in the regulation of autophagy and endosomal trafficking.
+
+In summary, the primary biological process performed by this system of interacting proteins is intracellular protein trafficking, which is essential for the proper functioning of cellular processes such as endocytosis, exocytosis, and protein sorting."
+GO:0031145	CDC20 ANAPC15 CDC16 UBE2C ANAPC16 CDK2 CDC27 ANAPC2 ANAPC4 ANAPC5 CDC23 CDC20B CDC26 ANAPC7 UBE2S ANAPC1 ANAPC13 CUL3 ECRG4 PLK1 FBXO31 ANAPC10 FZR1 ANAPC11	24	anaphase-promoting complex-dependent catabolic process	Anaphase-Promoting Complex/Cyclosome (APC/C) Regulation	"1. Central role of APC/C in cell cycle regulation:
+- The majority of the listed proteins (CDC20, ANAPC15, CDC16, ANAPC16, CDC27, ANAPC2, ANAPC4, ANAPC5, CDC23, CDC20B, CDC26, ANAPC7, ANAPC1, ANAPC13, ANAPC10, FZR1, ANAPC11) are components or regulators of the Anaphase-Promoting Complex/Cyclosome (APC/C), a multi-subunit E3 ubiquitin ligase.
+- APC/C is crucial for cell cycle progression, specifically in the transition from metaphase to anaphase and exit from mitosis, by targeting specific cell cycle proteins for degradation via the ubiquitin-proteasome system.
+
+2. Co-activators and substrate recognition:
+- CDC20 and FZR1 (also known as CDH1) are co-activators of APC/C, responsible for substrate recognition and specificity.
+- CDC20 is active during early mitosis, while FZR1 is active during late mitosis and G1 phase.
+
+3. Ubiquitin-conjugating enzymes:
+- UBE2C and UBE2S are E2 ubiquitin-conjugating enzymes that work with APC/C to ubiquitinate target proteins.
+- UBE2C is involved in the initiation of substrate ubiquitination, while UBE2S is responsible for chain elongation.
+
+4. Cell cycle kinases and regulation:
+- CDK2 and PLK1 are cell cycle-regulating kinases that can modulate APC/C activity.
+- CDK2 is involved in the G1/S and G2/M transitions, while PLK1 is involved in multiple stages of mitosis, including APC/C activation.
+
+5. Additional regulatory proteins:
+- CUL3 is a cullin family protein that forms the scaffold for other E3 ubiquitin ligases, suggesting a potential link to APC/C regulation.
+- ECRG4 is a tumor suppressor that can interact with APC/C components, potentially affecting APC/C activity.
+- FBXO31 is an F-box protein that can act as a substrate receptor for the SCF (Skp1-Cul1-F-box) E3 ubiquitin ligase complex, which may have a role in cell cycle regulation.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of the Anaphase-Promoting Complex/Cyclosome (APC/C), which is essential for cell cycle progression and maintaining genomic stability."
+GO:0007063	ATRX SLF2 RB1 NAA10 CTNNB1 SLF1 MACROH2A1 CDCA5 DDX11 FEN1 NSMCE2 SMC5 CTCF AXIN2 BUB1 HDAC8 WAPL RAD21 TNKS ESPL1	20	regulation of sister chromatid cohesion	DNA Repair and Chromosome Segregation	"The system of interacting proteins primarily involves processes related to DNA repair, chromosome segregation, and cell cycle regulation. 
+
+1. DNA Repair: ATRX, FEN1, and DDX11 are involved in DNA repair mechanisms. ATRX is a chromatin remodeler that plays a role in the maintenance of telomeres and genomic stability. FEN1 is a structure-specific nuclease that participates in DNA replication and repair. DDX11 is a DNA helicase involved in the resolution of G-quadruplex structures, which are essential for DNA repair and replication.
+
+2. Chromosome Segregation: Several proteins in this system are involved in the process of chromosome segregation during cell division. These include RB1, CDCA5, BUB1, and ESPL1. RB1 is a tumor suppressor that regulates cell cycle progression and is involved in the proper segregation of chromosomes. CDCA5 is a component of the cohesin complex, which is essential for sister chromatid cohesion. BUB1 is a kinase involved in the spindle assembly checkpoint, ensuring accurate chromosome segregation. ESPL1 is a protease that cleaves the cohesin complex, allowing sister chromatids to separate during anaphase.
+
+3. Cell Cycle Regulation: CTNNB1, AXIN2, and TNKS are involved in the Wnt signaling pathway, which plays a crucial role in cell cycle regulation and cellular proliferation. CTNNB1 is a key component of the Wnt signaling pathway, and its stabilization leads to the activation of target genes involved in cell cycle progression. AXIN2 is a negative regulator of the Wnt signaling pathway, promoting the degradation of CTNNB1. TNKS is involved in the regulation of AXIN2 stability, thus indirectly affecting the Wnt signaling pathway.
+
+4. Chromatin Remodeling and Transcription Regulation: MACROH2A1, CTCF, and HDAC8 are involved in chromatin remodeling and transcription regulation. MACROH2A1 is a histone variant that plays a role in the regulation of gene expression and chromatin structure. CTCF is a transcription factor that functions as an insulator, regulating the three-dimensional organization of chromatin. HDAC8 is a histone deacetylase that modulates chromatin structure and gene expression by removing acetyl groups from histones.
+
+5. DNA Damage Response and Repair: NAA10, NSMCE2, and SMC5 are involved in the DNA damage response and repair. NAA10 is an N-acetyltransferase that plays a role in DNA damage repair by acetylating target proteins. NSMCE2 is a component of the SMC5-SMC6 complex, which is involved in the repair of DNA double-strand breaks and the maintenance of genome stability. SMC5 is another component of the SMC5-SMC6 complex, playing a similar role in DNA repair.
+
+6. Cohesin Complex Regulation: SLF1, SLF2, WAPL, and RAD21 are involved in the regulation of the cohesin complex. SLF1 and SLF2 are components of the SMC5-SMC6 complex, which interacts with the cohesin complex. WAPL is a cohesin release factor that promotes the removal of cohesin from chromatin. RAD21 is a component of the cohesin complex, playing a role in sister chromatid cohesion and DNA repair."
+GO:0010882	ANK2 ATP2A2 HRC RYR2 DMD ATP1A2 SLC8A1 CALM1 CLIC2 TNNI3 GSTO1 CALM2 CALM3 CACNA1C TMEM38B CASQ2 CAMK2D FKBP1B PRKACA ATP1B1 SLC9A1 GSTM2 PLN TMEM38A	24	regulation of cardiac muscle contraction by calcium ion signaling	Calcium Homeostasis and Signaling	"The primary biological process performed by this system of interacting proteins is calcium homeostasis and signaling. Calcium ions play a crucial role in various cellular processes, including muscle contraction, neurotransmitter release, and gene expression. The proteins in this system are involved in maintaining calcium ion concentrations and mediating calcium-dependent signaling pathways.
+
+1. Calcium transport and storage: Several proteins in this system are involved in the transport and storage of calcium ions. ATP2A2 and ATP1A2 are both ATPases that pump calcium ions out of the cytosol, while SLC8A1 and SLC9A1 are ion exchangers that facilitate calcium ion movement across the plasma membrane. CASQ2 is a calcium-binding protein that stores calcium ions in the sarcoplasmic reticulum (SR).
+
+2. Calcium release and regulation: RYR2 is a calcium release channel located in the SR, which releases calcium ions into the cytosol upon stimulation. HRC and FKBP1B are regulatory proteins that modulate the activity of RYR2. CALM1, CALM2, and CALM3 are calcium-binding proteins that regulate various calcium-dependent processes, including the activity of RYR2 and ATP2A2.
+
+3. Calcium signaling: CAMK2D and PRKACA are kinases that are activated by calcium ions and play a role in calcium-dependent signaling pathways. These kinases can phosphorylate various target proteins, including PLN, which regulates the activity of ATP2A2.
+
+4. Structural and regulatory proteins: ANK2, DMD, and TNNI3 are structural proteins that play a role in maintaining cellular integrity and regulating muscle contraction. CLIC2, TMEM38A, and TMEM38B are membrane proteins that may be involved in calcium ion transport or regulation.
+
+5. Detoxification and antioxidant defense: GSTO1 and GSTM2 are glutathione S-transferases that play a role in detoxification and antioxidant defense, which may be important for protecting cells from oxidative stress caused by fluctuations in calcium ion concentrations.
+
+6. Voltage-gated calcium channel: CACNA1C is a subunit of a voltage-gated calcium channel, which allows calcium ions to enter the cell upon membrane depolarization. This protein plays a crucial role in calcium-dependent processes such as muscle contraction and neurotransmitter release.
+
+In summary, this system of interacting proteins is primarily involved in calcium homeostasis and signaling, with key roles in calcium transport, storage, release, regulation, and signaling pathways. The proteins work together to maintain proper calcium ion concentrations and mediate calcium-dependent cellular processes."
+GO:0000272	CHIT1 GAA PFKM PHKG2 CHIA MGAM PPP1R3D GABARAPL1 PYGM G6PC1 PGM2 PYGL AGL PYGB AOAH PPP1CA INS RB1CC1 STBD1 PPP1R3B	20	polysaccharide catabolic process	Glycogen Metabolism and Regulation	"The primary biological process performed by this system of interacting proteins is glycogen metabolism and regulation. This process involves the synthesis, breakdown, and regulation of glycogen, a multi-branched polysaccharide that serves as a form of energy storage in cells.
+
+1. Glycogen synthesis and breakdown: Several proteins in this system are directly involved in glycogen synthesis and breakdown. PFKM (phosphofructokinase, muscle) is a key regulatory enzyme in glycolysis, which provides glucose-6-phosphate for glycogen synthesis. PYGB (glycogen phosphorylase, brain form) and PYGL (glycogen phosphorylase, liver form) are enzymes that catalyze the rate-limiting step in glycogenolysis, the breakdown of glycogen. AGL (amylo-alpha-1, 6-glucosidase) is involved in the debranching of glycogen during glycogenolysis.
+
+2. Glycogen regulation: Several proteins in this system are involved in the regulation of glycogen metabolism. PPP1CA (protein phosphatase 1, catalytic subunit, alpha isoform) and PPP1R3B (protein phosphatase 1, regulatory subunit 3B) are part of the protein phosphatase 1 (PP1) complex, which regulates glycogen metabolism by dephosphorylating and activating glycogen synthase and inactivating glycogen phosphorylase. PPP1R3D (protein phosphatase 1, regulatory subunit 3D) is another regulatory subunit of PP1 that is involved in glycogen metabolism. G6PC1 (glucose-6-phosphatase, catalytic subunit) is involved in the regulation of glucose homeostasis by catalyzing the hydrolysis of glucose-6-phosphate to glucose.
+
+3. Glycogen storage: STBD1 (starch-binding domain-containing protein 1) is involved in glycogen storage by binding to glycogen and promoting its accumulation in the cell.
+
+4. Autophagy and glycogen metabolism: GABARAPL1 (GABA type A receptor-associated protein-like 1) is involved in autophagy, a process that can affect glycogen metabolism by degrading glycogen granules.
+
+5. Carbohydrate digestion and absorption: MGAM (maltase-glucoamylase) and CHIA (chitinase, acidic) are involved in carbohydrate digestion and absorption, which can indirectly affect glycogen metabolism by providing glucose for glycogen synthesis.
+
+6. Insulin signaling: INS (insulin) is a hormone that regulates glucose homeostasis and promotes glycogen synthesis by activating glycogen synthase.
+
+7. Other interacting proteins: CHIT1 (chitotriosidase 1) and AOAH (acyloxyacyl hydrolase) are involved in the degradation of chitin and lipopolysaccharides, respectively, and may have indirect effects on glycogen metabolism. RB1CC1 (RB1-inducible coiled-coil 1) is involved in cell cycle regulation and autophagy, which may indirectly affect glycogen metabolism. PGM2 (phosphoglucomutase 2) is involved in the interconversion of glucose-1-phosphate and glucose-6-phosphate, which can affect glycogen synthesis and breakdown.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is glycogen metabolism and regulation, which involves the synthesis, breakdown, and regulation of glycogen as a form of energy storage in cells."
+GO:0009147	CAD NME5 NME4 NME2 DCTPP1 ENTPD7 UCKL1 NME3 UCK2 TBPL1 DUT LOC100506422 TYMS NME1-NME2 UCK1 CMPK2 NME6 NME1 DTYMK AK3 NME7 CTPS2 NME9 CTPS1 ENTPD4	25	pyrimidine nucleoside triphosphate metabolic process	Nucleotide Metabolism and Synthesis	"The primary biological process performed by this system of interacting proteins is nucleotide metabolism and synthesis. The proteins involved in this process are essential for the synthesis, degradation, and interconversion of nucleotides, which are the building blocks of DNA and RNA.
+
+1. De novo synthesis of pyrimidines and purines: CAD, TYMS, and DTYMK are key enzymes in the de novo synthesis of pyrimidines, while CTPS1 and CTPS2 are involved in the de novo synthesis of purines. These enzymes are crucial for the production of nucleotides required for DNA and RNA synthesis.
+
+2. Salvage pathways: UCK1, UCK2, and UCKL1 are involved in the salvage pathways of pyrimidine nucleotides, while NME1, NME2, NME3, NME4, NME5, NME6, NME7, and NME9 are involved in the salvage pathways of purine nucleotides. These enzymes recycle nucleotides from degraded DNA and RNA, ensuring an adequate supply of nucleotides for cellular processes.
+
+3. Nucleotide interconversion: AK3, CMPK2, and DCTPP1 are involved in the interconversion of nucleotides, which is essential for maintaining the proper balance of nucleotide pools within the cell.
+
+4. Nucleotide degradation: ENTPD4 and ENTPD7 are involved in the degradation of nucleotides, which is necessary for the removal of damaged or excess nucleotides from the cell.
+
+5. Regulation of nucleotide synthesis: TBPL1 and LOC100506422 are involved in the regulation of nucleotide synthesis, ensuring that the production of nucleotides is tightly controlled and coordinated with cellular needs.
+
+6. DNA replication and repair: DUT is involved in DNA replication and repair, playing a role in the removal of incorrect nucleotides and the insertion of correct nucleotides during these processes.
+
+In summary, this system of interacting proteins is primarily involved in nucleotide metabolism and synthesis, which is essential for the proper functioning of cellular processes such as DNA replication, transcription, and repair. The proteins in this system work together to ensure the synthesis, degradation, interconversion, and recycling of nucleotides, as well as the regulation of these processes."
+GO:0050913	TAS2R46 TAS2R7 TAS2R4 TAS2R39 TAS2R14 TAS2R13 TAS2R30 TAS2R19 CST2 PIP RGS21 TAS2R16 TAS2R3 TAS2R10 TAS2R40 TAS2R8 RTP1 TAS2R5 RTP4 TAS2R60 TAS2R38 RTP3 GNAT2 RTP2 TAS2R43 TAS2R41 ITPR3 CALHM1 GNAT1 CA6 TAS2R20 LPO CST4 REEP2 TAS2R1 GNAT3 TAS2R50 TAS2R31 RTP5 PIGR TAS2R9 PLCB2 CST1 AZGP1	44	sensory perception of bitter taste	Bitter Taste Perception	"The primary biological process performed by this system of interacting proteins is bitter taste perception. The majority of the proteins listed are taste 2 receptors (TAS2Rs), which are G protein-coupled receptors (GPCRs) responsible for detecting bitter compounds. These receptors are expressed in taste receptor cells (TRCs) within taste buds on the tongue.
+
+TAS2Rs (e.g., TAS2R46, TAS2R7, TAS2R4, TAS2R39, TAS2R14, TAS2R13, TAS2R30, TAS2R19, TAS2R16, TAS2R3, TAS2R10, TAS2R40, TAS2R8, TAS2R5, TAS2R60, TAS2R38, TAS2R43, TAS2R41, TAS2R20, TAS2R1, TAS2R50, TAS2R31, TAS2R9) are the key components of this system. They bind to bitter compounds, activating intracellular signaling pathways that lead to the perception of bitterness.
+
+GNAT1, GNAT2, and GNAT3 are G proteins that couple with TAS2Rs, initiating the intracellular signaling cascade. ITPR3 and CALHM1 are involved in intracellular calcium signaling, which is crucial for the activation of TRCs. PLCB2 is a phospholipase C enzyme that generates inositol trisphosphate (IP3) and diacylglycerol (DAG) upon activation by G proteins, further contributing to calcium signaling.
+
+RTP1, RTP2, RTP3, RTP4, and RTP5 are receptor-transporting proteins that facilitate the trafficking of TAS2Rs to the cell surface, ensuring proper receptor function. REEP2 is another protein involved in the trafficking of GPCRs, including TAS2Rs.
+
+CST1, CST2, CST4, PIP, LPO, CA6, PIGR, and AZGP1 are proteins related to the production and secretion of saliva. Although not directly involved in bitter taste perception, they play a role in the overall taste process by facilitating the dissolution and transport of taste compounds to the taste receptors.
+
+In summary, this system of interacting proteins primarily functions in bitter taste perception, with TAS2Rs detecting bitter compounds and initiating intracellular signaling cascades, G proteins and other signaling proteins modulating the response, and receptor-transporting proteins ensuring proper receptor function. Salivary proteins contribute to the overall taste process."
+GO:0002091	LRRTM1 UBQLN2 ANKRD13B PCSK9 LRPAP1 ANXA2 LRRTM2 ANKRD13A DLG4 MTMR2 ANKRD13D ATXN2 NECAB2 WDR54 SDCBP RIN3	16	negative regulation of receptor internalization	Regulation of Endocytosis and Synaptic Function	"The system of interacting proteins primarily involves the regulation of endocytosis and synaptic function. The proteins involved in this process include LRRTM1, LRRTM2, UBQLN2, ANKRD13B, PCSK9, LRPAP1, ANXA2, ANKRD13A, DLG4, MTMR2, ANKRD13D, ATXN2, NECAB2, WDR54, SDCBP, and RIN3.
+
+1. LRRTM1 and LRRTM2: These proteins are members of the leucine-rich repeat transmembrane neuronal proteins family, which play a crucial role in the development and maintenance of excitatory synapses. They interact with synaptic proteins such as DLG4 and NECAB2, contributing to synaptic function regulation.
+
+2. UBQLN2: This protein is involved in the ubiquitin-proteasome system, which is essential for protein degradation and turnover. It interacts with proteins such as ANKRD13A, ANKRD13B, and ANKRD13D, which are involved in endocytic trafficking and regulation of membrane protein turnover.
+
+3. PCSK9 and LRPAP1: These proteins are involved in the regulation of low-density lipoprotein receptor (LDLR) endocytosis and degradation. PCSK9 promotes LDLR degradation, while LRPAP1 acts as a chaperone, protecting LDLR from PCSK9-mediated degradation.
+
+4. ANXA2: This protein is a calcium-dependent phospholipid-binding protein involved in membrane trafficking and endocytosis. It interacts with SDCBP, which is involved in endocytic membrane trafficking and signal transduction.
+
+5. DLG4: This protein is a member of the membrane-associated guanylate kinase (MAGUK) family, which is involved in the regulation of synaptic function and plasticity. It interacts with LRRTM1 and LRRTM2, contributing to the maintenance of excitatory synapses.
+
+6. MTMR2: This protein is a phosphatase involved in the regulation of endosomal trafficking and membrane dynamics. It interacts with ATXN2, which is involved in endocytic trafficking and regulation of mRNA stability.
+
+7. WDR54 and RIN3: These proteins are involved in endocytic trafficking and regulation of membrane protein turnover. WDR54 is a WD repeat-containing protein, while RIN3 is a Ras and Rab interactor involved in endocytic trafficking.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of endocytosis and synaptic function. The proteins involved in this process contribute to the maintenance of excitatory synapses, endocytic trafficking, and regulation of membrane protein turnover."
+GO:1905564	PDPK1 FGFR1 GHSR APLN STAT3 HMGB1 FGF2 SP1 SIRT6 AKT3 GHRL MDK ADAM17 ITGA4 PLCG1 PROK1 NRARP IGF2	18	positive regulation of vascular endothelial cell proliferation	Growth Factor Signaling	"The most prominent biological process performed by this system of interacting proteins is growth factor signaling. This process is crucial for cellular growth, differentiation, and survival.
+
+1. Presence of growth factors and receptors: FGF2 and FGFR1 are key components of the fibroblast growth factor (FGF) signaling pathway. FGF2 is a growth factor that binds to FGFR1, a receptor tyrosine kinase, to initiate downstream signaling events.
+
+2. Involvement of intracellular signaling proteins: PDPK1, AKT3, and PLCG1 are intracellular signaling proteins that play essential roles in growth factor signaling. PDPK1 and AKT3 are involved in the PI3K/AKT pathway, which is activated by growth factor receptors like FGFR1. PLCG1 is a phospholipase that generates second messengers in response to receptor activation.
+
+3. Transcription factors and gene regulation: STAT3 and SP1 are transcription factors that regulate gene expression in response to growth factor signaling. STAT3 is activated by various growth factors and cytokines, while SP1 is involved in the regulation of genes related to cell growth and differentiation.
+
+4. Modulation of growth factor signaling: APLN, GHSR, GHRL, and IGF2 are proteins that modulate growth factor signaling. APLN is a peptide hormone that can regulate cell proliferation and migration. GHSR and GHRL are involved in the regulation of growth hormone secretion, which can influence growth factor signaling. IGF2 is a growth factor that can activate the IGF1 receptor, another receptor tyrosine kinase.
+
+5. Regulation of protein-protein interactions: HMGB1, MDK, ADAM17, ITGA4, PROK1, NRARP, and SIRT6 are proteins that regulate protein-protein interactions and cellular processes related to growth factor signaling. HMGB1 is a chromatin-binding protein that can modulate gene expression. MDK is a growth factor that can promote cell survival and angiogenesis. ADAM17 is a metalloproteinase that can cleave membrane-bound growth factors. ITGA4 is an integrin that can mediate cell adhesion and migration. PROK1 is a prokineticin that can regulate angiogenesis and cell proliferation. NRARP is a Notch signaling regulator that can influence cell fate decisions. SIRT6 is a histone deacetylase that can regulate gene expression and DNA repair.
+
+In conclusion, this system of interacting proteins is primarily involved in growth factor signaling, which is essential for cellular growth, differentiation, and survival. The proteins in this system participate in various aspects of this process, including growth factor-receptor interactions, intracellular signaling, gene regulation, modulation of growth factor signaling, and regulation of protein-protein interactions."
+GO:2000648	KAT7 VEGFC HOXA3 HMX2 PDCD2 HMGA2 N4BP2L2 ELL3 SHOX2 KITLG EPCAM TP63 TERT PBX1 KDM1A FERMT2 CTNNB1 LTBP3 WNT1 NANOG CITED1 WNT10B FGF2 FGF10 RUNX2 KDR OSR2 THPO SIRT6 WNT5A ATXN1L GJA1 HNRNPU CCNE1 FGF8 TBX3 SOX11 PTPRC NR2E1 FGF9 TIAL1 FGF4 PRRX1 SOX9	44	positive regulation of stem cell proliferation	Angiogenesis and Skeletal Development	"The primary biological process performed by this system of interacting proteins is angiogenesis and skeletal development. The proteins involved in this process are:
+
+1. VEGFC: Vascular endothelial growth factor C is a key regulator of angiogenesis, promoting the growth of new blood vessels. It interacts with KDR, a receptor tyrosine kinase, to initiate signaling pathways that lead to endothelial cell proliferation and migration.
+
+2. FGF2, FGF4, FGF8, FGF9, and FGF10: These fibroblast growth factors are involved in various aspects of angiogenesis and skeletal development. They regulate cell proliferation, differentiation, and migration, and play crucial roles in limb and bone development.
+
+3. RUNX2: Runt-related transcription factor 2 is essential for osteoblast differentiation and bone formation. It regulates the expression of genes involved in osteoblast differentiation and function, such as collagen type I and osteocalcin.
+
+4. SOX9: SRY-box transcription factor 9 is a key regulator of chondrogenesis, the process of cartilage formation. It is essential for the differentiation of mesenchymal cells into chondrocytes and the subsequent formation of cartilage.
+
+5. WNT1, WNT5A, and WNT10B: These Wnt proteins are involved in the regulation of bone development and homeostasis. They activate the canonical Wnt/β-catenin signaling pathway (involving CTNNB1) to regulate osteoblast differentiation and function.
+
+6. HOXA3 and PBX1: These homeobox proteins are involved in the regulation of limb and skeletal development. They function as transcription factors, controlling the expression of genes involved in limb patterning and skeletal formation.
+
+7. HMX2 and OSR2: These transcription factors are involved in the regulation of craniofacial and limb development. They control the expression of genes involved in the patterning and differentiation of craniofacial structures and limb formation.
+
+8. PRRX1 and TBX3: These transcription factors are involved in the regulation of limb and skeletal development. They control the expression of genes involved in limb patterning and skeletal formation.
+
+9. KAT7, KDM1A, and SIRT6: These proteins are involved in the regulation of gene expression through histone modification. They play roles in the regulation of angiogenesis and skeletal development by modulating the expression of genes involved in these processes.
+
+10. EPCAM, GJA1, and PTPRC: These proteins are involved in cell adhesion and communication, which are essential for the proper organization and function of endothelial cells during angiogenesis and the differentiation of skeletal cells during development.
+
+In summary, this system of interacting proteins is primarily involved in the processes of angiogenesis and skeletal development, with key proteins regulating cell proliferation, differentiation, migration, and gene expression."
+GO:0060142	IL4R MAPK14 CXCL9 CD53 TMEM182 FLOT1 CFLAR ADGRB1 CAPN2 MYOG TNFSF14 TREM2 RAPGEF3 RIPOR2 MYOD1 CAMK1 SCGB3A1 PLEKHO1 DCSTAMP EHD1 IL4 GDF15 OCSTAMP GCM1 TYROBP ADAM9 CXCL10 EHD2 NFATC2	29	regulation of syncytium formation by plasma membrane fusion	Regulation of Immune Response and Cellular Differentiation	"1. Immune response regulation: IL4, IL4R, CXCL9, CXCL10, TNFSF14, and TREM2 are involved in immune response regulation. IL4 and IL4R form a complex to activate downstream signaling pathways, such as JAK-STAT, which modulate immune cell differentiation and function. CXCL9 and CXCL10 are chemokines that recruit immune cells to sites of inflammation. TNFSF14 is a member of the tumor necrosis factor superfamily, which regulates immune cell activation. TREM2 is an immunoreceptor that modulates microglial activation and phagocytosis.
+
+2. Cellular differentiation: MYOD1, MYOG, GCM1, and NFATC2 are transcription factors involved in cellular differentiation. MYOD1 and MYOG are essential for skeletal muscle differentiation, while GCM1 is involved in placental development. NFATC2 is a calcium-regulated transcription factor that plays a role in immune cell activation and differentiation.
+
+3. Signal transduction: MAPK14, RAPGEF3, CAMK1, and TYROBP are involved in signal transduction. MAPK14 is a member of the MAP kinase family, which regulates various cellular processes, including inflammation and differentiation. RAPGEF3 is a guanine nucleotide exchange factor that activates the small GTPase RAP1, involved in cell adhesion and migration. CAMK1 is a calcium/calmodulin-dependent protein kinase that regulates various cellular processes, including gene expression and cell survival. TYROBP is an adaptor protein that mediates signaling through immunoreceptors, such as TREM2.
+
+4. Membrane trafficking and organization: FLOT1, EHD1, EHD2, and ADAM9 are involved in membrane trafficking and organization. FLOT1 is a component of lipid rafts, which are membrane microdomains involved in signal transduction and protein sorting. EHD1 and EHD2 are members of the EHD protein family, which regulate endocytic recycling and membrane trafficking. ADAM9 is a metalloprotease that mediates cell adhesion and migration through the shedding of extracellular matrix proteins and cell surface receptors.
+
+5. Apoptosis regulation: CFLAR is an inhibitor of apoptosis, which prevents cell death by inhibiting caspase-8 activation.
+
+6. Cell adhesion and migration: CD53, TMEM182, ADGRB1, and CAPN2 are involved in cell adhesion and migration. CD53 is a member of the tetraspanin family, which modulates cell adhesion and migration. TMEM182 is a transmembrane protein that may be involved in cell adhesion. ADGRB1 is a G protein-coupled receptor that mediates cell adhesion and migration. CAPN2 is a calcium-dependent protease that regulates cytoskeletal remodeling and cell migration.
+
+7. Cytoskeletal regulation: PLEKHO1 and RIPOR2 are involved in cytoskeletal regulation. PLEKHO1 is a scaffold protein that regulates the stability of the actin cytoskeleton. RIPOR2 is a member of the FAM65 family, which regulates actin dynamics and cell migration.
+
+8. Secreted proteins: SCGB3A1 and GDF15 are secreted proteins with diverse functions. SCGB3A1 is a secretoglobin with anti-inflammatory and immunomodulatory properties. GDF15 is a member of the TGF-beta superfamily, which regulates various cellular processes, including inflammation and cell survival.
+
+9. Osteoclast differentiation: DCSTAMP and OCSTAMP are involved in osteoclast differentiation. Both proteins are transmembrane proteins that play a role in the fusion of mononuclear precursors to form multinucleated osteoclasts."
+GO:0101023	FGFR1 AKT3 GHRL ITGA4 NRARP IGF2 COL4A3 GHSR ADAM17 PPARG FGF2 FLT1 PDPK1 SP1 SIRT6 CCL2 MDK PLCG1 APLN STAT3 HMGB1 MEF2C ALDH1A2 DBH PROK1	25	vascular endothelial cell proliferation	Cell Proliferation and Differentiation	"1. FGFR1 and FGF2 interaction: FGFR1 (fibroblast growth factor receptor 1) is a receptor tyrosine kinase that binds to FGF2 (fibroblast growth factor 2), leading to cell proliferation, differentiation, and migration. This interaction is crucial for tissue repair and embryonic development.
+
+2. AKT3 and PDPK1 interaction: AKT3 (protein kinase B) is a serine/threonine kinase that plays a role in cell survival, growth, and metabolism. PDPK1 (3-phosphoinositide-dependent protein kinase 1) phosphorylates and activates AKT3, promoting cell survival and growth.
+
+3. GHRL and GHSR interaction: GHRL (ghrelin) is a hormone that stimulates appetite and growth hormone release. GHSR (growth hormone secretagogue receptor) is the receptor for ghrelin, and their interaction regulates energy homeostasis and growth hormone secretion.
+
+4. ITGA4 and COL4A3 interaction: ITGA4 (integrin alpha-4) is a cell adhesion molecule that binds to COL4A3 (collagen type IV alpha 3), facilitating cell adhesion, migration, and signaling. This interaction is essential for tissue integrity and cell communication.
+
+5. NRARP and Notch signaling: NRARP (Notch-regulated ankyrin repeat protein) is involved in the regulation of Notch signaling, which plays a critical role in cell fate determination, differentiation, and tissue patterning.
+
+6. IGF2 and insulin-like growth factor signaling: IGF2 (insulin-like growth factor 2) is a growth factor that promotes cell proliferation, differentiation, and survival. It is involved in various cellular processes, including embryonic development and tissue repair.
+
+7. ADAM17 and shedding of membrane proteins: ADAM17 (a disintegrin and metalloproteinase domain-containing protein 17) is a protease that cleaves membrane-bound proteins, such as growth factors and cytokines, modulating their activity and availability.
+
+8. PPARG and lipid metabolism: PPARG (peroxisome proliferator-activated receptor gamma) is a nuclear receptor that regulates lipid metabolism, adipogenesis, and insulin sensitivity. It plays a crucial role in energy homeostasis and metabolic regulation.
+
+9. FLT1 and angiogenesis: FLT1 (fms-related tyrosine kinase 1) is a receptor tyrosine kinase that binds to vascular endothelial growth factors (VEGFs), promoting angiogenesis and vascular development.
+
+10. SP1, SIRT6, MEF2C, and gene regulation: SP1 (specificity protein 1), SIRT6 (sirtuin 6), and MEF2C (myocyte enhancer factor 2C) are transcription factors that regulate gene expression, playing essential roles in cellular processes such as cell growth, differentiation, and stress response.
+
+11. CCL2 and inflammation: CCL2 (C-C motif chemokine ligand 2) is a chemokine that recruits monocytes, memory T cells, and dendritic cells to sites of inflammation, playing a crucial role in immune response and inflammation.
+
+12. MDK, PLCG1, APLN, STAT3, HMGB1, ALDH1A2, DBH, and PROK1: These proteins are involved in various cellular processes, including cell proliferation, differentiation, migration, and survival. Their interactions contribute to the overall complexity and regulation of the system."
+GO:0003401	BMP4 HOXD13 TRIM28 WNT11 FGF1 SFRP2 MAGI2 MED1 SFRP1 HNF1B SIX1 FGF10 NKD1 WNT3A RDH10 SIX4 WNT5A MED12 ESR1 AREG YAP1 SPRY2 PTK7 SHH SPRY1 FGFR2 SOX9	27	axis elongation	Limb Development and Differentiation	"1. Limb development and differentiation: The majority of the proteins in this system are involved in limb development and differentiation. BMP4, HOXD13, WNT11, FGF1, FGF10, WNT3A, WNT5A, SHH, and SOX9 are all key players in limb development, specifically in the formation of the limb bud, patterning, and differentiation of limb structures.
+
+2. Bone morphogenetic proteins (BMPs): BMP4 is a member of the BMP family, which plays a crucial role in the formation of the limb bud and the differentiation of chondrocytes. BMP4 is involved in the initiation of limb development and the establishment of the apical ectodermal ridge (AER).
+
+3. Homeobox (HOX) genes: HOXD13 is a member of the HOX gene family, which is responsible for the patterning of the limb along the anterior-posterior axis. HOXD13 is specifically involved in the development of the digits and the regulation of chondrogenesis.
+
+4. Wnt signaling pathway: WNT11, WNT3A, WNT5A, and NKD1 are involved in the Wnt signaling pathway, which is essential for limb development. WNT11 is involved in the establishment of the AER, while WNT3A and WNT5A are involved in limb patterning and outgrowth. NKD1 acts as a negative regulator of the Wnt signaling pathway.
+
+5. Fibroblast growth factors (FGFs): FGF1 and FGF10 are members of the FGF family, which play a crucial role in limb development. FGF1 is involved in the formation of the AER, while FGF10 is involved in limb bud initiation and outgrowth.
+
+6. Sonic hedgehog (SHH): SHH is a key signaling molecule involved in limb patterning, specifically in the establishment of the zone of polarizing activity (ZPA) and the regulation of digit formation.
+
+7. SRY-box transcription factor 9 (SOX9): SOX9 is a transcription factor involved in chondrogenesis and the differentiation of chondrocytes during limb development.
+
+8. Other proteins: TRIM28, SFRP2, MAGI2, MED1, SFRP1, HNF1B, SIX1, RDH10, SIX4, MED12, ESR1, AREG, YAP1, SPRY2, PTK7, SPRY1, and FGFR2 are also involved in various aspects of limb development and differentiation, including regulation of gene expression, cell signaling, and cell adhesion."
+GO:0055062	UMOD ENPP3 ALPL SLC34A3 SLC17A8 SLC17A7 SFRP4 SLC34A1 PTH ANKH SLC17A6 ENPP1 ABCC6 FGFR4 SLC34A2 SLC9A3R1 TFAP2B FGF23 XPR1 GCM2	20	phosphate ion homeostasis	Phosphate Homeostasis	"The primary biological process performed by this system of interacting proteins is phosphate homeostasis, which involves the regulation of phosphate levels in the body. This is crucial for maintaining proper cellular function, bone mineralization, and overall health.
+
+1. UMOD, ENPP3, and ALPL: These proteins are involved in the regulation of extracellular pyrophosphate (ePPi) levels. UMOD inhibits ENPP3, an enzyme that generates ePPi, while ALPL is a pyrophosphatase that hydrolyzes ePPi. The balance between these proteins is essential for controlling ePPi levels, which in turn regulate mineralization processes.
+
+2. SLC34A1, SLC34A2, and SLC34A3: These proteins are sodium-phosphate co-transporters that play a crucial role in phosphate reabsorption in the kidneys. Mutations in these genes can lead to disorders of phosphate homeostasis, such as hypophosphatemia or hyperphosphatemia.
+
+3. SLC17A6, SLC17A7, and SLC17A8: These proteins are vesicular glutamate transporters that also transport inorganic phosphate. They contribute to phosphate homeostasis by regulating phosphate release from cells.
+
+4. PTH and FGF23: These hormones regulate phosphate homeostasis by modulating renal phosphate reabsorption and intestinal phosphate absorption. PTH decreases renal phosphate reabsorption, while FGF23 inhibits both renal phosphate reabsorption and intestinal phosphate absorption.
+
+5. ANKH and ENPP1: These proteins are involved in the regulation of extracellular ATP and pyrophosphate levels. ANKH mediates the transport of ATP and pyrophosphate, while ENPP1 hydrolyzes ATP to generate pyrophosphate. Both proteins contribute to the regulation of mineralization processes.
+
+6. ABCC6 and XPR1: These proteins are involved in the transport of inorganic phosphate. ABCC6 is an ATP-dependent transporter that mediates the efflux of inorganic phosphate, while XPR1 is a phosphate exporter. Both proteins contribute to the regulation of phosphate homeostasis.
+
+7. FGFR4 and GCM2: These proteins are involved in the regulation of parathyroid hormone (PTH) secretion. FGFR4 is a receptor for FGF23, which inhibits PTH secretion, while GCM2 is a transcription factor that regulates PTH gene expression. Both proteins contribute to the regulation of phosphate homeostasis through their effects on PTH secretion.
+
+8. SFRP4, SLC9A3R1, and TFAP2B: These proteins are involved in the regulation of renal phosphate reabsorption. SFRP4 inhibits Wnt signaling, which promotes phosphate reabsorption, while SLC9A3R1 and TFAP2B are involved in the regulation of sodium-phosphate co-transporters. All three proteins contribute to the maintenance of phosphate homeostasis by modulating renal phosphate reabsorption."
+GO:0060088	SCRIB SEC24B STRC PLS1 PDZD7 TRIOBP TPRN CLRN1 WHRN GRXCR2 CLRN2 LHFPL5 SOD1 CDH23 MYO7A SLC9A3R1	16	auditory receptor cell stereocilium organization	Hair Cell Stereocilia Development and Maintenance	"The primary biological process performed by this system of interacting proteins is the development and maintenance of hair cell stereocilia, which are essential for auditory and vestibular functions. The proteins involved in this process include SCRIB, STRC, PLS1, PDZD7, TRIOBP, TPRN, CLRN1, WHRN, GRXCR2, CLRN2, LHFPL5, CDH23, MYO7A, and SLC9A3R1.
+
+1. Stereocilia bundle formation and cohesion: CDH23 and PLS1 are crucial for the formation and cohesion of stereocilia bundles. CDH23 is a cadherin protein that forms tip links between adjacent stereocilia, allowing for mechanotransduction. PLS1 is an actin-bundling protein that maintains stereocilia structure and rigidity.
+
+2. Stereocilia elongation and actin regulation: MYO7A, TRIOBP, and TPRN are involved in stereocilia elongation and actin regulation. MYO7A is a motor protein that transports cargo along actin filaments, while TRIOBP and TPRN are actin-binding proteins that stabilize and organize the actin cytoskeleton.
+
+3. Mechanotransduction and ion homeostasis: CLRN1, CLRN2, LHFPL5, and SLC9A3R1 are essential for mechanotransduction and ion homeostasis in hair cells. CLRN1 and CLRN2 are transmembrane proteins that interact with other proteins to form the mechanotransduction complex. LHFPL5 is involved in the assembly of the mechanotransduction machinery, while SLC9A3R1 is an ion transporter that maintains intracellular ion concentrations.
+
+4. Protein trafficking and localization: SCRIB, SEC24B, and PDZD7 are involved in protein trafficking and localization. SCRIB is a scaffold protein that regulates the localization of other proteins, while SEC24B is a component of the COPII complex, which is involved in protein transport from the endoplasmic reticulum to the Golgi apparatus. PDZD7 is a scaffold protein that interacts with other proteins to form complexes at the base of stereocilia.
+
+5. Protein-protein interactions and scaffolding: WHRN and GRXCR2 are involved in protein-protein interactions and scaffolding. WHRN is a scaffold protein that interacts with other proteins to form complexes at the tips of stereocilia, while GRXCR2 is involved in the regulation of actin dynamics and stereocilia morphology.
+
+6. Protection against oxidative stress: SOD1 is an antioxidant enzyme that protects hair cells from oxidative stress by catalyzing the dismutation of superoxide radicals into oxygen and hydrogen peroxide.
+
+In conclusion, this system of interacting proteins plays a critical role in the development and maintenance of hair cell stereocilia, which are essential for auditory and vestibular functions. The proteins are involved in various aspects of stereocilia formation, actin regulation, mechanotransduction, protein trafficking, and protection against oxidative stress."

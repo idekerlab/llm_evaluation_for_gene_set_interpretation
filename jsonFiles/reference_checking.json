@@ -1,0 +1,10 @@
+{
+    "CONTEXT": "I am a highly intelligent question answering bot. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with \"Unknown\".",
+    "TEMP": 0.0, 
+    "MAX_TOKENS": 1000,
+    "RATE_PER_TOKEN": 6e-5,
+    "GPT_MODEL": "gpt-4-0314",
+    "DOLLAR_LIMIT": 200,
+    "LOG_NAME": "./logs/reference_checker_", 
+    "EMAIL": "salkhairy@ucsd.edu"
+}

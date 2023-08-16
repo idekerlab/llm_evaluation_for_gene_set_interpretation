@@ -1,0 +1,25 @@
+GO	Genes	Gene_Count	Term_Description	LLM Name	LLM Analysis
+GO:0032385	LDLRAP1 SCP2D1 ANXA2 SCP2	4	positive regulation of intracellular cholesterol transport	Lipid Transport and Metabolism	"Proteins: LDLRAP1, SCP2D1, ANXA2, SCP2
+
+1. LDLRAP1: Low-density lipoprotein receptor adaptor protein 1 (LDLRAP1) is crucial for the endocytosis of low-density lipoprotein (LDL) particles. It interacts with the LDL receptor (LDLR) and clathrin, facilitating the internalization of LDL particles into the cell. This process is essential for maintaining cholesterol homeostasis.
+
+2. SCP2D1: Sterol carrier protein 2 domain containing 1 (SCP2D1) is a lipid-binding protein involved in the intracellular transport of lipids, including cholesterol and fatty acids. It is essential for lipid metabolism and may play a role in the regulation of lipid droplet formation.
+
+3. ANXA2: Annexin A2 (ANXA2) is a calcium-dependent phospholipid-binding protein that plays a role in membrane trafficking and organization. It has been implicated in various cellular processes, including endocytosis, exocytosis, and membrane repair. ANXA2 may also be involved in cholesterol transport and metabolism, as it has been shown to interact with cholesterol-rich lipid rafts.
+
+4. SCP2: Sterol carrier protein 2 (SCP2) is a lipid-binding protein that facilitates the intracellular transport of lipids, including cholesterol and fatty acids. It is involved in lipid metabolism and is essential for maintaining cellular lipid homeostasis.
+
+In summary, the primary biological process performed by this system of interacting proteins is lipid transport and metabolism. LDLRAP1 is involved in the endocytosis of LDL particles, while SCP2D1 and SCP2 facilitate the intracellular transport of lipids. ANXA2 plays a role in membrane trafficking and organization, potentially contributing to cholesterol transport and metabolism. These proteins work together to maintain cellular lipid homeostasis and regulate lipid-related processes."
+GO:0002468	NOD1 HLA-DRA CLEC4A HLA-DRB1 CCL21 NOD2 CCL19 SLC11A1 HLA-DRB3 CCR7 CD68 FCGR2B THBS1 FGL2 CD74	15	dendritic cell antigen processing and presentation	Antigen Presentation and Immune Response Modulation	"The primary biological process performed by this system of interacting proteins is antigen presentation and immune response modulation. This process involves the recognition, processing, and presentation of antigens to immune cells, as well as the regulation of immune cell activation and migration.
+
+1. Antigen presentation: HLA-DRA, HLA-DRB1, HLA-DRB3, and CD74 are all components of the major histocompatibility complex class II (MHC II) molecules, which are responsible for presenting antigens to CD4+ T cells. CD74 acts as an MHC II chaperone, ensuring proper folding and peptide loading.
+
+2. Immune cell activation: NOD1 and NOD2 are intracellular pattern recognition receptors that recognize bacterial peptidoglycan fragments and activate the immune response. SLC11A1 is an iron transporter involved in macrophage activation and antimicrobial defense.
+
+3. Immune cell migration: CCL19, CCL21, and CCR7 are involved in the chemotaxis of immune cells. CCL19 and CCL21 are chemokines that attract CCR7-expressing cells, such as dendritic cells and T cells, to lymphoid tissues.
+
+4. Immune response modulation: CLEC4A is a C-type lectin receptor involved in the recognition of pathogens and modulation of immune responses. FCGR2B is an inhibitory Fc receptor that negatively regulates B cell activation and antibody production. CD68 is a macrophage marker involved in phagocytosis and antigen presentation.
+
+5. Extracellular matrix remodeling and coagulation: THBS1 and FGL2 are involved in extracellular matrix remodeling and coagulation, respectively. THBS1 is a glycoprotein that mediates cell-to-matrix interactions, while FGL2 is a fibrinogen-like protein that promotes blood clotting.
+
+In summary, this system of interacting proteins plays a crucial role in antigen presentation and immune response modulation, with additional involvement in immune cell migration, extracellular matrix remodeling, and coagulation."

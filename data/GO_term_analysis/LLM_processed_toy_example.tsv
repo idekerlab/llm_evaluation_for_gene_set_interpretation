@@ -1,0 +1,139 @@
+GO	Genes	Gene_Count	Term_Description	LLM Name	LLM Analysis
+GO:0032385	LDLRAP1 SCP2D1 ANXA2 SCP2	4	positive regulation of intracellular cholesterol transport	Lipid Transport and Metabolism	"Proteins: LDLRAP1, SCP2D1, ANXA2, SCP2
+
+1. LDLRAP1: Low-density lipoprotein receptor adaptor protein 1 (LDLRAP1) is crucial for the endocytosis of low-density lipoprotein (LDL) particles. It interacts with the LDL receptor (LDLR) and clathrin, facilitating the internalization of LDL particles into the cell. This process is essential for maintaining cholesterol homeostasis.
+
+2. SCP2D1: Sterol carrier protein 2 domain-containing protein 1 (SCP2D1) is a lipid-binding protein involved in the intracellular transport of lipids, including cholesterol and fatty acids. It plays a role in lipid metabolism and may contribute to the regulation of lipid droplet size and distribution.
+
+3. ANXA2: Annexin A2 (ANXA2) is a calcium-dependent phospholipid-binding protein that plays a role in membrane trafficking and organization. It has been implicated in various cellular processes, including endocytosis, exocytosis, and membrane repair. ANXA2 has also been reported to interact with lipids, such as cholesterol, and may contribute to lipid transport and metabolism.
+
+4. SCP2: Sterol carrier protein 2 (SCP2) is a lipid-binding protein that facilitates the intracellular transport of lipids, including cholesterol, fatty acids, and phospholipids. It is involved in lipid metabolism and has been implicated in the regulation of lipid droplet size and distribution.
+
+In summary, the primary biological process performed by this system of interacting proteins is lipid transport and metabolism. LDLRAP1 is involved in the endocytosis of LDL particles, which is essential for cholesterol homeostasis. SCP2D1 and SCP2 are lipid-binding proteins that facilitate the intracellular transport of lipids and contribute to lipid metabolism. ANXA2 is a phospholipid-binding protein that plays a role in membrane trafficking and organization, and may also contribute to lipid transport and metabolism."
+GO:0002468	NOD1 HLA-DRA CLEC4A HLA-DRB1 CCL21 NOD2 CCL19 SLC11A1 HLA-DRB3 CCR7 CD68 FCGR2B THBS1 FGL2 CD74	15	dendritic cell antigen processing and presentation	Antigen Presentation and Immune Response Modulation	"The primary biological process performed by this system of interacting proteins is antigen presentation and immune response modulation. This process involves the recognition, processing, and presentation of antigens to immune cells, as well as the regulation of immune cell activation and migration.
+
+1. Antigen presentation: HLA-DRA, HLA-DRB1, HLA-DRB3, and CD74 are all components of the major histocompatibility complex class II (MHC II) molecules, which are responsible for presenting antigens to CD4+ T cells. The presence of these proteins suggests that this system plays a role in antigen presentation and the activation of adaptive immune responses.
+
+2. Immune cell activation and migration: CCL19, CCL21, and CCR7 are involved in the regulation of immune cell migration and activation. CCL19 and CCL21 are chemokines that attract immune cells to sites of inflammation, while CCR7 is a chemokine receptor expressed on various immune cells, including T cells and dendritic cells. The interaction between these proteins suggests a role in directing immune cell migration and activation during an immune response.
+
+3. Innate immune recognition: NOD1 and NOD2 are intracellular pattern recognition receptors that recognize bacterial peptidoglycan components and initiate immune responses. Their presence in this system indicates a role in the detection of pathogens and the activation of innate immune responses.
+
+4. Immune cell modulation: FCGR2B, CD68, and THBS1 are involved in the modulation of immune cell activation and function. FCGR2B is an inhibitory Fc receptor that negatively regulates B cell activation, while CD68 is a macrophage marker involved in phagocytosis and antigen presentation. THBS1 is a glycoprotein that modulates various cellular processes, including immune cell adhesion and activation. These proteins suggest a role in fine-tuning immune cell responses.
+
+5. Other immune-related proteins: CLEC4A is a C-type lectin receptor involved in the recognition of pathogens and the activation of immune responses, while SLC11A1 is a solute carrier protein implicated in the control of intracellular pathogens. FGL2 is a fibrinogen-like protein with immunomodulatory functions, including the regulation of T cell activation and cytokine production. These proteins further support the involvement of this system in immune processes.
+
+In summary, this system of interacting proteins is primarily involved in antigen presentation and immune response modulation, with roles in the recognition and processing of antigens, the activation and migration of immune cells, and the fine-tuning of immune responses."
+GO:0033683	OGG1 ERCC5 XPA ERCC4 NTHL1	5	nucleotide-excision repair, DNA incision	DNA Repair	"The system of interacting proteins OGG1, ERCC5, XPA, ERCC4, and NTHL1 primarily functions in DNA repair processes. These proteins are involved in different repair pathways, working together to maintain genomic integrity.
+
+1. OGG1: 8-oxoguanine DNA glycosylase
+- Function: Base excision repair (BER)
+- Reasoning: OGG1 recognizes and removes 8-oxoguanine, a common oxidative DNA lesion, preventing G:C to T:A transversions.
+
+2. ERCC5: Excision repair cross-complementation group 5
+- Function: Nucleotide excision repair (NER)
+- Reasoning: ERCC5, also known as XPG, is an endonuclease that cleaves DNA at the 3' side of the damaged site, facilitating the removal of bulky DNA lesions induced by UV light or chemical agents.
+
+3. XPA: Xeroderma pigmentosum complementation group A
+- Function: Nucleotide excision repair (NER)
+- Reasoning: XPA is a DNA damage recognition protein that binds to damaged DNA and recruits other NER factors, including ERCC5, to the site of damage.
+
+4. ERCC4: Excision repair cross-complementation group 4
+- Function: Nucleotide excision repair (NER) and interstrand crosslink repair (ICL)
+- Reasoning: ERCC4, also known as XPF, forms a heterodimer with ERCC1 and acts as an endonuclease that cleaves DNA at the 5' side of the damaged site in NER. Additionally, ERCC4 participates in ICL repair by unhooking crosslinked DNA strands.
+
+5. NTHL1: Nth-like DNA glycosylase 1
+- Function: Base excision repair (BER)
+- Reasoning: NTHL1 recognizes and removes oxidized pyrimidines, such as thymine glycol and 5-hydroxycytosine, preventing mutations caused by oxidative stress.
+
+In summary, the most prominent biological process performed by this system of interacting proteins is DNA repair, with a focus on nucleotide excision repair and base excision repair pathways. These proteins work together to recognize, remove, and repair various types of DNA damage, ensuring the maintenance of genomic stability."
+GO:0035672	SLC7A11 SLC25A39 SLC26A6 ABCB9 SLC15A4 ABCC5 CDH17 SLC15A3 ABCC4 SLC13A3 GJA1 SLC15A1 SLC15A2 ABCC1 CA2	15	oligopeptide transmembrane transport	Ion and Nutrient Transport Regulation	"The primary biological process performed by this system of interacting proteins is the regulation of ion and nutrient transport across cellular membranes. This is supported by the presence of several solute carrier (SLC) family proteins and ATP-binding cassette (ABC) transporters.
+
+1. SLC family proteins: SLC7A11, SLC25A39, SLC26A6, SLC15A4, SLC15A3, SLC13A3, SLC15A1, and SLC15A2 are all members of the solute carrier family. These proteins are responsible for the transport of various ions, nutrients, and other molecules across cellular membranes. For example, SLC7A11 is involved in the transport of cystine and glutamate, while SLC26A6 is a chloride transporter.
+
+2. ABC transporters: ABCB9, ABCC5, ABCC4, and ABCC1 are members of the ATP-binding cassette transporter family. These proteins use ATP hydrolysis to transport various substrates across cellular membranes. For instance, ABCC1 is involved in the export of glutathione and other conjugates, while ABCC4 and ABCC5 are involved in the transport of cyclic nucleotides and other organic anions.
+
+3. Other proteins involved in transport: CDH17 is a member of the cadherin family, which is involved in cell adhesion and the regulation of ion transport. GJA1 is a gap junction protein that facilitates intercellular communication and the exchange of ions and small molecules between cells.
+
+4. Ion regulation: CA2 is a carbonic anhydrase enzyme that catalyzes the reversible hydration of carbon dioxide to bicarbonate, playing a crucial role in pH regulation and ion transport.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of ion and nutrient transport across cellular membranes. This is supported by the presence of multiple solute carrier proteins, ATP-binding cassette transporters, and other proteins involved in transport and ion regulation."
+GO:0048023	OPN3 CDH3 ATP7A APPL1 ASIP RAB38 ZEB2 TYRP1 GIPC1	9	positive regulation of melanin biosynthetic process	Melanogenesis Regulation	"Proteins: OPN3, CDH3, ATP7A, APPL1, ASIP, RAB38, ZEB2, TYRP1, GIPC1.
+
+1. OPN3: Opsin-3 is a G-protein coupled receptor (GPCR) involved in light detection and signaling. It has been implicated in melanogenesis regulation, as it can modulate melanin synthesis in response to light.
+
+2. CDH3: P-cadherin (CDH3) is a calcium-dependent cell adhesion protein. It is involved in cell-cell adhesion and communication, which can influence melanocyte differentiation and melanin synthesis.
+
+3. ATP7A: ATP7A is a copper-transporting P-type ATPase. It plays a crucial role in melanogenesis by transporting copper ions to tyrosinase, a key enzyme in melanin synthesis.
+
+4. APPL1: Adaptor protein containing PH domain, PTB domain, and leucine zipper motif 1 (APPL1) is involved in endosomal trafficking and signaling. It interacts with ASIP, which is a crucial regulator of melanogenesis.
+
+5. ASIP: Agouti signaling protein (ASIP) is a paracrine signaling molecule that regulates melanogenesis by antagonizing the melanocortin 1 receptor (MC1R). It leads to a decrease in melanin production, specifically eumelanin.
+
+6. RAB38: RAB38 is a small GTPase involved in the regulation of intracellular vesicle trafficking. It plays a role in the transport of melanogenic enzymes, such as tyrosinase, to melanosomes, which are specialized organelles for melanin synthesis.
+
+7. ZEB2: Zinc finger E-box-binding homeobox 2 (ZEB2) is a transcription factor that regulates gene expression during development. It has been implicated in the regulation of melanocyte differentiation and melanogenesis.
+
+8. TYRP1: Tyrosinase-related protein 1 (TYRP1) is an enzyme involved in melanin synthesis. It catalyzes the oxidation of 5,6-dihydroxyindole-2-carboxylic acid (DHICA) to indole-5,6-quinone-2-carboxylic acid, a crucial step in eumelanin production.
+
+9. GIPC1: GAIP-interacting protein, C-terminus (GIPC1) is an adaptor protein involved in endocytic trafficking. It interacts with proteins like ASIP and may play a role in the regulation of melanogenesis.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of melanogenesis. The proteins are involved in various aspects of melanin synthesis, including light detection, cell adhesion, copper transport, endosomal trafficking, paracrine signaling, vesicle transport, transcriptional regulation, and enzymatic reactions."
+GO:0044029	ZMPSTE24 NIBAN2 PIK3CA	3	hypomethylation of CpG island	Regulation of Cellular Senescence	"Proteins: ZMPSTE24, NIBAN2, PIK3CA
+
+1. ZMPSTE24: This protein is a zinc metalloprotease involved in the post-translational processing of prelamin A to mature lamin A, which is a component of the nuclear lamina. Mutations in ZMPSTE24 can lead to accumulation of prelamin A, causing nuclear envelope abnormalities and cellular senescence. This protein is essential for maintaining nuclear integrity and preventing premature cellular aging.
+
+2. NIBAN2: Niban2 is an apoptosis regulator protein that has been implicated in the regulation of cellular stress responses. It is involved in the unfolded protein response (UPR) pathway, which is activated in response to endoplasmic reticulum (ER) stress. NIBAN2 has been shown to suppress apoptosis and promote cell survival under stress conditions, suggesting a role in maintaining cellular homeostasis and preventing premature cell death.
+
+3. PIK3CA: This protein is a catalytic subunit of the phosphatidylinositol 3-kinase (PI3K) complex, which is involved in various cellular processes, including cell growth, proliferation, and survival. PIK3CA is a key player in the PI3K/AKT/mTOR signaling pathway, which is often dysregulated in cancer. Activation of this pathway can promote cell survival and inhibit apoptosis, contributing to cellular senescence and tumorigenesis.
+
+In summary, the interaction between ZMPSTE24, NIBAN2, and PIK3CA plays a crucial role in the regulation of cellular senescence. ZMPSTE24 is involved in maintaining nuclear integrity, NIBAN2 regulates cellular stress responses and apoptosis, and PIK3CA is a key component of the PI3K/AKT/mTOR signaling pathway that promotes cell survival. Together, these proteins contribute to the prevention of premature cellular aging and the maintenance of cellular homeostasis."
+GO:0048014	TEK ANGPT1 SVEP1 ANGPT2	4	Tie signaling pathway	Angiogenesis Regulation	"Proteins: TEK, ANGPT1, SVEP1, ANGPT2
+
+1. TEK (Tie2) is a receptor tyrosine kinase that plays a crucial role in angiogenesis, the formation of new blood vessels from pre-existing ones. It is predominantly expressed in endothelial cells and is activated by its ligands, ANGPT1 and ANGPT2.
+
+2. ANGPT1 (Angiopoietin-1) is a secreted glycoprotein that binds to and activates TEK, promoting endothelial cell survival, migration, and blood vessel maturation. It is essential for vascular development and stabilization.
+
+3. SVEP1 (Sushi, von Willebrand factor type A, EGF, and pentraxin domain-containing protein 1) is an extracellular matrix protein that interacts with TEK and modulates its activity. SVEP1 has been shown to enhance ANGPT1-induced TEK phosphorylation, thus promoting angiogenesis.
+
+4. ANGPT2 (Angiopoietin-2) is another ligand for TEK, but it acts as a context-dependent antagonist or agonist. In the presence of vascular endothelial growth factors (VEGF), ANGPT2 promotes angiogenesis by destabilizing blood vessels, allowing endothelial cells to proliferate and migrate. In the absence of VEGF, ANGPT2 inhibits angiogenesis by competing with ANGPT1 for TEK binding, leading to vessel regression.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is the regulation of angiogenesis. TEK, ANGPT1, SVEP1, and ANGPT2 work together to control blood vessel formation, maturation, and stabilization. The balance between ANGPT1 and ANGPT2 binding to TEK is critical for maintaining proper vascular development and function."
+GO:0010845	PRDM9 PRDM7 RAD51AP1 UBE2B	4	positive regulation of reciprocal meiotic recombination	Meiotic Recombination Regulation	"Proteins: PRDM9, PRDM7, RAD51AP1, UBE2B
+
+The primary biological process performed by this system of interacting proteins is the regulation of meiotic recombination. This process is essential for the proper segregation of homologous chromosomes during meiosis, which is crucial for the formation of haploid gametes and genetic diversity.
+
+1. PRDM9: PRDM9 is a histone methyltransferase that plays a critical role in determining the location of recombination hotspots during meiosis. It specifically trimethylates histone H3 at lysine 4 (H3K4me3) and lysine 36 (H3K36me3), which are epigenetic marks associated with active chromatin and recombination initiation sites. PRDM9 also contains a zinc finger domain that recognizes specific DNA sequences, further guiding the localization of recombination events.
+
+2. PRDM7: PRDM7 is a paralog of PRDM9 and shares a high degree of sequence similarity with it. Although the exact function of PRDM7 is not well understood, it is thought to play a role in meiotic recombination due to its similarity to PRDM9. PRDM7 may act as a modulator of PRDM9 function or have a redundant role in the regulation of recombination hotspots.
+
+3. RAD51AP1: RAD51AP1 is a crucial component of the homologous recombination machinery, which is responsible for repairing DNA double-strand breaks during meiosis. It functions as a cofactor for the RAD51 recombinase, promoting the formation of the RAD51 nucleoprotein filament on single-stranded DNA and facilitating the search for homologous sequences. The interaction between RAD51AP1 and PRDM9 suggests a direct link between the determination of recombination hotspots and the initiation of homologous recombination.
+
+4. UBE2B: UBE2B is an E2 ubiquitin-conjugating enzyme involved in the ubiquitin-proteasome system, which is responsible for the degradation of proteins and the regulation of various cellular processes. In the context of meiotic recombination, UBE2B has been implicated in the turnover of proteins involved in DNA repair and recombination, such as RAD51. The interaction between UBE2B and the other proteins in this system suggests a role in the regulation of protein stability and activity during meiotic recombination.
+
+In conclusion, the system of interacting proteins PRDM9, PRDM7, RAD51AP1, and UBE2B plays a crucial role in the regulation of meiotic recombination. The proteins function in determining recombination hotspots, facilitating homologous recombination, and regulating protein stability, ensuring the proper segregation of homologous chromosomes and the generation of genetic diversity."
+GO:0050434	MDFIC RSF1 DHX9	3	positive regulation of viral transcription	Chromatin Remodeling and Transcription Regulation	"Protein MDFIC:
+MDFIC (MyoD Family Inhibitor Domain Containing) is a transcriptional regulator that inhibits the activity of MyoD family proteins, which are involved in muscle differentiation. MDFIC acts by binding to the basic helix-loop-helix (bHLH) domain of MyoD family proteins, preventing their dimerization and DNA binding.
+
+Protein RSF1:
+RSF1 (Remodeling and Spacing Factor 1) is a chromatin remodeling protein that plays a role in nucleosome spacing and transcription regulation. It is a subunit of the RSF complex, which is involved in chromatin remodeling and histone modification. RSF1 interacts with histone H3 and is involved in the deposition of the histone variant H2A.Z, which is important for transcription regulation and DNA repair.
+
+Protein DHX9:
+DHX9 (DEAH-Box Helicase 9) is an ATP-dependent RNA helicase involved in various aspects of RNA metabolism, including transcription, splicing, and translation. It also plays a role in DNA replication and repair. DHX9 interacts with both RNA and DNA, and its helicase activity is essential for unwinding RNA and DNA structures.
+
+Interactions and Biological Processes:
+The interaction between MDFIC, RSF1, and DHX9 suggests a coordinated role in chromatin remodeling and transcription regulation. MDFIC's inhibition of MyoD family proteins can influence the transcription of muscle-specific genes, while RSF1's involvement in chromatin remodeling and histone modification can impact the accessibility of DNA to the transcription machinery. DHX9's helicase activity can facilitate the unwinding of DNA and RNA structures, promoting transcription and other RNA-related processes.
+
+In conclusion, the most prominent biological process performed by this system of interacting proteins is chromatin remodeling and transcription regulation. The interaction between MDFIC, RSF1, and DHX9 highlights their coordinated roles in modulating gene expression and maintaining proper cellular function."
+GO:0036265	WDR4 METTL1 BUD23 RNMT TRMT112 RAMAC	6	RNA (guanine-N7)-methylation	rRNA Modification and mRNA Capping	"The primary biological process performed by this system of interacting proteins is rRNA modification and mRNA capping. The proteins involved in this process are WDR4, METTL1, BUD23, RNMT, TRMT112, and RAMAC.
+
+1. WDR4 and METTL1: These proteins form a heterodimeric complex that functions as a methyltransferase, specifically catalyzing the 7-methylguanosine (m7G) modification of the 9th position in the tRNA. This modification is essential for proper tRNA folding and stability, which in turn affects translation efficiency and fidelity.
+
+2. BUD23: This protein is a methyltransferase that is responsible for the N7-methylation of guanosine at position 1575 in 18S rRNA, a modification that is crucial for the biogenesis and function of the small ribosomal subunit. BUD23 is also involved in the assembly of the 40S ribosomal subunit, which is essential for translation initiation.
+
+3. RNMT: This protein is an mRNA cap guanine-N7 methyltransferase that plays a critical role in the capping of nascent mRNA molecules. The 5' cap structure is essential for mRNA stability, nuclear export, and efficient translation initiation.
+
+4. TRMT112: This protein acts as a cofactor for several methyltransferases, including METTL1 and BUD23. TRMT112 is required for the stability and proper function of these enzymes, thus playing an indirect role in rRNA modification and mRNA capping.
+
+5. RAMAC: This protein is a component of the ribosome assembly machinery and is involved in the biogenesis of the large ribosomal subunit. RAMAC is essential for the proper assembly and function of the ribosome, which is required for efficient translation.
+
+In conclusion, the primary biological process performed by this system of interacting proteins is rRNA modification and mRNA capping, which are essential for proper ribosome biogenesis, mRNA stability, and translation efficiency."
