@@ -34,10 +34,10 @@ getSetSize = function(genesStr){
     return(length(geneList))
 }
 
-getGSEAGeneCount = function(systemGenes, GSEA_Genes){
+getEnrichrGeneCount = function(systemGenes, Enrichr_Genes){
     systemGenesList = str_split(string = systemGenes, pattern = " ")[[1]];
-    GSEA_GenesList = str_split(string = GSEA_Genes, pattern = ";")[[1]];
-    return(length(intersect(systemGenesList, GSEA_GenesList)))
+    Enrichr_GenesList = str_split(string = Enrichr_Genes, pattern = ";")[[1]];
+    return(length(intersect(systemGenesList, Enrichr_GenesList)))
     }
     
 

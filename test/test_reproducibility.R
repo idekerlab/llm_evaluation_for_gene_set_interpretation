@@ -10,8 +10,8 @@ library(lsa)
 #textrpp_initialize(save_profile = TRUE)
 
 
-analyses_1_DF = read_delim("data/merged_new_LLM_GSEA_simVals_refs.txt", delim = "\t")
-analyses_2_DF = read_delim("data/merged_subset_LLM_GSEA_simVals_refs.txt",  delim = "\t")
+analyses_1_DF = read_delim("data/merged_new_LLM_Enrichr_simVals_refs.txt", delim = "\t")
+analyses_2_DF = read_delim("data/merged_subset_LLM_Enrichr_simVals_refs.txt",  delim = "\t")
 
 combined_analyses_1_2_DF = inner_join(analyses_1_DF %>%
                                         select(`DataSet`, `Human Name`, `GenesFixed`, `LLM Name`, `LLM Analysis`),

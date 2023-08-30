@@ -61,7 +61,7 @@ The notebooks are numbered according to the evaluation steps
 
     [batch run 1000 GO terms using slurm](run_thousand_GO_llm_query.sh)
 
-    [omic gene set GPT-4 analysis](1.[omics%20data]GenerateLLM_analysis.ipynb) and [omics gene set GSEA](1B.[omics%20data]run_GSEA.ipynb)
+    [omic gene set GPT-4 analysis](1.[omics%20data]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[omics%20data]run_Enrichr.ipynb)
 
     ``` 
     ## will process from 1st to 5th terms
