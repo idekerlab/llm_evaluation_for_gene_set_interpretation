@@ -1,4 +1,4 @@
-Bio==1.5.9
+Bio
 networkx
 jupyter
 matplotlib==3.7.1
