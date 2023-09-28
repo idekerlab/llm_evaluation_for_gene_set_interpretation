@@ -49,7 +49,7 @@ The notebooks are numbered according to the evaluation steps
 
    The data is already in the [data directory](./data) (refer to the README in this directory for detail information about the data)
    
-   If need to download GO, follow the code below: 
+   if need to download GO, follow the code below: 
     ```
     ## download and parse GO_BP terms
     outdir = 'data/GO_BP/'
@@ -59,7 +59,7 @@ The notebooks are numbered according to the evaluation steps
     and the [notebook](0.[Prep GO]Download_and_parse_GO.ipynb) for parsing GO terms
 	
 
-	If need to download MSigDB, run [notebook](0.[omics set]ProcessMSigDB.ipynb). The notebook reads in the hallmark gene sets and saves them as individual .yaml files.
+	if need to download MSigDB, run  
    
 
 2. Query GPT-4 for names and supporting analysis 
