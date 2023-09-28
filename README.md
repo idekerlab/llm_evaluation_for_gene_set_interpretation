@@ -39,6 +39,24 @@ cd llm_go_evaluation
 pip install -r requirements.txt
 ```
 
+DDOT is required for downloading GO and can be installed in one of two ways:
+
+To install DDOT by downloading the zip file of the source tree:
+```
+wget https://github.com/idekerlab/ddot/archive/refs/heads/python3.zip
+unzip python3.zip
+cd ddot-python3
+python setup.py bdist_wheel
+pip install dist/ddot*py3*whl
+```
+
+To install DDOT by cloning the repo:
+```
+git clone --branch python3 https://github.com/idekerlab/ddot.git
+cd ddot
+python setup.py bdist_wheel
+pip install dist/ddot*py3*whl
+```
 ### R requirements:
 The code was developed using R 4.2.2.
 
