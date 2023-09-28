@@ -7,7 +7,7 @@ Code associated with paper "Evaluation of large language models for discovery of
 ## Dependencies
 ### Set up an environment
 ```
-conda create -n llm_eval python=3.7.10 r-base=4.2.2 anaconda
+conda create -n llm_eval python=3.11.5
 ```
 ### Set up an environment variable to store GPT-4 API key 
 
@@ -29,7 +29,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 From OpenAI website for [the best practice for API key safety](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety) 
 
 ### Python requirements:
-The code was developed using Python 3.7.10.
+The code was developed using Python 3.11.5.
 
 ```
 git clone git@github.com:idekerlab/llm_go_evaluation.git
