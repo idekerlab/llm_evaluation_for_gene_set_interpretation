@@ -45,17 +45,22 @@ The code was developed using R 4.2.2.
 ## Documentation
 The notebooks are numbered according to the evaluation steps 
 
-0. Data Preperation
+0. Data Preperation (this step can be omitted for testing purposes)
 
+   The data is already in the [data directory](./data) (refer to the README in this directory for detail information about the data)
+   
+   if need to download GO, follow the code below: 
     ```
     ## download and parse GO_BP terms
     outdir = 'data/GO_BP/'
     namespace = 'biological_process'
     python process_the_gene_ontology.py $outdir --namespace $namespace 
-
     ```
+    and the [notebook](0.[Prep GO]Download_and_parse_GO.ipynb) for parsing GO terms
 
-1. Query GPT-4 for names and supporting analysis 
+   
+
+2. Query GPT-4 for names and supporting analysis 
 
     [GO gene set GPT-4 analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
 
@@ -77,7 +82,7 @@ The notebooks are numbered according to the evaluation steps
     python query_llm_for_analysis.py --input $INPUT --start $START --end $END --config $CONFIG
     ```
 
-2. Semantic Similarity evaluation of names
+3. Semantic Similarity evaluation of names
 
     [GO gene set analysis evalution](2.[GO%20set]Rank_LLM_GO_term_pair_sim.ipynb)
 
@@ -90,7 +95,7 @@ The notebooks are numbered according to the evaluation steps
 
     ```
 
-3. Further evaluation of the performance: including gene set enrichment(GO set), and gene coverage in the analysis 
+4. Further evaluation of the performance: including gene set enrichment(GO set), and gene coverage in the analysis 
 
     [GO gene set enrichment analysis](3.[GO%20set]Evaluate_gene_set_similarity.ipynb) and counting [gene coverage](3B.[GO%20set]Count_genes_in_analysis.ipynb)
 
@@ -102,11 +107,11 @@ The notebooks are numbered according to the evaluation steps
 
     ```
 
-4. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
+5. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
 
-5. Blinded study and data processing [Omics processing](5.[omics%20data]Analyse_Winner_Task2.ipynb)
+6. Blinded study and data processing [Omics processing](5.[omics%20data]Analyse_Winner_Task2.ipynb)
 
-6. Visualization of results 
+7. Visualization of results 
     [extended data fig.1 + Fig.2](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
     [extract sub hierarchy](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
     [Fig.3 + extended data fig. 3](6.[omics%20set]GenerateOmicsFigures.ipynb)
