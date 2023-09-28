@@ -61,6 +61,10 @@ pip install dist/ddot*py3*whl
 The code was developed using R 4.2.2.
 To install the R packages required, please run R_requirements.R
 
+```
+Rscript R_requirements.R
+```
+
 ## Documentation
 The notebooks are numbered according to the evaluation steps 
 
