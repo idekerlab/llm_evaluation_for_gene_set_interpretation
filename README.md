@@ -79,10 +79,10 @@ The notebooks are numbered according to the evaluation steps
     namespace = 'biological_process'
     python process_the_gene_ontology.py $outdir --namespace $namespace 
     ```
-    and the [notebook](0.[Prep GO]Download_and_parse_GO.ipynb) for parsing GO terms
+    and the [notebook](0.[Prep%20GO]Download_and_parse_GO.ipynb) for parsing GO terms
 	
 
-	If need to download MSigDB, run [notebook](0.[omics set]ProcessMSigDB.ipynb). The notebook reads in the hallmark gene sets and saves them as individual .yaml files.
+	If need to download MSigDB, run [notebook](0.[omics%20set]ProcessMSigDB.ipynb). The notebook reads in the hallmark gene sets and saves them as individual .yaml files.
    
 
 2. Query GPT-4 for names and supporting analysis 
