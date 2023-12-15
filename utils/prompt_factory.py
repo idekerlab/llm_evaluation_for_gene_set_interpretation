@@ -77,14 +77,12 @@ Do not provide a confidence score for a "system of unrelated proteins".
     task_instructions = """
 Write a critical analysis of the biological processes performed by this system of interacting proteins.  Base your analysis on prior knowledge available in your training data.
 
-Then, based on your analysis, propose a brief and detailed name for the most prominent biological process performed by the system.
+After completing your analysis, propose a brief and detailed name for the most prominent biological process performed by the system.
     """
 
     score_instructions = """
 
-Also based on your analysis, provide a confidence score for your chosen name and put it after the name in parenthesis. The confidence score should be a number between 0.00 and 1.00, where 0.00 means that your confidence is lowest and 1.00 means that your confidence is highest.
-Basically, with this score you indicate how well your chosen process name describes the functions and processes of the system of interacting proteins.
-When computing the score, you must also take into account 'how many' genes in the system of proteins are actually involved in that biological process. For example, if you choose 'Ribosome biogenesis' as process name and only a few genes in the system are involved in this process, your score should be lower than it would be if most of the genes in the system were involved.
+After completing your analysis, please also assign a confidence score to the process name you selected. This score should follow the name in parentheses and range from 0.00 to 1.00. A score of 0.00 indicates the lowest confidence, while 1.00 reflects the highest confidence. This score helps gauge how accurately the chosen name represents the functions and activities within the system of interacting proteins. When determining your score, consider the proportion of genes in the protein system that participate in the identified biological process. For instance, if you select "Ribosome biogenesis" as the process name but only a few genes in the system contribute to this process, the score should be lower compared to a scenario where a majority of the genes are involved in "Ribosome biogenesis".
     """
     
     direct_instructions = """
