@@ -68,21 +68,25 @@ def make_user_prompt_with_score(genes, feature_df = [], direct = False, customiz
     general_analysis_instructions = """
 Be concise, do not use unnecessary words.
 Be factual, do not editorialize.
-Be specific, avoid overly general statements such as 'the proteins are involved in various cellular processes’. Also avoid choosing generic process names such as ‘Cellular Signaling and Regulation'.
-
-If you cannot identify a prominent biological process for the majority of the proteins in the system, I want you to communicate this in you analysis and name the process: “System of unrelated proteins”.
-Do not provide a confidence score for a "system of unrelated proteins".
+Be specific, avoid overly general statements such as 'the proteins are involved in various cellular processes’.
+Also avoid choosing generic process names such as ‘Cellular Signaling and Regulation'.
+If you cannot identify a prominent biological process for the majority of the proteins in the system, I want you to communicate
+this in you analysis and name the process: “System of unrelated proteins”. Do not provide a confidence score for a "system of unrelated proteins".
     """
     
     task_instructions = """
-Write a critical analysis of the biological processes performed by this system of interacting proteins.  Base your analysis on prior knowledge available in your training data.
-
+Write a critical analysis of the biological processes performed by this system of interacting proteins.
+Base your analysis on prior knowledge available in your training data.
 After completing your analysis, propose a brief and detailed name for the most prominent biological process performed by the system.
     """
 
     score_instructions = """
-
-After completing your analysis, please also assign a confidence score to the process name you selected. This score should follow the name in parentheses and range from 0.00 to 1.00. A score of 0.00 indicates the lowest confidence, while 1.00 reflects the highest confidence. This score helps gauge how accurately the chosen name represents the functions and activities within the system of interacting proteins. When determining your score, consider the proportion of genes in the protein system that participate in the identified biological process. For instance, if you select "Ribosome biogenesis" as the process name but only a few genes in the system contribute to this process, the score should be lower compared to a scenario where a majority of the genes are involved in "Ribosome biogenesis".
+After completing your analysis, please also assign a confidence score to the process name you selected.
+This score should follow the name in parentheses and range from 0.00 to 1.00. A score of 0.00 indicates the lowest confidence,
+while 1.00 reflects the highest confidence. This score helps gauge how accurately the chosen name represents the functions and activities
+within the system of interacting proteins. When determining your score, consider the proportion of genes in the protein system that participate
+in the identified biological process. For instance, if you select "Ribosome biogenesis" as the process name but only a few genes in the system 
+contribute to this process, the score should be lower compared to a scenario where a majority of the genes are involved in "Ribosome biogenesis".
     """
     
     direct_instructions = """
