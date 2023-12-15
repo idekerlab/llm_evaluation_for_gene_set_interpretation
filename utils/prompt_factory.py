@@ -71,7 +71,7 @@ Be factual, do not editorialize.
 Be specific, avoid overly general statements such as 'the proteins are involved in various cellular processes’. Also avoid choosing generic process names such as ‘Cellular Signaling and Regulation'.
 
 If you cannot identify a prominent biological process for the majority of the proteins in the system, I want you to communicate this in you analysis and name the process: “System of unrelated proteins”.
-Do not provide a confidence score for a "system of unrelated proteins".
+Provide a score of 0.00 for a "system of unrelated proteins".
     """
     
     task_instructions = """
