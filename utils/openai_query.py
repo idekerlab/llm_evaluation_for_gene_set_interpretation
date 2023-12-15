@@ -20,7 +20,7 @@ def save_log(LOG_FILE,log_data):
 def estimate_cost(tokens, rate_per_token):
     return tokens * rate_per_token
 
-def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT):
+def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT, seed: int = None):
     backoff_time = 10  # Start backoff time at 10 second
     retries = 0
 
@@ -34,19 +34,22 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
     while retries <= 5: ## allow a max of 5 retries if the server is busy or overloaded
         try:
             start_time = time.time()
-            response = openai.ChatCompletion.create(
+            response = openai.chat.completions.create(
                 model=model,
                 messages=[{"role": "system", "content": context},{"role": "user", "content": prompt}],
                 max_tokens=max_tokens,
                 n=1,
                 stop=None,
+                seed=seed,
                 temperature=temperature,
             )
             end_time = time.time() 
-
-            # print(response)
-            tokens_used = response["usage"]["total_tokens"]
             
+            # print(response)
+            # tokens_used = response["usage"]["total_tokens"]
+            tokens_used = response.usage.total_tokens
+            response_content = response.choices[0].message.content
+            system_fingerprint = response.system_fingerprint
             # Update and save the log
             log_data["tokens_used"] += tokens_used
             log_data["dollars_spent"] = estimate_cost(log_data["tokens_used"], rate_per_token)
@@ -56,7 +59,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             print(tokens_used)
             save_log(LOG_FILE,log_data)
 
-            return response.choices[0].message.content
+            return response_content, system_fingerprint
         except requests.exceptions.RequestException as err:
             if err.response.status_code == 429:  # HTTP status 429: Too Many Requests
                 error_body = err.response.json()  # Retrieve error body
@@ -82,7 +85,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
                 backoff_time *= 2
             else:
                 print(f"An error occurred: {err}")
-                return None
+                return None, None
 
         except Exception as e:
             error_message = str(e)
@@ -99,7 +102,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
                 backoff_time *= 2
 
     print(f"Max retries exceeded. Please try again later.")
-    return None
+    return None, None
     
 
 # excute the script

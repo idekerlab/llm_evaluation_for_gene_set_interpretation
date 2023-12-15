@@ -3,7 +3,7 @@
     "TEMP": 0.0, 
     "MAX_TOKENS": 1000,
     "RATE_PER_TOKEN": 3e-5,
-    "GPT_MODEL": "gpt-4-1106-preview",
+    "MODEL": "gpt-4-1106-preview",
     "DOLLAR_LIMIT": 35.0,
-    "LOG_NAME": "logs/demo_GO"
+    "LOG_NAME": "logs/demo_scoring_contamination"
 }
