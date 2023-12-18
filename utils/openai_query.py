@@ -11,7 +11,7 @@ def load_log(LOG_FILE):
         with open(LOG_FILE, "r") as f:
             return json.load(f)
     else:
-        return {"tokens_used": 0, "dollars_spent": 0.0, "time_taken_last_run": 0.0, "time_taken_total": 0.0}
+        return {"tokens_used": 0, "dollars_spent": 0.0, "time_taken_last_run": 0.0, "time_taken_total": 0.0, "runs": 0}
 
 def save_log(LOG_FILE,log_data):
     with open(LOG_FILE, "w") as f:
@@ -56,6 +56,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             time_usage = end_time - start_time
             log_data["time_taken_last_run"] = time_usage
             log_data["time_taken_total"] += time_usage
+            log_data["runs"] += 1 # Increment the number of runs, used for estimating the average time taken per run
             print(tokens_used)
             save_log(LOG_FILE,log_data)
 
