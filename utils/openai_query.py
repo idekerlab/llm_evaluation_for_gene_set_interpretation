@@ -61,49 +61,24 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             save_log(LOG_FILE,log_data)
 
             return response_content, system_fingerprint
-        except requests.exceptions.RequestException as err:
-            if err.response.status_code == 429:  # HTTP status 429: Too Many Requests
-                error_body = err.response.json()  # Retrieve error body
-                error_message = error_body.get('message', '')  # Extract error message
-                
-                if 'You exceeded your current quota' in error_message: # If the error message indicates that the quota has been exceeded, abort
-                    print("You exceeded your current quota, exiting...")
-                    return None
-                elif 'That model is currently overloaded with other requests.' in error_message:
-                    print(f"Server is overloaded, retrying in {backoff_time} seconds...")
-                    time.sleep(backoff_time)
-                    retries += 1
-                    backoff_time *= 2 # Double the backoff time for the next retry
-            elif err.response.status_code == 500:
-                print(f"Server error occurred, retrying in {backoff_time} seconds...")
-                time.sleep(backoff_time)
-                retries += 1
-                backoff_time *= 2
-            elif err.response.status_code == 502:  # HTTP status 502: Bad Gateway
-                print(f"Bad Gateway error occurred, retrying in {backoff_time} seconds...")
-                time.sleep(backoff_time)
-                retries += 1
-                backoff_time *= 2
-            else:
-                print(f"An error occurred: {err}")
-                return None, None
-
+        
+        except openai.error.RateLimitError as e:
+            print("Rate limit exceeded. Please increate the limit before re-run.")
+            return None, None
+        except (openai.error.APIConnectionError, openai.error.APIError) as e:
+            print(f"Server issue detected, retrying in {backoff_time} seconds...")
+            time.sleep(backoff_time)
+            retries += 1
+            backoff_time *= 2 # Double the backoff time for the next retry
         except Exception as e:
-            error_message = str(e)
-            if 'That model is currently overloaded with other requests.' in error_message or 'The server had an error while processing your request.' in error_message:
-                print(f"Server issue occurred, retrying in {backoff_time} seconds...")
-                time.sleep(backoff_time)
-                retries += 1
-                backoff_time *= 2
-            else:
-                print(f"An unknown error occurred: {e}")
-                print(f"Retrying in {backoff_time} seconds...")
-                time.sleep(backoff_time) # Sleep for the backoff time for error that not seen before and retry until max retries
-                retries += 1
-                backoff_time *= 2
+            print(f"An unexpected error occurred: {e}")
+            # Decide if you want to retry or not based on the exception
+            return None, None
 
-    print(f"Max retries exceeded. Please try again later.")
-    return None, None
+        if retries > 5:
+            print("Max retries exceeded. Please try again later.")
+            return None, None
+
     
 
 # excute the script
