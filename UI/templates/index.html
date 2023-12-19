@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LLM Gene Set Analysis</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <!-- Input area for genes -->
+        <div class="header">
+            <div class="header-title">LLM Gene Set Analysis</div>
+            <div class="header-button">LLM Model</div>
+        </div>
+
+        <div class="query-bar">
+            <button id="menu-button" onclick="insertSampleGeneset()">
+                <img src="static/menu.png" alt="Menu">
+            </button>
+            <input type="text" id="geneset" placeholder="Enter gene sets...">
+            <button id="copy-button" onclick="copyGeneset()">
+                <img src="static/clipboard.png" alt="Copy">
+            </button>
+            <button id="search-button" onclick="analyzeGeneset()">
+                <img src="static/magnifying_glass.png" alt="Search">
+            </button>
+        </div>
+
+        <!-- Dropdown Menu for sample gene sets, initially hidden -->
+        <div id="menu-dropdown"
+            style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; padding: 10px;">
+            <ul>
+                <li onclick="insertSampleGeneset('apoptosis')">Apoptosis</li>
+                <li onclick="insertSampleGeneset('complement_and_coagulation')">Complement and Coagulation</li>
+                <li onclick="insertSampleGeneset('cancer')">Cancer</li>
+            </ul>
+        </div>
+
+
+        <!-- Output container for displaying the response -->
+        <div id="output"></div>
+
+        <img id="loading-icon" src="static/loading.gif" alt="Loading..." class="loading-icon">
+
+    </div>
+
+    <script>
+        // Icon to use in the search bar to invoke 'analyzeGeneset'
+        magnifying_glass_icon = "static/magnifying_glass.png"
+
+        // Icon to copy the geneset to the clipboard
+        clipboard_icon = "static/clipboard.png"
+
+        // 'three bar' menu icon to let the user choose one of the sample_gene_sets
+        menu_icon = "static/menu.png"
+
+        // loading icon
+        loading_gif = "static/loading.gif"
+
+        // sample genesets for the user to choose to insert in the geneset textarea
+        sample_gene_sets = {
+            "apoptosis": "CASP3 CASP6 CASP7 CFLAR CHUK DFFA DFFB FADD GAS2",
+            "complement_and_coagulation": "C2 C3 C3AR1 C4A C4B C4BPA C4BPB C5 C5AR1 C6 C7",
+            "cancer": "CCND1 CDH1 CTNNB1 HRAS KRAS LEF1 MAP2K1 MAP2K2"
+        }
+
+        // Toggles the dropdown menu visibility
+        function toggleMenu() {
+            var menuDropdown = document.getElementById('menu-dropdown');
+            menuDropdown.style.display = menuDropdown.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Call toggleMenu when the menu button is clicked
+        document.getElementById('menu-button').addEventListener('click', toggleMenu);
+
+
+        prompt_template = ""
+
+        available_models = ["mistral7b", "gpt-3.5-turbo"]
+        current_model = "gpt-3.5-turbo"
+
+        // make the prompt
+        function makePrompt(geneSet) {
+
+        }
+
+        function insertSampleGeneset(setName) {
+            if (sample_gene_sets.hasOwnProperty(setName)) {
+                const genesetTextarea = document.getElementById('geneset');
+                genesetTextarea.value = sample_gene_sets[setName];
+                genesetTextarea.focus();
+                genesetTextarea.setSelectionRange(genesetTextarea.value.length, genesetTextarea.value.length);
+
+                // Hide the dropdown menu
+                document.getElementById('menu-dropdown').style.display = 'none';
+            } else {
+                console.error('Invalid gene set name');
+            }
+        }
+
+
+        function copyGeneset() {
+            // Get the text from the geneset textarea
+            const genesetTextarea = document.getElementById('geneset');
+            const geneset = genesetTextarea.value;
+
+            // Use the Clipboard API to copy the text
+            navigator.clipboard.writeText(geneset).then(function () {
+                /* Clipboard successfully set */
+                alert('Gene set copied to clipboard!');
+            }, function () {
+                /* Clipboard write failed */
+                alert('Failed to copy gene set to clipboard.');
+            });
+        }
+
+        function analyzeGeneset() {
+            const geneSet = document.getElementById('geneset').value;
+            const outputDiv = document.getElementById('output');
+            const loadingIcon = document.getElementById('loading-icon');
+
+            // Show the loading icon
+            loadingIcon.style.display = 'block';
+
+            // Send the gene set to the server
+            fetch('/analyze_genes', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ gene_set: geneSet }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Hide the loading icon
+                    loadingIcon.style.display = 'none';
+
+                    // Display the response in the output div
+                    outputDiv.textContent = data.text;
+                })
+                .catch((error) => {
+                    // Hide the loading icon
+                    loadingIcon.style.display = 'none';
+
+                    // Display the error in the output div
+                    outputDiv.textContent = 'Error: ' + error.toString();
+                });
+        }
+
+    </script>
+</body>
+
+
+</html>
