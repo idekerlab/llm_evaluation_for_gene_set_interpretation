@@ -1,0 +1,214 @@
+    /* Basic reset for styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        /* Replace with the color of your choice */
+    }
+
+    /* Container for the entire app */
+    #app-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        /* Replace with the color of your choice */
+        border: 1px solid #ddd;
+        /* Border color as per your mock-up */
+        border-radius: 8px;
+    }
+
+    /* Header Styles */
+    .header {
+        background-color: #30d5c8;
+        /* Adjust the color to match the mockup */
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        /* Adjust as needed */
+        display: flex;
+        justify-content: space-between;
+        /* This will space out the title and the button/tab */
+        align-items: center;
+        /* Vertically centers the content */
+    }
+
+    /* Title Styles */
+    .header-title {
+        font-weight: bold;
+        font-size: 1.5em;
+        /* Adjust as needed */
+    }
+
+    /* Button/Tab Styles */
+    .header-button {
+        border: 2px solid #ffffff;
+        /* Adjust the color to match the mockup */
+        border-radius: 10px;
+        /* Adjust as needed */
+        padding: 10px 20px;
+        cursor: pointer;
+        /* Indicates it's clickable */
+    }
+
+    .query-bar {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        /* White background */
+        border: 1px solid #cccccc;
+        /* Light grey border */
+        border-radius: 5px;
+        /* Rounded corners for the container */
+        padding: 5px;
+        /* Spacing inside the container */
+    }
+
+    .query-bar input[type="text"] {
+        flex-grow: 1;
+        /* Input field takes up the remaining space */
+        border: none;
+        /* Remove default border */
+        padding: 5px 10px;
+        /* Spacing inside the input field */
+        margin: 0 5px;
+        /* Space between input field and buttons */
+    }
+
+    .query-bar button {
+        background: none;
+        /* Transparent background for buttons */
+        border: none;
+        /* Remove default border */
+        padding: 5px;
+        /* Spacing inside the buttons */
+        cursor: pointer;
+        /* Pointer cursor on hover */
+    }
+
+    .query-bar button img {
+        height: 20px;
+        /* Set a fixed height for icons */
+        width: auto;
+        /* Maintain aspect ratio */
+    }
+
+    /* You can add :hover styles for buttons to give visual feedback */
+    .query-bar button:hover {
+        background-color: #e6e6e6;
+        /* Light grey background on hover */
+    }
+
+
+
+    /* Add this to your existing CSS file */
+    #content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* General button styles */
+    button {
+        background-color: #007bff;
+        /* Example blue background */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        /* Adjust the space between icon and text */
+    }
+
+    /* Adjust button text */
+    button img {
+        height: 1em;
+        /* Scales the icon to the height of the text */
+    }
+
+    /* Styles for the icon image */
+    button img {
+        height: 100%;
+        /* Scales the icon to the height of the button */
+        object-fit: contain;
+        /* Keeps the aspect ratio of the icon */
+    }
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #0056b3;
+        /* Darker shade on hover */
+    }
+
+    #menu-dropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu-dropdown li {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    #menu-dropdown li:hover {
+        background-color: #f0f0f0;
+    }
+
+
+    /* Styles for the output area */
+    #output {
+        flex-grow: 2;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 20px 0;
+        overflow-y: auto;
+        white-space: pre-wrap;
+    }
+
+
+    /* Loading icon styles */
+    #loading-icon {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Position relative to the viewport */
+        top: 50%;
+        /* Position the top edge of the icon halfway down the viewport */
+        left: 50%;
+        /* Position the left edge of the icon halfway across the viewport */
+        transform: translate(-50%, -50%);
+        /* Offset the icon back by half its width and height */
+        z-index: 1000;
+        /* Ensure it's above other content */
+    }
+
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        #app-container {
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        .gene-set-input {
+            flex-direction: column;
+        }
+
+        .button {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
