@@ -25,7 +25,7 @@ I would like to search PubMed to find supporting evidence for the statements in 
     LOG_FILE = config['LOG_NAME']+'log.json'
     DOLLAR_LIMIT = config['DOLLAR_LIMIT']
     
-    result = openai_chat(context, query, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
+    result, _ = openai_chat(context, query, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
     if verbose: 
             print("Query:")
             print(query)
@@ -57,7 +57,7 @@ Please find keywords for this paragraph:
     LOG_FILE = config['LOG_NAME']+'log.json'
     DOLLAR_LIMIT = config['DOLLAR_LIMIT']
 
-    result = openai_chat(context, query, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
+    result, _ = openai_chat(context, query, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
     if verbose: 
             print("Query:")
             print(query)
