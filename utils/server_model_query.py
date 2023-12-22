@@ -3,23 +3,23 @@ import requests
 import os
 import time
 
-def load_log_gort(LOG_FILE):
+def load_log(LOG_FILE):
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r") as f:
             return json.load(f)
     else:
         return {"tokens_used": 0,"time_taken_last_run": 0.0, "time_taken_total": 0.0, "total_speed_for_response" : 0.0, "runs": 0}
 
-def save_log_gort(LOG_FILE,log_data):
+def save_log(LOG_FILE,log_data):
     with open(LOG_FILE, "w") as f:
         json.dump(log_data, f, indent=4)
         
-def query_gort_model(context, prompt, model,temperature, LOG_FILE, seed: int =42, url = 'https://api.llm.ideker.ucsd.edu/api/chat'):
+def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, seed: int =42, url = 'https://api.llm.ideker.ucsd.edu/api/chat'):
     backoff_time = 10  # Start backoff time at 10 second
     retries = 0
     max_retries = 5
     # set up the log file
-    log_data = load_log_gort(LOG_FILE)
+    log_data = load_log(LOG_FILE)
     ##load messages 
     messages = [{"role": "system", "content": context},{"role": "user", "content": prompt}]
     # Set up the data for the POST request
@@ -29,7 +29,8 @@ def query_gort_model(context, prompt, model,temperature, LOG_FILE, seed: int =42
         "messages":messages,
         "options": {
             "seed": seed,
-            "temperature": temperature
+            "temperature": temperature,
+            "num_predict": max_tokens
         }
     }
     while retries <= max_retries: ## allow a max of 5 retries if the server is busy or overloaded
@@ -53,7 +54,7 @@ def query_gort_model(context, prompt, model,temperature, LOG_FILE, seed: int =42
                 log_data["total_speed_for_response"] += response_speed
                 log_data["runs"] += 1
                 
-                save_log_gort(LOG_FILE,log_data) # save the log
+                save_log(LOG_FILE,log_data) # save the log
                 
                 return  analysis
             else:
