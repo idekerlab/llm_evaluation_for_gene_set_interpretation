@@ -198,7 +198,7 @@ Abstract:
 Does this title support paragraph? Please tell me yes or no
 """    
     try:
-        result = openai_chat(context, message, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
+        result, _ = openai_chat(context, message, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
     except Exception as e:
         print("Error in openai_chat")
         print("Error detail: ", e)
@@ -240,7 +240,7 @@ Does this abstract support paragraph? Please tell me yes or no
         """
         
     try:
-        result = openai_chat(context, message, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
+        result, _ = openai_chat(context, message, gpt_model, temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT)
     except Exception as e:
         print("Error in openai_chat")
         print("Error detail: ", e)
@@ -485,5 +485,4 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False,
         referenced_paragraphs += "\n\n"
         # referenced_paragraphs += "\n\nKeyword combinations: %s"%keyword_joined + '\n\n'
     return referenced_paragraphs + footer#, abstracts
-
 
