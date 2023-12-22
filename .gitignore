@@ -4,6 +4,6 @@ find . -size +100M
 
 Set_seed_in_GPT_query.ipynb
 
-./logs/test*
+logs/test*.log
 
 pipeline_for_new_model.ipynb
