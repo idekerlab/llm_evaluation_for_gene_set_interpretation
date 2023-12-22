@@ -72,7 +72,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             backoff_time *= 2 # Double the backoff time for the next retry
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-            # Decide if you want to retry or not based on the exception
+
             return None, None
 
         if retries > 5:
