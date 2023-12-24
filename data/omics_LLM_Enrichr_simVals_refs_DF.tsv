@@ -135,7 +135,29 @@ To summarize, the proteins in this system are predominantly involved in the immu
 
 8. IDI1 (Isopentenyl-diphosphate delta isomerase 1) is part of the cholesterol biosynthesis pathway, converting isopentenyl diphosphate to dimethylallyl diphosphate, both precursors for the synthesis of isoprenoids and cholesterol.
 
-The proteins listed are significantly involved in the metabolism of lipids and the biosynthesis of cholesterol, with multiple enzymes directly participating in the mevalonate pathway and fatty acid metabolism. The presence of key regulatory proteins such as INSIG1 indicates a system that is not only involved in the synthesis but also the regulation of these processes. The majority of the genes in this system contribute to lipid and cholesterol metabolism, hence the high confidence score. However, the score is not perfect due to the presence of some proteins that may have roles in other unrelated biological processes."	0.85	0	17-Apr	1.3861013554149986e-06	0.000823331	ZMIZ1;PMEPA1;PLPP1;NKX3-1	Androgen Receptor Signaling Pathway 	GO:0030521	0.34747037	0.6878784	GO	
+The proteins listed are significantly involved in the metabolism of lipids and the biosynthesis of cholesterol, with multiple enzymes directly participating in the mevalonate pathway and fatty acid metabolism. The presence of key regulatory proteins such as INSIG1 indicates a system that is not only involved in the synthesis but also the regulation of these processes. The majority of the genes in this system contribute to lipid and cholesterol metabolism, hence the high confidence score. However, the score is not perfect due to the presence of some proteins that may have roles in other unrelated biological processes."	0.85	0	17-Apr	1.3861013554149986e-06	0.000823331	ZMIZ1;PMEPA1;PLPP1;NKX3-1	Androgen Receptor Signaling Pathway 	GO:0030521	0.34747037	0.6878784	GO	"1. ABCC4 (ATP-binding cassette sub-family C member 4) functions as a cellular efflux transporter for various molecules, including lipids and steroid hormones, which can indirectly influence lipid metabolism.
+
+2. ACSL3 (Acyl-CoA synthetase long-chain family member 3) is involved in the initial step of fatty acid metabolism, converting free long-chain fatty acids into fatty acyl-CoA esters, which are key components in lipid biosynthesis and degradation.
+
+3. DHCR24 (24-dehydrocholesterol reductase) and HMGCR (3-hydroxy-3-methylglutaryl-CoA reductase) are critical enzymes in the mevalonate pathway for cholesterol biosynthesis. DHCR24 catalyzes the final step in cholesterol production, while HMGCR is the rate-limiting enzyme in this pathway.[1]
+
+4. HMGCS1 (3-hydroxy-3-methylglutaryl-CoA synthase 1) also plays a role in the early stages of cholesterol biosynthesis, catalyzing the condensation of acetyl-CoA with acetoacetyl-CoA to form HMG-CoA.
+
+5. INSIG1 (Insulin induced gene 1) is a regulatory protein that helps control cholesterol synthesis by mediating the degradation of HMGCR under sterol-rich conditions.[2]
+
+6. SCD (Stearoyl-CoA desaturase) is a key enzyme in fatty acid metabolism, responsible for the synthesis of monounsaturated fats from saturated fatty acyl-CoAs.
+
+7. ELOVL5 (ELOVL fatty acid elongase 5) and FADS1 (Fatty acid desaturase 1) are involved in the elongation and desaturation of fatty acids, respectively, which are crucial steps in the synthesis of long-chain polyunsaturated fatty acids.[3]
+
+8. IDI1 (Isopentenyl-diphosphate delta isomerase 1) is part of the cholesterol biosynthesis pathway, converting isopentenyl diphosphate to dimethylallyl diphosphate, both precursors for the synthesis of isoprenoids and cholesterol.
+
+The proteins listed are significantly involved in the metabolism of lipids and the biosynthesis of cholesterol, with multiple enzymes directly participating in the mevalonate pathway and fatty acid metabolism. The presence of key regulatory proteins such as INSIG1 indicates a system that is not only involved in the synthesis but also the regulation of these processes. The majority of the genes in this system contribute to lipid and cholesterol metabolism, hence the high confidence score. However, the score is not perfect due to the presence of some proteins that may have roles in other unrelated biological processes.
+
+========================================================================================================================================================================================================
+[1] Schroor, Maite M, Mokhtar, Fatma B A, Plat, Jogchum, Mensink, Ronald P. ""Associations between SNPs in Intestinal Cholesterol Absorption and Endogenous Cholesterol Synthesis Genes with Cholesterol Metabolism."" Biomedicines, 2021, pp.  .
+[2] Zhong, Shanshan, Li, Luxiao, Liang, Ningning, Zhang, Lili, Xu, Xiaodong, Chen, Shiting, Yin, Huiyong. ""Acetaldehyde Dehydrogenase 2 regulates HMG-CoA reductase stability and cholesterol synthesis in the liver."" Redox biology, 2021, pp. 101919.
+[3] Castellini, Cesare, Mattioli, Simona, Moretti, Elena, Cotozzolo, Elisa, Perini, Francesco, Dal Bosco, Alessandro, Signorini, Cinzia, Noto, Daria, Belmonte, Giuseppe, Lasagna, Emiliano, Brecchia, Gabriele, Collodel, Giulia. ""Expression of genes and localization of enzymes involved in polyunsaturated fatty acid synthesis in rabbit testis and epididymis."" Scientific reports, 2022, pp. 2637.
+"
 7	7	4450	0	MSigDB	ANGIOGENESIS	APOH APP CCND2 COL3A1 COL5A2 CXCL6 FGFR1 FSTL1 ITGAV JAG1 JAG2 KCNJ8 LPL LRPAP1 LUM MSX1 NRP1 OLR1 PDGFA PF4 PGLYRP1 POSTN PRG2 PTK2 S100A4 SERPINA5 SLCO2A1 SPP1 STC1 THBD TIMP1 TNFRSF21 VAV2 VCAN VEGFA VTN	36	Extracellular Matrix Remodeling and Angiogenesis	"1. COL3A1 and COL5A2 encode for type III and type V collagen, respectively, which are fibrous proteins that are essential components of the extracellular matrix (ECM) and play a critical role in tissue strength and elasticity.
 
 2. LUM encodes for lumican, a keratan sulfate proteoglycan that is involved in the organization of collagen fibers, influencing the tensile strength of the ECM.
