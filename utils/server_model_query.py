@@ -35,7 +35,7 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
     }
     while retries <= max_retries: ## allow a max of 5 retries if the server is busy or overloaded
         try:
-            response = requests.post(url, json = data)
+            response = requests.post(url, json = data, timeout= 120)
 
             # Check if the request was successful
             if response.status_code == 200:
@@ -57,6 +57,14 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
                 save_log(LOG_FILE,log_data) # save the log
                 
                 return  analysis
+            elif response.status_code == 503:
+                print('Encountering server issue. Retrying in ', backoff_time, ' seconds')
+                time.sleep(backoff_time)
+                retries += 1
+                backoff_time *= 2
+            else:
+                print('The request failed with status code: ', response.status_code)
+                return None
         except requests.exceptions.RequestException as e:
             print('The request failed with an exception: ', e, ' Retrying in ', backoff_time, ' seconds')
             time.sleep(backoff_time)
