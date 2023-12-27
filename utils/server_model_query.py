@@ -57,9 +57,6 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
                 save_log(LOG_FILE,log_data) # save the log
                 
                 return  analysis
-            else:
-                print('The request failed with status code: ', response.status_code)
-                return None
         except requests.exceptions.RequestException as e:
             print('The request failed with an exception: ', e, ' Retrying in ', backoff_time, ' seconds')
             time.sleep(backoff_time)
