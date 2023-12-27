@@ -56,15 +56,16 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
                 
                 save_log(LOG_FILE,log_data) # save the log
                 
-                return  analysis
-            elif response.status_code == 503:
+                return  analysis, None # second value is error message 
+            elif response.status_code in [500, 502, 503, 504]:
                 print('Encountering server issue. Retrying in ', backoff_time, ' seconds')
                 time.sleep(backoff_time)
                 retries += 1
                 backoff_time *= 2
             else:
-                print('The request failed with status code: ', response.status_code)
-                return None
+                error_message = f'The request failed with status code: {response.status_code}'
+                print(error_message)
+                return None, error_message
         except requests.exceptions.RequestException as e:
             print('The request failed with an exception: ', e, ' Retrying in ', backoff_time, ' seconds')
             time.sleep(backoff_time)
@@ -72,4 +73,5 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
             backoff_time *= 2 # Double the backoff time for the next retry
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-            return None
+            return None, str(e)
+    return None, "Error: Max retries exceeded"
