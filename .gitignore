@@ -1,3 +1,5 @@
+data/GO_term_analysis/*.log
+
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
