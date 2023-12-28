@@ -33,7 +33,7 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
             "num_predict": max_tokens
         }
     }
-    while retries <= max_retries: ## allow a max of 5 retries if the server is busy or overloaded
+    while retries < max_retries: ## allow a max of 5 retries if the server is busy or overloaded
         try:
             response = requests.post(url, json = data, timeout= 120)
 
@@ -58,10 +58,12 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
                 
                 return  analysis, None # second value is error message 
             elif response.status_code in [500, 502, 503, 504]:
-                print('Encountering server issue. Retrying in ', backoff_time, ' seconds')
+                print(f'Encountering server issue {response.status_code}. Retrying in ', backoff_time, ' seconds')
+                
                 time.sleep(backoff_time)
                 retries += 1
                 backoff_time *= 2
+                
             else:
                 error_message = f'The request failed with status code: {response.status_code}'
                 print(error_message)
@@ -74,4 +76,4 @@ def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, 
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             return None, str(e)
-    return None, "Error: Max retries exceeded"
+    return None, "Error: Max retries exceeded, last response error was: " + str(response.status_code)
