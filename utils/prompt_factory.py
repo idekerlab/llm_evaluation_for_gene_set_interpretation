@@ -68,11 +68,10 @@ def make_user_prompt_with_score(genes, feature_df = [], direct = False, customiz
     general_analysis_instructions = """
 Be concise, do not use unnecessary words.
 Be factual, do not editorialize.
-
-Be specific, avoid overly general statements such as 'the proteins are involved in various cellular processes’.
-Also avoid choosing generic process names such as ‘Cellular Signaling and Regulation'.
-If you cannot identify a prominent biological process for the proteins in the system, I want you to communicate
-this in you analysis and name the process: “System of unrelated proteins”. Provide a score of 0.00 for a "System of unrelated proteins".
+Be specific, avoid overly general statements such as 'the proteins are involved in various cellular processes'.
+Avoid listing facts about individual proteins. Instead, try to group proteins with similar functions and discuss their interplay, synergistyc or antagonistic effects and functional integration within the system.
+Also avoid choosing generic process names such as 'Cellular Signaling and Regulation'.
+If you cannot identify a prominent biological process for the proteins in the system, I want you to communicate this in you analysis and name the process: “System of unrelated proteins”. Provide a score of 0.00 for a "System of unrelated proteins".
     """
     
     task_instructions = """
@@ -129,7 +128,6 @@ It is involved in glucose transport in the small intestine and kidney too.
 To summarize, the genes in this set are involved in the specification, differentiation, growth and functionality of the pancreas, 
 with a particular emphasis on the pancreatic beta-cell. Particularly, the architecture of the pancreatic islet ensures proper glucose sensing 
 and homeostasis via a number of different hormones and receptors that can elicit both synergistic and antagonistic effects in the pancreas itself and other peripheral tissues.
-
     """
     
     if direct == True:

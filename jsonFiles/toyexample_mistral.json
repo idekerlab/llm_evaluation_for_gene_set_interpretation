@@ -1,7 +1,0 @@
-{
-    "CONTEXT": "You are an efficient and insightful assistant to a molecular biologist",
-    "TEMP": 0.0, 
-    "MODEL": "mistral:7b",
-    "LOG_NAME": "logs/toy_prompt_mistral",
-    "MAX_TOKENS": 1000
-}
