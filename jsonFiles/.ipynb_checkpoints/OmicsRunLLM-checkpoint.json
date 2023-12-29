@@ -1,0 +1,10 @@
+{
+    "CONTEXT": "You are an efficient and insightful assistant to a molecular biologist",
+    "TEMP": 0.0, 
+    "MAX_TOKENS": 1000,
+    "RATE_PER_TOKEN": 6e-5,
+    "GPT_MODEL": "gpt-4-0314",
+    "DOLLAR_LIMIT": 200,
+    "LOG_NAME": "./logs/NeST_run", 
+    "EMAIL": "salkhairy@ucsd.edu"
+}

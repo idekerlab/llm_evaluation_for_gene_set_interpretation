@@ -1,0 +1,10 @@
+{
+    "CONTEXT": "You are an efficient and insightful assistant to a molecular biologist",
+    "TEMP": 0.0, 
+    "MAX_TOKENS": 1000,
+    "RATE_PER_TOKEN": 0.00003,
+    "GPT_MODEL": "gpt-4-1106-preview",
+    "DOLLAR_LIMIT": 200,
+    "LOG_NAME": "./logs/Omics_run", 
+    "EMAIL": "salkhairy@ucsd.edu"
+}
