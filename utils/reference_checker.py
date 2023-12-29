@@ -69,10 +69,10 @@ Please find keywords for this paragraph:
 def get_keywords_combinations(paragraph, config, verbose=False):
     genes = get_genes_from_paragraph(paragraph, config, verbose)
     functions = get_molecular_functions_from_paragraph(paragraph, config, verbose)
-    if genes is None or functions is None: # CH updated the condition
-        return None, [], [], True # SA modified binary return
-    if genes[0]=='Unknown' or functions[0]=='Unknown':
-        return None, [], [], False # SA modified
+    if genes is None or genes[0]=='Unknown':
+        genes = []
+    if functions is None or functions[0]=='Unknown': # CH updated the condition
+        functions = [] # SA modified binary return
     # CH modify the keywords combination, so search for Titles first then Title/Abstracts
     gene_query_title = " OR ".join(["(%s[Title])"%gene for gene in genes])
     keywords_title = [gene_query_title + " AND (%s[Title])"%function for function in functions]
@@ -401,7 +401,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False,
             print("="*75)
         keywords, genes, functions, flag_working = get_keywords_combinations(paragraph, config=config, verbose=verbose) # SA: modified
         if keywords is None:
-            print("No keyword generated", skip referencing)
+            print("No keyword generated skip referencing")
             references_paragraphs.append([])
             continue
         if verbose:
