@@ -21,6 +21,7 @@ def estimate_cost(tokens, rate_per_token):
     return tokens * rate_per_token
 
 def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT, seed: int = None):
+    openai.api_key = os.environ['OPENAI_API_KEY']
     backoff_time = 10  # Start backoff time at 10 second
     retries = 0
 

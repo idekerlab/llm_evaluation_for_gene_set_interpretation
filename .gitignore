@@ -1,5 +1,10 @@
+errfile
+outfile
+data/GO_term_analysis/*.json
 data/GO_term_analysis/*.log
-
+data/GO_term_analysis/add_on*
+data/GO_term_analysis/test*
+data/GO_term_analysis/*promp*
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
