@@ -29,7 +29,7 @@ def get_logger(filename):
 # Add argument parsing
 parser = argparse.ArgumentParser(description='Process range of gene sets.')
 parser.add_argument('--config', type=str, required=True, help='Config file for LLM')
-parser.add_argument('--initialize', type=bool, default=True, help='Whether to initialize the input file with llm names, analysis and score to None, default is None')
+parser.add_argument('--initialize', action='store_true', help='If provided, initializes the input file with llm names, analysis and score to None. By default, this is not done.')
 parser.add_argument('--input', type=str, required=True, help='Path to input csv with gene sets')
 parser.add_argument('--input_sep', type=str, required=True, help='Separator for input csv')
 parser.add_argument('--set_index', type=str, default = 0, help='Column name for gene set index, default would be first column')
@@ -146,8 +146,11 @@ def main(df):
                     logger.info(f'GPT_Fingerprint for {idx}: {finger_print}')
                     
             else:
-                logger.error(f'Error for query gene set {idx}: {error_message}')
-
+                if error_message:
+                    logger.error(f'Error for query gene set {idx}: {error_message}')
+                else:
+                    logger.error(f'Error for query gene set {idx}: No analysis returned')
+                    
         except Exception as e:
             logger.error(f'Error for {idx}: {e}')
             continue
@@ -161,23 +164,27 @@ def main(df):
 
 
 if __name__ == "__main__":
-
+    if input_sep == '\\t':
+        input_sep = '\t'
+    # print(repr(input_sep))
     raw_df = pd.read_csv(input_file, sep=input_sep, index_col=set_index)
+    print(raw_df.columns)
 
     # Only process the specified range of genes
     df = raw_df.iloc[ind_start:ind_end]
-    assert df.shape[0] == ind_end - ind_start, "The number of genesets to process is not equal to the specified range"
     
     if '-' in model:
         name_fix = '_'.join(model.split('-')[:2])
     else:
         name_fix = model.replace(':', '_')
     column_prefix = name_fix + '_default' #start from default gene set
+    
     if args.initialize:
         # initialize the input file with llm names, analysis and score to None
         df[f'{column_prefix} Name'] = None
         df[f'{column_prefix} Analysis'] = None
         df[f'{column_prefix} Score'] = None
+    print(df[f'{column_prefix} Analysis'].isna().sum())
     main(df)  ## run with the real set 
     
      ## run the pipeline for contaiminated gene sets 
@@ -190,11 +197,13 @@ if __name__ == "__main__":
         column_prefix = name_fix + '_' +contam_prefix
         print(column_prefix)
         
+        
         if args.initialize:
             # initialize the input file with llm names, analysis and score to None
             df[f'{column_prefix} Name'] = None
             df[f'{column_prefix} Analysis'] = None
             df[f'{column_prefix} Score'] = None
+        print(df[f'{column_prefix} Analysis'].isna().sum())
         main(df)
 
 print("Done")
