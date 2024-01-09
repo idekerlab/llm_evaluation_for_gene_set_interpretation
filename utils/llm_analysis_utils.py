@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import os
  
 def process_analysis(analysis):
     """
@@ -18,7 +19,10 @@ def process_analysis(analysis):
     
     llm_name = llm_process.rsplit(" ", 1)[0]
     
-    llm_analysis = analysis.split('\n', 2)[2]
+    try:
+        llm_analysis = analysis.split('\n', 2)[2]
+    except IndexError:
+        llm_analysis = 'No description for the name'
     
     return llm_name, llm_score, llm_analysis
 
@@ -27,5 +31,13 @@ def save_progress(df, response_dict, out_file):
     Save DataFrame and LLM response dictionary to file.
     """
     df.to_csv(f'{out_file}.tsv', sep='\t', index=True)
+    
+    if os.path.exists(f'{out_file}.json'):
+        with open(f'{out_file}.json', 'r') as f:
+            data= json.load(f)
+    else:
+        data = {}
+    data.update(response_dict)
+    
     with open(f'{out_file}.json', 'w') as fp:
-        json.dump(response_dict, fp)
+        json.dump(data, fp)
