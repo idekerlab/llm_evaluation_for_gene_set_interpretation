@@ -5,6 +5,8 @@ data/GO_term_analysis/*.log
 data/GO_term_analysis/add_on*
 data/GO_term_analysis/test*
 data/GO_term_analysis/*promp*
+data/GO_term_analysis/model_compare/*
+!data/GO_term_analysis/model_compare/*100set*
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
@@ -16,4 +18,6 @@ logs/test*.log
 
 pipeline_for_new_model.ipynb
 
+#ignore archived files
 data/archived
+figures/archived
