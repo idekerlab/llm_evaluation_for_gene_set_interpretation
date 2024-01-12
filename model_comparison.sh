@@ -3,7 +3,7 @@
 #SBATCH --error=./errfile/gpt_go_analysis.%A_%a.err
 #SBATCH --job-name=llm_go_analysis
 #SBATCH --partition="nrnb-compute" # replace with your partition name
-#SBATCH --array=8 # run specific array task
+#SBATCH --array=10 # run specific array task
 #SBATCH --time=3:00:00
 #SBATCH --mem=8G
 #SBATCH --cpus-per-task=1
