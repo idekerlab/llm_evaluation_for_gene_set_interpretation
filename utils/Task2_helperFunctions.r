@@ -35,10 +35,17 @@ getSetSize = function(genesStr){
 }
 
 getEnrichrGeneCount = function(systemGenes, Enrichr_Genes){
-    systemGenesList = str_split(string = systemGenes, pattern = " ")[[1]];
+	systemGenesList = str_split(string = systemGenes, pattern = " ")[[1]];
     Enrichr_GenesList = str_split(string = Enrichr_Genes, pattern = ";")[[1]];
     return(length(intersect(systemGenesList, Enrichr_GenesList)))
-    }
+	}
+
+
+#getEnrichrGeneCount = function(systemGenes, Enrichr_Genes){
+#    systemGenesList = str_split(string = systemGenes, pattern = " ")[[1]];
+#    Enrichr_GenesList = str_split(string = Enrichr_Genes, pattern = ";")[[1]];
+#    return(length(intersect(systemGenesList, Enrichr_GenesList)))
+#    }
     
 
 getLLMGeneCount  = function(GenesFixed, LLM_Analysis){
