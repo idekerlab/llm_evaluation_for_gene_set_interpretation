@@ -277,10 +277,21 @@ def get_genes_in_abstract(paper, genes, verbose=False):
         print("Genes: ", ", ".join(genes_in_abstract))
         print(" ")
     return genes_in_abstract
+    
+def get_n_citation(paper):
+    links = Entrez.elink(dbfrom="pubmed", id=paper["MedlineCitation"]["PMID"], linkname="pubmed_pubmed_citedin")
+    link_list = []
+    record = Entrez.read(links)
+    if len(record[0][u'LinkSetDb'])==0:
+        return 0
+    records = record[0][u'LinkSetDb'][0][u'Link']
+    for link in records:
+        link_list.append(link[u'Id'])
+    return len(link_list)
 
 ## 12/18/2023 IL updated the following main function
 def sort_paper_by_n_genes_in_abstract(papers, genes, verbose=False):
-    return list(reversed(sorted(papers, key=lambda paper: len(get_genes_in_abstract(paper, genes, verbose=verbose)))))
+    return sorted(papers, key=lambda paper: (-len(get_genes_in_abstract(paper, genes, verbose=verbose)), -get_n_citation(paper)))
 
 def get_references(queried_papers, paragraph, config, n=10, verbose=False):
     ## load config for openai query
@@ -380,13 +391,15 @@ def get_papers(keywords, n, email):
         pass
     return total_papers
 
+
 ## 12/18/2023 IL updated the following main function
-def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data'):
+def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data'):
     '''
     paragraphs: list of paragraphs
     email: email address for Entrez
     config: config file for openai query
     n: number of papers to be queried for each paragraph
+    papers_query: number of papersf paper td
     verbose: if True, print out the process
     MarkedParagraphs: list of tuples (index, paragraph) that are already marked
     saveto: name of the json file to save the paragraph data
@@ -412,7 +425,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False,
         # keyword_joined = ",".join(keywords)
         # print("Keywords: ", keyword_joined)
         print("Serching paper with keywords...")
-        papers = search_pubmed(keywords, email, retmax=100)
+        papers = search_pubmed(keywords, email, retmax=papers_query)
         
         print("In paragraph %d, %d references are queried"%(i+1, len(papers)))
         
@@ -425,12 +438,18 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False,
         genes_to_be_searched = genes.copy()
         for paper in sorted_papers:
             genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
-            if len(genes_in_abstract)>1:
+            title = paper['MedlineCitation']['Article']['ArticleTitle']
+            if len(genes)==1:
+                single_gene = True
+            else:
+                single_gene = False
+            if len(genes_in_abstract)>=1:
                 title_matching = check_title_matching(paper, paragraph, config, verbose=verbose)
                 if title_matching:
-                    title = paper['MedlineCitation']['Article']['ArticleTitle']
                     abstract = paper['MedlineCitation']['Article']['Abstract']['AbstractText'][0]
                     title_matching_papers.append(paper)
+                    if verbose:
+                        print(title, genes_in_abstract, get_n_citation(paper))
                     for gene_in_abstract in genes_in_abstract:
                         if gene_in_abstract in genes_to_be_searched:
                             genes_to_be_searched.remove(gene_in_abstract)
@@ -441,15 +460,19 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, verbose=False,
         for paper in title_matching_papers:
             if check_abstract_match(paper, paragraph, config, verbose=verbose):
                 genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
-                if len([ gene_in_abstract for gene_in_abstract in genes_in_abstract if gene_in_abstract in genes_to_be_searched])==0:
-                    continue
+                if verbose:
+                    print("Remained genes: ", ",".join(genes_to_be_searched))
                 paper_for_references.append(paper)
                 for gene_in_abstract in genes_in_abstract:
                     if gene_in_abstract in genes_to_be_searched:
                         genes_to_be_searched.remove(gene_in_abstract)
                         print(title)
-                if len(genes_to_be_searched)==0:
-                    break
+                if (len(paper_for_references)>=n):
+                    if not single_gene:
+                        if len([ gene_in_abstract for gene_in_abstract in genes_in_abstract if gene_in_abstract in genes_to_be_searched])==0:
+                            break
+                    else:
+                        break
         references = [get_mla_citation_from_pubmed_id(paper) for paper in paper_for_references]
         abstract_paragraph = ["\n".join(paper['MedlineCitation']['Article']['Abstract']['AbstractText']) for paper in paper_for_references]
         references_paragraphs.append(references) 
