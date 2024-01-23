@@ -35,6 +35,7 @@ parser.add_argument('--input_sep', type=str, required=True, help='Separator for 
 parser.add_argument('--set_index', type=str, default = 0, help='Column name for gene set index, default would be first column')
 parser.add_argument('--gene_column', type=str, required=True, help='Column name for gene set')
 parser.add_argument('--gene_sep', type=str, required=True, help='Separator for gene set')
+parser.add_argument('--run_contaminated', action='store_true', help='If provided, runs the pipeline for contaminated gene sets. By default, this is not done.')
 parser.add_argument('--start', type=int, required=True, help='Start index for gene set range')
 parser.add_argument('--end', type=int, required=True, help='End index for gene set range')
 parser.add_argument('--gene_features', type=str, default=None, help='Path to csv with gene features if need to be included in prompt')
@@ -187,23 +188,25 @@ if __name__ == "__main__":
     print(df[f'{column_prefix} Analysis'].isna().sum())
     main(df)  ## run with the real set 
     
-     ## run the pipeline for contaiminated gene sets 
-    contaminated_columns = [col for col in df.columns if col.endswith('contaminated_Genes')]
-    # print(contaminated_columns)
-    for col in contaminated_columns:
-        gene_column = col ## Note need to change the gene_column to the contaminated column
-        contam_prefix = '_'.join(col.split('_')[0:2])
-        
-        column_prefix = name_fix + '_' +contam_prefix
-        print(column_prefix)
-        
-        
-        if args.initialize:
-            # initialize the input file with llm names, analysis and score to None
-            df[f'{column_prefix} Name'] = None
-            df[f'{column_prefix} Analysis'] = None
-            df[f'{column_prefix} Score'] = None
-        print(df[f'{column_prefix} Analysis'].isna().sum())
-        main(df)
+    # if run_contaminated is true, then run the pipeline for contaminated gene sets
+    if args.run_contaminated:
+        ## run the pipeline for contaiminated gene sets 
+        contaminated_columns = [col for col in df.columns if col.endswith('contaminated_Genes')]
+        # print(contaminated_columns)
+        for col in contaminated_columns:
+            gene_column = col ## Note need to change the gene_column to the contaminated column
+            contam_prefix = '_'.join(col.split('_')[0:2])
+            
+            column_prefix = name_fix + '_' +contam_prefix
+            print(column_prefix)
+            
+            
+            if args.initialize:
+                # initialize the input file with llm names, analysis and score to None
+                df[f'{column_prefix} Name'] = None
+                df[f'{column_prefix} Analysis'] = None
+                df[f'{column_prefix} Score'] = None
+            print(df[f'{column_prefix} Analysis'].isna().sum())
+            main(df)
 
 print("Done")
