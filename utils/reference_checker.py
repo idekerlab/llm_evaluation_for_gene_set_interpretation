@@ -1,6 +1,7 @@
 from Bio import Entrez
 import openai
 import requests
+from urllib import request
 from utils.openai_query import openai_chat
 import os 
 import json
@@ -65,14 +66,35 @@ Please find keywords for this paragraph:
             print(result)
     if result is not None:
         return [keyword.strip() for keyword in result.split(",")]
+
+def get_aliased_symbol(gene_symbol):
+    requested = request.urlopen(f'http://mygene.info/v3/query?q=symbol:{gene_symbol}&species=human')
+    read = requested.read()
+    requested.close()
+    result_dict = json.loads(read.decode())
+    if len(result_dict['hits'])==0:
+        requested = request.urlopen(f'http://mygene.info/v3/query?q=alias:{gene_symbol}&species=human')
+        read = requested.read()
+        requested.close()
+        result_dict = json.loads(read.decode())
+        if len(result_dict['hits'])==0:
+            return None
+        else:
+            return result_dict['hits'][0]['symbol']
+    else:
+        return gene_symbol
     
 def get_keywords_combinations(paragraph, config, verbose=False):
     genes = get_genes_from_paragraph(paragraph, config, verbose)
+    genes = list(filter(None, [get_aliased_symbol(gene) for gene in genes]))
     functions = get_molecular_functions_from_paragraph(paragraph, config, verbose)
-    if genes is None or genes[0]=='Unknown':
-        genes = []
+    if (genes is None) or len(genes)==0:
+        return None, [], functions, False
+    elif genes[0]=='Unknown':
+            return None, [], functions, False
     if functions is None or functions[0]=='Unknown': # CH updated the condition
-        functions = [] # SA modified binary return
+            return None, genes, [], False
+        #functions = [] # SA modified binary return
     # CH modify the keywords combination, so search for Titles first then Title/Abstracts
     gene_query_title = " OR ".join(["(%s[Title])"%gene for gene in genes])
     keywords_title = [gene_query_title + " AND (%s[Title])"%function for function in functions]
@@ -391,9 +413,71 @@ def get_papers(keywords, n, email):
         pass
     return total_papers
 
+def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20, verbose=False):
+    if verbose:
+        print("""Extracting keywords from paragraph\nParagraph:\n%s"""%paragraph)
+        print("="*75)
+    keywords, genes, functions, flag_working = get_keywords_combinations(paragraph, config=config, verbose=verbose) # SA: modified
+    if keywords is None:
+        print("No keyword generated skip referencing")
+        return None
+    if verbose:
+        print("PubMed Keywords: ", keywords)
+    if flag_working: # collect genes or functions keywords return None and come back later 
+        MarkedParagraphs.append((i,paragraph))
+    print("Serching paper with keywords...")
+    papers = search_pubmed(keywords, email, retmax=papers_query)
+    print("%d references are queried"%(len(papers)))
+    
+    if len(papers)==0:
+        print("No paper searched!!")
+    sorted_papers = sort_paper_by_n_genes_in_abstract(papers, genes, verbose=False)
+    
+    #title_matchings = check_title_matching(paper, paragraph, config, verbose=verbose) for paper in sorted_papers]
+    title_matching_papers = []
+    genes_to_be_searched = genes.copy()
+    for paper in sorted_papers:
+        genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
+        title = paper['MedlineCitation']['Article']['ArticleTitle']
+        if len(genes)==1:
+            single_gene = True
+        else:
+            single_gene = False
+        if len(genes_in_abstract)>=1:
+            title_matching = check_title_matching(paper, paragraph, config, verbose=verbose)
+            if title_matching:
+                abstract = paper['MedlineCitation']['Article']['Abstract']['AbstractText'][0]
+                title_matching_papers.append(paper)
+                if verbose:
+                    print(title, genes_in_abstract, get_n_citation(paper))
+                for gene_in_abstract in genes_in_abstract:
+                    if gene_in_abstract in genes_to_be_searched:
+                        genes_to_be_searched.remove(gene_in_abstract)
+                #print(title)
+    print("The number of title matching paper: %d"%len(title_matching_papers))
+    paper_for_references = []
+    genes_to_be_searched = genes.copy()
+    for paper in title_matching_papers:
+        if check_abstract_match(paper, paragraph, config, verbose=verbose):
+            genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
+            if verbose:
+                print("Remained genes: ", ",".join(genes_to_be_searched))
+            paper_for_references.append(paper)
+            for gene_in_abstract in genes_in_abstract:
+                if gene_in_abstract in genes_to_be_searched:
+                    genes_to_be_searched.remove(gene_in_abstract)
+                    print(title)
+            if (len(paper_for_references)>=n):
+                if not single_gene:
+                    if len([ gene_in_abstract for gene_in_abstract in genes_in_abstract if gene_in_abstract in genes_to_be_searched])==0:
+                        break
+                else:
+                    break
+    references = [get_mla_citation_from_pubmed_id(paper) for paper in paper_for_references]
+    return {"paragraph": paragraph, "keyword": keywords, "references": references}
 
 ## 12/18/2023 IL updated the following main function
-def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data'):
+def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data', return_paragraph_ref_data=False):
     '''
     paragraphs: list of paragraphs
     email: email address for Entrez
@@ -406,86 +490,22 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     '''
     
     references_paragraphs = []
+    paragraph_ref_data = []
     paragraph_data = {}
-    abstracts = []
     for i, paragraph in enumerate(paragraphs):
-        if verbose:
-            print("""Extracting keywords from paragraph\nParagraph:\n%s"""%paragraph)
-            print("="*75)
-        keywords, genes, functions, flag_working = get_keywords_combinations(paragraph, config=config, verbose=verbose) # SA: modified
-        if keywords is None:
-            print("No keyword generated skip referencing")
-            references_paragraphs.append([])
-            continue
-        if verbose:
-            print("PubMed Keywords: ", keywords)
-        if flag_working: # collect genes or functions keywords return None and come back later 
-            MarkedParagraphs.append((i,paragraph))
-        #keywords = list(sorted(keywords, key=len))
-        # keyword_joined = ",".join(keywords)
-        # print("Keywords: ", keyword_joined)
-        print("Serching paper with keywords...")
-        papers = search_pubmed(keywords, email, retmax=papers_query)
-        
-        print("In paragraph %d, %d references are queried"%(i+1, len(papers)))
-        
-        if len(papers)==0:
-            print("No paper searched!!")
-        sorted_papers = sort_paper_by_n_genes_in_abstract(papers, genes, verbose=False)
-        
-        #title_matchings = check_title_matching(paper, paragraph, config, verbose=verbose) for paper in sorted_papers]
-        title_matching_papers = []
-        genes_to_be_searched = genes.copy()
-        for paper in sorted_papers:
-            genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
-            title = paper['MedlineCitation']['Article']['ArticleTitle']
-            if len(genes)==1:
-                single_gene = True
-            else:
-                single_gene = False
-            if len(genes_in_abstract)>=1:
-                title_matching = check_title_matching(paper, paragraph, config, verbose=verbose)
-                if title_matching:
-                    abstract = paper['MedlineCitation']['Article']['Abstract']['AbstractText'][0]
-                    title_matching_papers.append(paper)
-                    if verbose:
-                        print(title, genes_in_abstract, get_n_citation(paper))
-                    for gene_in_abstract in genes_in_abstract:
-                        if gene_in_abstract in genes_to_be_searched:
-                            genes_to_be_searched.remove(gene_in_abstract)
-                    #print(title)
-        print("The number of title matching paper: %d"%len(title_matching_papers))
-        paper_for_references = []
-        genes_to_be_searched = genes.copy()
-        for paper in title_matching_papers:
-            if check_abstract_match(paper, paragraph, config, verbose=verbose):
-                genes_in_abstract = get_genes_in_abstract(paper, genes, verbose=False)
-                if verbose:
-                    print("Remained genes: ", ",".join(genes_to_be_searched))
-                paper_for_references.append(paper)
-                for gene_in_abstract in genes_in_abstract:
-                    if gene_in_abstract in genes_to_be_searched:
-                        genes_to_be_searched.remove(gene_in_abstract)
-                        print(title)
-                if (len(paper_for_references)>=n):
-                    if not single_gene:
-                        if len([ gene_in_abstract for gene_in_abstract in genes_in_abstract if gene_in_abstract in genes_to_be_searched])==0:
-                            break
-                    else:
-                        break
-        references = [get_mla_citation_from_pubmed_id(paper) for paper in paper_for_references]
-        abstract_paragraph = ["\n".join(paper['MedlineCitation']['Article']['Abstract']['AbstractText']) for paper in paper_for_references]
-        references_paragraphs.append(references) 
-        abstracts.append(abstract_paragraph)
+        #abstract_paragraph = ["\n".join(paper['MedlineCitation']['Article']['Abstract']['AbstractText']) for paper in paper_for_references]
+        reference_search_result = get_references_for_paragraph(paragraph, email, config, n=n, papers_query=papers_query, verbose=verbose)
+        if reference_search_result is None:
+            references = []
+        else:
+            references = reference_search_result['references']
+        references_paragraphs.append(references)
+        paragraph_ref_data.append(reference_search_result)
         print("In paragraph %d, %d references are matched"%(i+1, len(references)))
         print("")
         print("")
-        
         # Store paragraph, keywords, and references in the dictionary
-        paragraph_data[paragraph] = {
-            'keywords': keywords,
-            'references': references
-        }
+        paragraph_data[i] = reference_search_result
         if os.path.exists(f'{saveto}.json'):
             with open(f'{saveto}.json') as json_file:
                 data = json.load(json_file)
@@ -495,7 +515,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
         else: #if not exist, create new one
             with open(f'{saveto}.json', 'w') as json_file:
                 json.dump(paragraph_data, json_file)
-        
+
     n_refs = sum([len(refs) for refs in references_paragraphs])
     print("Total %d references are queried"%n_refs)
     print(references_paragraphs)
@@ -511,5 +531,19 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
             j+=1
         referenced_paragraphs += "\n\n"
         # referenced_paragraphs += "\n\nKeyword combinations: %s"%keyword_joined + '\n\n'
-    return referenced_paragraphs + footer#, abstracts
+    if return_paragraph_ref_data:
+        return referenced_paragraphs + footer, paragraph_ref_data#, abstracts
+    else:
+        return referenced_paragraphs
+
+def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data', return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph'):
+    result_dict = {}
+    for paragraph_id, paragraphs in zip(df[id_col].values, df[paragraph_col].values):
+        paragraph_result_dict = {}
+        paragraph_result_dict['paragraphs'] = paragraphs
+        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraphs.splitlines(), email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], saveto=saveto, return_paragraph_ref_data=True)
+        paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
+        paragraph_result_dict['pargraph_data'] = paragraph_ref_data
+        result_dict[paragraph_id] = paragraph_result_dict
+    return result_dict
 
