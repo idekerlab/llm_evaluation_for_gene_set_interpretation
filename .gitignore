@@ -21,3 +21,4 @@ pipeline_for_new_model.ipynb
 #ignore archived files
 data/archived
 figures/archived
+utils/__pycache__/
