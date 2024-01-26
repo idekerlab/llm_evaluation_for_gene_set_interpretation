@@ -152,3 +152,28 @@ and homeostasis via a number of different hormones and receptors that can elicit
         prompt_text  = add_gene_feature_summary(prompt_text, feature_df)
     
     return prompt_text
+
+def prompt_for_name(genes):
+    """
+    Create a ChatGPT prompt based on the list of genes
+    :return: A string containing the ChatGPT prompt text
+    """
+
+    general_analysis_instructions = """
+Be concise, do not use unneccesary words. Be specific, avoid overly general names such as 'the proteins are involved in various cellular processes'
+Be factual, do not editorialize.
+    """
+    
+    task_instructions = """
+Propose a brief name for the most prominant biological process performed by the system.
+    """
+
+
+    prompt_text = task_instructions
+    prompt_text += general_analysis_instructions
+        
+    prompt_text += "\n\nHere are the interacting proteins:\n"
+    prompt_text += f'\nProteins: '
+    prompt_text += ", ".join(genes) + ".\n\n"
+    
+    return prompt_text
