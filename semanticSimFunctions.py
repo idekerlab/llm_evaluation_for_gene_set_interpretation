@@ -41,6 +41,32 @@ def getSentenceSimilarity(sentence1, sentence2, tokenizer, model, simMetric):
     return sentenceSim, sentence1_embedding, sentence2_embedding
 
 
+def getNameSimilarities_noExpertName(names_DF, LLM_name_col, GO_name_col, tokenizer, model, simMetric, epsilon= 0.05):
+    """
+    names_DF: data frame with columns containing the names from various sources (each row is a different gene set)
+    *_name_col: strings of column names """
+    
+    
+    ## Initialize columns
+    names_DF['LLM_name_GO_term_sim'] = None;
+    
+    nSystems = names_DF.shape[0]
+    
+    for systemInd in range(nSystems):
+        print(systemInd)
+        systemRow = names_DF.iloc[systemInd]
+        LLM_name = systemRow[LLM_name_col]
+        GO_term = systemRow[GO_name_col]  
+
+        LLM_name_GO_term_sim, LLM_name_embedding, GO_term_embedding =  getSentenceSimilarity(LLM_name, GO_term, 
+                                                     tokenizer, model,
+                                                     simMetric)
+
+        names_DF.loc[systemInd, 'LLM_name_GO_term_sim']  = LLM_name_GO_term_sim
+
+    return names_DF
+    
+
 def getNameSimilarities(names_DF, LLM_name_col, GO_name_col, human_name_col, tokenizer, model, simMetric, epsilon= 0.05):
     """
     names_DF: data frame with columns containing the names from various sources (each row is a different gene set)
