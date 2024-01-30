@@ -67,6 +67,11 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             print("Rate limit exceeded. Please increate the limit before re-run.")
             return None, None
         except openai.APIConnectionError as e:
+            print(f"AIP connection error, retrying in {backoff_time} seconds...")
+            time.sleep(backoff_time)
+            retries += 1
+            backoff_time *= 2 # Double the backoff time for the next retry
+        except openai.InternalServerError as e:
             print(f"Server issue detected, retrying in {backoff_time} seconds...")
             time.sleep(backoff_time)
             retries += 1
