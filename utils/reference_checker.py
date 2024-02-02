@@ -530,6 +530,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
             footer += "[%d] %s"%(j, reference) + '\n'
             j+=1
         referenced_paragraphs += "\n\n"
+    referenced_paragraphs += footer
         # referenced_paragraphs += "\n\nKeyword combinations: %s"%keyword_joined + '\n\n'
     if return_paragraph_ref_data:
         return referenced_paragraphs + footer, paragraph_ref_data#, abstracts
