@@ -3,6 +3,8 @@ import requests
 import os
 import time
 
+URL = os.environ.get("LOCAL_MODEL_HOST")
+
 def load_log(LOG_FILE):
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r") as f:
@@ -14,7 +16,7 @@ def save_log(LOG_FILE,log_data):
     with open(LOG_FILE, "w") as f:
         json.dump(log_data, f, indent=4)
         
-def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, seed: int =42, url = 'https://api.llm.ideker.ucsd.edu/api/chat'):
+def server_model_chat(context, prompt, model,temperature, max_tokens, LOG_FILE, seed: int =42, url = URL):
     backoff_time = 10  # Start backoff time at 10 second
     retries = 0
     max_retries = 5
