@@ -13,7 +13,7 @@ conda create -n llm_eval python=3.11.5
 
 ```
 conda activate llm_eval
-conda env config vars set OPENAI_API_KEY="<your api key>"
+conda env config vars set OPENAI_API_KEY="<your api key>" 
 conda deactivate  # reactivate 
 
 conda activate llm_eval
