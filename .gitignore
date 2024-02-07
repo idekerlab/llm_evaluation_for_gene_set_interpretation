@@ -22,11 +22,14 @@ Set_seed_in_GPT_query.ipynb
 
 logs/test*.log
 
+
 pipeline_for_new_model.ipynb
 
 #ignore archived files
 data/archived
 figures/archived
+
 #ignore cache
 utils/__pycache__/*
 __pycache__/*
+

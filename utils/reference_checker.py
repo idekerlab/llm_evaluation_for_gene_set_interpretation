@@ -477,7 +477,7 @@ def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20,
     return {"paragraph": paragraph, "keyword": keywords, "references": references}
 
 ## 12/18/2023 IL updated the following main function
-def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data', return_paragraph_ref_data=False):
+def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False):
     '''
     paragraphs: list of paragraphs
     email: email address for Entrez
@@ -504,17 +504,17 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
         print("In paragraph %d, %d references are matched"%(i+1, len(references)))
         print("")
         print("")
-        # Store paragraph, keywords, and references in the dictionary
-        paragraph_data[i] = reference_search_result
-        if os.path.exists(f'{saveto}.json'):
-            with open(f'{saveto}.json') as json_file:
-                data = json.load(json_file)
-            data.update(paragraph_data)
-            with open(f'{saveto}.json', 'w') as json_file:
-                json.dump(data, json_file) # update the existing json file 
-        else: #if not exist, create new one
-            with open(f'{saveto}.json', 'w') as json_file:
-                json.dump(paragraph_data, json_file)
+        # # Store paragraph, keywords, and references in the dictionary
+        # paragraph_data[i] = reference_search_result
+        # if os.path.exists(f'{saveto}.json'):
+        #     with open(f'{saveto}.json') as json_file:
+        #         data = json.load(json_file)
+        #     data.update(paragraph_data)
+        #     with open(f'{saveto}.json', 'w') as json_file:
+        #         json.dump(data, json_file) # update the existing json file 
+        # else: #if not exist, create new one
+        #     with open(f'{saveto}.json', 'w') as json_file:
+        #         json.dump(paragraph_data, json_file)
 
     n_refs = sum([len(refs) for refs in references_paragraphs])
     print("Total %d references are queried"%n_refs)
@@ -533,18 +533,22 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     referenced_paragraphs += footer
         # referenced_paragraphs += "\n\nKeyword combinations: %s"%keyword_joined + '\n\n'
     if return_paragraph_ref_data:
-        return referenced_paragraphs + footer, paragraph_ref_data#, abstracts
+        return referenced_paragraphs, paragraph_ref_data#, abstracts
     else:
         return referenced_paragraphs
 
-def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], saveto = 'paragraph_ref_data', return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph'):
+def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph'):
+    df.set_index(id_col, inplace=True)
     result_dict = {}
-    for paragraph_id, paragraphs in zip(df[id_col].values, df[paragraph_col].values):
+    for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
         paragraph_result_dict = {}
         paragraph_result_dict['paragraphs'] = paragraphs
-        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraphs.splitlines(), email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], saveto=saveto, return_paragraph_ref_data=True)
+        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraphs.splitlines(), email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
         paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
         paragraph_result_dict['pargraph_data'] = paragraph_ref_data
         result_dict[paragraph_id] = paragraph_result_dict
-    return result_dict
+        
+        df.loc[paragraph_id, 'referenced_analysis'] = referenece_paragraphs
+    
+    return df, result_dict
 
