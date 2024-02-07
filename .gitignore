@@ -15,6 +15,7 @@ find . -size +100M
 Set_seed_in_GPT_query.ipynb
 
 logs/test*.log
+__pycache__
 
 pipeline_for_new_model.ipynb
 
