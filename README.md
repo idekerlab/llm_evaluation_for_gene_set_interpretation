@@ -32,9 +32,9 @@ From OpenAI website for [the best practice for API key safety](https://help.open
 The code was developed using Python 3.11.5.
 
 ```
-git clone git@github.com:idekerlab/llm_go_evaluation.git
+git clone git@github.com:idekerlab/llm_evaluation_for_gene_set_interpretation.git
 
-cd llm_go_evaluation
+cd llm_evaluation_for_gene_set_interpretation
 
 pip install -r requirements.txt
 ```
