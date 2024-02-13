@@ -103,7 +103,7 @@ def get_keywords_combinations(paragraph, config, verbose=False):
     function_query = " OR ".join(['"%s"'%function for function in functions])
     #keywords = [gene_query + " AND (%s[Title/Abstract])"%function for function in functions]
     #keywords = keywords_title + keywords
-    keywords = "(%s) AND (%s) AND (hasabstract[text])"%(gene_query, function_query)
+    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh]"%(gene_query, function_query)
 
     return keywords, genes, functions, False # SA modified
     
@@ -170,7 +170,16 @@ def get_mla_citation_from_pubmed_id(paper_dict):
     elif "Issue" in article['Journal']['JournalIssue']['PubDate']:
         issue = article['Journal']['JournalIssue']['PubDate']['Issue']
         mla_citation += f", no. {issue}" if issue else ''
-    mla_citation += f", {year}, pp. {page}."
+    mla_citation += f", {year}, pp. {page}"
+    no_doi = True
+    if "ArticleIdList" in paper_dict['PubmedData'].keys():
+        for other_id in paper_dict['PubmedData']['ArticleIdList']:
+            if other_id.attributes['IdType']=='doi':
+                doi = str(other_id)
+                mla_citation += f", doi: https://doi.org/{doi}"
+                no_doi = False
+    if no_doi:
+        mla_citation += "."
     return mla_citation
 
 def get_citation(paper):
