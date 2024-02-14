@@ -1,6 +1,7 @@
 from Bio import Entrez
 import openai
 import requests
+import pandas as pd
 from urllib import request
 from utils.openai_query import openai_chat
 import os 
@@ -103,7 +104,9 @@ def get_keywords_combinations(paragraph, config, verbose=False):
     function_query = " OR ".join(['"%s"'%function for function in functions])
     #keywords = [gene_query + " AND (%s[Title/Abstract])"%function for function in functions]
     #keywords = keywords_title + keywords
-    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh]"%(gene_query, function_query)
+    # restrain the keywords to only query human, mice and rats
+    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND (humans[mh] OR mice[mh] OR rats[mh])"%(gene_query, function_query)
+
 
     return keywords, genes, functions, False # SA modified
     
@@ -432,8 +435,6 @@ def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20,
         return None
     if verbose:
         print("PubMed Keywords: ", keywords)
-    if flag_working: # collect genes or functions keywords return None and come back later 
-        MarkedParagraphs.append((i,paragraph))
     print("Serching paper with keywords...")
     papers = search_pubmed(keywords, email, retmax=papers_query)
     print("%d references are queried"%(len(papers)))
@@ -486,7 +487,7 @@ def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20,
     return {"paragraph": paragraph, "keyword": keywords, "references": references}
 
 ## 12/18/2023 IL updated the following main function
-def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False):
+def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, return_paragraph_ref_data=False):
     '''
     paragraphs: list of paragraphs
     email: email address for Entrez
@@ -500,7 +501,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     
     references_paragraphs = []
     paragraph_ref_data = []
-    paragraph_data = {}
+    # paragraph_data = {}
     for i, paragraph in enumerate(paragraphs):
         #abstract_paragraph = ["\n".join(paper['MedlineCitation']['Article']['Abstract']['AbstractText']) for paper in paper_for_references]
         reference_search_result = get_references_for_paragraph(paragraph, email, config, n=n, papers_query=papers_query, verbose=verbose)
@@ -546,18 +547,39 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     else:
         return referenced_paragraphs
 
-def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph'):
+def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph', runVersion = "initial", save_path = None):
     df.set_index(id_col, inplace=True)
-    result_dict = {}
-    for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
-        paragraph_result_dict = {}
-        paragraph_result_dict['paragraphs'] = paragraphs
-        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraphs.splitlines(), email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
-        paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
-        paragraph_result_dict['pargraph_data'] = paragraph_ref_data
-        result_dict[paragraph_id] = paragraph_result_dict
+    if runVersion == "initial":
+        df.loc[:,'referenced_analysis'] = None
         
+    result_dict = {}
+    i = 0
+    for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
+        
+        if not pd.isna(df.loc[paragraph_id, 'referenced_analysis']):
+            continue # skip this row because already done
+        paragraph_list = list(filter(lambda p: len(p.split()) > 5, paragraphs.split("\n")))
+        # paragraph_result_dict = {}
+        # paragraph_result_dict['paragraphs'] = paragraphs
+
+        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraph_list, email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
+        # paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
+        # paragraph_result_dict['paragraph_data'] = paragraph_ref_data
+        # result_dict[paragraph_id] = paragraph_result_dict
+        result_dict[paragraph_id] = paragraph_ref_data
+
         df.loc[paragraph_id, 'referenced_analysis'] = referenece_paragraphs
+        
+        if save_path:
+            if i % 10 == 0:
+                df.to_csv(save_path +'.tsv', sep='\t', index=True)
+                with open(save_path + '_result.json', 'w') as f:
+                    json.dump(result_dict, f)
+            df.to_csv(save_path +'.tsv', sep='\t', index=True)
+            with open(save_path + '_result.json', 'w') as f:
+                json.dump(result_dict, f)
+        i += 1
+        
     
     return df, result_dict
 
