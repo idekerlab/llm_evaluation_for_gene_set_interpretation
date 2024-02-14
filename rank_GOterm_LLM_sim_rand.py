@@ -16,7 +16,7 @@ parser.add_argument('--input_file', type=str, help='input file path')
 parser.add_argument('--emb_file', type=str, help='embedding of all GO terms file path')
 parser.add_argument('--topn', type=int, help='collect top n hits names and sim scores')
 parser.add_argument('--output_file', type=str, help='output file path')
-parser.add_argument('--background_file', type=str, help='all go sim background file path')
+parser.add_argument('--background_file', default=None, required=False, type=str, help='all go sim background file path')
 
 args = parser.parse_args()
 input_file = args.input_file
@@ -72,7 +72,10 @@ for ind, row in tqdm(df.iterrows(), total=df.shape[0]):
     if row['true_GO_term_sim_percentile'] is None: # skip the ones that are already processed
         try: 
             GO_term = row['Term_Description'] # the actual GO term
-            LLM_name = row['LLM Name'] # the LLM name
+            # get the name column 
+            name_col = [col for col in df.columns if 'default name' in col.lower()][0]
+            # print(name_col)
+            LLM_name = row[name_col] # the LLM name
             # get llm name embedding
             LLM_name_emb = getSentenceEmbedding(LLM_name, SapBERT_tokenizer, SapBERT_model)
             
@@ -136,16 +139,18 @@ for ind, row in tqdm(df.iterrows(), total=df.shape[0]):
         if i % 10 == 0:
             df.to_csv(output_file, sep='\t', index=True)
             print(f'Saved progress after {i} rows.')
-            with open(background_file, "w") as f:
-                for sim in all_go_sim_list:
-                    f.write(str(sim) + "\n")
+            if background_file:
+                with open(background_file, "w") as f:
+                    for sim in all_go_sim_list:
+                        f.write(str(sim) + "\n")
                     
                     
 df.to_csv(output_file, sep='\t', index=True) # index is the GO term, so set true
 
 # save the list of all go term similarities
-with open(background_file, "w") as f:
-    for sim in all_go_sim_list:
-        f.write(str(sim) + "\n")
+if background_file is not None:
+    with open(background_file, "w") as f:
+        for sim in all_go_sim_list:
+            f.write(str(sim) + "\n")
         
 print('DONE')
