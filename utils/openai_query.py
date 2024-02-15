@@ -21,6 +21,7 @@ def estimate_cost(tokens, rate_per_token):
     return tokens * rate_per_token
 
 def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, LOG_FILE, DOLLAR_LIMIT, seed: int = None):
+    openai.api_key = os.environ['OPENAI_API_KEY']
     backoff_time = 10  # Start backoff time at 10 second
     retries = 0
 
@@ -62,14 +63,22 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
 
             return response_content, system_fingerprint
         
-        except openai.error.RateLimitError as e:
+        except openai.RateLimitError as e:
             print("Rate limit exceeded. Please increate the limit before re-run.")
             return None, None
-        except (openai.error.APIConnectionError, openai.error.APIError) as e:
+        except openai.APIConnectionError as e:
+            print(f"AIP connection error, retrying in {backoff_time} seconds...")
+            time.sleep(backoff_time)
+            retries += 1
+            backoff_time *= 2 # Double the backoff time for the next retry
+        except openai.InternalServerError as e:
             print(f"Server issue detected, retrying in {backoff_time} seconds...")
             time.sleep(backoff_time)
             retries += 1
             backoff_time *= 2 # Double the backoff time for the next retry
+        except openai.APIError as e:
+            print(f"An API error occurred: {e}")
+            return None, None
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
