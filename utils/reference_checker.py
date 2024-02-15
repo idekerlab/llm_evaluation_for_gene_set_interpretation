@@ -103,7 +103,7 @@ def get_keywords_combinations(paragraph, config, verbose=False):
     function_query = " OR ".join(['"%s"'%function for function in functions])
     #keywords = [gene_query + " AND (%s[Title/Abstract])"%function for function in functions]
     #keywords = keywords_title + keywords
-    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh]"%(gene_query, function_query)
+    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh] NOT "Retracted Publication"[pt]"%(gene_query, function_query)
 
     return keywords, genes, functions, False # SA modified
     
