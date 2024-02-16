@@ -25,7 +25,9 @@ localcopy*
 jsonFiles/*test.json
 
 pipeline_for_new_model.ipynb
-
+check_manual_eval_stats.ipynb 
+./data/[LLM_eval]Omics_revamped.xlsx
+OLD*
 #ignore archived files
 data/archived
 figures/archived
