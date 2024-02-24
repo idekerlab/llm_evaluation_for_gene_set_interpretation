@@ -1,6 +1,7 @@
 import argparse
 import pandas as pd
 import json 
+import numpy as np
 from utils.openai_query import openai_chat
 from utils.prompt_factory import make_user_prompt_with_score
 from utils.server_model_query import server_model_chat
@@ -157,6 +158,11 @@ def main(df):
             continue
         i += 1
         if i % 10 == 0:
+            # bin scores into no score, low score, medium score, high score
+            bins = [-np.inf, 0, 0.79, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.79 is low score, between 0.8 to 0.86 is medium score, above 0.86 is high score
+            labels = ['Name not assigned', 'Low Score', 'Medium Score', 'High Score']  # Define the corresponding labels
+            
+            df[f'{column_prefix} Score bins'] = pd.cut(df[f'{column_prefix} Score'], bins=bins, labels=labels)
             save_progress(df, analysis_dict, out_file)
             # df.to_csv(f'{out_file}.tsv', sep='\t', index=True)
             print(f"Saved progress for {i} genesets")
@@ -184,7 +190,7 @@ if __name__ == "__main__":
         # initialize the input file with llm names, analysis and score to None
         df[f'{column_prefix} Name'] = None
         df[f'{column_prefix} Analysis'] = None
-        df[f'{column_prefix} Score'] = None
+        df[f'{column_prefix} Score'] = -np.inf
     print(df[f'{column_prefix} Analysis'].isna().sum())
     main(df)  ## run with the real set 
     
@@ -205,7 +211,7 @@ if __name__ == "__main__":
                 # initialize the input file with llm names, analysis and score to None
                 df[f'{column_prefix} Name'] = None
                 df[f'{column_prefix} Analysis'] = None
-                df[f'{column_prefix} Score'] = None
+                df[f'{column_prefix} Score'] = -np.inf
             print(df[f'{column_prefix} Analysis'].isna().sum())
             main(df)
 
