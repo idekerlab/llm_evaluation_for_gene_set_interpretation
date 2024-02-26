@@ -28,6 +28,7 @@ pipeline_for_new_model.ipynb
 check_manual_eval_stats.ipynb 
 ./data/[LLM_eval]Omics_revamped.xlsx
 OLD*
+Extract_keywords_reference_finder.ipynb
 #ignore archived files
 data/archived
 figures/archived
