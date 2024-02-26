@@ -3,6 +3,7 @@ import openai
 import requests
 import pandas as pd
 from urllib import request
+import urllib.parse as parse
 from utils.openai_query import openai_chat
 import os 
 import json
@@ -68,22 +69,32 @@ Please find keywords for this paragraph:
     if result is not None:
         return [keyword.strip() for keyword in result.split(",")]
 
+def is_formated_gene_symbol(symbol):
+    # A simple regex to check if the gene symbol is alphanumeric and may contain underscores
+    return re.match(r'^\w+$', symbol)
 def get_aliased_symbol(gene_symbol):
-    requested = request.urlopen(f'http://mygene.info/v3/query?q=symbol:{gene_symbol}&species=human')
-    read = requested.read()
-    requested.close()
-    result_dict = json.loads(read.decode())
-    if len(result_dict['hits'])==0:
-        requested = request.urlopen(f'http://mygene.info/v3/query?q=alias:{gene_symbol}&species=human')
-        read = requested.read()
-        requested.close()
-        result_dict = json.loads(read.decode())
-        if len(result_dict['hits'])==0:
-            return None
-        else:
-            return result_dict['hits'][0]['symbol']
-    else:
+    encoded_gene_symbol = parse.quote(gene_symbol)  # URL encode the gene symbol
+    if not is_formated_gene_symbol(gene_symbol):
         return gene_symbol
+    try:
+        url = f'http://mygene.info/v3/query?q=symbol:{encoded_gene_symbol}&species=human'
+        with request.urlopen(url) as requested:
+            result_dict = json.loads(requested.read().decode())
+
+        if len(result_dict['hits']) == 0:
+            url = f'http://mygene.info/v3/query?q=alias:{encoded_gene_symbol}&species=human'
+            with request.urlopen(url) as requested:
+                result_dict = json.loads(requested.read().decode())
+
+            if len(result_dict['hits']) == 0:
+                return None
+            else:
+                return result_dict['hits'][0]['symbol']
+        else:
+            return gene_symbol
+    except Exception as e:
+        print("Error detail: ", e)
+        return None
     
 def get_keywords_combinations(paragraph, config, verbose=False):
     genes = get_genes_from_paragraph(paragraph, config, verbose)
@@ -105,7 +116,7 @@ def get_keywords_combinations(paragraph, config, verbose=False):
     #keywords = [gene_query + " AND (%s[Title/Abstract])"%function for function in functions]
     #keywords = keywords_title + keywords
 
-    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh] NOT "Retracted Publication"[pt]"%(gene_query, function_query)
+    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh] NOT Retracted Publication[pt]"%(gene_query, function_query)
 
 
     return keywords, genes, functions, False # SA modified
