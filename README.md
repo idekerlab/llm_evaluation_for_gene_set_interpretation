@@ -2,7 +2,7 @@
 
 
 ## Description
-Code associated with paper "Evaluation of large language models for discovery of gene set function" 
+Code associated with paper "Evaluation of large language models for discovery of gene set function" [read paper](https://arxiv.org/abs/2309.04019v1)
 
 ## Dependencies
 ### Set up an environment
@@ -13,7 +13,7 @@ conda create -n llm_eval python=3.11.5
 
 ```
 conda activate llm_eval
-conda env config vars set OPENAI_API_KEY="<your api key>"
+conda env config vars set OPENAI_API_KEY="<your api key>" 
 conda deactivate  # reactivate 
 
 conda activate llm_eval

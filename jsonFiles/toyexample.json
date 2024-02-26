@@ -5,5 +5,5 @@
     "RATE_PER_TOKEN": 3e-5,
     "MODEL": "gpt-4-1106-preview",
     "DOLLAR_LIMIT": 35.0,
-    "LOG_NAME": "logs/toy_prompt1215"
+    "LOG_NAME": "logs/toy_example1226"
 }
