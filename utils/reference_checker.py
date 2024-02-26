@@ -1,7 +1,9 @@
 from Bio import Entrez
 import openai
 import requests
+import pandas as pd
 from urllib import request
+import urllib.parse as parse
 from utils.openai_query import openai_chat
 import os 
 import json
@@ -67,22 +69,32 @@ Please find keywords for this paragraph:
     if result is not None:
         return [keyword.strip() for keyword in result.split(",")]
 
+def is_formated_gene_symbol(symbol):
+    # A simple regex to check if the gene symbol is alphanumeric and may contain underscores
+    return re.match(r'^\w+$', symbol)
 def get_aliased_symbol(gene_symbol):
-    requested = request.urlopen(f'http://mygene.info/v3/query?q=symbol:{gene_symbol}&species=human')
-    read = requested.read()
-    requested.close()
-    result_dict = json.loads(read.decode())
-    if len(result_dict['hits'])==0:
-        requested = request.urlopen(f'http://mygene.info/v3/query?q=alias:{gene_symbol}&species=human')
-        read = requested.read()
-        requested.close()
-        result_dict = json.loads(read.decode())
-        if len(result_dict['hits'])==0:
-            return None
-        else:
-            return result_dict['hits'][0]['symbol']
-    else:
+    encoded_gene_symbol = parse.quote(gene_symbol)  # URL encode the gene symbol
+    if not is_formated_gene_symbol(gene_symbol):
         return gene_symbol
+    try:
+        url = f'http://mygene.info/v3/query?q=symbol:{encoded_gene_symbol}&species=human'
+        with request.urlopen(url) as requested:
+            result_dict = json.loads(requested.read().decode())
+
+        if len(result_dict['hits']) == 0:
+            url = f'http://mygene.info/v3/query?q=alias:{encoded_gene_symbol}&species=human'
+            with request.urlopen(url) as requested:
+                result_dict = json.loads(requested.read().decode())
+
+            if len(result_dict['hits']) == 0:
+                return None
+            else:
+                return result_dict['hits'][0]['symbol']
+        else:
+            return gene_symbol
+    except Exception as e:
+        print("Error detail: ", e)
+        return None
     
 def get_keywords_combinations(paragraph, config, verbose=False):
     genes = get_genes_from_paragraph(paragraph, config, verbose)
@@ -103,7 +115,9 @@ def get_keywords_combinations(paragraph, config, verbose=False):
     function_query = " OR ".join(['"%s"'%function for function in functions])
     #keywords = [gene_query + " AND (%s[Title/Abstract])"%function for function in functions]
     #keywords = keywords_title + keywords
-    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh] NOT "Retracted Publication"[pt]"%(gene_query, function_query)
+
+    keywords = "(%s) AND (%s) AND (hasabstract[text]) AND humans[mh] NOT Retracted Publication[pt]"%(gene_query, function_query)
+
 
     return keywords, genes, functions, False # SA modified
     
@@ -295,7 +309,7 @@ def get_genes_in_abstract(paper, genes, verbose=False):
         if verbose:
             print("Error in getting abstract from paper.")
             print("Error detail: ", e)
-        return 0
+        return []
     gene_counts = 0
     genes_in_abstract = []
     for gene in genes:
@@ -432,8 +446,6 @@ def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20,
         return None
     if verbose:
         print("PubMed Keywords: ", keywords)
-    if flag_working: # collect genes or functions keywords return None and come back later 
-        MarkedParagraphs.append((i,paragraph))
     print("Serching paper with keywords...")
     papers = search_pubmed(keywords, email, retmax=papers_query)
     print("%d references are queried"%(len(papers)))
@@ -486,7 +498,7 @@ def get_references_for_paragraph(paragraph, email, config, n=5, papers_query=20,
     return {"paragraph": paragraph, "keyword": keywords, "references": references}
 
 ## 12/18/2023 IL updated the following main function
-def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False):
+def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=20, verbose=False, return_paragraph_ref_data=False):
     '''
     paragraphs: list of paragraphs
     email: email address for Entrez
@@ -500,7 +512,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     
     references_paragraphs = []
     paragraph_ref_data = []
-    paragraph_data = {}
+    # paragraph_data = {}
     for i, paragraph in enumerate(paragraphs):
         #abstract_paragraph = ["\n".join(paper['MedlineCitation']['Article']['Abstract']['AbstractText']) for paper in paper_for_references]
         reference_search_result = get_references_for_paragraph(paragraph, email, config, n=n, papers_query=papers_query, verbose=verbose)
@@ -546,18 +558,38 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     else:
         return referenced_paragraphs
 
-def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, MarkedParagraphs=[], return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph'):
+def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph', runVersion = "initial", save_path = None):
     df.set_index(id_col, inplace=True)
-    result_dict = {}
-    for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
-        paragraph_result_dict = {}
-        paragraph_result_dict['paragraphs'] = paragraphs
-        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraphs.splitlines(), email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
-        paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
-        paragraph_result_dict['pargraph_data'] = paragraph_ref_data
-        result_dict[paragraph_id] = paragraph_result_dict
+    if runVersion == "initial":
+        df.loc[:,'referenced_analysis'] = None
         
+    result_dict = {}
+    i = 0
+    for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
+        
+        if not pd.isna(df.loc[paragraph_id, 'referenced_analysis']):
+            continue # skip this row because already done
+        paragraph_list = list(filter(lambda p: len(p.split()) > 5, paragraphs.split("\n")))
+        # paragraph_result_dict = {}
+        # paragraph_result_dict['paragraphs'] = paragraphs
+
+        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraph_list, email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
+        # paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
+        # paragraph_result_dict['paragraph_data'] = paragraph_ref_data
+        # result_dict[paragraph_id] = paragraph_result_dict
+        result_dict[paragraph_id] = paragraph_ref_data
+
         df.loc[paragraph_id, 'referenced_analysis'] = referenece_paragraphs
+        
+        if save_path:
+            if i % 10 == 0:
+                df.to_csv(save_path +'.tsv', sep='\t', index=True)
+                with open(save_path + '_result.json', 'w') as f:
+                    json.dump(result_dict, f)
+            df.to_csv(save_path +'.tsv', sep='\t', index=True)
+            with open(save_path + '_result.json', 'w') as f:
+                json.dump(result_dict, f)
+        i += 1
+        
     
     return df, result_dict
-
