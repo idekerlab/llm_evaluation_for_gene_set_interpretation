@@ -309,7 +309,7 @@ def get_genes_in_abstract(paper, genes, verbose=False):
         if verbose:
             print("Error in getting abstract from paper.")
             print("Error detail: ", e)
-        return 0
+        return []
     gene_counts = 0
     genes_in_abstract = []
     for gene in genes:
@@ -593,4 +593,3 @@ def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, retur
         
     
     return df, result_dict
-
