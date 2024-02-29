@@ -6,6 +6,7 @@ data/Omics_data/L1000__gene_attribute_edges.txt
 ./data/omics_LLM_Enrichr_DF copy.tsv
 errfile
 outfile
+data/CH_omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF.json
 data/GO_term_analysis/*.json
 data/GO_term_analysis/*.log
 data/GO_term_analysis/add_on*
