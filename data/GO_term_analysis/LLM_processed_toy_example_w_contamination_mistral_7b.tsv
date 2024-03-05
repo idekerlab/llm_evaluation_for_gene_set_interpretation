@@ -1,0 +1,452 @@
+GO	Genes	Gene_Count	Term_Description	50perc_contaminated_Genes	100perc_contaminated_Genes	mistral_7b_default Name	mistral_7b_default Analysis	mistral_7b_default Score	mistral_7b_50perc_contaminated Name	mistral_7b_50perc_contaminated Analysis	mistral_7b_50perc_contaminated Score	mistral_7b_100perc_contaminated Name	mistral_7b_100perc_contaminated Analysis	mistral_7b_100perc_contaminated Score
+GO:0045940	STAR WNT4 ADM APOE CES1 STARD4 NR1D1 TNF FSHB BMP6 CGA APOA1 SCAP PRKAA1 IGF1R SREBF2 IL1A FGF1 LDLRAP1 ABCG4 IFNG CYP7A1 DAB2 SREBF1 ABCG1	25	positive regulation of steroid metabolic process	WNT4 IL1A FSHB DAB2 IFNG ABCG1 APOA1 STAR CGA STARD4 CYP7A1 IGF1R HPS1 ESCO1 SRP9 CSTB EYS ZNF776 CYP2W1 ZNF319 ARL11 ZC3H12D CLDN24 PTPN5 CDKN2B	CALD1 VPS29 MTRF1 MVP GTF2I CC2D1B EPHA7 SPACA9 UBQLN4 PPP2R3B AURKA H2AC25 TRIM29 PKDCC LGALS7 LPAR6 PRDM12 DCDC1 SMARCAL1 PCDHA13 OR12D3 ND3 LARP4 ZIM2 GSTA2	 Lipid metabolism and inflammation response	"1. STAR, Sterol Regulatory Element Binding Protein 1 (SREBF1), and SREBF2 are key regulators of lipid biosynthesis. They activate the transcription of genes involved in cholesterol and fatty acid synthesis, as well as triglyceride storage.
+2. WNT4 is a secreted signaling molecule that plays a role in embryonic development and adult tissue repair. However, its primary function in this context is related to lipid metabolism, where it acts as an activator of lipogenesis.
+3. ADM (Adiponectin) is an adipocyte-derived hormone that plays a crucial role in glucose homeostasis and lipid metabolism. It increases fatty acid oxidation and improves insulin sensitivity, while also inhibiting lipogenesis.
+4. APOE (Apolipoprotein E) is involved in the transport of lipids, particularly chylomicrons and very low-density lipoproteins (VLDL), from the intestine and liver to peripheral tissues. It plays a role in reverse cholesterol transport, helping remove excess cholesterol from the bloodstream.
+5. CES1 is an enzyme that catalyzes the first step of bile acid synthesis, converting cholesterol into the primary bile acid, chenodeoxycholic acid.
+6. STARD4 and SCAP are components of the SREBP-cleavage activating protein complex, which regulates the activation of SREBF1 and SREBF2 in response to nutrient availability.
+7. NR1D1 is a nuclear receptor that acts as a transcription factor for genes involved in cholesterol homeostasis and bile acid synthesis.
+8. TNF (Tumor Necrosis Factor) is a cytokine that plays a central role in the inflammatory response. It can stimulate lipid metabolism by increasing fatty acid oxidation and triglyceride breakdown, while also promoting insulin resistance.
+9. FSHB (Fetuin-B) is an extracellular glycoprotein that acts as a modulator of lipid metabolism and inflammation. It can inhibit lipolysis and promote the formation of large, dense low-density lipoproteins (LDL), which are less susceptible to oxidative damage.
+10. BMP6 is a member of the TGF-β superfamily of growth factors that plays a role in bone development and metabolism. However, it also influences lipid metabolism by promoting adipocyte differentiation and lipogenesis.
+11. CGA (Cortisol-binding globulin) is a plasma protein that binds to cortisol and other steroid hormones, transporting them to their target cells. It can indirectly influence lipid metabolism by modulating the activity of other hormones, such as insulin and glucocorticoids.
+12. APOA1 is an apolipoprotein that plays a role in reverse cholesterol transport and lipoprotein metabolism. It can promote the clearance of triglyceride-rich lipoproteins from the bloodstream and increase the uptake of HDL by peripheral tissues.
+13. IGF1R, Insulin-like growth factor 1 receptor, is a transmembrane receptor that plays a role in cell growth, metabolism, and differentiation. It can influence lipid metabolism by regulating the expression of genes involved in fatty acid synthesis and oxidation.
+14. SREBF2, as mentioned earlier, is a key regulator of lipid biosynthesis. It activates the transcription of genes involved in cholesterol and fatty acid synthesis, as well as triglyceride storage.
+15. IL1A (Interleukin 1 Alpha) is a pro-inflammatory cytokine that can influence lipid metabolism by promoting the expression of genes involved in lipogenesis and insulin resistance.
+16. FGF1 (Fibroblast Growth Factor 1) is a multifunctional growth factor that plays a role in embryonic development, tissue repair, and angiogenesis."	0.85	 Lipid metabolism and inflammatory response	"WNT4 is a secreted signaling protein involved in the Wnt pathway, which plays a crucial role in embryonic development and adult tissue homeostasis. In lipid metabolism, it regulates the expression of genes involved in cholesterol biosynthesis and transport.
+
+IL1A is an interleukin that acts as a pro-inflammatory cytokine, playing a central role in the inflammatory response to various stimuli. It triggers a cascade of intracellular signaling events leading to the production of other cytokines and acute-phase proteins.
+
+FSHB is an enzyme that catalyzes the conversion of cholesterol into bile acids, which are essential for the absorption and excretion of lipids. It is a key player in the enterohepatic circulation of bile acids.
+
+DAB2 is a cytoplasmic adaptor protein that negatively regulates the TNF receptor signaling pathway, thereby inhibiting inflammatory responses. It acts as an antagonist to IL1A and other pro-inflammatory cytokines.
+
+IFNG is a cytokine produced by activated CD4+ and CD8+ T cells, which plays a critical role in cellular immunity against intracellular pathogens. It induces apoptosis in infected cells and activates other immune cells.
+
+ABCG1 is an ATP-binding cassette transporter that facilitates the efflux of cholesterol, phospholipids, and xenobiotics from various tissues, including the liver and intestine. It plays a crucial role in maintaining lipid homeostasis and detoxification.
+
+APOA1 is a protein component of high-density lipoproteins (HDLs), which acts as an antioxidant and anti-inflammatory agent. It facilitates the reverse transport of cholesterol from peripheral tissues to the liver for excretion.
+
+STAR is a steroidogenic acute regulatory protein that plays a crucial role in the intracellular transport of cholesterol to the mitochondria, where it is converted into steroid hormones. It is essential for the synthesis of cortisol and aldosterone.
+
+CGA and STARD4 are both involved in the regulation of lipid metabolism, with CGA encoding a hormone that stimulates glycerolipid synthesis and triglyceride storage, while STARD4 is a steroidogenic acyl-CoA desaturase that catalyzes the conversion of unsaturated fatty acids to more unsaturated ones.
+
+CYP7A1 is an enzyme involved in the conversion of cholesterol into bile acids, which is the rate-limiting step in bile acid synthesis. It plays a crucial role in maintaining lipid homeostasis and detoxification.
+
+IGF1R is a receptor for insulin-like growth factor 1 (IGF1), which plays a critical role in cellular growth, differentiation, and metabolism. It regulates the uptake and metabolism of glucose, amino acids, and lipids.
+
+HPS1 is an enzyme involved in the biosynthesis of heme, which is a cofactor for various proteins, including cytochromes and hemoglobin. It plays a crucial role in the metabolism of iron and oxygen.
+
+ESCO1 is a histone methyltransferase that catalyzes the addition of methyl groups to specific lysine residues on histones H3 and H4, thereby regulating gene expression. It plays a crucial role in lipid metabolism by controlling the expression of genes involved in cholesterol biosynthesis and transport.
+
+SRP9 is a component of the signal recognition particle (SRP), which is responsible for the targeting of proteins to the endoplasmic reticulum (ER) for translation and folding. It plays a crucial role in lipid metabolism by ensuring the proper localization and function of ER-associated proteins involved in lipid biosynthesis and transport.
+
+EYS is a transcription factor that regulates the expression of genes involved in lipid metabolism, particularly those involved"	0.85	 Chromatin remodeling and gene expression regulation	"CALD1 is a calcium-dependent phosphatase involved in the dephosphorylation of histone H2A.2 and H2AX, leading to chromatin relaxation and facilitating transcription.
+
+VPS29 is a subunit of the endoplasmic reticulum-associated protein degradation (ERAD) complex, which targets misfolded proteins for degradation in the proteasome. This process can impact gene expression by removing aberrant or nonfunctional transcription factors and regulators.
+
+MTRF1 is a transcription factor that binds to the promoter region of target genes and activates their expression, primarily involved in muscle development and differentiation.
+
+MVP plays a role in nuclear pore complex assembly and transport of macromolecules between the nucleus and cytoplasm, allowing for efficient gene regulation.
+
+GTF2I is a general transcription factor that binds to the promoter regions of target genes and facilitates their expression. It interacts with other transcription factors and cofactors to form the RNA polymerase holoenzyme.
+
+CC2D1B is a subunit of the CCCTC-binding factor (CTCF) complex, which functions in chromatin insulation and regulation of gene expression by creating barriers between enhancers and promoters.
+
+EPHA7 is a receptor tyrosine kinase involved in cell migration and differentiation, which can impact gene expression through signaling pathways that regulate transcription factors and epigenetic modifications.
+
+SPACA9 is an RNA-binding protein that interacts with specific mRNAs and regulates their stability and translation efficiency. This process can influence the expression of target genes and proteins.
+
+UBQLN4 is a ubiquitin-like protein involved in the regulation of chromatin structure and gene expression through its interaction with histones and other chromatin modifiers.
+
+PPP2R3B is a regulatory subunit of protein phosphatase 1 (PP1), which can dephosphorylate various substrates, including transcription factors and histones, to impact their activity and function.
+
+AURKA is a serine/threonine kinase involved in the regulation of mitosis and chromatin condensation, which can influence gene expression by controlling access to the genomic material during cell division.
+
+H2AC25 is a histone H2A variant that plays a role in transcriptional elongation and RNA polymerase II recruitment, contributing to efficient gene expression.
+
+TRIM29 is an E3 ubiquitin ligase involved in the regulation of chromatin structure and gene expression through its interaction with histones and other chromatin modifiers.
+
+PKDCC is a serine/threonine kinase that phosphorylates and regulates various substrates, including transcription factors and ion channels, impacting their activity and function.
+
+LGALS7 is a galactoside-binding protein involved in the regulation of gene expression through its interaction with specific promoter regions and transcription factors.
+
+LPAR6 is a G protein-coupled receptor that mediates intracellular signaling cascades, which can impact gene expression by regulating transcription factors and epigenetic modifications.
+
+PRDM12 is a transcription factor involved in the regulation of chromatin structure and gene expression through its interaction with specific DNA sequences and histones.
+
+DCDC1 is a microtubule-associated protein that plays a role in chromosome segregation during mitosis, which can impact gene expression by controlling access to the genomic material during cell division.
+
+SMARCAL1 is a helicase involved in the regulation of chromatin structure and gene expression through its interaction with specific DNA sequences and histones.
+
+PCDHA13 is a cadherin protein that plays a role in cell adhesion and communication, which can impact gene expression by regulating transcription factors and signaling pathways.
+
+OR12D3 is an olfactory receptor involved in the detection of specific odorants, which can impact gene expression through intracellular signaling cascades that regulate transcription factors and epigenetic modifications.
+
+ND3 is a subunit of NAD+ dehydrogenase complexes, which play a role in energy metabolism and redox reactions, which can indirectly influence gene expression by impacting the availability of energy and reducing equivalents for"	0.85
+GO:0010757	PLAU CTSZ THBS1 SERPINF2 SERPINE1 SERPINE2 CPB2 PLAT	8	negative regulation of plasminogen activation	CPB2 SERPINE1 PLAU THBS1 ZNF737 SMDT1 XPNPEP2 LRRC32	ADAMTS17 CEP63 LRRC18 SUPT3H FUBP1 KCNK4 RPL27A LRWD1	 Coagulation and fibrinolysis	"1. PLAU, also known as urokinase-type plasminogen activator, is an enzyme that converts plasminogen to plasmin, initiating the proteolytic cascade of coagulation. It plays a crucial role in fibrin clot formation and wound healing.
+2. CTSZ, cathepsin Z, is a lysosomal cysteine protease that activates pro-proteases involved in the coagulation cascade, such as factor D and factor X. It also contributes to the degradation of extracellular matrix components during inflammation.
+3. THBS1, thrombospondin 1, is a multidomain glycoprotein that plays a role in both coagulation and fibrinolysis. It inhibits plasminogen activation by binding to plasminogen and tPA, but also promotes platelet aggregation and the formation of stable fibrin clots.
+4. SERPINF2, antithrombin III, is a serine protease inhibitor that inactivates thrombin, factor Xa, and other coagulation factors, thereby preventing excessive blood coagulation.
+5. SERPINE1, plasminogen activator inhibitor-1 (PAI-1), is another serpin that regulates the activity of plasminogen activators by binding to them and inhibiting their ability to convert plasminogen to plasmin. It also plays a role in cell adhesion and migration.
+6. SERPINE2, heparin cofactor II, is an endogenous anticoagulant that potentiates the activity of thrombin and other proteases by binding to their active sites and inhibiting their ability to cleave substrates.
+7. CPB2, carbonic anhydrase 2, is a zinc-containing enzyme involved in the regulation of pH homeostasis in various tissues, including the eye and the brain. It also plays a role in the coagulation cascade by activating factor XII and promoting the assembly of the early coagulation complex.
+8. PLAT, tissue plasminogen activator (tPA), is an enzyme that converts plasminogen to plasmin, initiating fibrinolysis and clot dissolution. It plays a crucial role in the resolution of thrombi and the maintenance of blood flow.
+
+To summarize, these proteins are involved in the regulation of coagulation and fibrinolysis, which are essential processes for maintaining hemostasis and preventing excessive bleeding or clotting. The interplay between these proteins ensures a delicate balance between coagulation and fibrinolysis, allowing for proper wound healing and tissue repair."	0.85	 Coagulation and fibrinolysis	"1. CPB2, also known as thrombomodulin, is a type 1 transmembrane glycoprotein that acts as a cofactor for thrombin in the activation of protein C. It plays a crucial role in the anticoagulant pathway by inhibiting the coagulation cascade and promoting fibrinolysis.
+
+2. SERPINE1, or plasminogen activator inhibitor-1 (PAI-1), is a serine protease inhibitor that regulates the activity of tissue plasminogen activator (tPA) and urokinase-type plasminogen activator (uPA). It prevents the conversion of plasminogen to plasmin, thereby inhibiting fibrinolysis.
+
+3. PLAU, or urokinase-type plasminogen activator, is a serine protease that converts plasminogen into plasmin, which is essential for the degradation of fibrin clots and the remodeling of the extracellular matrix.
+
+4. THBS1, or thrombospondin-1, is a multidomain glycoprotein that plays a role in both coagulation and angiogenesis. It inhibits the activity of tPA and uPA by binding to their active sites, thus preventing fibrinolysis. At the same time, it promotes the assembly of fibrin clots by interacting with integrins on platelets and endothelial cells.
+
+5. ZNF737 is a zinc finger transcription factor that regulates the expression of genes involved in the coagulation cascade, such as Factor V and Factor VIII. It also plays a role in the negative regulation of fibrinolysis by inhibiting the expression of tPA and uPA.
+
+6. SMDT1 is a serine protease that activates protein C, which in turn deactivates factors Va and VIIIa and inhibits the coagulation cascade. It also has antimicrobial properties by cleaving bacterial cell wall components.
+
+7. XPNPEP2 is a peptidase involved in the processing of various proteins, including thrombin and plasminogen activator inhibitor-1 (PAI-1). It plays a role in the regulation of coagulation and fibrinolysis by modifying the activity of these proteins.
+
+8. LRRC32 is a leucine-rich repeat protein that interacts with various signaling molecules, including thrombin and Factor Xa. It plays a role in the regulation of coagulation by modulating the activity of these proteins and influencing cellular responses to injury or inflammation.
+
+Together, these proteins are involved in the complex interplay between coagulation and fibrinolysis, which is essential for proper hemostasis and wound healing. The balance between these two processes is crucial for preventing excessive bleeding or clotting, and dysregulation can lead to various pathological conditions such as thrombosis or hemorrhage."	0.85	 Lipid Metabolism and Cell Signaling	"1. ADAMTS17 is a member of the ADAMTS family of proteases, which are involved in various biological processes including the cleavage of extracellular matrix components and the regulation of growth factors. In lipid metabolism, ADAMTS17 plays a role in the activation of TGF-beta, which is a key regulator of cell differentiation and extracellular matrix remodeling during adipocyte development.
+2. CEP63 is a cohesin complex subunit involved in chromatin organization and gene expression regulation. It has been shown to interact with several transcription factors and play a role in the regulation of lipid metabolism, particularly in the context of adipogenesis.
+3. LRRC18 is a leucine-rich repeat containing protein that interacts with various signaling molecules and plays a role in cellular signaling pathways involved in lipid metabolism. It has been shown to regulate the activity of AMPK, a key regulator of energy homeostasis and lipid metabolism.
+4. SUPT3H is a histone H3/H4 N-terminal kinase that plays a role in chromatin remodeling and transcription elongation. It has been shown to interact with several transcription factors involved in lipid metabolism, including PPARγ and CCAAT/enhancer binding protein α (CEBPA), and play a role in the regulation of their activity.
+5. FUBP1 is a RNA-binding protein that plays a role in the regulation of gene expression through the modulation of pre-mRNA splicing and mRNA stability. It has been shown to interact with several transcription factors involved in lipid metabolism, including PPARγ and SREBP1c, and play a role in the regulation of their activity.
+6. KCNK4 is a potassium channel that plays a role in the regulation of intracellular signaling pathways involved in lipid metabolism. It has been shown to interact with several transcription factors and play a role in the regulation of their activity, particularly in the context of adipocyte differentiation.
+7. RPL27A is a ribosomal protein that plays a role in protein synthesis and translation. It has been shown to interact with several lipid metabolism-related proteins and play a role in the regulation of their activity, particularly in the context of adipocyte differentiation.
+8. LRWD1 is a leucine-rich repeat domain-containing protein that interacts with various signaling molecules and plays a role in cellular signaling pathways involved in lipid metabolism. It has been shown to regulate the activity of several transcription factors involved in lipid metabolism, including PPARγ and SREBP1c.
+
+To summarize, the proteins in this set are involved in various aspects of lipid metabolism, including chromatin remodeling, gene expression regulation, intracellular signaling, and protein synthesis and translation. They interact with each other and with various transcription factors to regulate the activity of genes involved in lipid metabolism and adipocyte differentiation."	0.85
+GO:2000136	GNG5 TBX5 ISL1 RBPJ CTNNB1 NOTCH1 SMAD4 EYA1 BMP10 SOX9 HES1 ENG MKS1 SIX1 TBX3 HAND2 PIM1 BMPR2	18	regulation of cell proliferation involved in heart morphogenesis	MKS1 BMP10 EYA1 SMAD4 HAND2 GNG5 RBPJ SIX1 ENG FBXO38 MRPL22 NCOA7 APCDD1 ZNF689 DNAJC17 UBE2G2 THNSL1 DNAJC27	MGMT GPHN BANK1 NDP IL1F10 IKBKG PARD3 INCENP SSUH2 CCL7 SIAH3 ADD3 P2RY11 HELQ NIPSNAP2 IL17RC SNTA1 NCAPD2	 Bone development and morphogenesis	"GNG5, TBX5, ISL1, RBPJ, CTNNB1, NOTCH1, SMAD4, EYA1, BMP10, SOX9, HES1, ENG, MKS1, SIX1, TBX3, HAND2, PIM1, and BMPR2 are a group of proteins involved in bone development and morphogenesis.
+
+1. TBX5, ISL1, and SOX9 are transcription factors that play crucial roles in the early stages of chondrogenesis, the process of forming cartilage, which is a precursor to bone tissue.
+2. RBPJ, CTNNB1, and NOTCH1 form part of the Notch signaling pathway, which regulates cell differentiation during embryonic development and is essential for proper bone morphogenesis.
+3. SMAD4 and BMPR2 are components of the TGF-β (Transforming Growth Factor beta) signaling pathway, which plays a significant role in bone development by regulating cell proliferation, differentiation, and apoptosis.
+4. HES1 is a transcription factor that acts downstream of the Notch and Wnt signaling pathways to regulate gene expression during bone morphogenesis.
+5. ENG and MKS1 are involved in the regulation of vascular development, which is crucial for proper bone growth and development.
+6. BMP10 and SIX1 act as antagonists to the BMP (Bone Morphogenetic Protein) signaling pathway, regulating its activity and ensuring proper bone morphology.
+7. EYA1 and HAND2 are transcription factors that play roles in the development of the neural crest, which gives rise to various tissues, including those involved in bone development.
+8. PIM1 is a serine/threonine kinase that plays a role in regulating cell proliferation and differentiation during bone development.
+
+In summary, these proteins are involved in the regulation of various aspects of bone development and morphogenesis, including chondrogenesis, vascular development, and cell differentiation. Their interplay ensures proper bone formation and growth through synergistic and antagonistic effects."	0.85	 Wnt/BMP signaling and epithelial-mesenchymal transition	"1. MKS1 is a microtubule-associated protein involved in the regulation of centrosome separation and spindle orientation during mitosis. It interacts with BMP10, a bone morphogenetic protein, to regulate cell differentiation and tissue development.
+2. BMP10 acts as a TGF-β superfamily member and is essential for proper limb development through the regulation of chondrogenesis and osteoblast differentiation. It interacts with SMAD4, a co-receptor in the TGF-β signaling pathway, to mediate its effects.
+3. EYA1 is a transcriptional cofactor that functions as part of the Polycomb Repressive Complex 2 (PRC2). It interacts with RBPJ and SIX1 to regulate gene expression during embryonic development.
+4. SMAD4, like BMP10, is a co-receptor in the TGF-β signaling pathway. It interacts with RBPJ to mediate the transcriptional response to TGF-β and BMP signals.
+5. HAND2 is a homeodomain transcription factor that functions as a master regulator of craniofacial development. It interacts with GNG5, a G protein subunit, to regulate cell differentiation and tissue morphogenesis.
+6. RBPJ, also known as CBF1, is a DNA-binding protein that functions as the primary mediator of TGF-β and Notch signaling. It interacts with various cofactors, including SMAD4 and EYA1, to regulate gene expression during development.
+7. SIX1 is a homeodomain transcription factor involved in craniofacial development and neural tube closure. It interacts with EYA1 and RBPJ to regulate gene expression and cell differentiation.
+8. ENG encodes the ephrin-B1 ligand, which interacts with EPHB receptors to mediate cell-cell communication and tissue morphogenesis. It interacts with FBXO38, an ubiquitin ligase, to regulate its stability and activity.
+9. MRPL22 is a mitochondrial ribosomal protein involved in the translation of mitochondrial mRNAs. It interacts with NCOA7, a nuclear receptor coactivator, to regulate gene expression and cellular metabolism.
+10. APCDD1 is an adaptor protein that functions as part of the APC/C-CDH1 complex, which regulates cell cycle progression and chromosome segregation. It interacts with ZNF689, a transcription factor, to regulate gene expression during mitosis.
+11. DNAJC17 is a molecular chaperone that functions in the ER to assist in protein folding and prevent aggregation. It interacts with UBE2G2, an ubiquitin-conjugating enzyme, to target misfolded proteins for degradation.
+12. THNSL1 is a transcription factor involved in the regulation of cellular differentiation and development. It interacts with DNAJC27, a cofactor, to regulate gene expression and promote tissue morphogenesis.
+
+To summarize, the proteins in this set are involved in various signaling pathways, primarily Wnt/BMP and TGF-β, that regulate cell differentiation, tissue development, and morphogenesis during embryonic development. The interactions between these proteins result in synergistic and antagonistic effects on gene expression and cellular behavior, ultimately leading to the proper formation of various tissues and organs."	0.85	 Chromatin remodeling and gene expression regulation	"1. MGMT is a DNA repair protein involved in the removal of alkyl groups from the O6 position of guanine bases, protecting cells from DNA damage caused by alkylating agents. It interacts with other chromatin remodeling proteins to facilitate access to the damaged DNA for repair.
+2. GPHN is a member of the SWI/SNF complex, which is responsible for chromatin remodeling and transcriptional regulation. It facilitates the binding of transcription factors to their target genes by modifying chromatin structure.
+3. BANK1 is an adaptor protein that interacts with histone H2B and the transcription factor E2F1, regulating gene expression during the cell cycle. It also plays a role in the DNA damage response by recruiting other proteins to sites of damage.
+4. NDP is a subunit of the NDC80 complex, which is involved in chromatin remodeling and mitotic spindle assembly. It interacts with other proteins to regulate gene expression during mitosis.
+5. IL1F10, IKBKG, PARD3, INCENP, SSUH2, CCL7, SIAH3, ADD3, P2RY11, HELQ, NIPSNAP2, IL17RC, SNTA1, and NCAPD2 are all involved in various aspects of chromatin remodeling and gene expression regulation. Some function as adaptor proteins, some interact with histones or other chromatin-modifying enzymes, and others regulate transcription factor activity.
+
+Together, these proteins play a crucial role in the dynamic regulation of chromatin structure and gene expression. They facilitate the binding of transcription factors to their target genes, modify chromatin structure to make it more accessible for transcription, and respond to various cellular signals to adjust gene expression accordingly. This process is essential for proper development and differentiation of cells, as well as for the adaptive response to changing environmental conditions."	0.85
+GO:0002433	PLPP4 LYN PRKCE APPL1 PRKCD FYN VAV1 YES1 MYO1G PLA2G6 LIMK1 VAV2 PTK2 HCK APPL2 ABL1 VAV3 PLD2 FGR SYK SRC PAK1	22	immune response-regulating cell surface receptor signaling pathway involved in phagocytosis	ABL1 VAV3 APPL2 LYN FGR SYK PRKCE PRKCD PLPP4 HCK SRC CNNM3 STRN4 ZNF529 WDR5B ZNF841 BMERB1 H2AC15 HSPB8 TVP23C PSMG3 MSTN	JAML PRKCSH PIM1 EID2 EPO UBE4A MRPL9 ASB18 SEC61B TAF1B OR52M1 SRSF10 GRWD1 HSDL2 EDIL3 EIF4G3 LTV1 PHEX PRAF2 PRSS12 UFSP1 NOC4L	 Signaling and regulation of actin cytoskeleton dynamics	"1. PLPP4, LYN, PRKCE, APPL1, PRKCD, FYN, VAV1, YES1, MYO1G, PLA2G6, LIMK1, VAV2, PTK2, HCK, APPL2, ABL1, VAV3, PLD2, FGR, SYK, SRC, and PAK1 are all proteins involved in various aspects of intracellular signaling and regulation of actin cytoskeleton dynamics.
+
+2. LYN, PRKCE, HCK, PTK2, and SYK are all tyrosine kinases that play roles in the initiation and propagation of intracellular signals. They phosphorylate specific tyrosine residues on other proteins, leading to their activation or regulation.
+
+3. FYN, SRC, and ABL1 are also tyrosine kinases, but they have additional functions beyond signaling. For example, SRC is involved in the regulation of actin dynamics through its interaction with actin filaments. ABL1 is a non-receptor tyrosine kinase that plays roles in various cellular processes, including actin cytoskeleton reorganization and cell migration.
+
+4. VAV1, VAV2, and VAV3 are all guanine nucleotide exchange factors (GEFs) for the Rho family of small GTPases. They activate these proteins by exchanging GDP for GTP, leading to their activation and subsequent regulation of actin cytoskeleton dynamics.
+
+5. PLPP4, PLA2G6, and PLD2 are all phospholipases that hydrolyze phospholipids, leading to the production of signaling molecules or lipid second messengers. For example, PLPP4 produces IP3, which activates intracellular calcium release, while PLA2G6 produces arachidonic acid, which can act as a signaling molecule or precursor for eicosanoids.
+
+6. MYO1G and LIMK1 are both involved in the regulation of microtubule dynamics. MYO1G is a myosin I motor protein that moves along microtubules and plays roles in various cellular processes, including intracellular transport and cell division. LIMK1 phosphorylates cofilin, leading to its inhibition and the stabilization of actin filaments.
+
+7. APPL1 and APPL2 are adaptor proteins that link signaling molecules to effectors or other proteins, leading to the regulation of various cellular processes. For example, they can interact with phosphoinositides and recruit effectors to the plasma membrane, leading to the regulation of actin cytoskeleton dynamics.
+
+8. The proteins in this set are involved in the regulation of actin cytoskeleton dynamics, which is essential for various cellular processes such as cell migration, intracellular transport, and cell division. They form a complex network of signaling pathways that can elicit both synergistic and antagonistic effects on actin cytoskeleton dynamics, depending on the specific context and cellular environment."	0.85	 Muscle contraction and signaling	"1. ABL1, a tyrosine-protein kinase, plays a role in the regulation of actin cytoskeleton dynamics during muscle contraction. It interacts with various proteins such as Actin, Myosin, and Talin to facilitate muscle contraction.
+2. VAV3 is a guanine nucleotide exchange factor (GEF) for Rho family GTPases. It plays a crucial role in the regulation of actin dynamics during muscle contraction by activating Rac1 and Cdc42.
+3. APPL2, an adaptor protein, interacts with phosphoinositides and various signaling proteins such as PI3K, Akt, and mTOR. It plays a role in the regulation of muscle growth and differentiation by modulating downstream signaling pathways.
+4. LYN, FGR, SYK, PRKCE (PKCε), and PRKCD (PKCδ) are all tyrosine kinases involved in various aspects of muscle contraction and signaling. They phosphorylate various substrates to regulate actin dynamics, ion channel activity, and other cellular processes.
+5. PLPP4 is a phosphatidylinositol-specific phospholipase P-type enzyme that plays a role in the regulation of intracellular calcium signaling during muscle contraction.
+6. HCK, SRC, CNNM3, STRN4, ZNF529, WDR5B, ZNF841, BMERB1, H2AC15, HSPB8, TVP23C, PSMG3, and MSTN are involved in various aspects of muscle development, differentiation, and function. They act as transcription factors, chromatin remodelers, cytoskeleton regulators, and signaling proteins to modulate gene expression, protein stability, and cellular structure.
+
+To summarize, the proteins in this set are involved in muscle contraction and signaling, with a particular emphasis on the regulation of actin dynamics and intracellular calcium signaling. The complex interplay between these proteins ensures proper muscle function and development, with both synergistic and antagonistic effects on various cellular processes."	0.85	 Lipid metabolism and cell signaling	"1. JAML is a member of the junction adhesion molecule family, which plays a role in regulating cell-cell adhesion and intracellular signaling. In lipid metabolism, it interacts with APOB and LDLR to facilitate the uptake and processing of lipoproteins.
+2. PRKCSH is a phosphatidylserine synthase that converts phosphatidylethanolamine to phosphatidylserine, which plays a crucial role in the activation of various signaling proteins, including the coagulation cascade and cell death pathways.
+3. PIM1 is a serine/threonine kinase involved in regulating cell proliferation, differentiation, and metabolism. It phosphorylates several key proteins involved in lipid metabolism, such as AKT2 and SREBP-1c, leading to increased fatty acid synthesis and lipogenesis.
+4. EID2 is a zinc finger transcription factor that regulates the expression of genes involved in lipid metabolism and inflammation. It interacts with PPARγ and RXRα to activate the transcription of genes involved in adipocyte differentiation and lipid storage.
+5. EPO is a glycoprotein hormone produced by the kidneys that regulates red blood cell production and oxygen transport. However, it also plays a role in lipid metabolism by stimulating the expression of genes involved in fatty acid oxidation and ketogenesis in the liver.
+6. UBE4A is an ubiquitin ligase involved in the degradation of misfolded proteins and the regulation of cellular stress responses. It interacts with several proteins involved in lipid metabolism, such as AMPK and SREBP-1c, to promote lipid catabolism during periods of nutrient deprivation.
+7. The remaining proteins (MRPL9, ASB18, SEC61B, TAF1B, OR52M1, SRSF10, GRWD1, HSDL2, EDIL3, EIF4G3, LTV1, PHEX, PRAF2, PRSS12, UFSP1, NOC4L) have been implicated in various aspects of lipid metabolism and cell signaling, such as protein synthesis, RNA processing, lysosomal function, and the regulation of intracellular calcium levels.
+
+Together, these proteins play a crucial role in regulating lipid metabolism and cell signaling, with a particular emphasis on the adaptation to changing nutrient availability and the maintenance of energy homeostasis. The complex interplay between these proteins ensures an efficient response to external cues and the proper functioning of various tissues involved in lipid metabolism."	0.85
+GO:1990874	DBH NF1 ERN1 MMP2 HPGD IGFBP5 TGFB3 DDIT3 MAP3K5 PDCD4 CDKN1A FOXJ2 RBM10 NR4A3 CDKN1B MYOCD TERT IGF1 EDN1 SOD2 PTEN PDGFB CNN1 TNF GPER1 MAP3K7 FRS2 NDRG2 CALCRL IL10 MEF2C POLDIP2 HTR1B FGFR2 EFEMP2 TPM1 FGF9 BMPR1A ADAMTS1 GNAI2 GNA12 DDR2 LDLRAP1 MDM2 APLN MEF2D ADIPOQ DNMT1 JUN JAK2 PPARG PRKG1 FGF2 MFN2 BMP4 GNA13 TAFA5 SRC MMP9 P2RY6 GJA1	61	vascular associated smooth muscle cell proliferation	MAP3K7 PDGFB HPGD CDKN1A IGFBP5 EFEMP2 FGF9 TGFB3 IL10 MYOCD NDRG2 DNMT1 MEF2C EDN1 POLDIP2 DBH TPM1 P2RY6 NF1 DDR2 MEF2D JAK2 PRKG1 BMPR1A MMP9 APLN ERN1 MFN2 CDKN1B ADAMTS1 MEIS1 SLC25A5 MAPK13 APOC4 MAGEE1 ILDR2 PTGS1 RASA4 YPEL3 COLEC12 SKIC8 RBBP9 RFPL2 BMP10 KCNA7 NDUFA9 TRIM9 CCZ1B MYO1G RASA4B ZNF606 TMPRSS3 PPP1CC SP6 DEFB1 OR10C1 MINPP1 ELMO3 HAAO TPSAB1 ACAD8	GARNL3 OR1J1 SPP2 USP17L2 ARMH3 ANKRD13A HELZ OR10J1 C9orf78 FAM174B SLC25A29 CELA2B TUBA3D DRP2 SLC35F6 ADAMTSL4 MRPL58 CCHCR1 CHRNA2 ADAM17 CLIP4 PSPH PTPN4 TCEA3 HAL CEP112 HTR3C CDC26 MUC2 GALNT12 PGAP1 EID2 VPS39 UBE2I XK ZNF268 MTCL1 RTP4 C19orf18 ITGB1 RAD1 PSTK MTCP1 SF3A3 CAMK2A IFNL4 NLRP2 PTGES3 MTRR OPA3 GPR34 CCDC134 BAP1 CLN3 SHH HCAR1 WDR54 PIK3R6 PCDH18 SSU72 RTTN	 Lipid metabolism and inflammatory response	"1. DBH is involved in the biosynthesis of catecholamines, which are important signaling molecules derived from lipids. They play a role in various physiological processes including lipolysis.
+2. NF1 is a tumor suppressor protein that negatively regulates the RAS/MAPK pathway, which is crucial for cellular growth and differentiation in response to extracellular signals. It also has a role in lipid metabolism by regulating lipogenesis and cholesterol biosynthesis.
+3. ERN1 is an endoplasmic reticulum (ER) transmembrane protein that plays a key role in the unfolded protein response (UPR), which is activated when the ER is overloaded with misfolded proteins. This response helps to maintain cellular homeostasis and prevent apoptosis, but it can also lead to lipid droplet accumulation and inflammation.
+4. MMP2 is a matrix metalloproteinase that plays a role in extracellular matrix remodeling during various physiological processes, including angiogenesis, tissue repair, and inflammation. It also has a role in lipid metabolism by facilitating the release of free fatty acids from adipocytes.
+5. HPGD is involved in the conversion of prostaglandin H2 to its active form, prostaglandin E2 (PGE2), which is a potent lipid mediator that plays a role in various physiological processes including inflammation and immune response.
+6. IGFBP5 is a binding protein for insulin-like growth factor 1 (IGF1), which is a key regulator of cellular growth, differentiation, and metabolism. It also has a role in lipid metabolism by modulating the activity of various enzymes involved in lipogenesis and lipolysis.
+7. TGFB3 is a multifunctional cytokine that plays a role in various physiological processes including tissue repair, development, and inflammation. It also has a role in lipid metabolism by regulating the expression of genes involved in adipogenesis and lipolysis.
+8. DDIT3 is an ER transmembrane protein that plays a key role in the UPR, which is activated when the ER is overloaded with misfolded proteins. It also has a role in inflammatory response by inducing the expression of various genes involved in lipid metabolism and inflammation.
+9. MAP3K5 is a mitogen-activated protein kinase kinase that plays a role in the innate immune response to bacterial infections. It also has a role in lipid metabolism by regulating the expression of genes involved in lipogenesis and lipolysis.
+10. PDCD4 is an adaptor protein that plays a role in various cellular processes including apoptosis, cell migration, and lipid metabolism. It interacts with various proteins involved in lipid metabolism and inflammation, such as MMP2 and TNF.
+11. CDKN1A is a cyclin-dependent kinase inhibitor that plays a role in the regulation of cell cycle progression and apoptosis. It also has a role in lipid metabolism by regulating the expression of genes involved in lipogenesis and lipolysis.
+12. FOXJ2 is a transcription factor that plays a role in various physiological processes including development, differentiation, and inflammation. It also has a role in lipid metabolism by regulating the expression of genes involved in adipogenesis and lipolysis.
+13. RBM10 is an RNA-binding protein that plays a role in various physiological processes including development, differentiation, and inflammation. It also has a role in lipid metabolism by regulating the expression of genes involved in lipogenesis and lipolysis.
+14. NR4A3 is a nuclear receptor that plays a role in various physiological processes including development, differentiation, and inflammation. It also has a role in lipid metabolism by regulating the expression of genes involved in lipogenesis and lipolysis.
+15. CDKN1B is a cyclin-dependent kinase inhibitor that plays a role in the regulation of cell cycle progression and apoptosis. It"	0.85	 Lipid metabolism and adipogenesis	"1. MAP3K7, also known as TAK1, is an upstream kinase involved in the TGF-β signaling pathway. It plays a role in regulating lipid metabolism by modulating the expression of various genes related to adipogenesis and lipolysis.
+2. PDGFB is a growth factor that promotes the differentiation of mesenchymal cells into adipocytes, thereby contributing to adipogenesis. It also plays a role in maintaining the survival and function of mature adipocytes.
+3. HPGD is an enzyme involved in the beta-oxidation of long-chain fatty acids. It catalyzes the conversion of 13,14-dihydroxyretinoic acid to its active form, all-trans retinoic acid, which plays a crucial role in adipogenesis and lipid metabolism.
+4. CDKN1A (p21) is a cyclin-dependent kinase inhibitor that regulates the cell cycle and promotes adipocyte differentiation by inhibiting the activity of key transcription factors involved in myogenic differentiation.
+5. IGFBP5 is a binding protein for insulin-like growth factor 1 (IGF-1). It plays a role in regulating lipid metabolism and adipogenesis by modulating the availability and activity of IGF-1.
+6. EFEMP2 is an extracellular matrix protein involved in the regulation of cell proliferation, differentiation, and migration. It interacts with various growth factors and cytokines to regulate lipid metabolism and adipogenesis.
+7. FGF9 is a growth factor that promotes adipocyte differentiation and survival. It also plays a role in the regulation of lipid metabolism by modulating the expression of genes involved in lipogenesis and lipolysis.
+8. TGFB3 is a multifunctional cytokine that regulates various cellular processes, including adipogenesis and lipid metabolism. It promotes adipocyte differentiation and inhibits lipolysis by regulating the expression of key genes involved in these processes.
+9. IL10 is an anti-inflammatory cytokine that plays a role in regulating lipid metabolism and adipogenesis. It promotes adipocyte differentiation and survival, while inhibiting inflammation and lipolysis.
+10. MYOCD is a myogenic regulatory factor involved in the regulation of adipogenesis and muscle development. It interacts with various transcription factors and signaling pathways to regulate lipid metabolism and adipocyte differentiation.
+11. NDRG2 is an energy sensor and metabolic regulator that plays a role in regulating lipid metabolism and adipogenesis. It interacts with various signaling pathways and transcription factors to modulate the expression of genes involved in these processes.
+12. DNMT1 is a DNA methyltransferase involved in the regulation of gene expression during development and differentiation, including lipid metabolism and adipogenesis.
+13. MEF2C is a myocyte-specific transcription factor that plays a role in regulating adipogenesis and muscle development. It interacts with various signaling pathways and cofactors to modulate the expression of genes involved in these processes.
+14. EDN1 is an endothelin peptide that regulates lipid metabolism and adipogenesis by modulating the activity of various signaling pathways and transcription factors.
+15. POLDIP2 is a poly(ADP-ribose) polymerase involved in the regulation of lipid metabolism and adipogenesis. It interacts with various proteins and signaling pathways to modulate the expression of genes involved in these processes.
+16. DBH is an enzyme involved in the synthesis of noradrenaline, a neurotransmitter that regulates lipid metabolism and adipogenesis by modulating the activity of various signaling pathways and transcription factors.
+17. TPM1 is a muscle-specific actin isoform involved in the regulation of adipocyte differentiation and function. It interacts with various proteins and signaling pathways to regulate lipid metabolism and adipogenesis.
+1"	0.85	 Chromatin remodeling and gene expression regulation	"1. GARNL3 is a histone acetyltransferase involved in the modification of chromatin structure, facilitating transcription factor binding and gene activation.
+2. OR1J1 and OR10J1 are olfactory receptors that regulate gene expression in response to specific odorant stimuli through intracellular signaling cascades.
+3. SPP2 is a secreted protein involved in the regulation of inflammatory responses, tissue repair, and cell growth by modulating chromatin accessibility and transcription factor binding.
+4. USP17L2 is an ubiquitin hydrolase that plays a role in the deubiquitination and stabilization of various transcription factors and chromatin-modifying enzymes.
+5. ARMH3, ANKRD13A, HELZ, C9orf78, FAM174B, SLC25A29, CELA2B, TUBA3D, DRP2, SLC35F6, ADAMTSL4, MRPL58, CCHCR1, CHRNA2, and ADAM17 are involved in various aspects of chromatin remodeling, transcription factor binding, and gene expression regulation.
+6. PSPH, PTPN4, TCEA3, HAL, CEP112, HTR3C, CDC26, MUC2, GALNT12, PGAP1, EID2, VPS39, UBE2I, XK, ZNF268, MTCL1, RTP4, C19orf18, ITGB1, RAD1, PSTK, MTCP1, SF3A3, CAMK2A, IFNL4, NLRP2, PTGES3, MTRR, OPA3, GPR34, CCDC134, BAP1, CLN3, SHH, HCAR1, WDR54, PIK3R6, PCDH18, SSU72, and RTTN are also implicated in chromatin remodeling and gene expression regulation through diverse mechanisms.
+
+The proteins in this set collectively contribute to the regulation of chromatin structure and accessibility, allowing for the proper binding and activation of transcription factors and the subsequent expression of specific genes. This process is essential for various cellular functions, including development, differentiation, and response to environmental stimuli."	0.85
+GO:0002792	ADRA2A KCNB1 SFRP1 IRS1 GHSR CRH LEP CD74 PFKL REST FFAR2 HADH UCP2 VSNL1 KCNJ11 FOXO1 KLF7 CRHBP GNAZ PSMD9 FKBP1B ACVR1C MIDN MTNR1B CCN3 SIRT4 DRD2 GHRL NDUFAF2 JAGN1 SYTL4 F2RL1 PPP3CA ABCC8 CARTPT PIM3 PTPN11 FFAR4 PRKN INHBB CHGA SREBF1 FAM3D ENY2 PDE8B BMP8A	46	negative regulation of peptide secretion	ADRA2A PPP3CA FOXO1 CHGA SFRP1 SREBF1 FAM3D LEP PDE8B DRD2 FFAR4 UCP2 BMP8A PIM3 CD74 CCN3 MIDN INHBB SYTL4 CARTPT SIRT4 PRKN PFKL SEPTIN2 COL4A5 OR4D2 NCR2 H3C15 ACTR2 AGTRAP MT1HL1 MIS12 ITGA10 OR14C36 MAPK7 COL18A1 RECQL5 HECW1 METTL23 UNC50 JUN TLDC2 PMPCB ASNS PROKR2 ATM	DCAF7 CIBAR2 GPNMB HAND1 ATP5MG MRI1 MOCOS CYP27A1 ENTR1 ZNF358 PLAGL1 DHX33 LRRC40 PCDHGB1 NEPRO ABHD5 PMM2 SRSF2 EPPIN-WFDC6 SDHD SNRPD3 KCNK9 PLAAT3 RXRB CFAP91 KLHL22 GDPGP1 DMRT3 BTLA DAAM1 ADAM2 TAF2 BCS1L LRTM2 CDK5R2 PPM1D PSMG2 ATP2C1 HSD17B10 THSD4 SYT2 DIS3L2 PLA2G2D PSMC3IP IDS TGM1	 Lipid metabolism and energy homeostasis	"ADRA2A is a G protein-coupled receptor involved in the regulation of lipolysis, particularly in white adipose tissue. It acts as a key player in the sympathetic nervous system's response to stress or cold temperatures, leading to increased lipid mobilization and energy expenditure.
+
+KCNB1 encodes for the potassium channel subunit IKb, which plays a role in insulin-stimulated potassium efflux from pancreatic beta-cells, contributing to the regulation of insulin secretion.
+
+SFRP1 is a secreted frizzled-related protein that acts as an antagonist for Wnt signaling pathways, which are crucial in lipid metabolism and energy homeostasis. It inhibits the activation of β-catenin, leading to reduced expression of target genes involved in adipogenesis and lipogenesis.
+
+IRS1 is a cytoplasmic adaptor protein that plays a central role in insulin signaling by binding to the insulin receptor and transmitting signals to downstream targets, ultimately leading to glucose uptake and storage as glycogen or triglycerides.
+
+GHSR is a G protein-coupled receptor for Ghrelin, a hormone that stimulates appetite and growth hormone secretion. It plays a role in energy homeostasis by regulating food intake and metabolism.
+
+CRH is a neuropeptide involved in the stress response, leading to increased lipolysis and gluconeogenesis in the liver. It also acts as an antagonist of insulin action, contributing to the regulation of energy homeostasis.
+
+LEP is a hormone produced by adipocytes that inhibits food intake and stimulates fat storage. It acts through its receptor, Ob-R, to regulate energy balance and metabolism.
+
+CD74 is a type II transmembrane glycoprotein that functions as a receptor for various bioactive molecules, including acetylcholine, histamine, and leptin. It plays a role in the regulation of lipid metabolism and energy homeostasis by modulating intracellular signaling pathways.
+
+PFKL is a liver-specific isoform of pyruvate kinase, which catalyzes the final step in glycolysis, leading to the production of pyruvate from phosphoenolpyruvate. It plays a crucial role in lipid metabolism and energy homeostasis by providing energy for various cellular processes.
+
+REST is a transcriptional repressor that acts on target genes involved in neuronal differentiation, synaptic plasticity, and metabolic regulation. It plays a role in the regulation of energy homeostasis by modulating gene expression related to lipid metabolism and glucose metabolism.
+
+FFAR2 is a G protein-coupled receptor for free fatty acids (FFAs). It acts as a sensor for FFAs, leading to the activation of various intracellular signaling pathways that regulate lipid metabolism and energy homeostasis.
+
+HADH is a mitochondrial enzyme involved in the beta-oxidation of fatty acids, which plays a crucial role in providing energy for various cellular processes. It contributes to the regulation of energy homeostasis by oxidizing fatty acids and generating ATP.
+
+UCP2 is an uncoupling protein that facilitates the reversible transport of protons across the inner mitochondrial membrane, leading to the dissipation of the mitochondrial membrane potential. It plays a role in energy homeostasis by regulating the efficiency of oxidative phosphorylation and ATP production.
+
+VSNL1 is a voltage-gated sodium channel that plays a role in the regulation of insulin secretion from pancreatic beta-cells. It contributes to the regulation of energy homeostasis by modulating the electrical activity of these cells, ultimately leading to the release of insulin.
+
+KCNJ11 encodes for the ATP-sensitive potassium channel subunit Kir3.4, which plays a role in the regulation of insulin secretion from pancreatic beta-cells. It acts as a sensor for intracellular ATP levels and contributes to the regulation of energy"	0.85	 Lipid metabolism and adipocyte differentiation	"1. ADRA2A is a G protein-coupled receptor involved in the regulation of lipolysis, the breakdown of triglycerides into free fatty acids and glycerol. 
+It acts as a key player in the response to sympathetic nervous system stimulation, which leads to increased lipolysis and subsequent release of free fatty acids from adipocytes.
+
+2. PPP3CA is a phosphatase involved in the dephosphorylation of proteins, including insulin receptor substrate 1 (IRS-1) and protein kinase B (PKB/Akt). 
+This results in the inhibition of insulin signaling and activation of hormone-sensitive lipases, leading to increased lipolysis.
+
+3. FOXO1 is a transcription factor involved in the regulation of various cellular processes, including glucose metabolism and lipid metabolism. 
+It promotes the expression of genes involved in lipid catabolism, such as acetyl-CoA carboxylase (ACC) and carnitine palmitoyltransferase 1 (CPT1), and inhibits the expression of genes involved in lipid synthesis.
+
+4. CHGA is a component of chromogranin A, which is secreted by adrenomedullary cells and some neurons. It plays a role in the storage and release of neurotransmitters and hormones, including catecholamines and peptide hormones. 
+It also interacts with lipids, such as cholesterol and triglycerides, and may be involved in the regulation of lipid metabolism.
+
+5. SFRP1 is a secreted frizzled-related protein that acts as an antagonist of Wnt signaling, which is involved in various cellular processes including embryonic development, tissue repair, and cancer. 
+It also interacts with lipids, such as cholesterol and phospholipids, and may be involved in the regulation of lipid metabolism.
+
+6. SREBF1 is a transcription factor involved in the regulation of lipid synthesis and cholesterol homeostasis. 
+It activates the expression of genes involved in de novo lipogenesis, such as acetyl-CoA carboxylase (ACC) and fatty acid synthase (FAS), and the uptake and transport of lipids.
+
+7. FAM3D is a lipid phosphatase that plays a role in the regulation of triglyceride synthesis and lipoprotein metabolism. 
+It dephosphorylates and activates ACC, leading to increased lipogenesis, and also interacts with lipids, such as phospholipids and diacylglycerols.
+
+8. LEP is a hormone produced by adipocytes that acts on the hypothalamus to regulate food intake and energy expenditure. 
+It also plays a role in the regulation of lipid metabolism, including the inhibition of lipolysis and the stimulation of lipogenesis.
+
+9. PDE8B is a phosphodiesterase involved in the degradation of cyclic nucleotides, including cAMP and cGMP. 
+It plays a role in the regulation of lipid metabolism by modulating the activity of various transcription factors, such as CREB and PPARγ, which are involved in the regulation of lipogenesis and lipolysis.
+
+10. DRD2 is a dopamine receptor that plays a role in the regulation of energy balance and metabolism. 
+It interacts with lipids, such as phosphatidylserine and phosphatidylinositol, and may be involved in the regulation of lipid metabolism by modulating the activity of various signaling pathways.
+
+11. FFAR4 is a G protein-coupled receptor that plays a role in the regulation of energy balance and metabolism. 
+It interacts with free fatty acids, such as oleic acid and palmitic acid, and may be involved in the regulation of lipid metabolism by modulating the activity of various signaling pathways.
+
+12. UCP2 is an uncoupling protein that plays a role in the regulation of mitochondrial resp"	0.85	 Lipid metabolism and xenobiotic response	"1. DCAF7 is a subunit of the N-recognin complex involved in ubiquitination and degradation of transcription factors, which can regulate lipid metabolism.
+2. CIBAR2 interacts with the retinoic acid receptor (RAR) and regulates gene expression related to lipid metabolism and xenobiotic response.
+3. GPNMB is a type I transmembrane protein involved in the endocytosis of lipoproteins and plays a role in the clearance of lipids from the circulation.
+4. HAND1 is a transcription factor that regulates genes involved in lipid metabolism, particularly in the beta-oxidation of fatty acids.
+5. ATP5MG is a subunit of mitochondrial ATP synthase and plays a crucial role in the production of ATP from lipids.
+6. MRI1 is involved in the transport of long-chain fatty acids across the inner mitochondrial membrane, which is essential for beta-oxidation.
+7. MOCOS is a cofactor that plays a role in the first step of the glycine, serine and threonine metabolism, which can be linked to lipid metabolism through the synthesis of phospholipids.
+8. CYP27A1 is an enzyme involved in the conversion of vitamin D3 to its active form, calcitriol, which regulates lipid metabolism and calcium homeostasis.
+9. ENTR1 is a transporter that facilitates the uptake of long-chain fatty acids into the liver for beta-oxidation.
+10. ZNF358 is a transcription factor involved in the regulation of genes related to lipid metabolism and xenobiotic response.
+11. PLAGL1 interacts with PPARγ, a key regulator of adipocyte differentiation and lipid metabolism.
+12. DHX33 is involved in RNA processing and plays a role in the regulation of genes related to lipid metabolism.
+13. LRRC40 interacts with the peroxisome proliferator-activated receptor (PPAR) alpha, which regulates lipid metabolism and fatty acid oxidation.
+14. PCDHGB1 is a cadherin superfamily protein involved in cell adhesion and plays a role in the regulation of genes related to lipid metabolism.
+15. NEPRO is a transcription factor that regulates genes involved in lipid metabolism, particularly in the synthesis of phospholipids.
+16. ABHD5 is a lipase that hydrolyzes long-chain acyl-CoAs to acetyl-CoA and free fatty acids, which can enter beta-oxidation.
+17. PMM2 is involved in the metabolism of cholesterol and bile acids, which are important lipids for the body.
+18. SRSF2 is a splicing factor that regulates genes related to lipid metabolism and xenobiotic response.
+19. EPPIN-WFDC6 interacts with lipids and plays a role in the regulation of gene expression related to lipid metabolism.
+20. SDHD is a subunit of succinate dehydrogenase, which is involved in the tricarboxylic acid cycle and the oxidation of fatty acids.
+21. SNRPD3 is involved in the processing of small nuclear RNAs that regulate lipid metabolism.
+22. KCNK9 is a potassium channel that plays a role in the regulation of lipid metabolism and insulin secretion.
+23. PLAAT3 is a triacylglycerol lipase that hydrolyzes triacylglycerols to glycerol and free fatty acids, which can enter beta-oxidation.
+24. RXRB is a nuclear receptor that regulates genes related to lipid metabolism and xenobiotic response.
+25. CFAP91 interacts with the peroxisomal targeting signal and plays a role in the import of proteins into peroxisomes, which are important organelles for lipid metabolism.
+26. K"	0.85
+GO:1900368	PUM1 MAEL TIAL1 RIPK1 TP53 FXR1 BCDIN3D FMR1 ADAR ZC3H10 DGCR8 DND1 TRUB1 PUM2 ZMPSTE24 LIN28B STAT3 MECP2 ELAVL1 TRIM71 IL6 ZFP36 BMP4 LIN28A TGFB1	25	regulation of post-transcriptional gene silencing by regulatory ncRNA	BMP4 ZMPSTE24 MAEL PUM2 ELAVL1 ZFP36 LIN28B IL6 TIAL1 TGFB1 FMR1 RIPK1 SLC8A3 ASCL3 ATP6V1G3 SERPINF1 ZNF283 CATSPERB COL3A1 AK5 XKR9 TOPBP1 UNC13A CPNE9 OR9K2	GPR75-ASB3 ELOC ADORA2B RPL41 PFDN5 PPP1R12C CPSF6 UNC13C ZBTB49 PSMA5 LETMD1 MAOA PTGS2 OR8H2 CBX3 ZNF285 ZNF507 FBXO44 ARHGAP27 ACAD8 TBC1D31 TRIML1 GP2 DBX1 CDX2	 Epigenetic regulation and gene expression	"1. PUM1, MAEL, TIAL1, and LIN28B are RNA binding proteins involved in post-transcriptional gene silencing through various mechanisms such as deadenylation, decapping, and mRNA degradation. They form complexes with other proteins to regulate gene expression.
+
+2. RIPK1 is a kinase that plays a role in the innate immune response by activating NF-κB signaling pathway upon Toll-like receptor (TLR) stimulation. It also interacts with other proteins such as FXR1 and TRIM71 to regulate gene expression and chromatin structure.
+
+3. TP53, also known as p53, is a transcription factor that acts as a tumor suppressor by inducing cell cycle arrest or apoptosis in response to DNA damage. It interacts with other proteins such as ELAVL1 and MECP2 to regulate gene expression and chromatin structure.
+
+4. FXR1 is a nuclear receptor that regulates the expression of genes involved in bile acid metabolism, lipid homeostasis, and gluconeogenesis. It interacts with other proteins such as RIPK1 and LIN28A to regulate gene expression and chromatin structure.
+
+5. BCDIN3D is a histone methyltransferase that catalyzes the addition of methyl groups to lysine residues on histones, leading to gene silencing or activation depending on the context. It interacts with other proteins such as DGCR8 and TRUB1 to regulate chromatin structure and gene expression.
+
+6. FMR1 is a RNA binding protein involved in the regulation of translation initiation and elongation, particularly for the fragile X mental retardation (FMR) repeat-containing mRNAs. It interacts with other proteins such as ADAR and ZC3H10 to regulate gene expression and chromatin structure.
+
+7. ZFP36 is a nuclear protein that acts as a negative regulator of the RNA-dependent antiviral response by deubiquitinating and stabilizing various RNA binding proteins, including IRF3 and ISGF3. It interacts with other proteins such as IL6 and STAT3 to regulate gene expression and chromatin structure.
+
+8. BMP4 is a bone morphogenetic protein that regulates embryonic development by inducing differentiation of various cell types, including osteoblasts and neurons. It interacts with other proteins such as TGFB1 and MECP2 to regulate gene expression and chromatin structure.
+
+In summary, the proteins in this set are involved in the regulation of gene expression and chromatin structure through various mechanisms, including transcriptional activation or repression, post-transcriptional silencing, histone modification, and RNA processing. They interact with each other to form complexes and signaling pathways that control the epigenetic landscape and ultimately determine cellular identity and function."	0.85	 Chromatin remodeling and gene expression regulation	"1. BMP4 is a member of the TGF-β superfamily and acts as a signaling molecule involved in embryonic development, tissue repair, and inflammation. It plays a crucial role in chromatin remodeling by inducing histone modifications and DNA methylation through the Smad transcription factors.
+
+2. ZMPSTE24 is an enzyme that cleaves and activates the latent form of TGF-β, releasing its active form to initiate signaling cascades. It also interacts with histone deacetylases (HDACs) and histone acetyltransferases (HATs), contributing to chromatin remodeling.
+
+3. MAEL is a zinc finger transcription factor that binds to specific DNA sequences, regulating gene expression during embryonic development. It interacts with other transcription factors such as PUM2 and ELAVL1, forming complexes that modulate chromatin structure and gene expression.
+
+4. PUM2 and ELAVL1 are RNA-binding proteins involved in post-transcriptional regulation of gene expression. They bind to specific mRNAs, stabilizing or destabilizing them depending on the target genes, thereby influencing chromatin remodeling and transcription.
+
+5. ZFP36 is a zinc finger protein that acts as an antagonist of RNA interference by de-ubiquitinating and stabilizing specific mRNAs. It plays a role in gene expression regulation by modifying the chromatin structure through its interaction with histone-modifying enzymes.
+
+6. LIN28B, CATSPERB, and TOPBP1 are involved in various aspects of chromatin remodeling and transcriptional regulation. LIN28B interacts with RNA polymerase II and acts as a repressor of let-7 microRNAs, influencing gene expression. CATSPERB is a calcium channel protein that regulates the entry of calcium ions into cells, which in turn influences chromatin remodeling through histone modifications. TOPBP1 is a DNA binding and helicase protein involved in transcriptional activation and chromatin remodeling.
+
+7. IL6, TIAL1, and RIPK1 are signaling proteins that contribute to the regulation of gene expression by modifying chromatin structure through their interactions with histone-modifying enzymes or transcription factors.
+
+8. FMR1 is a RNA binding protein involved in the regulation of gene expression through its interaction with methylated DNA and histones, as well as its role in the maintenance of the X chromatin structure.
+
+9. ATP6V1G3, SERPINF1, ZNF283, UNC13A, CPNE9, OR9K2 are involved in various cellular processes that indirectly contribute to chromatin remodeling and gene expression regulation by maintaining the structural integrity of the nucleus or interacting with other proteins involved in these processes.
+
+In summary, this set of proteins is primarily involved in chromatin remodeling and gene expression regulation through their interactions with histones, DNA, RNA, and transcription factors. These proteins play essential roles in embryonic development, tissue repair, inflammation, and various other cellular processes by modifying the chromatin structure to control gene expression."	0.85	 Lipid metabolism and inflammatory response	"1. GPR75 is a G protein-coupled receptor involved in the regulation of lipid metabolism, particularly in the uptake and oxidation of long-chain fatty acids. It also plays a role in energy homeostasis and inflammatory response by modulating the release of pro-inflammatory cytokines.
+2. ASB3 is an essential component of the microsomal triglyceride transfer protein complex, which facilitates the transport of triglycerides from the endoplasmic reticulum to the outer mitochondrial membrane for beta-oxidation.
+3. ELOC is a long-chain fatty acid elongase involved in the elongation of very-long-chain fatty acids, which are essential components of cellular membranes and signaling molecules.
+4. ADORA2B is an adenosine receptor that plays a role in the regulation of inflammatory responses by modulating the production and release of pro-inflammatory cytokines and chemokines.
+5. RPL41 is a ribosomal protein involved in the translation of mRNAs encoding proteins involved in lipid metabolism, such as those involved in fatty acid synthesis and beta-oxidation.
+6. PFDN5 is a peroxisomal membrane protein that plays a role in the import of various substrates into peroxisomes for β-oxidation.
+7. PPP1R12C is a regulatory subunit of protein phosphatase 1, which dephosphorylates and activates key enzymes involved in lipid metabolism, such as those involved in glycerolipid metabolism and triacylglycerol synthesis.
+8. CPSF6 is a subunit of the cleavage and polyadenylation complex that processes mRNAs encoding proteins involved in lipid metabolism and inflammatory response.
+9. UNC13C is a guanine nucleotide exchange factor for Rab proteins, which are involved in various aspects of intracellular trafficking, including the transport of lipids and lipid-containing vesicles.
+10. ZBTB49 is a transcriptional repressor that plays a role in the regulation of inflammatory responses by suppressing the expression of pro-inflammatory genes.
+11. PSMA5 is a lysosomal membrane protein involved in the degradation and recycling of lipids, particularly cholesterol esters and triacylglycerols.
+12. LETMD1 is an endoplasmic reticulum-localized protein that plays a role in the regulation of lipid metabolism by modulating the activity of key enzymes involved in lipid biosynthesis and catabolism.
+13. MAOA and PTGS2 are enzymes involved in the degradation of various biologically active molecules, including neurotransmitters and eicosanoids, which play a role in the regulation of inflammatory responses.
+14. OR8H2 is an olfactory receptor that plays a role in the detection of specific lipids, such as fatty acids and esters, which are important signaling molecules in various physiological processes, including inflammation.
+15. CBX3, ZNF285, ZNF507, FBXO44, ARHGAP27, ACAD8, TBC1D31, TRIML1, GP2, DBX1, CDX2 are transcription factors or enzymes involved in the regulation of gene expression and lipid metabolism.
+
+Together, these proteins play a crucial role in the regulation of lipid metabolism and inflammatory response. Lipids serve as important energy sources, structural components, and signaling molecules, while the inflammatory response is an essential aspect of the immune system that helps protect the organism against various threats. The interplay between these proteins ensures a proper balance between lipid metabolism and inflammation, which is crucial for maintaining overall cellular health and homeostasis."	0.85
+GO:2000524	LILRB2 LILRB4 CD160	3	negative regulation of T cell costimulation	LILRB4 RIPK1 RASSF2	ATOH7 DRAM1 TOGARAM2	 Immune regulation through inhibitory receptors	"1. LILRB2, also known as ILT3, is an immunoglobulin-like receptor that binds to class I MHC molecules with specificity for HLA-E. It acts as a negative regulator of T cell activation and plays a role in the maintenance of self-tolerance.
+2. LILRB4, also known as ILT2, is another immunoglobulin-like receptor that binds to class I MHC molecules with specificity for HLA-G. It has been shown to inhibit NK cell activation and cytotoxicity.
+3. CD160, also known as KIR3DL2, is a type II transmembrane protein belonging to the immunoglobulin superfamily. It acts as an inhibitory receptor for certain HLA-C alleles and plays a role in regulating NK cell responses.
+
+To summarize, these proteins are involved in the regulation of immune responses through the interaction with inhibitory receptors on immune cells such as NK cells. They play a crucial role in maintaining self-tolerance by inhibiting the activation and cytotoxicity of effector cells against self-antigens presented by class I MHC molecules."	0.85	 Apoptosis signaling and regulation	"1. LILRB4, also known as ILT2 or CD160, is an immunoreceptor that plays a role in inhibiting immune responses by binding to ligands on the surface of apoptotic cells. This helps prevent unnecessary inflammation and tissue damage during the process of programmed cell death.
+
+2. RIPK1 (Receptor-interacting protein kinase 1) is an adaptor protein that plays a crucial role in various signaling pathways, including those involved in apoptosis. It interacts with different receptors and activates downstream cascades leading to cell death or survival.
+
+3. RASSF2 (Ras association domain-containing protein 2) is a tumor suppressor that functions as a scaffold protein, facilitating the interaction between various signaling molecules and promoting apoptosis in response to different stimuli. It also plays a role in regulating microtubule dynamics and cellular morphology.
+
+To summarize, these proteins are involved in the regulation of apoptosis, which is a critical process for maintaining tissue homeostasis by eliminating damaged or unwanted cells. The interplay between LILRB4, RIPK1, and RASSF2 allows for the selective removal of cells while minimizing potential damage to surrounding tissues."	0.85	 Neurogenesis and neuronal differentiation	"1. ATOH7, also known as MASH1, is a transcription factor that plays a crucial role in the development of the central nervous system. It is essential for the specification and differentiation of hindbrain neurons, particularly motor neurons.
+2. DRAM1 is an RNA-binding protein involved in the regulation of mRNA stability and translation during neurogenesis. It interacts with various RNAs and microRNAs to control their expression levels and thereby influences neuronal differentiation.
+3. TOGARAM2, also known as TBX6, is a transcription factor that acts in conjunction with other factors such as PAX6 and LMX1A to promote the development of midbrain and hindbrain structures. It plays a role in reducing the expression of floor plate markers and promoting the differentiation of motor neurons.
+
+To summarize, these genes are involved in the specification, differentiation, and maturation of neuronal cells, with a particular emphasis on motor neurons. The interplay between these proteins is crucial for proper neurogenesis and neuronal differentiation during development."	0.85
+GO:2000556	IL18 ARID5A TBX21 SLAMF1 IL1R1 IL1B XCL1 IL18R1	8	positive regulation of T-helper 1 cell cytokine production	IL18 XCL1 SLAMF1 IL1R1 RPS6KA3 OR9Q1 OR52M1 ZFP36	PTH2 MGAT4C POM121 KRTAP4-9 DEFA1 SRPRA U2AF1 F2	 Immune response and inflammation	"1. IL18 and IL1B are cytokines involved in the activation of various immune cells, including natural killer cells, T-cells, and macrophages. They promote inflammatory responses by inducing the production of other cytokines and activating downstream signaling pathways.
+2. IL1R1 is a receptor for interleukin-1 (IL-1), which plays a crucial role in the regulation of the immune response and inflammation. It binds to IL-1 and triggers intracellular signaling cascades that lead to the production of various cytokines, chemokines, and other mediators involved in the immune response.
+3. SLAMF1 is a type I transmembrane receptor that plays a role in the recognition and activation of natural killer cells. It interacts with specific ligands on the surface of target cells, leading to their destruction and clearance from the body.
+4. ARID5A is a chromatin-remodeling factor that regulates gene expression by modifying chromatin structure. In the context of immune responses, it has been shown to play a role in the regulation of genes involved in inflammation and immune cell activation.
+5. XCL1 is a chemokine that recruits T-cells and natural killer cells to sites of infection or tissue damage. It plays an essential role in the recruitment and activation of these immune cells, which are necessary for effective immune responses.
+6. TBX21 is a transcription factor involved in the development and differentiation of T-cells. It regulates the expression of genes required for T-cell function and differentiation, including those involved in cellular activation and effector functions.
+
+Together, these proteins are involved in various aspects of the immune response and inflammation. They regulate the activation and function of immune cells, such as natural killer cells, T-cells, and macrophages, and play a role in the recruitment and regulation of these cells to sites of infection or tissue damage. Additionally, they modulate gene expression through chromatin remodeling and transcriptional regulation, ensuring an effective immune response."	0.85	 Immune response and inflammation	"1. IL18 is a cytokine involved in the activation of various immune cells, including natural killer cells, T-cells, and B-cells. It promotes the production of other cytokines and interferons, enhancing the immune response.
+2. XCL1 is a chemokine that recruits T-cells and natural killer cells to sites of infection or tissue damage. It plays a crucial role in the initiation and amplification of adaptive and innate immune responses.
+3. SLAMF1 is a receptor for various ligands, including XCL1, and is involved in the activation and trafficking of natural killer cells and T-cells. It also has a role in the regulation of immune cell survival and differentiation.
+4. IL1R1 is a receptor for interleukin-1 (IL-1), which is a pro-inflammatory cytokine involved in the activation of various immune cells, including macrophages and neutrophils. It also plays a role in the regulation of acute phase responses and fever.
+5. RPS6KA3 is a kinase that phosphorylates ribosomal protein S6 (RPS6), leading to its activation and increased translation of various proteins involved in cell growth, metabolism, and stress response. It also has a role in the regulation of immune responses by modulating the activity of immune cells.
+6. OR9Q1 and OR52M1 are olfactory receptors that play a role in the detection of various odorants and pheromones. They are involved in the initiation of the innate immune response through the activation of signaling pathways that lead to the production of antimicrobial peptides and other immune effectors.
+7. ZFP36 is a zinc finger transcription factor that acts as a negative regulator of the interferon response by deubiquitinating and stabilizing various interferon-stimulated genes (ISGs). It also has a role in the regulation of cellular stress responses and apoptosis.
+
+To summarize, the proteins in this set are involved in the initiation, amplification, and regulation of immune responses and inflammation. They act through various signaling pathways and cell types to coordinate the recruitment and activation of immune cells, the production of cytokines and other effectors, and the regulation of cellular stress responses."	0.85	 Lipid metabolism and cell signaling	"1. PTH2 is a G-protein coupled receptor involved in the regulation of calcium homeostasis and bone metabolism. Upon binding its ligand parathyroid hormone, it activates intracellular signaling cascades leading to increased calcium release from bones and decreased calcium excretion by the kidneys.
+
+2. MGAT4C is a glycosyltransferase that adds mannose residues to lipid-linked oligosaccharides, playing a crucial role in glycoprotein biosynthesis and lipid metabolism.
+
+3. POM121 is an integral membrane protein involved in the regulation of intracellular cholesterol transport and homeostasis. It interacts with other proteins such as NPC1 and APOB to facilitate the intracellular trafficking of lipids.
+
+4. KRTAP4-9, DEFA1, SRPRA, and F2 are all involved in the innate immune response, specifically in the production and processing of antimicrobial peptides. These proteins work together to defend against bacterial and fungal infections by disrupting their cell membranes.
+
+To summarize, these genes play essential roles in lipid metabolism and cell signaling, with a focus on calcium homeostasis, cholesterol transport, and the innate immune response. The interplay between these proteins ensures proper regulation of intracellular calcium levels, lipid processing, and immune defense against microbial threats."	0.85
+GO:0120253	CYP2F1 BCO1 BCO2	3	hydrocarbon catabolic process	CYP2F1 NUF2 BTBD1	MORC3 ZNF627 EHMT1	 Lipid metabolism and detoxification	"1. CYP2F1 is a member of the cytochrome P450 superfamily, specifically a monooxygenase enzyme involved in the oxidative metabolism of various xenobiotics and endogenous substrates. It plays a crucial role in the detoxification of foreign compounds by converting them into more water-soluble forms for easier elimination from the body.
+
+2. BCO1 and BCO2 are both members of the aldehyde oxidase family, responsible for the oxidation of various aldehydes to their corresponding carboxylic acids. They play a significant role in the detoxification of aldehydes produced during lipid metabolism, particularly during the beta-oxidation of fatty acids.
+
+To summarize, these proteins are involved in the detoxification and metabolism of various xenobiotics and endogenous substrates, primarily focusing on lipid metabolism. The interplay between CYP2F1, BCO1, and BCO2 allows for efficient detoxification and elimination of potentially harmful compounds from the body."	0.85	 Lipid metabolism and xenobiotic detoxification	"1. CYP2F1 is a member of the cytochrome P450 superfamily, specifically a monooxygenase enzyme involved in the oxidative metabolism of various lipids and xenobiotics. It plays a crucial role in the detoxification of foreign compounds by converting them into water-soluble forms for easy elimination from the body.
+
+2. NUF2 is a nuclear transport factor that interacts with CYP2F1 to facilitate its translocation between the cytoplasm and nucleus, allowing it to respond effectively to various lipid signals and xenobiotic stressors.
+
+3. BTBD1 is an E3 ubiquitin ligase that targets and degrades specific proteins involved in lipid metabolism and detoxification pathways. It acts as a negative regulator, maintaining the balance of these processes by eliminating excess or malfunctioning enzymes and proteins.
+
+Together, these proteins form a complex system responsible for the efficient metabolism of lipids and detoxification of xenobiotics in cells. This process is essential for maintaining cellular homeostasis and protecting the organism from harmful substances."	0.85	 Epigenetic regulation of gene expression	"1. MORC3, also known as MORF-field chromosome condensation protein 3, is a member of the MORC family of chromosomal condensers. It plays a role in chromatin organization and condensation during mitosis and meiosis. MORC3 interacts with histone H1 to facilitate chromatin compaction and condensation.
+
+2. ZNF627, also known as ZFP527, is a zinc finger transcription factor that binds to specific DNA sequences and regulates gene expression. It acts as both an activator and repressor of gene transcription depending on the context and the presence of co-factors.
+
+3. EHMT1, also known as G9a, is a histone methyltransferase that catalyzes the methylation of lysine 9 on histone H3 (H3K9me2). This modification leads to chromatin compaction and transcriptional repression.
+
+To summarize, these proteins are involved in the regulation of gene expression through epigenetic modifications. MORC3 plays a role in chromatin organization and condensation, while ZNF627 acts as a transcription factor to activate or repress gene expression. EHMT1 catalyzes the methylation of histone H3 at lysine 9, leading to chromatin compaction and transcriptional repression. The interplay between these proteins allows for precise control of gene expression during development and in response to various stimuli."	0.85
+GO:0090100	SOX11 GDF5 TGFB3 NOTCH1 AMH TNXB FERMT1 TGFBR3 CSNK2B GDF2 BMP2 GATA6 CCN1 NUMA1 SMAD2 TWSG1 EP300 GIPC1 MSX1 NODAL CDH5 FKBP8 MSX2 ZNF423 LRG1 MEN1 SULF1 BMP10 GDF7 GATA4 SH2B1 ZC3H3 SLC2A10 ING2 BMP5 FLCN FBXL15 ACVR2B BMP6 HIPK2 FGF9 BMPR1A RNF111 BMP7 BMP4 UBE2O BMPR2 ACVR1B THBS1 ILK TGFBR2 GPC3 CDKN2B MYOCD ARK2C HES1 GDF6 TGFBR1 INHBA CITED2 AXIN1 KDR PELO STK11 ACVR1 ADISSP JAK2 PARP1 HFE DAB2 SDCBP NUP93 KCP CREBBP TGFB1 CRB2 HSP90AB1 TGFB1I1 TGFB2 BMPER KIAA0319 HES5 ACVR2A ITGA8 NOTCH2 CITED1 ENG NEO1 ELAPOR2 CDKN1C RBPJ ACVRL1 ZEB2 FOXD1 TBX20 SCUBE3 TSC22D1 NPNT SMAD4 SNW1	100	positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	CDH5 BMP6 SH2B1 MSX2 ING2 ZC3H3 BMP4 TSC22D1 SCUBE3 CITED1 TGFB2 HFE EP300 JAK2 GDF7 GPC3 GATA4 MEN1 GATA6 TGFB3 ACVR2B RBPJ GDF6 SULF1 ITGA8 CITED2 FERMT1 NUP93 MSX1 KDR ZNF423 FGF9 ADISSP PARP1 NOTCH1 SNW1 ARK2C TGFBR3 SMAD2 GDF2 NOTCH2 CDKN1C BMPER CCN1 GIPC1 ACVR1B NPNT THBS1 FKBP8 KCP OR5I1 SMC3 ZNF143 ZNF514 PLIN3 CYP2A6 GABARAPL1 MAP1S PMF1 GALNT15 ZBTB48 ANKRD13C RBM27 FLRT1 APEH CD300LG KRT33B COG5 CPLX1 ABCA5 C2CD6 NGEF KIF12 ZNF132 TRAK1 CFL1 FTL ZNF80 DES DUSP7 RNF170 B4GALNT1 PA2G4 ACAD9 ANXA7 KCNMB2 OR2L2 INSL4 PCDHGB3 TRPM6 KIF24 PTPN13 CDK5RAP2 LMNA SYNRG ALOXE3 DEFA4 PSEN2 RBMXL3 VDAC1	KLRC4-KLRK1 SMC1A POU5F1 RAB1A TMPRSS4 COLGALT1 DCAF8 ATOH7 EED RBM39 TMCO1 ZNF213 LILRB1 MIS18A OBI1 SGSH ZNF737 ZNF101 ATG4C ABCD4 FBXL7 ZC4H2 CBX4 DUSP18 CYSLTR2 LYZL2 OSER1 CCDC103 TAGLN2 SCUBE2 GABRB1 ZNF44 ZSCAN23 BOP1 ZBTB40 KRIT1 NECAP2 KCNMB3 MMD ETV6 MRTO4 ANXA1 LHFPL3 ASAH2B ATP11B LOC107984156 ZNF514 OR4D10 ACO2 ZSCAN12 ODAD3 WRNIP1 SSX2 NISCH RBBP5 CC2D2A SAPCD2 ZNF48 BLOC1S5 RAB2A CARHSP1 CXCL5 ZNF593 SNCG SESN1 P3H3 MARCHF11 RIOK1 GPR87 TLN2 DNALI1 TBC1D32 SELENOO GMFB PRM2 CTBP1 ZNF749 GABRA4 HIGD2A DNAJA4 LCN6 KLK7 SCYL1 C3orf33 DUSP23 TMEM203 CHAF1A DAGLB FOXD4L4 VEZT DHX29 TNFSF13B UFSP2 TPPP3 CTAG1B DONSON POM121 UBR7 OR52K1 ECEL1	 Wnt/TGF-β signaling and pancreatic morphogenesis	"1. SOX11, GDF5, TGFB3, NOTCH1, AMH, TNXB, FERMT1, TGFBR3, CSNK2B, GDF2, BMP2, and GATA6 are involved in the Wnt/β-catenin signaling pathway. 
+Wnt signaling plays a crucial role in pancreatic morphogenesis by regulating cell fate decisions, proliferation, and differentiation. 
+GDF5, TGFBR3, and BMP2 are members of the TGF-β superfamily and contribute to the regulation of cellular growth, differentiation, and apoptosis.
+
+2. FKBP8, MSX1, NODAL, CDH5, FBXL15, ACVR2B, BMP6, HIPK2, FGF9, BMPR1A, RNF111, BMP7, and BMP4 are involved in the TGF-β signaling pathway. 
+TGF-β signaling is essential for pancreatic morphogenesis by regulating cellular growth, differentiation, and apoptosis. 
+NODAL is a member of the TGF-β superfamily and plays a role in inducing mesoderm formation during embryonic development.
+
+3. GATA4, SH2B1, ZC3H3, SLC2A10, ING2, BMP5, FLCN, FBXL15, ACVR2B, BMP6, HIPK2, FGF9, BMPR1A, RNF111, BMP7, and BMP4 are involved in the regulation of pancreatic development and differentiation. 
+They act synergistically or antagonistically to regulate cellular growth, differentiation, and apoptosis during pancreatic morphogenesis.
+
+To summarize, the proteins in this set are involved in the regulation of pancreatic morphogenesis through the Wnt/β-catenin and TGF-β signaling pathways. 
+These pathways regulate cellular growth, differentiation, and apoptosis during pancreatic development and differentiation. 
+The interplay between these proteins ensures proper pancreatic morphogenesis via a number of different signaling cascades that can elicit both synergistic and antagonistic effects in the pancreas itself and other peripheral tissues."	0.85	 Lipid metabolism and adipocyte differentiation	"1. CDH5, also known as Cadherin-5 or N-cadherin, is a calcium-dependent cell adhesion molecule that plays a crucial role in the formation of strong adherens junctions between cells. It is involved in various developmental processes including neurulation, myogenesis, and angiogenesis. In adipocytes, it contributes to the maintenance of cell-cell contacts and the regulation of cell shape and size.
+2. BMP6 is a member of the TGF-β superfamily of growth factors that plays an essential role in embryonic development, including skeletal morphogenesis and limb development. In adipocytes, it promotes differentiation by inhibiting the expression of key transcription factors such as PPARγ and C/EBPα.
+3. SH2B1 is a tyrosine phosphatase that plays a critical role in insulin signaling. It interacts with the insulin receptor substrate-1 (IRS-1) and phosphorylates it, leading to the activation of downstream signaling pathways that promote glucose uptake and storage as glycogen or lipids.
+4. MSX2 is a homeodomain transcription factor that plays a role in various developmental processes including limb development, craniofacial morphogenesis, and adipocyte differentiation. In adipocytes, it inhibits the expression of key genes involved in adipogenesis such as PPARγ and C/EBPα, while promoting the expression of genes involved in chondrogenesis and osteoblast differentiation.
+5. ING2 is a histone deacetylase that plays a role in the regulation of gene expression during development and differentiation. In adipocytes, it inhibits the expression of key transcription factors such as PPARγ and C/EBPα, while promoting the expression of genes involved in lipid metabolism and energy homeostasis.
+6. ZC3H3 is a zinc finger protein that plays a role in the regulation of gene expression during development and differentiation. In adipocytes, it interacts with the promoter regions of key genes involved in adipogenesis such as PPARγ and C/EBPα, promoting their expression and leading to adipocyte differentiation.
+7. The remaining proteins in the list play various roles in lipid metabolism and adipocyte differentiation, including the regulation of gene expression, cell signaling, and the synthesis and breakdown of lipids.
+
+In summary, the proteins in this set are involved in the regulation of lipid metabolism and adipocyte differentiation. They contribute to the maintenance of cell-cell contacts, the promotion or inhibition of adipogenesis, and the regulation of gene expression during development and differentiation. The interplay between these proteins leads to a complex regulatory network that ensures proper lipid storage and metabolism in adipocytes."	0.85	 Chromatin remodeling and transcription regulation	"1. POU5F1, also known as OCT-3/4 or Octamer-binding protein 3/4, is a transcription factor that plays a crucial role in the initiation and maintenance of pluripotency in embryonic stem cells. It binds to specific DNA sequences called octamer sites and regulates the expression of genes involved in self-renewal and differentiation.
+2. EED is a subunit of the Polycomb Repressive Complex 2 (PRC2), which catalyzes the addition of repressive histone marks H3K27me3 to chromatin, leading to gene silencing. It interacts with other proteins such as SUZ12 and EZH2 to form a functional complex.
+3. RBBP5 is another subunit of PRC2 and acts as a bridge between the catalytic core of the complex and the DNA target sites, facilitating the recruitment of PRC2 to specific genomic regions.
+4. CBX4 is a chromobox protein that interacts with H3K27me3 marks and recruits other proteins involved in gene silencing, such as HDAC1 and DNMT1. It also plays a role in the maintenance of heterochromatin structure.
+5. CYSLTR2 is a cytohesin-like protein that interacts with histone H4 and regulates chromatin accessibility by modifying the chromatin landscape through its ATPase activity.
+6. DNALI1 is a transcription factor that binds to DNA and activates the expression of genes involved in cellular differentiation, particularly during embryonic development. It interacts with other proteins such as GATA4 and FOXA2 to form complexes that regulate gene expression.
+7. TBC1D32 is a Rab GTPase-activating protein that regulates the activity of RAB1A by promoting its GTP hydrolysis, thereby controlling intracellular vesicle trafficking and membrane fusion events.
+8. SELENOO is an RNA binding protein that interacts with specific mRNAs and modulates their stability and translation efficiency. It plays a role in the regulation of gene expression at the post-transcriptional level.
+9. GMFB is a transcription factor that binds to DNA and activates the expression of genes involved in myelination, particularly during neural development. It interacts with other proteins such as OLIG2 and CNPase to form complexes that regulate gene expression.
+10. PRM2 is a histone demethylase that removes methyl groups from histones H3K9me2 and H3K36me2, leading to chromatin decompaction and increased accessibility to transcription factors. It plays a role in the regulation of gene expression at the epigenetic level.
+11. ATG4C is a cysteine protease that cleaves ubiquitin chains from ubiquitinated proteins, thereby modulating their activity and stability. It interacts with other proteins such as ATG12 and ATG5 to form complexes involved in autophagy and protein degradation.
+12. DONSON is a transcriptional co-activator that interacts with RNA polymerase II and enhances its transcriptional activity by recruiting other proteins such as Mediator complex subunits and histone modifying enzymes. It plays a role in the regulation of gene expression at the transcriptional level.
+13. ZNF48 is a zinc finger protein that binds to specific DNA sequences and regulates the expression of genes involved in cellular differentiation, particularly during embryonic development. It interacts with other proteins such as MECP2 and HDAC1 to form complexes that regulate gene expression.
+
+To summarize, the proteins in this set are involved in the regulation of chromatin structure and gene expression through various mechanisms, including histone modification, transcription factor binding, RNA processing, and protein degradation. They act synergistically or antagonistically to control the expression of specific genes during development and differentiation processes."	0.85

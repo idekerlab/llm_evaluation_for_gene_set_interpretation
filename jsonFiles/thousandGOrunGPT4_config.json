@@ -1,0 +1,9 @@
+{
+    "CONTEXT": "You are an efficient and insightful assistant to a molecular biologist",
+    "TEMP": 0.0, 
+    "MAX_TOKENS": 1000,
+    "RATE_PER_TOKEN": 3e-5,
+    "MODEL": "gpt-4-1106-preview",
+    "DOLLAR_LIMIT": 200,
+    "LOG_NAME": "logs/thousand_GO_run_gpt4"
+}
