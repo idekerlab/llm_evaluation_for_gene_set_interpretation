@@ -1,0 +1,353 @@
+GO	Genes	Gene_Count	Term_Description	50perc_contaminated_Genes	100perc_contaminated_Genes	gpt_3.5_default Name	gpt_3.5_default Analysis	gpt_3.5_default Score	gpt_3.5_50perc_contaminated Name	gpt_3.5_50perc_contaminated Analysis	gpt_3.5_50perc_contaminated Score	gpt_3.5_100perc_contaminated Name	gpt_3.5_100perc_contaminated Analysis	gpt_3.5_100perc_contaminated Score
+GO:0045940	STAR WNT4 ADM APOE CES1 STARD4 NR1D1 TNF FSHB BMP6 CGA APOA1 SCAP PRKAA1 IGF1R SREBF2 IL1A FGF1 LDLRAP1 ABCG4 IFNG CYP7A1 DAB2 SREBF1 ABCG1	25	positive regulation of steroid metabolic process	WNT4 IL1A FSHB DAB2 IFNG ABCG1 APOA1 STAR CGA STARD4 CYP7A1 IGF1R HPS1 ESCO1 SRP9 CSTB EYS ZNF776 CYP2W1 ZNF319 ARL11 ZC3H12D CLDN24 PTPN5 CDKN2B	CALD1 VPS29 MTRF1 MVP GTF2I CC2D1B EPHA7 SPACA9 UBQLN4 PPP2R3B AURKA H2AC25 TRIM29 PKDCC LGALS7 LPAR6 PRDM12 DCDC1 SMARCAL1 PCDHA13 OR12D3 ND3 LARP4 ZIM2 GSTA2	Cholesterol homeostasis and lipid metabolism	"1. APOE, ABCG1, LDLRAP1, and ABCG4 are involved in cholesterol transport and metabolism. APOE is a major cholesterol carrier in the brain and plays a crucial role in the redistribution of cholesterol among cells. ABCG1 and ABCG4 are involved in cellular cholesterol efflux, while LDLRAP1 is essential for the internalization of LDL particles.
+
+2. SREBF1 and SREBF2 are transcription factors that regulate the expression of genes involved in cholesterol and fatty acid biosynthesis. They play a central role in the cellular response to cholesterol levels and are key regulators of lipid metabolism.
+
+3. CYP7A1 is a key enzyme in the conversion of cholesterol to bile acids, a critical step in cholesterol catabolism and bile acid synthesis.
+
+4. SCAP is involved in the regulation of cholesterol homeostasis by controlling the transport of SREBPs from the endoplasmic reticulum to the Golgi apparatus, where they are processed to activate genes involved in cholesterol and fatty acid synthesis.
+
+5. NR1D1 is a nuclear receptor that plays a role in lipid metabolism and cholesterol homeostasis by regulating the expression of genes involved in lipid and cholesterol metabolism.
+
+6. APOA1 is a major component of high-density lipoprotein (HDL) and plays a crucial role in reverse cholesterol transport, removing excess cholesterol from peripheral tissues and transporting it to the liver for excretion.
+
+7. CES1 is involved in the hydrolysis of cholesterol esters and triglycerides, contributing to lipid metabolism and cholesterol homeostasis.
+
+In summary, the proteins in this system are primarily involved in cholesterol homeostasis and lipid metabolism, encompassing processes such as cholesterol transport, biosynthesis, catabolism, and regulation of gene expression related to lipid metabolism. These proteins collectively contribute to the maintenance of cellular and systemic cholesterol balance and lipid homeostasis.
+
+Confidence score: 0.92"	0.92	Cholesterol metabolism and steroid hormone synthesis	"1. ABCG1 and APOA1 are involved in cholesterol metabolism. ABCG1 facilitates cholesterol efflux from cells to HDL particles, contributing to cellular cholesterol homeostasis. APOA1 is the major protein component of HDL and plays a central role in reverse cholesterol transport, the process by which cholesterol is removed from peripheral tissues and delivered to the liver for excretion.
+
+2. STAR is a key protein in steroid hormone synthesis, facilitating the transport of cholesterol from the outer mitochondrial membrane to the inner mitochondrial membrane, where it is converted to pregnenolone, a precursor for steroid hormone biosynthesis.
+
+3. CYP7A1 is a cytochrome P450 enzyme involved in the conversion of cholesterol to bile acids, a critical step in cholesterol catabolism and bile acid synthesis.
+
+4. HPS1 is associated with cholesterol trafficking and lysosomal storage disorders, impacting cholesterol homeostasis and cellular lipid metabolism.
+
+To summarize, the proteins in this system are primarily involved in cholesterol metabolism and steroid hormone synthesis, playing essential roles in maintaining cellular cholesterol homeostasis and contributing to the synthesis of steroid hormones. These processes are crucial for various physiological functions, including cell membrane integrity, hormone production, and bile acid synthesis. The interplay of these proteins ensures the proper regulation of cholesterol levels and steroid hormone synthesis within the cell."	0.92	Chromatin remodeling and gene regulation	"1. Proteins such as SMARCAL1, LARP4, and PRDM12 are involved in chromatin remodeling and gene regulation. SMARCAL1 is a DNA annealing helicase that plays a role in DNA repair and recombination. LARP4 is a RNA-binding protein that regulates mRNA stability and translation. PRDM12 is a transcription factor that regulates gene expression during neuronal differentiation.
+
+2. Proteins like GTF2I, H2AC25, and ND3 are involved in gene regulation and transcriptional control. GTF2I is a transcription factor that regulates the expression of various genes involved in cell growth and differentiation. H2AC25 is a histone variant involved in nucleosome structure and gene regulation. ND3 is a subunit of the mitochondrial respiratory chain complex I, which is involved in the regulation of nuclear gene expression.
+
+3. Proteins such as VPS29, MVP, and UBQLN4 are involved in protein degradation and quality control. VPS29 is a component of the retromer complex involved in protein trafficking and degradation. MVP is a major vault protein involved in multidrug resistance and protein degradation. UBQLN4 is an ubiquitin-like protein involved in protein quality control and degradation.
+
+In summary, the proteins in this system are involved in chromatin remodeling, gene regulation, and protein degradation, indicating a role in controlling the expression of genes and maintaining cellular homeostasis. These processes are essential for the proper functioning and development of cells and tissues."	0.85
+GO:0010757	PLAU CTSZ THBS1 SERPINF2 SERPINE1 SERPINE2 CPB2 PLAT	8	negative regulation of plasminogen activation	CPB2 SERPINE1 PLAU THBS1 ZNF737 SMDT1 XPNPEP2 LRRC32	ADAMTS17 CEP63 LRRC18 SUPT3H FUBP1 KCNK4 RPL27A LRWD1	Regulation of proteolysis and blood coagulation	"1. PLAU, also known as urokinase plasminogen activator, is involved in the conversion of plasminogen to plasmin, which plays a key role in fibrinolysis and tissue remodeling. It is also implicated in cell migration and tissue invasion.
+
+2. CTSZ, cathepsin Z, is a lysosomal cysteine proteinase involved in the degradation of extracellular matrix proteins and the regulation of immune responses.
+
+3. THBS1, thrombospondin 1, is a multifunctional extracellular matrix glycoprotein that modulates cell-to-cell and cell-to-matrix interactions. It is involved in platelet aggregation, angiogenesis, and wound healing.
+
+4. SERPINF2, also known as alpha-2-antiplasmin, is a serine protease inhibitor that regulates the activity of plasmin, thereby modulating fibrinolysis.
+
+5. SERPINE1, also known as plasminogen activator inhibitor-1 (PAI-1), is a serine protease inhibitor that regulates the activity of tissue plasminogen activator and urokinase, thus controlling fibrinolysis and blood coagulation.
+
+6. SERPINE2, also known as protease nexin I, is a serine protease inhibitor that regulates the activity of thrombin and plasmin, thereby modulating blood coagulation and fibrinolysis.
+
+7. CPB2, carboxypeptidase B2, is involved in the regulation of blood coagulation by inactivating anaphylatoxins C3a and C5a, and by cleaving C-terminal arginine or lysine residues from biologically active peptides such as bradykinin or complement anaphylatoxins.
+
+8. PLAT, tissue-type plasminogen activator, is a serine protease that converts plasminogen to plasmin, thereby promoting fibrinolysis and the dissolution of blood clots.
+
+The proteins in this system are primarily involved in the regulation of proteolysis and blood coagulation. They collectively modulate the balance between clot formation and dissolution, and play crucial roles in maintaining hemostasis and tissue remodeling. The interplay between these proteins ensures the proper functioning of the coagulation cascade and fibrinolytic system, with implications for various physiological and pathological processes, including wound healing, thrombosis, and inflammation."	0.92	Regulation of blood coagulation and fibrinolysis	"1. CPB2, also known as thrombin-activatable fibrinolysis inhibitor (TAFI), plays a crucial role in regulating blood coagulation and fibrinolysis. 
+It inhibits fibrinolysis by removing C-terminal lysine residues from fibrin, thereby reducing the binding sites for plasminogen and plasmin. 
+This process ultimately leads to the stabilization of blood clots.
+
+2. SERPINE1, also known as plasminogen activator inhibitor-1 (PAI-1), is a major inhibitor of tissue plasminogen activator (tPA) and urokinase (uPA), 
+which are key activators of the fibrinolytic system. By inhibiting these activators, SERPINE1 plays a critical role in regulating fibrinolysis and maintaining hemostasis.
+
+3. PLAU, also known as urokinase plasminogen activator (uPA), is a serine protease that converts plasminogen to plasmin, thereby initiating fibrinolysis. 
+It is involved in the breakdown of blood clots and tissue remodeling.
+
+4. THBS1, also known as thrombospondin-1, is a multifunctional extracellular matrix glycoprotein that interacts with various components of the coagulation and fibrinolytic systems. 
+It modulates the activity of plasminogen and plasmin, and also influences platelet aggregation and adhesion.
+
+5. ZNF737, SMDT1, XPNPEP2, and LRRC32 are not directly involved in blood coagulation and fibrinolysis, and their functions are not directly related to the regulation of these processes.
+
+In summary, the proteins in this system are primarily involved in the regulation of blood coagulation and fibrinolysis, with a focus on maintaining hemostasis and preventing excessive bleeding or clot formation. The interplay between these proteins ensures a delicate balance between clot formation and dissolution, crucial for normal physiological function.
+
+Confidence score: 0.92"	0.92	Centrosome duplication and microtubule organization	"1. CEP63 is a centrosomal protein that plays a crucial role in centriole biogenesis and centrosome duplication. It is essential for the recruitment of other centrosomal proteins and the initiation of centriole assembly.
+
+2. LRRC18 is a centrosomal protein involved in microtubule organization and stabilization. It interacts with other centrosomal proteins to regulate microtubule dynamics and spindle assembly during cell division.
+
+3. SUPT3H is a subunit of the SAGA transcriptional coactivator complex, which also localizes to the centrosome and plays a role in centrosome duplication and microtubule organization. It is involved in the recruitment of other centrosomal proteins and the regulation of microtubule nucleation.
+
+4. KCNK4, also known as TASK-1, is a potassium channel protein that localizes to the centrosome and is involved in regulating centrosome function and microtubule organization. It interacts with other centrosomal proteins to modulate microtubule dynamics and spindle assembly during cell division.
+
+To summarize, the proteins in this set are primarily involved in centrosome duplication and microtubule organization, playing essential roles in the regulation of centriole biogenesis, centrosome duplication, and the organization and stabilization of microtubules during cell division. These processes are crucial for maintaining genomic stability and ensuring proper cell division and function."	0.85
+GO:2000136	GNG5 TBX5 ISL1 RBPJ CTNNB1 NOTCH1 SMAD4 EYA1 BMP10 SOX9 HES1 ENG MKS1 SIX1 TBX3 HAND2 PIM1 BMPR2	18	regulation of cell proliferation involved in heart morphogenesis	MKS1 BMP10 EYA1 SMAD4 HAND2 GNG5 RBPJ SIX1 ENG FBXO38 MRPL22 NCOA7 APCDD1 ZNF689 DNAJC17 UBE2G2 THNSL1 DNAJC27	MGMT GPHN BANK1 NDP IL1F10 IKBKG PARD3 INCENP SSUH2 CCL7 SIAH3 ADD3 P2RY11 HELQ NIPSNAP2 IL17RC SNTA1 NCAPD2	Cardiac development and morphogenesis	"1. TBX5, ISL1, and NKX2-5 are transcription factors crucial for cardiac development. They regulate the expression of genes involved in cardiomyocyte differentiation and heart morphogenesis. TBX5 is essential for the development of the cardiac conduction system, while ISL1 is involved in the specification and differentiation of cardiac progenitor cells. NKX2-5 plays a critical role in cardiac looping and chamber formation.
+
+2. NOTCH1, RBPJ, and HES1 are involved in Notch signaling, which is essential for cardiac development. NOTCH1 is a transmembrane receptor that, upon ligand binding, activates RBPJ-mediated transcription of target genes, including HES1. HES1, in turn, regulates the differentiation of cardiac progenitor cells and contributes to cardiac morphogenesis.
+
+3. SMAD4 and BMP10 are part of the BMP signaling pathway, which plays a crucial role in cardiac development and morphogenesis. BMP10, a member of the TGF-beta superfamily, is expressed in the developing heart and is involved in regulating cardiomyocyte proliferation and differentiation. SMAD4 is a key intracellular mediator of BMP signaling, transducing the BMP10 signal to regulate gene expression during cardiac development.
+
+4. CTNNB1, also known as beta-catenin, is a component of the Wnt signaling pathway, which is essential for cardiac development. It regulates gene expression involved in cardiomyocyte proliferation, differentiation, and morphogenesis. Additionally, TBX3, SIX1, and EYA1 are involved in the regulation of the Wnt signaling pathway and contribute to cardiac development.
+
+In summary, the proteins in this system are primarily involved in cardiac development and morphogenesis, regulating key processes such as cardiomyocyte differentiation, heart chamber formation, and signaling pathways crucial for proper heart development and function. The interactions and synergistic effects of these proteins are essential for the intricate process of cardiac development and morphogenesis."	0.95	Cardiac development and morphogenesis	"1. BMP10, EYA1, SMAD4, HAND2, GNG5, RBPJ, SIX1, ENG, and FBXO38 are all involved in cardiac development and morphogenesis. 
+BMP10 is a member of the bone morphogenetic protein family and plays a crucial role in heart development. 
+EYA1 is a transcriptional activator that is essential for normal development of the heart. 
+SMAD4 is a key mediator of the transforming growth factor beta (TGF-β) signaling pathway, which is critical for heart development. 
+HAND2 is a transcription factor that regulates cardiac morphogenesis. 
+GNG5 is a subunit of the heterotrimeric G protein complex, which is involved in cardiac development and function. 
+RBPJ is a transcription factor that plays a role in Notch signaling, which is important for cardiac development. 
+SIX1 is a transcription factor that is involved in cardiac muscle development. 
+ENG is a co-receptor for the TGF-β superfamily and is essential for normal heart development. 
+FBXO38 is a regulator of cardiac development and function.
+
+2. MRPL22, NCOA7, APCDD1, ZNF689, DNAJC17, UBE2G2, and THNSL1 are involved in mitochondrial function and protein synthesis, which are essential for cardiac development and function. 
+MRPL22 is a mitochondrial ribosomal protein that is involved in protein synthesis within the mitochondria. 
+NCOA7 is a coactivator of nuclear receptors and is involved in mitochondrial biogenesis and function. 
+APCDD1 is a regulator of Wnt signaling, which is important for cardiac development. 
+ZNF689 is a transcription factor that regulates mitochondrial function. 
+DNAJC17 is a chaperone protein that is involved in protein folding and quality control in the mitochondria. 
+UBE2G2 is an E2 ubiquitin-conjugating enzyme that is involved in protein degradation and turnover. 
+THNSL1 is a mitochondrial ribonuclease that is involved in mitochondrial RNA processing.
+
+To summarize, the proteins in this set are involved in cardiac development and morphogenesis, as well as mitochondrial function and protein synthesis, which are essential for normal heart development and function. These proteins work together to ensure proper cardiac development and function, with a particular emphasis on the regulation of key signaling pathways and mitochondrial processes."	0.92	Cellular signaling and immune response	"1. MGMT is involved in the repair of alkylated DNA and acts as a DNA damage sensor. It plays a role in cellular defense against the cytotoxic and mutagenic effects of DNA alkylation damage.
+
+2. GPHN, also known as gephyrin, is a scaffolding protein that anchors inhibitory neurotransmitter receptors at the postsynaptic membrane. It is crucial for the formation and maintenance of inhibitory synapses in the central nervous system.
+
+3. BANK1 is a B-cell-specific scaffold protein that plays a role in B-cell receptor (BCR) signaling and B-cell activation. It is involved in the regulation of B-cell proliferation, differentiation, and antibody production.
+
+4. NDP, or Norrie disease protein, is involved in the development and maintenance of the retinal vasculature. It also plays a role in the development of the central nervous system and the inner ear.
+
+5. IL1F10 is a member of the interleukin-1 family and is involved in the regulation of immune and inflammatory responses. It may play a role in the modulation of innate and adaptive immune responses.
+
+6. IKBKG, also known as NEMO, is a key regulator of the NF-kappa-B signaling pathway. It is involved in the activation of NF-kappa-B in response to various stimuli, including proinflammatory cytokines and microbial pathogens.
+
+7. PARD3 is a crucial component of the PAR polarity complex and is involved in the establishment of cell polarity and tight junction formation. It plays a role in the regulation of cell proliferation, differentiation, and migration.
+
+8. INCENP is a component of the chromosomal passenger complex (CPC) and is involved in the regulation of mitosis and cytokinesis. It plays a critical role in the proper alignment and segregation of chromosomes during cell division.
+
+9. SSUH2, also known as SASH1, is involved in the regulation of apoptosis, cell adhesion, and migration. It may also play a role in the modulation of immune responses and inflammation.
+
+10. CCL7, or monocyte chemoattractant protein 3 (MCP-3), is a chemokine that plays a role in the recruitment and activation of monocytes, T cells, and NK cells during inflammation and immune responses.
+
+11. SIAH3 is an E3 ubiquitin-protein ligase that plays a role in the regulation of protein degradation and turnover. It may also be involved in the modulation of cellular signaling pathways and apoptosis.
+
+12. ADD3, or adducin 3, is a cytoskeletal protein that plays a role in the assembly and stabilization of the spectrin-actin network. It is involved in the regulation of cell morphology, adhesion, and motility.
+
+13. P2RY11 is a purinergic receptor that is involved in the modulation of immune responses and inflammation. It may play a role in the regulation of leukocyte activation and migration.
+
+14. HELQ is a DNA helicase that plays a role in the repair of DNA damage and the maintenance of genomic stability. It is involved in the response to DNA double-strand breaks and interstrand crosslinks.
+
+15. NIPSNAP2 is a mitochondrial protein that plays a role in the regulation of mitochondrial dynamics and function. It may be involved in the maintenance of mitochondrial homeostasis and energy metabolism.
+
+16. IL17RC is a receptor for interleukin-17 (IL-17) cytokines and is involved in the regulation of immune responses and inflammation. It may play a role in the modulation of Th17 cell differentiation and function.
+
+17. SNTA1, also known as alpha-1-syntrophin, is a cytoplasmic protein that is involved in the organization and stabilization of membrane protein complexes. It may play a role in the regulation of signaling pathways and cellular responses.
+
+18. NCAPD2 is a subunit of the condensin complex and is involved in the regulation of chromosome condensation and segregation during mitosis and meiosis. It plays a critical role in the maintenance of genomic stability and proper cell division.
+
+The proteins in this system are involved in a wide range of cellular signaling processes, including immune responses, inflammation, DNA repair, cell adhesion, and cytoskeletal organization. The interplay between these proteins likely contributes to the coordination of various cellular functions and the maintenance of cellular homeostasis."	0.85
+GO:0002433	PLPP4 LYN PRKCE APPL1 PRKCD FYN VAV1 YES1 MYO1G PLA2G6 LIMK1 VAV2 PTK2 HCK APPL2 ABL1 VAV3 PLD2 FGR SYK SRC PAK1	22	immune response-regulating cell surface receptor signaling pathway involved in phagocytosis	ABL1 VAV3 APPL2 LYN FGR SYK PRKCE PRKCD PLPP4 HCK SRC CNNM3 STRN4 ZNF529 WDR5B ZNF841 BMERB1 H2AC15 HSPB8 TVP23C PSMG3 MSTN	JAML PRKCSH PIM1 EID2 EPO UBE4A MRPL9 ASB18 SEC61B TAF1B OR52M1 SRSF10 GRWD1 HSDL2 EDIL3 EIF4G3 LTV1 PHEX PRAF2 PRSS12 UFSP1 NOC4L	Cellular signaling and regulation	"The proteins in this system are primarily involved in cellular signaling and regulation. They participate in various signaling pathways, including those mediated by kinases such as LYN, FYN, YES1, HCK, ABL1, SYK, and SRC. These kinases are involved in the regulation of cell proliferation, differentiation, and survival. Additionally, proteins such as PRKCE, PRKCD, PTK2, and PAK1 are involved in the regulation of cellular processes through phosphorylation events. APPL1 and APPL2 are adaptor proteins that participate in intracellular signaling pathways, while VAV1, VAV2, and VAV3 are involved in the regulation of cytoskeletal dynamics and cell migration. Furthermore, MYO1G, LIMK1, and PLA2G6 are involved in the regulation of actin cytoskeleton dynamics and lipid signaling. Collectively, these proteins form a network that regulates various cellular processes, including cell signaling, cytoskeletal dynamics, and cellular responses to external stimuli.
+
+The confidence score for the process name ""Cellular signaling and regulation"" is 0.85. This score reflects the substantial involvement of the majority of the proteins in the system in cellular signaling and regulation, indicating a high level of confidence in the selected process name."	0.85	Cellular Signaling and Regulation	"The proteins in this system are involved in cellular signaling and regulation. ABL1, VAV3, LYN, FGR, SYK, PRKCE, PRKCD, HCK, and SRC are all involved in various aspects of cellular signaling, including the regulation of cell growth, differentiation, and survival. These proteins are known to interact with each other and with other signaling molecules to modulate cellular responses to extracellular stimuli. Additionally, APPL2, PLPP4, CNNM3, STRN4, ZNF529, ZNF841, WDR5B, BMERB1, H2AC15, HSPB8, TVP23C, PSMG3, and MSTN are also involved in cellular signaling and regulation, contributing to processes such as gene expression, protein modification, and intracellular trafficking.
+
+The majority of the proteins in this system participate in various aspects of cellular signaling and regulation, indicating a high level of confidence in the proposed process name. These proteins collectively form a complex network that governs the dynamic responses of the cell to its environment, highlighting the significance of cellular signaling and regulation in maintaining cellular homeostasis and coordinating cellular activities."	0.85	Protein synthesis and ribosome biogenesis	"1. Proteins such as MRPL9, LTV1, and NOC4L are involved in ribosome biogenesis, playing essential roles in the assembly and maturation of ribosomal subunits.
+
+2. EIF4G3 is a translation initiation factor that plays a crucial role in the recruitment of ribosomes to mRNA and the assembly of the translation initiation complex.
+
+3. Proteins like UBE4A and PIM1 are involved in the regulation of protein degradation and turnover, ensuring the quality control of newly synthesized proteins.
+
+4. SEC61B is a component of the protein translocation channel in the endoplasmic reticulum membrane, facilitating the translocation of nascent proteins into the ER lumen for further processing and modification.
+
+5. TAF1B is a subunit of the RNA polymerase II transcription factor complex, contributing to the initiation of mRNA synthesis and subsequent protein production.
+
+In summary, the proteins in this system are primarily involved in the processes of protein synthesis, ribosome biogenesis, and the regulation of protein quality control, ensuring the efficient and accurate production of functional proteins within the cell. These processes are fundamental for cellular function and are tightly regulated to maintain cellular homeostasis.
+
+Confidence score: 0.92"	0.92
+GO:1990874	DBH NF1 ERN1 MMP2 HPGD IGFBP5 TGFB3 DDIT3 MAP3K5 PDCD4 CDKN1A FOXJ2 RBM10 NR4A3 CDKN1B MYOCD TERT IGF1 EDN1 SOD2 PTEN PDGFB CNN1 TNF GPER1 MAP3K7 FRS2 NDRG2 CALCRL IL10 MEF2C POLDIP2 HTR1B FGFR2 EFEMP2 TPM1 FGF9 BMPR1A ADAMTS1 GNAI2 GNA12 DDR2 LDLRAP1 MDM2 APLN MEF2D ADIPOQ DNMT1 JUN JAK2 PPARG PRKG1 FGF2 MFN2 BMP4 GNA13 TAFA5 SRC MMP9 P2RY6 GJA1	61	vascular associated smooth muscle cell proliferation	MAP3K7 PDGFB HPGD CDKN1A IGFBP5 EFEMP2 FGF9 TGFB3 IL10 MYOCD NDRG2 DNMT1 MEF2C EDN1 POLDIP2 DBH TPM1 P2RY6 NF1 DDR2 MEF2D JAK2 PRKG1 BMPR1A MMP9 APLN ERN1 MFN2 CDKN1B ADAMTS1 MEIS1 SLC25A5 MAPK13 APOC4 MAGEE1 ILDR2 PTGS1 RASA4 YPEL3 COLEC12 SKIC8 RBBP9 RFPL2 BMP10 KCNA7 NDUFA9 TRIM9 CCZ1B MYO1G RASA4B ZNF606 TMPRSS3 PPP1CC SP6 DEFB1 OR10C1 MINPP1 ELMO3 HAAO TPSAB1 ACAD8	GARNL3 OR1J1 SPP2 USP17L2 ARMH3 ANKRD13A HELZ OR10J1 C9orf78 FAM174B SLC25A29 CELA2B TUBA3D DRP2 SLC35F6 ADAMTSL4 MRPL58 CCHCR1 CHRNA2 ADAM17 CLIP4 PSPH PTPN4 TCEA3 HAL CEP112 HTR3C CDC26 MUC2 GALNT12 PGAP1 EID2 VPS39 UBE2I XK ZNF268 MTCL1 RTP4 C19orf18 ITGB1 RAD1 PSTK MTCP1 SF3A3 CAMK2A IFNL4 NLRP2 PTGES3 MTRR OPA3 GPR34 CCDC134 BAP1 CLN3 SHH HCAR1 WDR54 PIK3R6 PCDH18 SSU72 RTTN	Regulation of smooth muscle cell proliferation and differentiation	"1. Proteins such as TGFB3, EDN1, PDGFB, FGF9, BMP4, and IL10 are involved in the regulation of smooth muscle cell proliferation and differentiation. 
+TGFB3 and EDN1 are known to promote smooth muscle cell proliferation, while PDGFB, FGF9, BMP4, and IL10 are involved in the differentiation of smooth muscle cells.
+
+2. Proteins like NF1, PTEN, and CDKN1A play crucial roles in regulating the proliferation of smooth muscle cells. NF1 and PTEN act as tumor suppressors and negatively regulate cell proliferation, while CDKN1A inhibits the activity of cyclin-dependent kinase complexes, thereby preventing cell cycle progression.
+
+3. The proteins GNA12, GNA13, and GNAI2 are involved in mediating signaling pathways that regulate smooth muscle cell proliferation and differentiation. These proteins are G-proteins that transduce extracellular signals to intracellular effectors, thereby influencing cellular processes such as proliferation and differentiation.
+
+4. The protein CNN1 is a marker of differentiated smooth muscle cells and is involved in maintaining the contractile phenotype of smooth muscle cells.
+
+In summary, the proteins in this system are involved in the regulation of smooth muscle cell proliferation and differentiation, encompassing a network of signaling molecules, growth factors, and cell cycle regulators that collectively contribute to the homeostasis and functionality of smooth muscle cells."	0.92	Cellular Signaling and Regulation	"The proteins in the system are involved in diverse cellular signaling and regulatory processes. MAP3K7 is a key regulator of the NF-κB signaling pathway, which plays a crucial role in immune responses and inflammation. PDGFB is a growth factor involved in cell proliferation and differentiation, particularly in the development of blood vessels. HPGD is an enzyme that regulates prostaglandin levels, impacting various physiological processes including inflammation and cancer progression. CDKN1A and CDKN1B are cyclin-dependent kinase inhibitors that regulate cell cycle progression and are involved in cellular senescence and apoptosis. IGFBP5 is a binding protein that modulates the activity of insulin-like growth factors, influencing cell growth and survival. FGF9 is a member of the fibroblast growth factor family, involved in various developmental processes including cell proliferation and differentiation. TGFB3 is a cytokine that regulates cell growth, differentiation, and apoptosis. IL10 is an anti-inflammatory cytokine that modulates immune responses. MYOCD is a transcriptional coactivator involved in smooth muscle cell differentiation and function. NDRG2 is a stress-responsive protein involved in cell growth and differentiation. DNMT1 is a DNA methyltransferase that plays a role in epigenetic regulation. MEF2C and MEF2D are transcription factors involved in muscle development and neuronal differentiation. JAK2 is a tyrosine kinase involved in cytokine signaling and hematopoiesis. PRKG1 is a protein kinase involved in smooth muscle relaxation and platelet aggregation. BMPR1A is a receptor for bone morphogenetic proteins, regulating cell growth and differentiation. MMP9 is a matrix metalloproteinase involved in tissue remodeling and inflammation. APLN is a peptide hormone involved in cardiovascular regulation and angiogenesis. ERN1 is an endoplasmic reticulum stress sensor that regulates the unfolded protein response. MFN2 is a mitochondrial membrane protein involved in mitochondrial fusion and metabolism. These proteins collectively participate in intricate cellular signaling and regulatory networks, influencing various physiological processes.
+
+The confidence score for the process name ""Cellular Signaling and Regulation"" is 0.85."	0.85	Protein Translation and Ribosome Biogenesis	"1. Proteins in this system are involved in various stages of protein translation and ribosome biogenesis. For instance, MRPL58 is a mitochondrial ribosomal protein involved in the assembly of the mitochondrial ribosome, while TUBA3D is a member of the tubulin family, essential for the formation of the cytoskeleton, including the microtubules that are involved in the movement of ribosomes during translation.
+
+2. Additionally, proteins like PSTK and MTCP1 are involved in the post-translational modification of proteins, specifically in the phosphorylation of tRNA and the regulation of protein translation.
+
+3. Furthermore, proteins such as CAMK2A and PIK3R6 are involved in signaling pathways that regulate protein synthesis and ribosome biogenesis, indicating their role in coordinating cellular responses to various stimuli.
+
+4. The presence of proteins like SF3A3 and SSU72 suggests involvement in pre-mRNA splicing, a crucial step in the maturation of mRNA before translation.
+
+In summary, the proteins in this system are primarily involved in the processes of protein translation and ribosome biogenesis, encompassing various stages from ribosomal assembly to post-translational modifications and signaling pathways that regulate protein synthesis.
+
+"	0.92
+GO:0002792	ADRA2A KCNB1 SFRP1 IRS1 GHSR CRH LEP CD74 PFKL REST FFAR2 HADH UCP2 VSNL1 KCNJ11 FOXO1 KLF7 CRHBP GNAZ PSMD9 FKBP1B ACVR1C MIDN MTNR1B CCN3 SIRT4 DRD2 GHRL NDUFAF2 JAGN1 SYTL4 F2RL1 PPP3CA ABCC8 CARTPT PIM3 PTPN11 FFAR4 PRKN INHBB CHGA SREBF1 FAM3D ENY2 PDE8B BMP8A	46	negative regulation of peptide secretion	ADRA2A PPP3CA FOXO1 CHGA SFRP1 SREBF1 FAM3D LEP PDE8B DRD2 FFAR4 UCP2 BMP8A PIM3 CD74 CCN3 MIDN INHBB SYTL4 CARTPT SIRT4 PRKN PFKL SEPTIN2 COL4A5 OR4D2 NCR2 H3C15 ACTR2 AGTRAP MT1HL1 MIS12 ITGA10 OR14C36 MAPK7 COL18A1 RECQL5 HECW1 METTL23 UNC50 JUN TLDC2 PMPCB ASNS PROKR2 ATM	DCAF7 CIBAR2 GPNMB HAND1 ATP5MG MRI1 MOCOS CYP27A1 ENTR1 ZNF358 PLAGL1 DHX33 LRRC40 PCDHGB1 NEPRO ABHD5 PMM2 SRSF2 EPPIN-WFDC6 SDHD SNRPD3 KCNK9 PLAAT3 RXRB CFAP91 KLHL22 GDPGP1 DMRT3 BTLA DAAM1 ADAM2 TAF2 BCS1L LRTM2 CDK5R2 PPM1D PSMG2 ATP2C1 HSD17B10 THSD4 SYT2 DIS3L2 PLA2G2D PSMC3IP IDS TGM1	Glucose homeostasis and metabolic regulation	"1. IRS1, GHSR, LEP, FFAR2, UCP2, KCNJ11, SIRT4, FFAR4, PRKN, PTPN11, and PDE8B are involved in insulin signaling, glucose metabolism, and energy homeostasis. 
+IRS1 is a key mediator of insulin signaling, while GHSR and LEP are involved in appetite regulation and energy balance. 
+FFAR2 and FFAR4 are free fatty acid receptors that play a role in glucose and lipid metabolism. UCP2 is a mitochondrial uncoupling protein that regulates energy expenditure. 
+KCNJ11 is a subunit of the ATP-sensitive potassium channel, critical for insulin secretion. SIRT4 regulates insulin secretion and glucose homeostasis. 
+PRKN is involved in the regulation of insulin sensitivity and energy metabolism. PTPN11 is a negative regulator of insulin signaling. 
+PDE8B is a phosphodiesterase that modulates insulin secretion and glucose homeostasis.
+
+2. CRH, CRHBP, and CARTPT are involved in the regulation of stress response, appetite, and energy balance. CRH is a key regulator of the stress response and energy metabolism. 
+CRHBP modulates the activity of CRH. CARTPT is involved in the regulation of appetite and energy balance.
+
+3. SFRP1, REST, FOXO1, KLF7, GNAZ, ACVR1C, MIDN, CCN3, BMP8A, and FAM3D are involved in the regulation of cell proliferation, differentiation, and metabolic processes. 
+SFRP1 is a Wnt signaling antagonist involved in adipogenesis and metabolic regulation. REST regulates the expression of genes involved in neuronal differentiation and metabolism. 
+FOXO1 and KLF7 are transcription factors involved in the regulation of glucose metabolism and insulin sensitivity. GNAZ is a G protein involved in metabolic regulation. 
+ACVR1C is a receptor for activin, a regulator of glucose and lipid metabolism. MIDN, CCN3, BMP8A, and FAM3D are involved in the regulation of cell proliferation and metabolic processes.
+
+To summarize, the proteins in this set are primarily involved in the regulation of glucose homeostasis, insulin signaling, energy balance, and metabolic processes. 
+They play crucial roles in maintaining proper glucose levels, energy expenditure, and metabolic regulation, with a focus on insulin sensitivity, appetite regulation, and stress response."	0.92	Cellular signaling and regulation	"The proteins in this system are involved in a wide array of cellular signaling and regulatory processes. They participate in signal transduction, gene expression regulation, metabolic regulation, and cellular homeostasis. For example, FOXO1 is a transcription factor involved in insulin signaling and glucose metabolism regulation. SREBF1 regulates lipid metabolism and cholesterol homeostasis. LEP is an adipokine involved in the regulation of energy balance and appetite. PDE8B is a phosphodiesterase that modulates intracellular cAMP levels, impacting various signaling pathways. Additionally, several proteins in this system are involved in G-protein coupled receptor signaling, such as ADRA2A, DRD2, FFAR4, and AGTRAP. These proteins collectively contribute to the intricate network of cellular signaling and regulation, orchestrating diverse physiological processes.
+
+The confidence score for the process name ""Cellular signaling and regulation"" is 0.85."	0.85	RNA splicing and processing	"1. Proteins such as SRSF2, SNRPD3, and DHX33 are involved in RNA splicing and processing, playing crucial roles in the formation of mature mRNA from precursor RNA. 
+   SRSF2 is a splicing factor that regulates alternative splicing of pre-mRNA, while SNRPD3 is a component of the spliceosome, essential for splicing. 
+   DHX33 is an ATP-dependent RNA helicase involved in pre-mRNA splicing.
+
+2. Proteins like PPM1D and DIS3L2 are involved in RNA processing and degradation. PPM1D is a phosphatase that regulates the stability of mRNA, 
+   while DIS3L2 is an exonuclease involved in the 3' to 5' processing and degradation of various RNAs.
+
+3. Additionally, proteins such as TAF2 and PSMC3IP are involved in transcription initiation and RNA polymerase regulation, contributing to the overall process of RNA synthesis and processing.
+
+In summary, the proteins in this system are primarily involved in various aspects of RNA splicing, processing, and degradation, indicating a prominent role in the regulation of gene expression at the post-transcriptional level. These proteins collectively contribute to the intricate network of molecular events that ensure the accurate and efficient processing of RNA molecules within the cell."	0.85
+GO:1900368	PUM1 MAEL TIAL1 RIPK1 TP53 FXR1 BCDIN3D FMR1 ADAR ZC3H10 DGCR8 DND1 TRUB1 PUM2 ZMPSTE24 LIN28B STAT3 MECP2 ELAVL1 TRIM71 IL6 ZFP36 BMP4 LIN28A TGFB1	25	regulation of post-transcriptional gene silencing by regulatory ncRNA	BMP4 ZMPSTE24 MAEL PUM2 ELAVL1 ZFP36 LIN28B IL6 TIAL1 TGFB1 FMR1 RIPK1 SLC8A3 ASCL3 ATP6V1G3 SERPINF1 ZNF283 CATSPERB COL3A1 AK5 XKR9 TOPBP1 UNC13A CPNE9 OR9K2	GPR75-ASB3 ELOC ADORA2B RPL41 PFDN5 PPP1R12C CPSF6 UNC13C ZBTB49 PSMA5 LETMD1 MAOA PTGS2 OR8H2 CBX3 ZNF285 ZNF507 FBXO44 ARHGAP27 ACAD8 TBC1D31 TRIML1 GP2 DBX1 CDX2	RNA processing and regulation	"1. Proteins such as PUM1, PUM2, TIAL1, ELAVL1, and ZFP36 are involved in post-transcriptional regulation of mRNA stability and translation. They bind to specific sequences in the 3' untranslated regions of target mRNAs, influencing their degradation or translation.
+
+2. MAEL, DND1, and DGCR8 are associated with RNA processing and maturation, particularly in the context of germ cell development and microRNA biogenesis.
+
+3. ADAR is an RNA-editing enzyme that catalyzes the conversion of adenosine to inosine in double-stranded RNA, thereby affecting RNA stability and function.
+
+4. TRUB1 is involved in tRNA pseudouridylation, a modification crucial for tRNA stability and function in translation.
+
+5. ZMPSTE24 plays a role in prelamin A processing, which is important for nuclear organization and RNA regulation.
+
+6. FXR1, FMR1, and LIN28A/B are RNA-binding proteins involved in translational regulation and stem cell maintenance.
+
+7. RIPK1, STAT3, TP53, and IL6 are involved in signaling pathways that regulate RNA processing and gene expression in response to cellular stress and immune signaling.
+
+In summary, the proteins in this system are primarily involved in various aspects of RNA processing, regulation, and stability, including mRNA stability, translation, microRNA biogenesis, tRNA modification, and nuclear organization. These processes collectively contribute to the precise control of gene expression at the post-transcriptional level.
+
+Confidence score: 0.92"	0.92	RNA regulation and cellular response to stress	"1. ELAVL1, PUM2, ZFP36, LIN28B, TIAL1, and FMR1 are RNA-binding proteins involved in post-transcriptional regulation. They control mRNA stability, translation, and localization, thereby influencing gene expression and cellular responses to various stimuli.
+
+2. MAEL is involved in the piRNA pathway, which regulates transposon silencing and germ cell development. This process is crucial for maintaining genomic stability and proper germ cell differentiation.
+
+3. TGFB1 and BMP4 are members of the TGF-beta superfamily and are key regulators of cellular responses to stress and development. They modulate cell proliferation, differentiation, and apoptosis, and play critical roles in tissue homeostasis and immune regulation.
+
+4. IL6 is a pro-inflammatory cytokine that mediates the immune response to stress and injury. It regulates the acute phase response and influences the differentiation and function of various immune cells.
+
+5. RIPK1 is a key regulator of cell death and inflammation in response to stress and cytokine signaling. It integrates signals from various stress pathways and modulates cell fate decisions, including apoptosis, necroptosis, and inflammation.
+
+In summary, the proteins in this system are involved in the regulation of RNA processing and cellular responses to stress, including immune modulation, cell fate decisions, and genomic stability. These processes are essential for maintaining cellular homeostasis and adapting to environmental challenges. The interactions among these proteins contribute to the intricate network of regulatory mechanisms that govern cellular responses to stress and RNA regulation."	0.85	Transcriptional regulation and RNA processing	"1. ELOC, CPSF6, CBX3, and ZNF285 are involved in transcriptional regulation and RNA processing. ELOC is a subunit of the elongin complex, which is involved in transcriptional elongation and RNA processing. CPSF6 is a component of the cleavage and polyadenylation specificity factor (CPSF) complex, which is involved in pre-mRNA 3' end processing. CBX3 is a component of the heterochromatin protein 1 (HP1) complex, which is involved in transcriptional silencing and RNA processing. ZNF285 is a zinc finger protein that likely functions as a transcriptional regulator.
+
+2. RPL41 is a ribosomal protein involved in protein synthesis. It is a component of the 60S subunit of the ribosome and plays a role in translation.
+
+3. PPP1R12C is a regulatory subunit of protein phosphatase 1 (PP1), which is involved in the dephosphorylation of proteins involved in various cellular processes, including transcriptional regulation and RNA processing.
+
+4. UNC13C is involved in synaptic vesicle exocytosis and neurotransmitter release, which indirectly impacts transcriptional regulation in neurons.
+
+To summarize, the proteins in this set are primarily involved in transcriptional regulation, RNA processing, and protein synthesis, with some proteins also playing a role in synaptic vesicle exocytosis. These processes are essential for the accurate and efficient expression of genetic information and the maintenance of cellular homeostasis."	0.85
+GO:2000524	LILRB2 LILRB4 CD160	3	negative regulation of T cell costimulation	LILRB4 RIPK1 RASSF2	ATOH7 DRAM1 TOGARAM2	Immune regulation and cell signaling	"1. LILRB2 and LILRB4 are members of the leukocyte immunoglobulin-like receptor (LILR) family, which are involved in immune regulation. 
+They are expressed on immune cells and can modulate immune responses through inhibitory signaling pathways. 
+LILRB2 and LILRB4 can interact with MHC class I molecules and other ligands to regulate the activation of immune cells, 
+such as T cells and natural killer cells, and maintain immune homeostasis.
+
+2. CD160 is a glycosylphosphatidylinositol-anchored protein expressed on natural killer cells and T cells. 
+It can function as a co-stimulatory molecule in immune responses and is involved in cell signaling. 
+CD160 can interact with herpesvirus entry mediator (HVEM) to modulate T cell activation and cytokine production. 
+Additionally, CD160 has been implicated in the regulation of immune responses in various contexts, including viral infections and cancer.
+
+In summary, the proteins in this set play crucial roles in immune regulation and cell signaling, contributing to the modulation of immune responses and the maintenance of immune homeostasis. They can interact with various ligands and receptors to exert inhibitory or co-stimulatory effects on immune cells, thereby influencing the overall immune response."	0.85	Regulation of immune response and cell death	"1. LILRB4, a member of the leukocyte immunoglobulin-like receptor family, is involved in the regulation of immune response. It is expressed on myeloid cells and can deliver inhibitory signals to modulate immune cell activation and function. LILRB4 has been implicated in the negative regulation of T-cell activation and the inhibition of inflammatory responses.
+
+2. RIPK1, a key regulator of cell death and inflammation, plays a critical role in the regulation of immune response and cell death. It is involved in the signaling pathways that control apoptosis, necroptosis, and inflammation. RIPK1 is a central component of the TNF receptor signaling complex and is essential for the activation of NF-κB and MAPK pathways in response to various stimuli.
+
+3. RASSF2, a member of the Ras association domain family, is involved in the regulation of cell death and cell cycle control. It functions as a tumor suppressor and is implicated in the regulation of apoptosis and cell proliferation. RASSF2 has been shown to interact with the pro-apoptotic protein MST1 and modulate its activity, thereby influencing cell death pathways.
+
+In summary, the proteins in this system are involved in the regulation of immune response and cell death, playing critical roles in modulating inflammatory signaling, apoptosis, and immune cell activation. These proteins function in a coordinated manner to maintain immune homeostasis and regulate cellular responses to various stimuli."	0.85	Regulation of autophagy and cellular stress response	"1. ATOH7 is a basic helix-loop-helix (bHLH) transcription factor that plays a crucial role in the development of retinal ganglion cells. 
+It is involved in the regulation of autophagy and cellular stress response in the retina, particularly in response to hypoxic conditions and oxidative stress.
+
+2. DRAM1, also known as damage-regulated autophagy modulator 1, is a lysosomal protein that induces autophagy and promotes cell survival under stress conditions. 
+It is involved in the regulation of p53-mediated apoptosis and is upregulated in response to various stress signals, including DNA damage and hypoxia.
+
+3. TOGARAM2 is a mitochondrial protein that has been implicated in the regulation of autophagy and mitochondrial dynamics. 
+It interacts with the autophagy-related protein ATG8 and is involved in the maintenance of mitochondrial homeostasis and cellular response to stress.
+
+These proteins collectively participate in the regulation of autophagy and cellular stress response, particularly in the context of retinal development and function. They play essential roles in maintaining cellular homeostasis and responding to various stress signals, thereby contributing to the overall health and functionality of retinal cells."	0.85
+GO:2000556	IL18 ARID5A TBX21 SLAMF1 IL1R1 IL1B XCL1 IL18R1	8	positive regulation of T-helper 1 cell cytokine production	IL18 XCL1 SLAMF1 IL1R1 RPS6KA3 OR9Q1 OR52M1 ZFP36	PTH2 MGAT4C POM121 KRTAP4-9 DEFA1 SRPRA U2AF1 F2	Regulation of immune response and inflammation	"1. IL18, IL1B, and IL1R1 are involved in the regulation of immune response and inflammation. IL18 and IL1B are proinflammatory cytokines that induce the production of other cytokines and chemokines. IL1R1 is a receptor for IL1B and mediates its proinflammatory effects.
+
+2. TBX21 is a transcription factor that plays a critical role in the differentiation of T helper 1 (Th1) cells, which are involved in cell-mediated immunity and inflammation.
+
+3. ARID5A is a transcriptional regulator that has been implicated in the regulation of cytokine expression and immune response.
+
+4. SLAMF1 is a cell surface receptor that is involved in the regulation of immune cell activation and function.
+
+5. XCL1 is a chemokine that attracts and activates T cells and dendritic cells, playing a role in the regulation of immune cell trafficking and function.
+
+6. IL18R1 is the receptor for IL18, mediating its effects on immune cell activation and inflammation.
+
+These proteins collectively participate in the regulation of immune response and inflammation, including the activation and differentiation of immune cells, cytokine production, and immune cell trafficking.
+
+The confidence score for the name ""Regulation of immune response and inflammation"" is 0.95."	0.95	Immune response and cytokine signaling	"1. IL18 and IL1R1 are involved in the immune response and cytokine signaling. IL18 is a proinflammatory cytokine that induces cell-mediated immunity, 
+while IL1R1 is a receptor for IL1A, IL1B, and IL1RN, and is involved in the immune response and inflammation.
+
+2. XCL1 is a chemokine that is involved in the immune response and attracts T cells and NK cells. It plays a role in the regulation of immune responses.
+
+3. SLAMF1 is a member of the signaling lymphocytic activation molecule (SLAM) family and is involved in the regulation of immune responses. 
+It is also involved in the activation and differentiation of T cells and NK cells.
+
+4. RPS6KA3 is a serine/threonine kinase that is involved in the regulation of cytokine production and immune responses. It plays a role in the MAPK signaling pathway and can modulate the activity of transcription factors involved in cytokine production.
+
+5. ZFP36 is an RNA-binding protein that regulates the stability of mRNAs encoding cytokines and other immune response-related proteins. It is involved in the post-transcriptional regulation of cytokine expression.
+
+6. OR9Q1 and OR52M1 are olfactory receptors and are not directly involved in immune response and cytokine signaling.
+
+In summary, the proteins in this set are primarily involved in immune response and cytokine signaling, playing roles in the regulation of inflammation, immune cell activation, and cytokine production. The interactions between these proteins contribute to the coordination and modulation of immune responses."	0.85	Protein targeting and translocation	"1. POM121 is a component of the nuclear pore complex and is involved in the translocation of proteins across the nuclear envelope. It plays a role in the targeting and translocation of integral membrane proteins to the inner nuclear membrane.
+
+2. SRPRA is a subunit of the signal recognition particle (SRP) that targets proteins to the endoplasmic reticulum (ER) membrane. It facilitates the co-translational translocation of proteins into the ER.
+
+3. U2AF1 is involved in pre-mRNA splicing and is essential for the recognition of the 3' splice site during the early stages of spliceosome assembly.
+
+4. MGAT4C is a Golgi enzyme involved in the processing of N-linked glycans on glycoproteins. It plays a role in the modification and maturation of glycoproteins before their transport to their final destinations.
+
+To summarize, the proteins in this set are primarily involved in the targeting, translocation, and modification of proteins within the cell, with a specific emphasis on the nuclear envelope, endoplasmic reticulum, and Golgi apparatus. These proteins collectively contribute to the proper localization and function of various cellular proteins."	0.85
+GO:0120253	CYP2F1 BCO1 BCO2	3	hydrocarbon catabolic process	CYP2F1 NUF2 BTBD1	MORC3 ZNF627 EHMT1	Retinoid metabolism and homeostasis	"1. CYP2F1 is a cytochrome P450 enzyme involved in the metabolism of retinoids, particularly in the oxidation of retinol to retinaldehyde. 
+It plays a crucial role in the conversion of dietary vitamin A into bioactive retinoic acid, which is essential for various biological processes including 
+embryonic development, vision, and immune function.
+
+2. BCO1 and BCO2, also known as beta-carotene oxygenases 1 and 2, are responsible for the cleavage of provitamin A carotenoids into retinaldehyde, 
+a precursor of retinoic acid. This process is essential for maintaining adequate levels of retinoids in the body, which are crucial for vision, 
+immune function, and cellular differentiation.
+
+In summary, the proteins in this system are primarily involved in the metabolism and homeostasis of retinoids, playing a critical role in the conversion of dietary vitamin A into bioactive retinoic acid, which is essential for various biological processes. These processes include embryonic development, vision, and immune function, indicating a prominent role in retinoid metabolism and homeostasis. The majority of the proteins in this system are directly involved in retinoid metabolism, supporting the high confidence score for the proposed process name."	0.92	Mitotic spindle assembly and chromosome segregation	"1. NUF2 is a component of the NDC80 kinetochore complex, which is essential for proper chromosome segregation during mitosis. It forms microtubule-binding interfaces that are crucial for the attachment of chromosomes to the mitotic spindle.
+
+2. BTBD1 is involved in the regulation of mitotic spindle assembly and chromosome segregation. It interacts with other proteins to ensure proper kinetochore-microtubule attachment and accurate chromosome segregation during cell division.
+
+3. CYP2F1 has been shown to play a role in cell cycle regulation and mitotic spindle assembly. It is involved in the metabolism of various compounds that can impact the cell cycle and mitotic processes.
+
+In summary, the proteins in this system are primarily involved in the assembly and function of the mitotic spindle, as well as the accurate segregation of chromosomes during cell division. These processes are essential for maintaining genomic stability and ensuring the faithful transmission of genetic material to daughter cells. The proteins work in concert to orchestrate the complex series of events that lead to proper mitotic spindle assembly and chromosome segregation, highlighting their functional integration within the system.
+
+"	0.85	Chromatin remodeling and gene regulation	"1. MORC3 is a member of the Microrchidia (MORC) family of proteins, which are involved in chromatin remodeling and gene regulation. 
+MORC3 has been shown to interact with histone deacetylases and other chromatin-modifying enzymes, suggesting a role in epigenetic regulation.
+
+2. ZNF627 is a zinc finger protein that likely functions as a transcriptional regulator. Zinc finger proteins are known to be involved in chromatin remodeling and gene regulation by binding to specific DNA sequences and recruiting other proteins to modulate gene expression.
+
+3. EHMT1, also known as G9a-like protein, is a histone methyltransferase that catalyzes the methylation of histone H3 at lysine 9, leading to transcriptional repression. This protein is involved in the regulation of chromatin structure and gene expression.
+
+In summary, the proteins in this set are involved in chromatin remodeling and gene regulation, likely playing a role in the epigenetic control of gene expression and cellular processes.
+
+The confidence score for the process name ""Chromatin remodeling and gene regulation"" is 0.90. This high score is based on the direct involvement of the proteins in chromatin remodeling and gene regulation, indicating a strong association with the identified biological process."	0.9
+GO:0090100	SOX11 GDF5 TGFB3 NOTCH1 AMH TNXB FERMT1 TGFBR3 CSNK2B GDF2 BMP2 GATA6 CCN1 NUMA1 SMAD2 TWSG1 EP300 GIPC1 MSX1 NODAL CDH5 FKBP8 MSX2 ZNF423 LRG1 MEN1 SULF1 BMP10 GDF7 GATA4 SH2B1 ZC3H3 SLC2A10 ING2 BMP5 FLCN FBXL15 ACVR2B BMP6 HIPK2 FGF9 BMPR1A RNF111 BMP7 BMP4 UBE2O BMPR2 ACVR1B THBS1 ILK TGFBR2 GPC3 CDKN2B MYOCD ARK2C HES1 GDF6 TGFBR1 INHBA CITED2 AXIN1 KDR PELO STK11 ACVR1 ADISSP JAK2 PARP1 HFE DAB2 SDCBP NUP93 KCP CREBBP TGFB1 CRB2 HSP90AB1 TGFB1I1 TGFB2 BMPER KIAA0319 HES5 ACVR2A ITGA8 NOTCH2 CITED1 ENG NEO1 ELAPOR2 CDKN1C RBPJ ACVRL1 ZEB2 FOXD1 TBX20 SCUBE3 TSC22D1 NPNT SMAD4 SNW1	100	positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	CDH5 BMP6 SH2B1 MSX2 ING2 ZC3H3 BMP4 TSC22D1 SCUBE3 CITED1 TGFB2 HFE EP300 JAK2 GDF7 GPC3 GATA4 MEN1 GATA6 TGFB3 ACVR2B RBPJ GDF6 SULF1 ITGA8 CITED2 FERMT1 NUP93 MSX1 KDR ZNF423 FGF9 ADISSP PARP1 NOTCH1 SNW1 ARK2C TGFBR3 SMAD2 GDF2 NOTCH2 CDKN1C BMPER CCN1 GIPC1 ACVR1B NPNT THBS1 FKBP8 KCP OR5I1 SMC3 ZNF143 ZNF514 PLIN3 CYP2A6 GABARAPL1 MAP1S PMF1 GALNT15 ZBTB48 ANKRD13C RBM27 FLRT1 APEH CD300LG KRT33B COG5 CPLX1 ABCA5 C2CD6 NGEF KIF12 ZNF132 TRAK1 CFL1 FTL ZNF80 DES DUSP7 RNF170 B4GALNT1 PA2G4 ACAD9 ANXA7 KCNMB2 OR2L2 INSL4 PCDHGB3 TRPM6 KIF24 PTPN13 CDK5RAP2 LMNA SYNRG ALOXE3 DEFA4 PSEN2 RBMXL3 VDAC1	KLRC4-KLRK1 SMC1A POU5F1 RAB1A TMPRSS4 COLGALT1 DCAF8 ATOH7 EED RBM39 TMCO1 ZNF213 LILRB1 MIS18A OBI1 SGSH ZNF737 ZNF101 ATG4C ABCD4 FBXL7 ZC4H2 CBX4 DUSP18 CYSLTR2 LYZL2 OSER1 CCDC103 TAGLN2 SCUBE2 GABRB1 ZNF44 ZSCAN23 BOP1 ZBTB40 KRIT1 NECAP2 KCNMB3 MMD ETV6 MRTO4 ANXA1 LHFPL3 ASAH2B ATP11B LOC107984156 ZNF514 OR4D10 ACO2 ZSCAN12 ODAD3 WRNIP1 SSX2 NISCH RBBP5 CC2D2A SAPCD2 ZNF48 BLOC1S5 RAB2A CARHSP1 CXCL5 ZNF593 SNCG SESN1 P3H3 MARCHF11 RIOK1 GPR87 TLN2 DNALI1 TBC1D32 SELENOO GMFB PRM2 CTBP1 ZNF749 GABRA4 HIGD2A DNAJA4 LCN6 KLK7 SCYL1 C3orf33 DUSP23 TMEM203 CHAF1A DAGLB FOXD4L4 VEZT DHX29 TNFSF13B UFSP2 TPPP3 CTAG1B DONSON POM121 UBR7 OR52K1 ECEL1	TGF-beta signaling pathway	"1. The proteins in the system are involved in the TGF-beta signaling pathway, which regulates various cellular processes including cell growth, differentiation, apoptosis, and immune response. 
+2. TGFBR1, TGFBR2, and TGFBR3 are receptors for TGF-beta ligands, and their activation initiates downstream signaling cascades through SMAD proteins, such as SMAD2 and SMAD4, leading to the regulation of target gene expression.
+3. Other proteins in the system, such as TGFB1, TGFB2, and TGFB3, are TGF-beta ligands that bind to the TGF-beta receptors to initiate signaling.
+4. Additionally, several other proteins in the system, including BMP2, BMP4, BMP6, BMP7, GDF5, and GDF7, are members of the TGF-beta superfamily and play roles in bone and cartilage development, which are regulated by the TGF-beta signaling pathway.
+
+In summary, the proteins in this system are primarily involved in the TGF-beta signaling pathway, which is crucial for regulating various cellular processes, particularly in the context of development and tissue homeostasis.
+
+"	0.95	TGF-beta signaling pathway	"1. Proteins such as TGFB2, TGFB3, TGFBR3, SMAD2, GDF2, GDF6, GDF7, BMP4, BMP6, BMPER, ACVR2B, ACVR1B, and BMPER are involved in the TGF-beta signaling pathway. 
+2. This pathway plays a crucial role in regulating cell growth, differentiation, apoptosis, and immune responses. 
+3. The proteins in this system interact to transduce TGF-beta signals from the cell surface to the nucleus, where they regulate the expression of target genes. 
+4. The TGF-beta signaling pathway is involved in various cellular processes, including development, tissue homeostasis, and immune function.
+
+The confidence score for the TGF-beta signaling pathway is 0.92."	0.92	Chromatin remodeling and gene regulation	"1. Proteins such as SMC1A, EED, and RBBP5 are involved in chromatin remodeling and gene regulation. SMC1A is a component of the cohesin complex, which plays a crucial role in sister chromatid cohesion and DNA repair. EED is a subunit of the polycomb repressive complex 2 (PRC2), which is involved in gene silencing through histone methylation. RBBP5 is a component of the histone acetyltransferase complex, which regulates gene expression by modifying histones.
+
+2. Proteins like POU5F1 and ATOH7 are transcription factors that play essential roles in the regulation of gene expression. POU5F1 is a key regulator of pluripotency and self-renewal in embryonic stem cells, while ATOH7 is involved in the development of the nervous system and the regulation of retinal ganglion cell differentiation.
+
+3. Proteins such as ZNF213, ZNF737, and ZNF514 are members of the zinc finger protein family, which are known to be involved in gene regulation and transcriptional control. They act as transcription factors and are implicated in various cellular processes, including development and differentiation.
+
+4. Proteins like DCAF8 and BOP1 are involved in protein ubiquitination and ribosome biogenesis, respectively. These processes are essential for the regulation of gene expression and protein synthesis.
+
+In summary, the proteins in this system are primarily involved in chromatin remodeling, gene regulation, and transcriptional control, indicating a significant role in the regulation of cellular processes at the genetic level. The interactions and functions of these proteins suggest a coordinated effort in modulating gene expression and chromatin structure, highlighting their involvement in chromatin remodeling and gene regulation.
+
+"	0.92
