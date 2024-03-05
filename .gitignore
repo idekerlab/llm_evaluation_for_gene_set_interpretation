@@ -27,6 +27,7 @@ data/GO_term_analysis/all_go_sim_scores_gpt4.txt
 
 #obsolete 
 data/GO_term_analysis/name_only
+data/GO_term_analysis/simrank_pval_LLM_processed_selected_1000_go_terms_return_huge_matches.tsv
 
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
@@ -50,5 +51,17 @@ figures/archived
 
 #ignore cache
 utils/__pycache__/*
+utils/__pycache__
 __pycache__/*
 
+#ignore unused files 
+figures/model_compare/*raincloud*
+figures/model_compare/*.pdf
+figures/model_compare/*semantic_similarity_confidence* 
+check_result_ref_finder.ipynb
+figures/LLM_name_GO_term_percentile_CDF_w_random_byGO_revertX_100to1.svg
+figures/LLM_name_GO_term_percentile_CDF_w_random_byGO_revertX_100to1.svg
+figures/LLM_name_GO_term_sim_against_random_cdf_response to X-ray.svg
+figures/LLM_name_GO_term_sim_against_random_pdf_response to X-ray.svg
+figures/LLM_GO_gene_mention_percentage.svg
+figures/GO_0010897_with_bestmatch_vennDiagram.svg
