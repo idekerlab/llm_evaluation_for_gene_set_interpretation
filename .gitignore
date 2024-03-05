@@ -15,6 +15,19 @@ data/GO_term_analysis/*promp*
 data/GO_term_analysis/model_compare/*
 data/GO_term_analysis/model_compare/void*
 !data/GO_term_analysis/model_compare/*100set*
+data/GO_term_analysis/CC_MF_branch/*
+!data/GO_term_analysis/CC_MF_branch/*1000_go*
+!data/GO_term_analysis/CC_MF_branch/*.csv 
+data/GO_term_analysis/LLM_processed_gpt_4*
+data/GO_term_analysis/sets_no_gpt4name.tsv
+data/GO_term_analysis/best_25_worst_25_similarity_among1000GO.tsv
+data/GO_term_analysis/100_GO_terms_hypergeom_res.tsv
+#too big
+data/GO_term_analysis/all_go_sim_scores_gpt4.txt 
+
+#obsolete 
+data/GO_term_analysis/name_only
+
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
