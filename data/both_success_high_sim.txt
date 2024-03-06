@@ -1,2 +1,0 @@
-GeneSetName	GeneList	LLM Name	Adjusted P-value	GO term	enrichr_JI
-Bulimia	PRR5-ARHGAP8 MMADHC-DT SLC25A26 ARHGAP8 CUBN	Intracellular Cobalamin Transport and Metabolism	0.0109888214333476	Cobalamin Metabolic Process 	0.2

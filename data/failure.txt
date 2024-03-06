@@ -1,3 +1,0 @@
-GeneSetName	GeneList	LLM Name	Adjusted P-value	GO term	enrichr_JI
-Primary malignant neoplasm of lateral wall of oropharynx	ADH1B WDFY3 HLA-DQB1 KCNC4	System of unrelated proteins	0.0090957178230328	Aggrephagy 	0.25
-NEUROPATHY, CONGENITAL HYPOMYELINATING, 2	TRDN UNC5D MAPK14	System of unrelated proteins	0.0095926343142071	Response To Lipoteichoic Acid 	0.3333333333333333

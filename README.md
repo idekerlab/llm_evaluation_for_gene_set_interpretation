@@ -82,16 +82,16 @@ The notebooks are numbered according to the evaluation steps
     and the [notebook](0.[Prep%20GO]Download_and_parse_GO.ipynb) for parsing GO terms
 	
 
-	If need to download MSigDB, run [notebook](0.[omics%20set]ProcessMSigDB.ipynb). The notebook reads in the hallmark gene sets and saves them as individual .yaml files.
+	If need to download Omics data, run [notebook](0.[Omics_revamped]_ProcessOmicsData.ipynb). The notebook processes the omics data and saves them into a tab delimited text file.
    
 
-2. Query GPT-4 for names and supporting analysis 
+1. Query GPT-4 for names and supporting analysis and run functional enrichment
 
     [GO gene set GPT-4 analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
 
     [batch run 1000 GO terms using slurm](run_thousand_GO_llm_query.sh)
 
-    [omic gene set GPT-4 analysis](1.[omics%20data]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[omics%20data]run_Enrichr.ipynb)
+    [omic gene set GPT-4 analysis](1A.[Omics_revamped]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[Omics_revamped]run_Enrichr.ipynb)
 
     ``` 
     ## will process from 1st to 5th terms
@@ -107,11 +107,11 @@ The notebooks are numbered according to the evaluation steps
     python query_llm_for_analysis.py --input $INPUT --start $START --end $END --config $CONFIG
     ```
 
-3. Semantic Similarity evaluation of names
+2. Semantic Similarity evaluation of names
 
     [GO gene set analysis evalution](2.[GO%20set]Rank_LLM_GO_term_pair_sim.ipynb)
 
-    [omic gene set analysis evaluation](2.[omics%20data]RunSemanticSimEval.ipynb)
+    [omic gene set analysis evaluation](2.[Omics_revamped]RunSemanticSimEval.ipynb)
 
     ```
     # get the ranking of similarities from the GO gene set analysis
@@ -120,11 +120,11 @@ The notebooks are numbered according to the evaluation steps
 
     ```
 
-4. Further evaluation of the performance: including gene set enrichment(GO set), and gene coverage in the analysis 
+3. Further evaluation of the performance: including gene set enrichment(GO set), and gene coverage in the analysis 
 
     [GO gene set enrichment analysis](3.[GO%20set]Evaluate_gene_set_similarity.ipynb) and counting [gene coverage](3B.[GO%20set]Count_genes_in_analysis.ipynb)
 
-
+    [Omics data annotation evalation](3A.[Omics_revamped]_AnayseAnnotation.ipynb)
     ```
     # run hypergeometric test for p value and adjust p by BH
 
@@ -132,14 +132,16 @@ The notebooks are numbered according to the evaluation steps
 
     ```
 
-5. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
+4. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
 
-6. Blinded study and data processing [Omics processing](5.[omics%20data]Analyse_Winner_Task2.ipynb)
 
-7. Visualization of results 
+5. Quantification of citation module [check citation module](5.Quantify reference checking.ipynb)
+
+6. Further analyses and visualization of results 
     [extended data fig.1 + Fig.2](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
     [extract sub hierarchy](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
-    [Fig.3 + extended data fig. 3](6.[omics%20set]GenerateOmicsFigures.ipynb)
+    [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
+    [Omics figures](6B.[Omics_revamped]GenerateOmicsFigures.ipynb)
 
 ## License
 
