@@ -1,0 +1,1 @@
+{"CONTEXT": "You are an efficient and insightful assistant to a molecular biologist", "TEMP": 0.0, "MODEL": "llama2:70b", "LOG_NAME": "logs/model_comparison_llama2_70b", "MAX_TOKENS": 1000}

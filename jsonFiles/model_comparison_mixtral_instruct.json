@@ -1,0 +1,1 @@
+{"CONTEXT": "You are an efficient and insightful assistant to a molecular biologist", "TEMP": 0.0, "MODEL": "mixtral:instruct", "LOG_NAME": "logs/model_comparison_mixtral_instruct", "MAX_TOKENS": 1000}

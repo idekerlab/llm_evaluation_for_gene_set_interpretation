@@ -1,0 +1,9 @@
+{
+    "CONTEXT": "You are an efficient and insightful assistant to a molecular biologist",
+    "TEMP": 0.0, 
+    "MAX_TOKENS": 1000,
+    "RATE_PER_TOKEN": 2e-6,
+    "MODEL": "gpt-3.5-turbo-1106",
+    "DOLLAR_LIMIT": 35.0,
+    "LOG_NAME": "logs/toy_example_gpt35"
+}
