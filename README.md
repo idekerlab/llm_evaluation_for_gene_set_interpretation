@@ -111,7 +111,7 @@ The notebooks are numbered according to the evaluation steps
 
     source activate llm_eval
     # Run the Python script for the given range
-    pythonn query_llm_for_analysis.py --config $config \
+    python query_llm_for_analysis.py --config $config \
                 --initialize \
                 --input $input_file \
                 --input_sep  ','\
@@ -142,24 +142,28 @@ The notebooks are numbered according to the evaluation steps
 
     Analysis related to Fig. 2A
     [Compare the semantic similarities between models](3A.[model%20compare]compare_semantic_similarity.ipynb)
-    Analysis related to Fig. 3
-    [Run GO gene set functional enrichment for control](3A.[model%20compare]functional_enrichment_analysis_control.ipynb)
-    [Compare the confidence socre between real, contaminated and random gene sets](3B-2.[model%20compare]Check_confidence_scoring_metrics.ipynb)
 
-    *Check boarder concepts of the LLM names*
+   Analysis related to Fig. 3
+    [Run GO gene set functional enrichment for control](3A.[model%20compare]functional_enrichment_analysis_control.ipynb)
+
+   [Compare the confidence score between real, contaminated, and random gene sets](3B-2.[model%20compare]Check_confidence_scoring_metrics.ipynb)
+
+    *Check broader concepts of the LLM names*
+   
     Analysis for Fig. 2d
+   
     [Analysis for whether the best matching GO term is a broader concept as the queried term](3C.[GO set]Evaluate_gene_set_similarity.ipynb)
 
     **Evaluation Task 2 related**
     [Omics data annotation evaluation](3A.[Omics_revamped]_AnayseAnnotation.ipynb)
 
 
-5. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
+6. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
 
 
-6. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
+7. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
 
-7. Further analyses and visualization of results 
+8. Further analyses and visualization of results 
     [extended data fig.1 + Fig.2 + Fig.3](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
     [extract sub hierarchy (Fig.2e)](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
     [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
