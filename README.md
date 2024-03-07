@@ -163,10 +163,14 @@ The notebooks are numbered according to the evaluation steps
 
 7. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
 
-8. Further analyses and visualization of results 
+8. Further analyses and visualization of results
+9. 
     [extended data fig.1 + Fig.2 + Fig.3](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
+   
     [extract sub hierarchy (Fig.2e)](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
+   
     [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
+   
     [Omics figures](6B.[Omics_revamped]GenerateOmicsFigures.ipynb)
 
 ## License
