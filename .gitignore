@@ -1,9 +1,70 @@
+*-checkpoint.ipynb
+data/Omics_data/L1000__gene_attribute_edges.txt
+./.git/objects/pack/pack-9dcba3ba661c581e92ed9dc4cf320767273e4538.pack
+./data/Omics_data/L1000__gene_attribute_edges.txt
+./data/Viral_Infections_gene_attribute_matrix_standardized.txt
+./data/omics_LLM_Enrichr_DF.tsv
+./data/omics_LLM_Enrichr_DF copy.tsv
+errfile
+outfile
+data/CH_omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF.json
+data/GO_term_analysis/*.json
+data/GO_term_analysis/*.log
+data/GO_term_analysis/add_on*
+data/GO_term_analysis/test*
+data/GO_term_analysis/*promp*
+data/GO_term_analysis/model_compare/*
+data/GO_term_analysis/model_compare/void*
+!data/GO_term_analysis/model_compare/*100set*
+data/GO_term_analysis/CC_MF_branch/*
+!data/GO_term_analysis/CC_MF_branch/*1000_go*
+!data/GO_term_analysis/CC_MF_branch/*.csv 
+data/GO_term_analysis/LLM_processed_gpt_4*
+data/GO_term_analysis/sets_no_gpt4name.tsv
+data/GO_term_analysis/best_25_worst_25_similarity_among1000GO.tsv
+data/GO_term_analysis/100_GO_terms_hypergeom_res.tsv
+data/GO_term_analysis/900_selected_go_contaminated.csv
+data/omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF_with_potential_novel.tsv
+#too big
+data/GO_term_analysis/all_go_sim_scores_gpt4.txt 
 
+#obsolete 
+data/GO_term_analysis/name_only
+data/GO_term_analysis/simrank_pval_LLM_processed_selected_1000_go_terms_return_huge_matches.tsv
+
+logs/*
+data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
 find . -size +100M
 
 Set_seed_in_GPT_query.ipynb
 
-./logs/test*
+logs/test*.log
+localcopy*
+jsonFiles/*test.json
 
 pipeline_for_new_model.ipynb
+check_manual_eval_stats.ipynb 
+data/\[LLM_eval\]Omics_revamped.xlsx
+OLD*
+Extract_keywords_reference_finder.ipynb
+#ignore archived files
+data/archived
+figures/archived
+
+#ignore cache
+utils/__pycache__/*
+utils/__pycache__
+__pycache__/*
+
+#ignore unused files 
+figures/model_compare/*raincloud*
+figures/model_compare/*.pdf
+figures/model_compare/*semantic_similarity_confidence* 
+check_result_ref_finder.ipynb
+figures/LLM_name_GO_term_percentile_CDF_w_random_byGO_revertX_100to1.svg
+figures/LLM_name_GO_term_percentile_CDF_w_random_byGO_revertX_100to1.svg
+figures/LLM_name_GO_term_sim_against_random_cdf_response to X-ray.svg
+figures/LLM_name_GO_term_sim_against_random_pdf_response to X-ray.svg
+figures/LLM_GO_gene_mention_percentage.svg
+figures/GO_0010897_with_bestmatch_vennDiagram.svg

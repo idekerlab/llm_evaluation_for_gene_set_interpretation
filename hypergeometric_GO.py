@@ -33,6 +33,8 @@ df['pvals'] = None
 df['adj_pvals'] = None
 df['random_pvals'] = None
 df['random_adj_pvals'] = None
+df['JI'] = 0
+df['random JI'] = 0
 
 
 M = len(set(all_go['Genes'].str.split(' ').sum())) # total number of genes in all GO terms
@@ -45,9 +47,13 @@ for i, row in tqdm(df.iterrows(), total=df.shape[0]):
     top_n_hits = row[f'top_{n_hit}_hits'].split('|')
     # print(len(top_n_hits))
     pvals_list = []
-    ji = []
+    ji_list = []
     for j, term in enumerate(top_n_hits):
         genes = all_go[all_go['Term_Description'] == term]['Genes'].tolist()[0].split(' ')
+        
+        # Calculate Jaccard Index
+        ji = calc_JI(set(current_gene_set), set(genes))
+        ji_list.append(ji)
         # print(genes)
         x = len(set(current_gene_set).intersection(set(genes)))  # number of genes in the intersection
         
@@ -78,15 +84,17 @@ for i, row in tqdm(df.iterrows(), total=df.shape[0]):
     random_go_term = row['random_GO_name']
     # get the genes in the random GO term
     random_row_genes = all_go.loc[all_go['Term_Description']==random_go_term, 'Genes'].values[0].split(' ')
+    random_JI = calc_JI(set(current_gene_set), set(random_row_genes))
+
     x_rand = len(set(current_gene_set).intersection(set(random_row_genes))) 
     N_rand = len(random_row_genes)
 
     p_val_rand = hypergeom.sf(x_rand-1, M, n, N_rand)
     rand_pvals.append(p_val_rand)
     df.loc[i, 'random_pvals'] = p_val_rand
-    
+    df.loc[i, 'random JI'] = random_JI
     df.loc[i, 'pvals'] = '|'.join(str(pval) for pval in pvals_list)
-
+    df.loc[i, 'JI'] = '|'.join(str(ji) for ji in ji_list)
 
 # Adjust the p-values for each j separately
 for j in all_pvals_dict:

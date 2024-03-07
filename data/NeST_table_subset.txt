@@ -1,4 +1,0 @@
-NEST ID	name_new	Genes
-NEST:256	MAPK signaling	"ERBB2,ERBB4,FGFR2,FGFR4,HRAS,KRAS"
-NEST:134	RPA complex associated proteins	"ATM,ATR,BLM,BRCA1,XPA,XPC"
-NEST:125	Extended mismatch repair complex	"ERCC1,ERCC4,MLH1,MLH3,MSH2,MSH3,MSH6,PMS1,PMS2,SLX4"
