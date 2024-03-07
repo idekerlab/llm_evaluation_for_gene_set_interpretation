@@ -2,7 +2,7 @@
 
 
 ## Description
-Code associated with paper "Evaluation of large language models for discovery of gene set function" [read paper](https://arxiv.org/abs/2309.04019v1)
+Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://arxiv.org/abs/2309.04019v1)
 
 ## Dependencies
 ### Set up an environment
@@ -88,10 +88,11 @@ The notebooks are numbered according to the evaluation steps
 
 1. Query GPT-4 for names and supporting analysis and run functional enrichment
 
-    [GO gene set GPT-4 analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
-    [GO gene set different models](1A.[GO%20set]Compare_models.ipynb)
+   GO gene set GPT-4 analysis is stored in [Run_LLM_analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
 
-    [batch run 1000 GO terms using slurm](thousandGOsets_GPT4Run.sh) with the [parameter file](thousandGOsets_GPT4Run_params.txt) 
+   GO gene set analysis with [different models](1A.[GO%20set]Compare_models.ipynb)
+
+   Batch run 1000 GO terms using [slurm job](thousandGOsets_GPT4Run.sh) with the [parameter file](thousandGOsets_GPT4Run_params.txt) 
 
 
     [omic gene set GPT-4 analysis](1A.[Omics_revamped]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[Omics_revamped]run_Enrichr.ipynb)
@@ -122,7 +123,7 @@ The notebooks are numbered according to the evaluation steps
                 --output_file $out_file
     ```
 
-2. Semantic Similarity evaluation of names
+3. Semantic Similarity evaluation of names
 
     [GO gene set analysis evalution](2.[GO%20set]Rank_LLM_GO_term_pair_sim.ipynb)
 
@@ -134,7 +135,7 @@ The notebooks are numbered according to the evaluation steps
     python rank_GOterm_LLM_sim_rand.py --input_file ./data/GO_term_analysis/LLM_processed_toy_example_w_contamination_gpt_4.tsv --emb_file data/all_go_terms_embeddings_dict.pkl --topn 3 --output_file ./data/GO_term_analysis/simrank_LLM_processed_toy_example.tsv --background_file data/GO_term_analysis/all_go_sim_scores_toy.txt
     ```
 
-3. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
+4. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
     **Evaluation Task 1 related**
     
     *Model Comparison*
@@ -153,12 +154,12 @@ The notebooks are numbered according to the evaluation steps
     [Omics data annotation evaluation](3A.[Omics_revamped]_AnayseAnnotation.ipynb)
 
 
-4. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
+5. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
 
 
-5. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
+6. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
 
-6. Further analyses and visualization of results 
+7. Further analyses and visualization of results 
     [extended data fig.1 + Fig.2 + Fig.3](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
     [extract sub hierarchy (Fig.2e)](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
     [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
