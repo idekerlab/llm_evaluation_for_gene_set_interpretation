@@ -2,7 +2,7 @@
 
 
 ## Description
-Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://arxiv.org/abs/2309.04019v1)
+Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://arxiv.org/abs/2309.04019v2)
 
 ## Dependencies
 ### Set up an environment
