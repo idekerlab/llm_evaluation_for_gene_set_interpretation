@@ -158,9 +158,9 @@ def main(df):
             continue
         i += 1
         if i % 10 == 0:
-            # bin scores into no score, low score, medium score, high score
-            bins = [-np.inf, 0, 0.79, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.79 is low score, between 0.8 to 0.86 is medium score, above 0.86 is high score
-            labels = ['Name not assigned', 'Low Score', 'Medium Score', 'High Score']  # Define the corresponding labels
+            # bin scores into no score, low, medium, high confidence
+            bins = [-np.inf, 0, 0.81, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.79 is low confidence, between 0.82 to 0.86 is medium confidence, above 0.87 is high confidence
+            labels = ['Name not assigned', 'Low Confidence', 'Medium Confidence', 'High Confidence']  # Define the corresponding labels
             
             df[f'{column_prefix} Score bins'] = pd.cut(df[f'{column_prefix} Score'], bins=bins, labels=labels)
             save_progress(df, analysis_dict, out_file)
