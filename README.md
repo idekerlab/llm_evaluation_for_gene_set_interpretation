@@ -2,7 +2,7 @@
 
 
 ## Description
-Code associated with paper "Evaluation of large language models for discovery of gene set function" [read paper](https://arxiv.org/abs/2309.04019v1)
+Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://arxiv.org/abs/2309.04019v2)
 
 ## Dependencies
 ### Set up an environment
@@ -32,9 +32,9 @@ From OpenAI website for [the best practice for API key safety](https://help.open
 The code was developed using Python 3.11.5.
 
 ```
-git clone git@github.com:idekerlab/llm_go_evaluation.git
+git clone git@github.com:idekerlab/llm_evaluation_for_gene_set_interpretation.git
 
-cd llm_go_evaluation
+cd llm_evaluation_for_gene_set_interpretation
 
 pip install -r requirements.txt
 ```
@@ -88,10 +88,11 @@ The notebooks are numbered according to the evaluation steps
 
 1. Query GPT-4 for names and supporting analysis and run functional enrichment
 
-    [GO gene set GPT-4 analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
-    [GO gene set different models](1A.[GO%20set]Compare_models.ipynb)
+   GO gene set GPT-4 analysis is stored in [Run_LLM_analysis](1.[GO%20set]Run_LLM_analysis.ipynb)
 
-    [batch run 1000 GO terms using slurm](thousandGOsets_GPT4Run.sh) with the [parameter file](thousandGOsets_GPT4Run_params.txt) 
+   GO gene set analysis with [different models](1A.[GO%20set]Compare_models.ipynb)
+
+   Batch run 1000 GO terms using [slurm job](thousandGOsets_GPT4Run.sh) with the [parameter file](thousandGOsets_GPT4Run_params.txt) 
 
 
     [omic gene set GPT-4 analysis](1A.[Omics_revamped]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[Omics_revamped]run_Enrichr.ipynb)
@@ -110,7 +111,7 @@ The notebooks are numbered according to the evaluation steps
 
     source activate llm_eval
     # Run the Python script for the given range
-    pythonn query_llm_for_analysis.py --config $config \
+    python query_llm_for_analysis.py --config $config \
                 --initialize \
                 --input $input_file \
                 --input_sep  ','\
@@ -122,7 +123,7 @@ The notebooks are numbered according to the evaluation steps
                 --output_file $out_file
     ```
 
-2. Semantic Similarity evaluation of names
+3. Semantic Similarity evaluation of names
 
     [GO gene set analysis evalution](2.[GO%20set]Rank_LLM_GO_term_pair_sim.ipynb)
 
@@ -134,34 +135,42 @@ The notebooks are numbered according to the evaluation steps
     python rank_GOterm_LLM_sim_rand.py --input_file ./data/GO_term_analysis/LLM_processed_toy_example_w_contamination_gpt_4.tsv --emb_file data/all_go_terms_embeddings_dict.pkl --topn 3 --output_file ./data/GO_term_analysis/simrank_LLM_processed_toy_example.tsv --background_file data/GO_term_analysis/all_go_sim_scores_toy.txt
     ```
 
-3. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
+4. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
     **Evaluation Task 1 related**
     
     *Model Comparison*
 
     Analysis related to Fig. 2A
     [Compare the semantic similarities between models](3A.[model%20compare]compare_semantic_similarity.ipynb)
-    Analysis related to Fig. 3
-    [Run GO gene set functional enrichment for control](3A.[model%20compare]functional_enrichment_analysis_control.ipynb)
-    [Compare the confidence socre between real, contaminated and random gene sets](3B-2.[model%20compare]Check_confidence_scoring_metrics.ipynb)
 
-    *Check boarder concepts of the LLM names*
+   Analysis related to Fig. 3
+    [Run GO gene set functional enrichment for control](3A.[model%20compare]functional_enrichment_analysis_control.ipynb)
+
+   [Compare the confidence score between real, contaminated, and random gene sets](3B-2.[model%20compare]Check_confidence_scoring_metrics.ipynb)
+
+    *Check broader concepts of the LLM names*
+   
     Analysis for Fig. 2d
+   
     [Analysis for whether the best matching GO term is a broader concept as the queried term](3C.[GO set]Evaluate_gene_set_similarity.ipynb)
 
     **Evaluation Task 2 related**
     [Omics data annotation evaluation](3A.[Omics_revamped]_AnayseAnnotation.ipynb)
 
 
-4. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
+6. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
 
 
-5. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
+7. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
 
-6. Further analyses and visualization of results 
+8. Further analyses and visualization of results
+9. 
     [extended data fig.1 + Fig.2 + Fig.3](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
+   
     [extract sub hierarchy (Fig.2e)](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
+   
     [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
+   
     [Omics figures](6B.[Omics_revamped]GenerateOmicsFigures.ipynb)
 
 ## License
