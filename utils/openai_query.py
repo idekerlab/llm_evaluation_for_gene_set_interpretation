@@ -58,7 +58,7 @@ def openai_chat(context, prompt, model,temperature, max_tokens, rate_per_token, 
             log_data["time_taken_last_run"] = time_usage
             log_data["time_taken_total"] += time_usage
             log_data["runs"] += 1 # Increment the number of runs, used for estimating the average time taken per run
-            print(tokens_used)
+            # print(tokens_used)
             save_log(LOG_FILE,log_data)
 
             return response_content, system_fingerprint
