@@ -1,0 +1,59 @@
+...1	Unnamed: 0	Source	GeneSetID	GeneSetName	GeneList	n_Genes	LLM Name	LLM Analysis	Score	Rank	Overlap	P-value	Adjusted P-value	Genes	Term	GO term	GO ID	GO_term_genes	LLM_name_GO_term_sim	enrichr_JI	LLM_success_TF	enrichr_success_TF
+161	0	NeST	Cluster1-14	Cluster1-14	DTWD1 DTWD2 POLD2 POLD4 POLH POLI RAD18 REV1 REV3L TBC1D19 TTLL1 UBE2V1 UBE2V2 WRNIP1 ZNF611	15	DNA Damage Tolerance and Repair Pathway	"1. DTWD1 and DTWD2 are proteins containing DTW domains, which are implicated in protein-protein interactions. While specific roles in DNA repair are not well-established, proteins with DTW domains are often involved in regulatory functions that could influence DNA repair pathways.
+
+2. POLD2 and POLD4 are subunits of DNA polymerase delta, which plays a critical role in DNA replication and repair. POLD2 is the accessory subunit, while POLD4 is a smaller subunit that may have a role in stabilizing the complex and interacting with other proteins during DNA synthesis and repair.
+
+3. POLH and POLI encode DNA polymerases eta and iota, respectively. These are Y-family DNA polymerases involved in translesion synthesis (TLS), a process that allows DNA replication to occur despite the presence of lesions that would otherwise stall the replication fork.
+
+4. RAD18 is an E3 ubiquitin-protein ligase that is crucial for post-replication repair of DNA. It monoubiquitinates PCNA, facilitating the recruitment of Y-family polymerases to sites of stalled replication due to DNA damage.
+
+5. REV1 and REV3L encode proteins that are part of the translesion synthesis machinery. REV1 is a deoxycytidyl transferase that inserts cytosine opposite lesions that obstruct replication. REV3L is the catalytic subunit of DNA polymerase zeta, which extends from the nucleotides inserted by REV1 and other TLS polymerases.
+
+6. TBC1D19 is a protein with a role in intracellular trafficking. Its connection to DNA repair is not direct, but it may influence the process by regulating the localization and turnover of proteins involved in DNA repair pathways.
+
+7. TTLL1 is a tubulin tyrosine ligase-like protein. While its primary function is related to post-translational modifications of tubulin, such modifications can indirectly affect cell cycle progression and DNA repair processes.
+
+8. UBE2V1 and UBE2V2 are ubiquitin-conjugating enzymes that work with RAD18 to facilitate PCNA monoubiquitination, a key step in the activation of the TLS pathway.
+
+9. WRNIP1 (Werner helicase interacting protein 1) is involved in the processing of stalled replication forks and may function in the restart of DNA replication following fork stalling.
+
+10. ZNF611 is a zinc finger protein, and while zinc finger proteins are often involved in DNA binding and transcription regulation, the specific role of ZNF611 in DNA repair is not well characterized.
+
+In summary, the majority of the proteins in this system are directly involved in the DNA damage tolerance and repair pathways, particularly in the context of translesion synthesis and post-replication repair mechanisms. These proteins work together to ensure that replication can continue past DNA lesions, with various enzymes contributing to lesion bypass, extension past the damage, and subsequent repair processes. The system reflects a coordinated response to DNA damage, ensuring genomic stability and cell survival."	0.92	0	5/9	1.4165747669514382e-14	9.207735985184349e-13	POLD2;REV1;REV3L;POLI;POLH	Error-Prone Translesion Synthesis (GO:0042276)	Error-Prone Translesion Synthesis 	GO:0042276	POLE2 POLD2 POLD3 REV1 TENT4A POLI PRIMPOL POLH REV3L	0.48838547	0.2631578947368421	TRUE	TRUE
+5468	6	NeST	Cluster2-184	Cluster2-184	DDX23 SF3A1 SF3A2 SF3B2 SNW1	5	Pre-mRNA Splicing Regulation	"1. DDX23, also known as PRP28, is an RNA helicase involved in the regulation of pre-mRNA splicing. It is a component of the U5 snRNP complex and plays a role in the catalytic step II of the splicing process. DDX23 unwinds RNA duplexes, which is essential for the removal of introns from pre-mRNA.
+
+2. SF3A1, SF3A2, and SF3B2 are components of the splicing factor 3a and 3b complexes, respectively, which are subcomplexes of the U2 small nuclear ribonucleoprotein (snRNP). These proteins are critical for the assembly of the spliceosome, the large RNA-protein molecular complex that facilitates the removal of introns from pre-mRNA.
+
+3. SNW1, also known as SKIP, is a splicing coactivator that interacts with the spliceosome and is involved in the regulation of alternative splicing. It associates with both the core spliceosome and the U1 snRNP, influencing the recognition of splice sites and modulating the splicing process.
+
+To summarize, the proteins in this set are integral to the pre-mRNA splicing process. They work in concert to ensure the accurate and efficient removal of introns from pre-mRNA, which is essential for the generation of mature and translatable mRNA molecules. The proteins are involved in various stages of spliceosome assembly and function, from the recognition of splice sites to the catalysis of splicing reactions. Their interactions are crucial for the regulation of alternative splicing, which allows for the production of multiple protein isoforms from a single gene, thereby contributing to the complexity of the proteome."	0.95	6	2/5	4.998248025443111e-7	3.427370074589562e-6	SF3A1;SF3A2	mRNA 3'-Splice Site Recognition (GO:0000389)	mRNA 3'-Splice Site Recognition 	GO:0000389	NR5A1 SF3A2 SF3A3 SLU7 SF3A1	0.74771035	0.25	TRUE	TRUE
+5941	0	NeST	Cluster2-191	Cluster2-191	APC2 CELSR1 CELSR2 CELSR3 FAT4 FREM2 FUZ FZD1 FZD2 FZD3 FZD5 FZD6 FZD7 FZD8 FZD9 FZD10 INTU NUMBL PRICKLE1 PRICKLE3 RSG1 VANGL1	22	Wnt/Planar Cell Polarity Signaling	"1. The proteins APC2, CELSR1, CELSR2, CELSR3, FAT4, FREM2, FUZ, FZD1-10, INTU, NUMBL, PRICKLE1, PRICKLE3, RSG1, and VANGL1 are integral components of the Wnt/Planar Cell Polarity (PCP) signaling pathway. This pathway is crucial for the establishment of cellular orientation within the plane of a tissue, which is orthogonal to the direction of the apical-basal axis.
+
+2. The Frizzled family proteins (FZD1-10) are seven-pass transmembrane receptors that bind Wnt ligands and initiate PCP signaling. They work in concert with co-receptors such as VANGL1 and members of the CELSR family to transduce signals that regulate cytoskeletal organization and cell polarity.
+
+3. The Dishevelled-associated activator of morphogenesis (DAAM) proteins, represented by INTU in this system, are involved in the regulation of actin dynamics and are activated downstream of Frizzled receptors.
+
+4. Proteins such as PRICKLE1 and PRICKLE3 are post-synaptic density proteins that interact with other PCP components to modulate their activity and stabilize asymmetric cell complexes, which are essential for the directional cell behaviors.
+
+5. APC2 is a component of the destruction complex that regulates the levels of β-catenin, a key effector in canonical Wnt signaling, which is also known to intersect with PCP signaling.
+
+6. FAT4 and FREM2 are atypical cadherins and extracellular matrix proteins, respectively, that are implicated in processes such as cell adhesion and migration, which are influenced by PCP signaling.
+
+7. NUMBL is a Notch signaling inhibitor that can interact with components of the Wnt/PCP pathway, suggesting a potential cross-talk between these two pathways.
+
+8. FUZ is a planar cell polarity effector that has been implicated in ciliogenesis and is necessary for the proper orientation of cilia in response to PCP signals.
+
+To summarize, the proteins in this set are predominantly involved in the Wnt/Planar Cell Polarity signaling pathway, which is essential for the coordinated orientation of cells across the plane of a tissue. This pathway influences various developmental processes, including cell migration, tissue patterning, and organ development. The proteins listed function in a highly integrated manner to ensure the fidelity of PCP signaling and its downstream effects on cell behavior and tissue architecture."	0.92	0	14/41	5.946261235508236e-34	1.3379087779893534e-31	FZD1;FZD3;FZD2;FZD5;FZD7;FZD6;FZD9;FZD8;FZD10;PRICKLE1;CELSR1;CELSR2;CELSR3;VANGL1	Non-Canonical Wnt Signaling Pathway (GO:0035567)	Non-Canonical Wnt Signaling Pathway 	GO:0035567	FZD2 FZD1 RHOA FZD4 RYK FZD3 FZD6 FZD5 SMURF2 FZD8 SMURF1 WNT5A FZD7 WNT7A FZD9 WNT9B TIAM1 CDC42 CCDC88C SFRP4 VANGL2 SFRP5 VANGL1 SFRP2 DAAM1 GPI CELSR1 FZD10 PRICKLE1 PRICKLE2 CELSR2 CELSR3 SFRP1 FRZB WNT11 TMEM67 DVL1 DVL2 DVL3 RAC1 WNT4	0.7989567	0.2857142857142857	TRUE	TRUE
+6404	0	NeST	Cluster2-199	Cluster2-199	FBXO45 HEY1 HEY2 HEYL NINL PAWR SPRYD3 THAP1	8	Regulation of transcription and cell signaling in development	"1. FBXO45 is a member of the F-box protein family, which functions as one of the four subunits of the ubiquitin protein ligase complex called SCFs (SKP1-cullin-F-box), involved in phosphorylation-dependent ubiquitination. FBXO45 specifically has been implicated in the regulation of neuronal differentiation and apoptosis, suggesting a role in developmental processes.
+
+2. HEY1, HEY2, and HEYL are basic helix-loop-helix (bHLH) transcription factors known to be downstream effectors of the Notch signaling pathway. They are involved in various developmental processes, including cardiovascular development, neurogenesis, and somitogenesis. These factors can act as transcriptional repressors and are important for maintaining the balance between proliferation and differentiation.
+
+3. NINL is a ciliary protein that has been associated with dynein motor regulation and may play a role in the organization of cellular structures during cell division and differentiation. Its interaction with other proteins in this system suggests a potential link to signaling pathways that govern developmental processes.
+
+4. PAWR, also known as Par-4, is a pro-apoptotic protein that can interact with various signaling pathways, including those mediated by PKC and AKT. It is implicated in the regulation of cell survival and has been shown to play a role in neuronal differentiation and development.
+
+5. SPRYD3 belongs to the SPRY domain-containing family of proteins that are modulators of receptor tyrosine kinase signaling, which is crucial for various developmental and cellular processes. SPRYD3 may influence cell signaling cascades that are important for cell fate determination and differentiation.
+
+6. THAP1 is a DNA-binding protein with a THAP domain, which is involved in transcriptional regulation and cell cycle control. Mutations in THAP1 have been associated with developmental disorders, suggesting its role in the regulation of gene expression during development.
+
+In summary, the proteins in this set are involved in the regulation of transcription and cell signaling pathways that are critical for developmental processes. They exhibit a functional integration that influences cell fate determination, differentiation, and apoptosis, particularly in the context of neuronal and cardiovascular development. The interactions among these proteins suggest a coordinated network that modulates developmental signaling pathways, with potential antagonistic and synergistic effects on gene expression and cellular outcomes."	0.88	0	3/10	5.033265573129969e-9	5.536592130442966e-7	HEYL;HEY1;HEY2	Notch Signaling Involved In Heart Development (GO:0061314)	Notch Signaling Involved In Heart Development 	GO:0061314	JAG1 NOTCH1 NOTCH2 HEY2 HEY1 SNAI2 SNAI1 GALNT11 HEYL RBPJ	0.56039083	0.2	TRUE	TRUE
