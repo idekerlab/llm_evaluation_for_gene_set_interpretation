@@ -1,0 +1,499 @@
+Source	GeneSetID	GeneSetName	GeneList	n_Genes	Supporting Genes	Supporting Count	LLM Support Analysis	GenesMentionedInText	LLM_coverage
+L1000	BRD-A00546892_-666_MCF7_6.0_h_10.0_um	BRD-A00546892 -666 MCF7 6.0 h 10.0 um	CITED2 COL5A1 CRABP2 KCTD12 MDFIC MMP2 NRP1 ORC1 PEG10 RCBTB2 S100A8 TMEM45A TWIST1 VIM CLU COCH CST3 DNAJB1 FAM46A LMO2 MAOB NRN1 SLC27A2 ZBTB20	24	CITED2 TWIST1 LMO2 COL5A1 MMP2 NRP1	6	"-- Summary --
+The selected genes support the given name ""Cellular Matrix Remodeling and Tissue Development"" as they are involved in processes such as tissue development, extracellular matrix remodeling, and cellular signaling pathways that influence these functions. These processes are essential for organogenesis, tissue repair, and maintaining tissue architecture.
+
+-- Explanation --
+CITED2: High
+Involved in transcriptional regulation influencing gene expression, crucial for developmental processes.
+
+TWIST1: High
+Crucial for mesodermal tissue development and epithelial-mesenchymal transition (EMT).
+
+LMO2: High
+Implicated in hematopoiesis and vascular development.
+
+COL5A1: High
+Encodes type V collagen, essential for connective tissue structure and function.
+
+MMP2: High
+Degrades extracellular matrix components, critical for tissue remodeling and development.
+
+NRP1: High
+Involved in angiogenesis and cardiovascular system development.
+
+-- genes supporting the name: CITED2, TWIST1, LMO2, COL5A1, MMP2, NRP1
+
+-- genes not supporting the name: ORC1, RCBTB2, DNAJB1, PEG10, FAM46A, TMEM45A, CLU, COCH, CST3, MAOB, NRN1, SLC27A2
+
+-- genes with unclear support: CRABP2, S100A8, VIM, KCTD12, MDFIC, ZBTB20"	24	0.25
+L1000	BRD-A00993607_ALPRENOLOL_MCF7_6.0_h_10.0_um	BRD-A00993607 ALPRENOLOL MCF7 6.0 h 10.0 um	1060P11.3 ADM AHR AMIGO2 ARL4C ATP10D CAV2 CD44 CDC42EP3 CHST1 COLEC12 DENND1B EMP1 EXT1 FAM129A FZD6 GLIPR1 IER5 IGF2BP3 KLRB1 LPAR6 NT5E PLIN2 PLXNA1 POSTN PPP1R3C QPCT SLC5A3 SPON2 TMEM158 TNFSF10 TRIB2 AGR2 CCL19 COMP CRK CXCL13 FAM46A GOLGA8A GRN GSTM3 HPRT1 MYO5C NGFRAP1 PLA2G16 SERPINA3 SLC5A6	47	CD44 EMP1 AMIGO2 POSTN COMP EXT1 CAV2 ARL4C CDC42EP3 FZD6 LPAR6 TNFSF10 CHST1 SLC5A3 SLC5A6	15	"-- Summary --
+The selected genes support the given name ""Cellular Adhesion and Extracellular Matrix Interaction"" as they are involved in processes such as cell adhesion, extracellular matrix organization, and signaling pathways that influence cell interactions with the ECM. These functions are crucial for maintaining tissue architecture and facilitating cell communication.
+
+-- Explanation --
+CD44: High
+CD44 is involved in cell-cell interactions, cell adhesion, and migration, directly supporting the name.
+
+EMP1: High
+EMP1 functions in cell-cell interactions, supporting the cellular adhesion aspect of the name.
+
+AMIGO2: High
+AMIGO2 mediates homophilic cell adhesion, directly supporting the name.
+
+POSTN: High
+POSTN is involved in the adhesion and migration of epithelial cells and interacts with the ECM, supporting the name.
+
+COMP: High
+COMP is involved in the assembly of the ECM, supporting the extracellular matrix interaction aspect of the name.
+
+EXT1: High
+EXT1 is involved in the biosynthesis of heparan sulfate proteoglycans, critical components of the ECM, supporting the name.
+
+CAV2: Medium
+CAV2 is involved in the formation of caveolae, which play roles in cellular processes including signal transduction and molecular transport, indirectly supporting the name.
+
+ARL4C: Medium
+ARL4C is associated with cytoskeletal organization and signaling pathways that regulate cell shape and motility, supporting the name.
+
+CDC42EP3: Medium
+CDC42EP3 is associated with cytoskeletal organization and signaling pathways that regulate cell shape and motility, supporting the name.
+
+FZD6: Medium
+FZD6 mediates signaling pathways influencing cell proliferation, differentiation, and migration, supporting the name.
+
+LPAR6: Medium
+LPAR6 mediates signaling pathways influencing cell proliferation, differentiation, and migration, supporting the name.
+
+TNFSF10: Medium
+TNFSF10 induces apoptosis, influencing tissue remodeling and turnover, indirectly affecting the ECM and cell adhesion, supporting the name.
+
+CHST1: Medium
+CHST1 catalyzes the sulfation of carbohydrate groups in glycosaminoglycans, indicating a role in modifying the ECM, supporting the name.
+
+SLC5A3: Low
+SLC5A3 is involved in the transport of molecules across cell membranes, potentially influencing the cellular microenvironment and interactions with the ECM, indirectly supporting the name.
+
+SLC5A6: Low
+SLC5A6 is involved in the transport of molecules across cell membranes, potentially influencing the cellular microenvironment and interactions with the ECM, indirectly supporting the name.
+
+-- genes supporting the name: CD44, EMP1, AMIGO2, POSTN, COMP, EXT1, CAV2, ARL4C, CDC42EP3, FZD6, LPAR6, TNFSF10, CHST1, SLC5A3, SLC5A6
+
+-- genes not supporting the name: None
+
+-- genes with unclear support: 1060P11.3, ADM, AHR, ATP10D, CD44, COLEC12, DENND1B, FAM129A, FZD6, GLIPR1, IER5, IGF2BP3, KLRB1, NT5E, PLIN2, PLXNA1, PPP1R3C, QPCT, SPON2, TMEM158, TRIB2, AGR2, CCL19, CRK, CXCL13, FAM46A, GOLGA8A, GRN, GSTM3, HPRT1, MYO5C, NGFRAP1, PLA2G16, SERPINA3"	15	0.3191489361702128
+L1000	BRD-A01593789_CHLORMADINONE ACETATE_MCF7_6.0_h_10.0_um	BRD-A01593789 CHLORMADINONE ACETATE MCF7 6.0 h 10.0 um	1060P11.3 ADH5 ADM ATF3 CASP1 CLEC2B CPA3 CRIM1 DKK3 FEZ1 MECOM MKNK1 NXN PCK1 RGCC S100A8 SPON1 SST TMEM41B CYP1B1 DNAJC12 ETFB FOLR1 GPX3 IGFBP4 MAN1C1 OXA1L PIK3R1 RAD23B RARRES1 RNF167 SORD SPDEF TACSTD2 TBC1D4 TFF1 TNC TSPYL5	38	ATF3 CASP1 ADM CRIM1 DKK3 MECOM PIK3R1 S100A8 SST TNC	10	"-- Summary --
+The selected genes support the given name ""Stress Response and Apoptosis Regulation"" as they are involved in cellular stress responses, apoptosis, and related signaling pathways. These functions align with the proposed name, indicating a coordinated role in managing cellular stress and apoptosis.
+
+-- Explanation --
+ATF3: High
+ATF3 is a stress-responsive transcription factor involved in the cellular response to stressors and can promote or suppress apoptosis.
+
+CASP1: High
+CASP1 plays a central role in apoptosis and the inflammatory response, key aspects of stress response and apoptosis regulation.
+
+ADM: High
+ADM is involved in anti-apoptotic effects and is upregulated in response to stress, supporting its role in stress response and apoptosis regulation.
+
+CRIM1: Medium
+CRIM1 is involved in cellular growth and differentiation and may play a role in cellular response to stress, though its functions are less well characterized.
+
+DKK3: High
+DKK3 modulates WNT signaling, which is important for cell fate determination, proliferation, and apoptosis, and is involved in cellular stress responses.
+
+MECOM: High
+MECOM is a transcription regulator involved in apoptosis and cell proliferation, supporting its role in stress response and apoptosis regulation.
+
+PIK3R1: High
+PIK3R1 is part of the PI3K/Akt signaling pathway, critical for cell survival and stress response, supporting its role in stress response and apoptosis regulation.
+
+S100A8: High
+S100A8 is involved in the regulation of inflammatory processes and immune response, associated with stress responses in cells.
+
+SST: High
+SST modulates stress and apoptosis in neighboring cells, supporting its role in stress response and apoptosis regulation.
+
+TNC: High
+TNC influences cell survival, apoptosis, and response to stress, particularly in tissue injury and repair, supporting its role in stress response and apoptosis regulation.
+
+-- genes supporting the name: [ATF3, CASP1, ADM, CRIM1, DKK3, MECOM, PIK3R1, S100A8, SST, TNC]
+
+-- genes not supporting the name: []
+
+-- genes with unclear support: [1060P11.3, ADH5, CLEC2B, CPA3, FEZ1, MKNK1, NXN, PCK1, RGCC, SPON1, TMEM41B, CYP1B1, DNAJC12, ETFB, FOLR1, GPX3, IGFBP4, MAN1C1, OXA1L, RAD23B, RARRES1, RNF167, SORD, SPDEF, TACSTD2, TBC1D4, TFF1, TSPYL5]"	10	0.2631578947368421
+L1000	BRD-A02006392_NITRENDIPINE_MCF7_6.0_h_10.0_um	BRD-A02006392 NITRENDIPINE MCF7 6.0 h 10.0 um	1060P11.3 ADAM17 AKAP12 ALCAM AMFR BIK CASP2 CCL18 CD58 CLU CPT1A CST3 CTNNB1 CXCL8 DDX3Y EIF1AY EIF2S3 EIF5A FOSL1 FTH1 GLUL GNL3L GPX3 GUSBP3 HMGCS1 HNRNPH1 HNRNPL KLF4 MAFF MAPK13 MTCL1 NPIPB3 NUTF2 PHLDA2 PPP3R1 RPS4Y1 S100A6 SAT1 SEC22B SEL1L3 SET SMA4 SRSF6 STRN3 STT3A TFF3 TLR4 TMEM176B TNFAIP6 TP53 TSPAN8 ZNF451 ZNF652 ARNT2 BTG3 CDKN2A CYP1B1 DPP4 GABRP GPM6B GPR116 H2AFV HEBP1 HSPA1A ID1 IGHM MMP7 PLA2G4A PLEKHM1 RAI14 SERPINA5 SHB SNX7 TFPI2 VTCN1 ZNF395	76	TP53 CASP2 BIK HSPA1A GLUL GPX3 CDKN2A FOSL1 ADAM17 MMP7 TLR4	11	"-- Summary --
+The selected genes support the given name ""Cellular Stress Response and Apoptosis Regulation"" as they are involved in pathways that detect and respond to cellular stress, regulate apoptosis, manage oxidative stress, and control cell cycle progression in response to stress signals.
+
+-- Explanation --
+TP53: High
+TP53 is a well-known tumor suppressor that plays a pivotal role in the response to DNA damage and other cellular stresses, inducing cell cycle arrest, DNA repair, or apoptosis.
+
+CASP2: High
+CASP2 is a pro-apoptotic protein involved in the intrinsic apoptosis pathway, contributing to the initiation and execution phases of apoptosis.
+
+BIK: High
+BIK is a pro-apoptotic protein that can induce apoptosis in response to cellular stress, being a member of the Bcl-2 family.
+
+HSPA1A: High
+HSPA1A acts as a molecular chaperone, helping to refold proteins and prevent aggregation under stress conditions, thus involved in the cellular stress response.
+
+GLUL: Medium
+GLUL is implicated in nitrogen metabolism and can be upregulated in response to metabolic stress, contributing to the cellular stress response.
+
+GPX3: High
+GPX3 is an antioxidant enzyme that protects cells from oxidative damage by reducing peroxides, which can be a source of cellular stress.
+
+CDKN2A: High
+CDKN2A is involved in cell cycle regulation and can influence the cellular response to stress by halting cell cycle progression to allow for repair or to initiate apoptosis.
+
+FOSL1: Medium
+FOSL1 is involved in cell cycle regulation and can influence the cellular response to stress, contributing to the regulation of apoptosis.
+
+ADAM17: Medium
+ADAM17 is involved in extracellular matrix remodeling, which can be associated with tissue repair following injury or stress.
+
+MMP7: Medium
+MMP7 is involved in extracellular matrix remodeling, which can be associated with tissue repair following injury or stress.
+
+TLR4: Medium
+TLR4 is a component of the innate immune system and can trigger inflammatory responses to cellular damage or the presence of pathogens.
+
+-- genes supporting the name: [TP53, CASP2, BIK, HSPA1A, GLUL, GPX3, CDKN2A, FOSL1, ADAM17, MMP7, TLR4]
+
+-- genes not supporting the name: []
+
+-- genes with unclear support: [1060P11.3, ADAM17, AKAP12, ALCAM, AMFR, CCL18, CD58, CLU, CPT1A, CST3, CTNNB1, CXCL8, DDX3Y, EIF1AY, EIF2S3, EIF5A, FTH1, GNL3L, GUSBP3, HMGCS1, HNRNPH1, HNRNPL, KLF4, MAFF, MAPK13, MTCL1, NPIPB3, NUTF2, PHLDA2, PPP3R1, RPS4Y1, S100A6, SAT1, SEC22B, SEL1L3, SET, SMA4, SRSF6, STRN3, STT3A, TFF3, TMEM176B, TNFAIP6, TSPAN8, ZNF451, ZNF652, ARNT2, BTG3, CYP1B1, DPP4, GABRP, GPM6B, GPR116, H2AFV, HEBP1, ID1, IGHM, PLA2G4A, PLEKHM1, RAI14, SERPINA5, SHB, SNX7, TFPI2, VTCN1, ZNF395]"	11	0.14473684210526316
+L1000	BRD-A02176148_TUBAIC ACID_MCF7_6.0_h_10.0_um	BRD-A02176148 TUBAIC ACID MCF7 6.0 h 10.0 um	CASP1 CAST CD52 CLC COL1A2 COL3A1 COL5A2 CPA3 DKK3 DPYSL3 FN1 GJA1 GPNMB GULP1 IDO1 LPAR6 LUM MEG3 MKNK1 MOSPD1 MSN MUC16 PAEP PAPSS2 PLCB3 SPON1 FABP5 FERMT2 HK2 NRN1 PTGES TCN1 THAP11 UGCG	34	COL1A2 COL3A1 COL5A2 FN1 LUM SPON1 GJA1 GPNMB GULP1 MUC16 PLCB3 UGCG	12	"-- Summary --
+The selected genes support the given name ""Extracellular Matrix Organization and Cell Signaling Modulation"" as they are involved in the structural integrity of tissues, extracellular matrix (ECM) organization, cell adhesion, migration, and signaling processes. These functions are critical for maintaining tissue homeostasis, repair, and cellular communication.
+
+-- Explanation --
+COL1A2: High
+Encodes collagen type I, a major structural protein in the ECM, providing tensile strength and involved in tissue repair and fibrosis.
+
+COL3A1: High
+Encodes collagen type III, a structural protein in the ECM, contributing to tissue integrity, repair, and fibrosis.
+
+COL5A2: High
+Encodes collagen type V, involved in ECM structure, providing tensile strength, and participating in tissue repair and fibrosis.
+
+FN1: High
+Encodes fibronectin, essential for wound healing, cell adhesion, and migration, binding to integrins and other ECM components.
+
+LUM: High
+Encodes lumican, a proteoglycan in the ECM, regulating collagen fibril organization and involved in tumor progression and metastasis.
+
+SPON1: High
+Encodes spondin 1, an ECM protein promoting neurite extension and maintaining ECM structure.
+
+GJA1: Medium
+Encodes connexin 43, involved in intercellular communication, cell proliferation, and tissue homeostasis.
+
+GPNMB: Medium
+Involved in cell migration, phagocytosis, anti-inflammatory, and growth factor signaling.
+
+GULP1: Medium
+Involved in cell migration and phagocytosis, mediating the engulfment of apoptotic cells.
+
+MUC16: Medium
+Encodes a mucin involved in cell adhesion and signaling, forming a protective layer on epithelial surfaces.
+
+PLCB3: Medium
+Encodes phospholipase C beta 3, critical for intracellular signal transduction and generating second messengers.
+
+UGCG: Medium
+Encodes UDP-glucose ceramide glucosyltransferase, involved in glycosphingolipid biosynthesis, important for cell surface structure and signaling.
+
+-- genes supporting the name: COL1A2, COL3A1, COL5A2, FN1, LUM, SPON1, GJA1, GPNMB, GULP1, MUC16, PLCB3, UGCG
+
+-- genes not supporting the name: None
+
+-- genes with unclear support: CASP1, CAST, CD52, CLC, CPA3, DKK3, DPYSL3, IDO1, LPAR6, MEG3, MKNK1, MOSPD1, MSN, PAEP, PAPSS2, SPON1, FABP5, FERMT2, HK2, NRN1, PTGES, TCN1, THAP11"	15	0.35294117647058826
+L1000	BRD-A04756508_NORGESTIMATE_MCF7_6.0_h_10.0_um	BRD-A04756508 NORGESTIMATE MCF7 6.0 h 10.0 um	1060P11.3 ACTN1 AMIGO2 ANKRD10 ATP11B C1QA C1QB CAMK2N1 CXCL13 DDIT4 DEPTOR EXT1 FBLN1 FBN1 GBP1 HERPUD1 HLA-C HLA-F HOMER3 HOXB6 HSPA6 IDO1 IGHM IGJ IGKV1-5 IGKV4-1 IGL IGLJ3 IGLV2-23 IL32 ITGA4 ITGA6 LIMCH1 PDGFRA SFTPA2 SFTPB SRD5A1 TMEM176B TPD52 TRIM2 VEGFA WARS WDR7 XIST ABAT BEX1 EIF5A FABP5 HP MARCKSL1 NFIB NUTF2 PEG3 RPA3 RPL27A RPS11 SLIRP TCN1 TGFBI TM4SF1 TMSB15A TPPP3 YWHAE	63	C1QA C1QB HLA-C HLA-F CXCL13 IDO1 IGHM IGJ IGKV1-5 IGKV4-1 IGL IGLJ3 IGLV2-23 FBLN1 FBN1 VEGFA ACTN1 ITGA4 PDGFRA TGFBI SFTPA2 SFTPB	22	"-- Summary --
+The selected genes support the given name ""Immune Response and Extracellular Matrix Organization"" as they are involved in various immune functions such as antigen presentation, chemotaxis, opsonization, and the adaptive immune system, as well as in the organization and function of the extracellular matrix, which is crucial for tissue integrity and repair following immune-mediated damage.
+
+-- Explanation --
+C1QA: High
+C1QA is involved in the complement system, crucial for opsonization and phagocytosis, supporting immune response.
+
+C1QB: High
+C1QB is part of the complement system, playing a role in opsonization and phagocytosis, supporting immune response.
+
+HLA-C: High
+HLA-C is part of MHC class I molecules, presenting antigens to cytotoxic T cells, crucial for immune response.
+
+HLA-F: High
+HLA-F is part of MHC class I molecules, presenting antigens to cytotoxic T cells, crucial for immune response.
+
+CXCL13: High
+CXCL13 attracts B cells and is significant in B-cell follicle formation and chronic inflammation, supporting immune response.
+
+IDO1: High
+IDO1 catabolizes tryptophan into kynurenine, regulating T-cell immunity, supporting immune response.
+
+IGHM: High
+IGHM is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGJ: High
+IGJ is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGKV1-5: High
+IGKV1-5 is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGKV4-1: High
+IGKV4-1 is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGL: High
+IGL is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGLJ3: High
+IGLJ3 is part of the adaptive immune system, involved in antigen recognition and response.
+
+IGLV2-23: High
+IGLV2-23 is part of the adaptive immune system, involved in antigen recognition and response.
+
+FBLN1: High
+FBLN1 is involved in the extracellular matrix, participating in cell adhesion and migration, supporting tissue integrity.
+
+FBN1: High
+FBN1 is involved in the extracellular matrix, playing a role in connective tissue integrity.
+
+VEGFA: High
+VEGFA regulates angiogenesis, essential for wound healing and immune response.
+
+ACTN1: High
+ACTN1 is involved in cell adhesion and migration, important for immune cell trafficking.
+
+ITGA4: High
+ITGA4 is involved in cell adhesion and migration, important for immune cell trafficking.
+
+PDGFRA: Medium
+PDGFRA is involved in cell growth and differentiation, linked to tissue repair following immune responses.
+
+TGFBI: Medium
+TGFBI is involved in cell growth and differentiation, linked to tissue repair following immune responses.
+
+SFTPA2: High
+SFTPA2 is involved in lung-specific immune defense mechanisms, part of the innate immune system.
+
+SFTPB: High
+SFTPB is involved in lung-specific immune defense mechanisms, part of the innate immune system.
+
+-- genes supporting the name: [C1QA, C1QB, HLA-C, HLA-F, CXCL13, IDO1, IGHM, IGJ, IGKV1-5, IGKV4-1, IGL, IGLJ3, IGLV2-23, FBLN1, FBN1, VEGFA, ACTN1, ITGA4, PDGFRA, TGFBI, SFTPA2, SFTPB]
+
+-- genes not supporting the name: []
+
+-- genes with unclear support: [1060P11.3, AMIGO2, ANKRD10, ATP11B, CAMK2N1, DDIT4, DEPTOR, EXT1, GBP1, HERPUD1, HOMER3, HOXB6, HSPA6, IL32, ITGA6, LIMCH1, SRD5A1, TMEM176B, TPD52, TRIM2, WARS, WDR7, XIST, ABAT, BEX1, EIF5A, FABP5, HP, MARCKSL1, NFIB, NUTF2, PEG3, RPA3, RPL27A, RPS11, SLIRP, TCN1, TM4SF1, TMSB15A, TPPP3, YWHAE]"	22	0.3492063492063492
+L1000	BRD-A06352418_TERFENADINE_MCF7_6.0_h_10.0_um	BRD-A06352418 TERFENADINE MCF7 6.0 h 10.0 um	1060P11.3 ACLY CDH2 CDKN1C CLU CST3 CXCL12 CXCL5 CYP1B1 CYP51A1 DDIT4 DHCR24 DHCR7 DUSP4 ELOVL5 FADS1 FAM117A FAM129A FCER1A FDFT1 FOXJ3 GATM GSTA4 HERPUD1 HMGCR HMGCS1 HTATIP2 IDI1 INSIG1 KLRB1 LDLR LSM5 MAF ME1 MSMO1 PDGFC PHLDA1 PIR PPT1 RASA4 SC5D SCD SDC2 SLC27A2 SLC7A11 SLC9A3R1 SQLE TGFBI TKT TOB1 WBP5 ALDH5A1 C1ORF116 CD9 CIAPIN1 CSGALNACT1 ID3 ID4 KIAA1033 LMO3 SCGB2A1 SLC2A5 SLPI SPARC SRGN UBR7 YBX3	67	HMGCR HMGCS1 FDFT1 DHCR24 DHCR7 MSMO1 SC5D SQLE INSIG1 LDLR ACLY ELOVL5 FADS1 SCD SLC27A2 IDI1 CYP1B1 CYP51A1	18	"-- Summary --
+The selected genes support the given name ""Cholesterol Biosynthesis and Lipid Metabolism Regulation"" as they are directly involved in the biosynthesis, regulation, and homeostasis of cholesterol and lipids. These genes participate in key pathways such as the mevalonate pathway, fatty acid synthesis, and cholesterol homeostasis.
+
+-- Explanation --
+HMGCR: High
+HMGCR is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+HMGCS1: High
+HMGCS1 is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+FDFT1: High
+FDFT1 is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+DHCR24: High
+DHCR24 is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+DHCR7: High
+DHCR7 is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+MSMO1: High
+MSMO1 is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+SC5D: High
+SC5D is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+SQLE: High
+SQLE is directly involved in the mevalonate pathway, which produces cholesterol and other isoprenoids.
+
+INSIG1: High
+INSIG1 is a key regulator of cholesterol homeostasis, blocking the activation of SREBPs, which control cholesterol and fatty acid synthesis.
+
+LDLR: High
+LDLR is responsible for the removal of cholesterol from the bloodstream via endocytosis of lipoprotein particles.
+
+ACLY: High
+ACLY converts citrate to acetyl-CoA, a precursor for the biosynthesis of cholesterol and fatty acids.
+
+ELOVL5: High
+ELOVL5 is involved in the elongation of fatty acids, critical for the synthesis of long-chain polyunsaturated fatty acids.
+
+FADS1: High
+FADS1 is involved in the desaturation of fatty acids, critical for the synthesis of long-chain polyunsaturated fatty acids.
+
+SCD: High
+SCD is a key enzyme in the synthesis of monounsaturated fats from saturated fatty acids.
+
+SLC27A2: High
+SLC27A2 is involved in the uptake and activation of long-chain fatty acids.
+
+IDI1: High
+IDI1 is involved in the synthesis of isoprenoids, important for various cellular functions.
+
+CYP1B1: Medium
+CYP1B1 indicates roles in drug metabolism and the synthesis of sterols.
+
+CYP51A1: Medium
+CYP51A1 indicates roles in drug metabolism and the synthesis of sterols.
+
+-- genes supporting the name: HMGCR, HMGCS1, FDFT1, DHCR24, DHCR7, MSMO1, SC5D, SQLE, INSIG1, LDLR, ACLY, ELOVL5, FADS1, SCD, SLC27A2, IDI1, CYP1B1, CYP51A1
+
+-- genes not supporting the name: [None]
+
+-- genes with unclear support: 1060P11.3, CDH2, CDKN1C, CLU, CST3, CXCL12, CXCL5, DDIT4, DUSP4, ELOVL5, FAM117A, FAM129A, FCER1A, FOXJ3, GATM, GSTA4, HERPUD1, HTATIP2, KLRB1, LSM5, MAF, ME1, PDGFC, PHLDA1, PIR, PPT1, RASA4, SDC2, SLC7A11, SLC9A3R1, TGFBI, TKT, TOB1, WBP5, ALDH5A1, C1ORF116, CD9, CIAPIN1, CSGALNACT1, ID3, ID4, KIAA1033, LMO3, SCGB2A1, SLC2A5, SLPI, SPARC, SRGN, UBR7, YBX3"	18	0.26865671641791045
+L1000	BRD-A08003242_RHODOMYRTOXIN B_MCF7_6.0_h_10.0_um	BRD-A08003242 RHODOMYRTOXIN B MCF7 6.0 h 10.0 um	1060P11.3 ACKR1 ASNS ATP6V1D AXIN1 BCL6 BEX1 BHLHE40 CCNG2 CHRDL1 DDIT4 DUSP4 DUSP5 ENAH FABP4 FAM129A FASN FLNA FOXO3 G6PD GPR126 GPR64 INSIG1 JUND KDM3A KDM4B LDLR LPP MT1X MTA1 MYC NAMPT NFIL3 PHLDA1 PIP5K1B PLCB1 PROM1 PRR7 RHOB RND3 RRAGD S100A14 SCD SERPINA3 SERPINB2 SFRP1 STC2 TIPARP TRIB3 TSC22D3 TUBB2B UGDH ZFP36L1 ADIRF ATF5 C8ORF33 CASP6 CCNE2 CDC25A COL10A1 COL11A1 CPS1 DKK3 DNAJA1 EFNB2 HNRNPA0 HSPA1A MAF MNDA NID2 SESN1 SFPQ SKP2 TIMM22	74	DDIT4 DNAJA1 HSPA1A ATF5 ASNS FASN G6PD SCD BCL6 FOXO3 MYC NFIL3 LDLR INSIG1 AXIN1 SFRP1 CCNG2 CCNE2 CDC25A CASP6	20	"-- Summary --
+The selected genes support the given name ""Cellular Stress Response and Metabolic Regulation"" as they are involved in cellular stress responses, metabolic processes, gene expression control, lipid metabolism, Wnt signaling, cell cycle regulation, and apoptosis. These functions are critical for maintaining cellular homeostasis and responding to environmental changes.
+
+-- Explanation --
+DDIT4: High
+Regulates the mTOR pathway, crucial for cell growth and survival under stress conditions.
+
+DNAJA1: High
+Heat shock protein that assists in protein folding and protects cells from stress-induced damage.
+
+HSPA1A: High
+Heat shock protein that assists in protein folding and protects cells from stress-induced damage.
+
+ATF5: High
+Transcription factor activated under stress to promote cell survival.
+
+ASNS: High
+Enzyme involved in the synthesis of asparagine and cellular response to amino acid availability.
+
+FASN: High
+Key enzyme in fatty acid synthesis.
+
+G6PD: High
+Involved in the pentose phosphate pathway, important for generating NADPH and ribose-5-phosphate.
+
+SCD: High
+Key enzyme in fatty acid synthesis.
+
+BCL6: High
+Repressor of genes that prevent cell cycle progression and apoptosis.
+
+FOXO3: High
+Regulates genes controlling cell cycle arrest, DNA repair, and apoptosis.
+
+MYC: High
+Regulator of cell growth and proliferation.
+
+NFIL3: High
+Plays a role in circadian rhythm and metabolism.
+
+LDLR: High
+Responsible for the uptake of low-density lipoprotein cholesterol from the bloodstream.
+
+INSIG1: High
+Regulates cholesterol synthesis by controlling the activity of SREBP.
+
+AXIN1: High
+Negative regulator of Wnt signaling.
+
+SFRP1: High
+Soluble modulator that can inhibit Wnt signaling.
+
+CCNG2: High
+Cyclin that regulates cell cycle progression.
+
+CCNE2: High
+Cyclin that regulates cell cycle progression.
+
+CDC25A: High
+Phosphatase that activates cyclin-dependent kinases (CDKs) and promotes cell cycle progression.
+
+CASP6: High
+Cysteine-aspartic acid protease that plays a role in programmed cell death.
+
+-- genes supporting the name: DDIT4, DNAJA1, HSPA1A, ATF5, ASNS, FASN, G6PD, SCD, BCL6, FOXO3, MYC, NFIL3, LDLR, INSIG1, AXIN1, SFRP1, CCNG2, CCNE2, CDC25A, CASP6
+
+-- genes not supporting the name: None
+
+-- genes with unclear support: 1060P11.3, ACKR1, ATP6V1D, BEX1, BHLHE40, CCNG2, CHRDL1, DUSP4, DUSP5, ENAH, FABP4, FAM129A, FASN, FLNA, GPR126, GPR64, JUND, KDM3A, KDM4B, LPP, MT1X, MTA1, NAMPT, PHLDA1, PIP5K1B, PLCB1, PROM1, PRR7, RHOB, RND3, RRAGD, S100A14, SERPINA3, SERPINB2, STC2, TIPARP, TRIB3, TSC22D3, TUBB2B, UGDH, ZFP36L1, ADIRF, ATF5, C8ORF33, CCNE2, COL10A1, COL11A1, CPS1, DKK3, EFNB2, HNRNPA0, MAF, MNDA, NID2, SESN1, SFPQ, SKP2, TIMM22"	21	0.2702702702702703
+L1000	BRD-A09056319_-666_MCF7_6.0_h_10.0_um	BRD-A09056319 -666 MCF7 6.0 h 10.0 um	CHEK1 DAB2 EGLN3 MFAP5 MXRA5 PDCD4 PLEKHM1 PTPRE S100A10 SLC38A1 SPTSSA SULF1 ZFP36L2 ADRB2 AKR1B1 CHGB CRISP3 CYBA ENC1 HLA-DMB HOMER2 NME4 OAS1 RARRES1 SORD STX1A UGCG	27	CHEK1 PDCD4 ZFP36L2 S100A10 ADRB2 AKR1B1 OAS1 SULF1	8	"-- Summary --
+The selected genes support the given name ""Cellular Stress Response and Apoptosis Regulation"" because they are involved in processes such as DNA damage response, apoptosis, post-transcriptional regulation during stress, and modulation of immune responses, all of which are critical components of cellular stress response and apoptosis regulation.
+
+-- Explanation --
+CHEK1: High
+CHEK1 is involved in the DNA damage response and cell cycle arrest, which are key aspects of cellular stress response.
+
+PDCD4: High
+PDCD4 is a tumor suppressor involved in apoptosis and cell survival, directly supporting the regulation of apoptosis.
+
+ZFP36L2: High
+ZFP36L2 regulates mRNA degradation during stress responses, contributing to cellular stress response mechanisms.
+
+S100A10: Medium
+S100A10 is involved in cell cycle progression and differentiation, with a role in stress response, particularly inflammation.
+
+ADRB2: Medium
+ADRB2 modulates the immune response and apoptosis, which are components of cellular stress response and apoptosis regulation.
+
+AKR1B1: Medium
+AKR1B1 is involved in detoxifying oxidative stress products, contributing to cellular stress response.
+
+OAS1: High
+OAS1 plays a role in the antiviral response and can induce apoptosis, directly supporting the regulation of apoptosis.
+
+SULF1: Medium
+SULF1 is involved in cell signaling in response to cellular stress, contributing to the cellular stress response.
+
+-- genes supporting the name: [CHEK1, PDCD4, ZFP36L2, S100A10, ADRB2, AKR1B1, OAS1, SULF1]
+
+-- genes not supporting the name: [None]
+
+-- genes with unclear support: [DAB2, EGLN3, MFAP5, MXRA5, PLEKHM1, PTPRE, SLC38A1, SPTSSA, CHGB, CRISP3, CYBA, ENC1, HLA-DMB, HOMER2, NME4, RARRES1, SORD, STX1A, UGCG]"	27	0.2962962962962963
+L1000	BRD-A09539288_HOMATROPINE BROMIDE_MCF7_6.0_h_10.0_um	BRD-A09539288 HOMATROPINE BROMIDE MCF7 6.0 h 10.0 um	1060P11.3 BEX1 CD44 CDC42EP3 CHI3L1 EXT1 IGFBP5 LYN PARM1 QPCT S100A6 SCGB1D2 SEMA5A TCTA TM4SF1 TNFRSF21 TNFSF10 VCAN WNT5A XIST XYLT1 ADH1B AK4 BACE2 BST2 DDX3Y FOLR1 GAS1 IGHM IGKV1-5 IGKV3-20 IGL IGLJ3 MAGEA3 MBP MSRB2 SEPP1 SORBS1 TGFBR2 TOB1	40	CD44 VCAN CHI3L1 EXT1 XYLT1 TNFRSF21 TNFSF10 WNT5A IGHM IGKV1-5 IGKV3-20 IGL TGFBR2 S100A6	14	"-- Summary --
+The selected genes support the given name ""Tumor Microenvironment Modulation and Extracellular Matrix Remodeling"" by being involved in processes such as ECM remodeling, cell adhesion, migration, immune response, and signaling pathways that regulate cell proliferation and survival, all of which are critical in the tumor microenvironment.
+
+-- Explanation --
+CD44: High
+CD44 is involved in cell-cell interactions, cell adhesion, and migration, which are key aspects of the tumor microenvironment.
+
+VCAN: High
+VCAN is implicated in cell adhesion, proliferation, migration, and angiogenesis, all of which are crucial for ECM remodeling and tumor microenvironment modulation.
+
+CHI3L1: High
+CHI3L1 plays a role in tissue remodeling and is often upregulated in cancers, directly supporting ECM remodeling.
+
+EXT1: High
+EXT1 is involved in the biosynthesis of heparan sulfate, essential for ECM structure and function.
+
+XYLT1: High
+XYLT1 is involved in the biosynthesis of glycosaminoglycan chains of proteoglycans, crucial for ECM structure and function.
+
+TNFRSF21: High
+TNFRSF21 is involved in apoptotic signaling pathways, modulating cell death and survival in the tumor microenvironment.
+
+TNFSF10: High
+TNFSF10 is involved in apoptotic signaling pathways, modulating cell death and survival in the tumor microenvironment.
+
+WNT5A: High
+WNT5A regulates cell migration, invasion, and metastasis, key processes in the tumor microenvironment.
+
+IGHM: Medium
+IGHM is a component of immunoglobulins, suggesting a role in immune surveillance within the tumor microenvironment.
+
+IGKV1-5: Medium
+IGKV1-5 is a component of immunoglobulins, suggesting a role in immune surveillance within the tumor microenvironment.
+
+IGKV3-20: Medium
+IGKV3-20 is a component of immunoglobulins, suggesting a role in immune surveillance within the tumor microenvironment.
+
+IGL: Medium
+IGL is a component of immunoglobulins, suggesting a role in immune surveillance within the tumor microenvironment.
+
+TGFBR2: High
+TGFBR2 is involved in signaling pathways that regulate cell proliferation, differentiation, and apoptosis, crucial for tumor progression and ECM remodeling.
+
+S100A6: High
+S100A6 is involved in signaling pathways that regulate cell proliferation, differentiation, and apoptosis, crucial for tumor progression and ECM remodeling.
+
+-- genes supporting the name: CD44, VCAN, CHI3L1, EXT1, XYLT1, TNFRSF21, TNFSF10, WNT5A, IGHM, IGKV1-5, IGKV3-20, IGL, TGFBR2, S100A6
+
+-- genes not supporting the name: [None]
+
+-- genes with unclear support: 1060P11.3, BEX1, CDC42EP3, IGFBP5, LYN, PARM1, QPCT, SCGB1D2, SEMA5A, TCTA, TM4SF1, ADH1B, AK4, BACE2, BST2, DDX3Y, FOLR1, GAS1, IGKV1-5, IGKV3-20, IGLJ3, MAGEA3, MBP, MSRB2, SEPP1, SORBS1, TOB1, XIST"	15	0.35
