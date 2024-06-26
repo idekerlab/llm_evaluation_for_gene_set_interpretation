@@ -506,7 +506,6 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     n: number of papers to be queried for each paragraph
     papers_query: number of papersf paper td
     verbose: if True, print out the process
-    MarkedParagraphs: list of tuples (index, paragraph) that are already marked
     saveto: name of the json file to save the paragraph data
     '''
     
@@ -573,7 +572,7 @@ def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, retur
         # paragraph_result_dict = {}
         # paragraph_result_dict['paragraphs'] = paragraphs
 
-        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraph_list, email, config, n=n, papers_query=papers_query, verbose=verbose, MarkedParagraphs=[], return_paragraph_ref_data=True)
+        referenece_paragraphs, paragraph_ref_data = get_references_for_paragraphs(paragraph_list, email, config, n=n, papers_query=papers_query, verbose=verbose, return_paragraph_ref_data=True)
         # paragraph_result_dict['referenced_paragraphs'] = referenece_paragraphs
         # paragraph_result_dict['paragraph_data'] = paragraph_ref_data
         # result_dict[paragraph_id] = paragraph_result_dict
