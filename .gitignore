@@ -7,6 +7,7 @@ data/Omics_data/L1000__gene_attribute_edges.txt
 ./data/omics_LLM_Enrichr_DF copy.tsv
 errfile
 outfile
+3A.[Omics_revamped]_AnayseAnnotation_original.ipynb
 
 data/new_GO_BP/
 data/GO_term_analysis/100_GO_terms_gprofiler_res.tsv
