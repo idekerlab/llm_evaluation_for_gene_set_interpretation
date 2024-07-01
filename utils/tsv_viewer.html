@@ -1,0 +1,562 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced TSV Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .info-column {
+            flex: 0 0 30%;
+            font-size: 15px;
+        }
+        .text-column {
+            flex: 1;
+        }
+        textarea {
+            width: 100%;
+            height: 500px;
+            resize: vertical;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+        #fieldSelect {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        #fieldSelect.active {
+            display: block;
+        }
+        .close-button {
+            float: right;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="file" id="fileInput" accept=".tsv" style="display: none;">
+            <button onclick="document.getElementById('fileInput').click()">Upload TSV</button>
+            <button onclick="reloadFile()">Reload</button>
+            <button onclick="toggleFieldSelect()">Select Fields</button>
+            <div>
+                <button onclick="prevRow()">&lt; Previous</button>
+                <span id="rowInfo">Row 0 of 0</span>
+                <button onclick="nextRow()">Next &gt;</button>
+            </div>
+            <div>
+                <input type="number" id="jumpInput" min="1" step="1">
+                <button onclick="jumpToRow()">Go</button>
+            </div>
+        </div>
+        <div class="content">
+            <div id="infoColumn" class="info-column"></div>
+            <div id="textColumn" class="text-column"></div>
+        </div>
+    </div>
+    <div id="fieldSelect">
+        <span class="close-button" onclick="toggleFieldSelect()">&times;</span>
+        <h2>Select Fields to Display</h2>
+        <div id="fieldCheckboxes"></div>
+    </div>
+
+    <script>
+        let data = [];
+        let headers = [];
+        let currentRow = 0;
+        let longFields = [];
+        let selectedFields = [];
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                parseCSV(text);
+                determineLongFields();
+                loadSelectedFields();
+                updateFieldSelect();
+                updateDisplay();
+            };
+            reader.readAsText(file);
+        }
+
+        function parseCSV(text) {
+            const lines = text.split('\n');
+            const result = [];
+            let insideQuotes = false;
+            let currentLine = [];
+            let currentField = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                for (let j = 0; j < line.length; j++) {
+                    const char = line[j];
+                    if (char === '"') {
+                        insideQuotes = !insideQuotes;
+                    } else if (char === '\t' && !insideQuotes) {
+                        currentLine.push(currentField.trim().replace(/\|\|/g, '\n'));  // Modified this line
+                        currentField = '';
+                    } else {
+                        currentField += char;
+                    }
+                }
+                if (!insideQuotes) {
+                    currentLine.push(currentField.trim().replace(/\|\|/g, '\n'));  // And this line
+                    result.push(currentLine);
+                    currentLine = [];
+                    currentField = '';
+                } else {
+                    currentField += '\n';
+                }
+            }
+
+            headers = result.shift();
+            data = result;
+        }
+
+        function determineLongFields() {
+            longFields = data[0].map((cell, index) => cell.length > 500 ? index : -1).filter(index => index !== -1);
+        }
+
+        function reloadFile() {
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length > 0) {
+                handleFileUpload({ target: fileInput });
+            } else {
+                alert('No file has been uploaded yet.');
+            }
+        }
+
+        function prevRow() {
+            if (currentRow > 0) {
+                currentRow--;
+                updateDisplay();
+            }
+        }
+
+        function nextRow() {
+            if (currentRow < data.length - 1) {
+                currentRow++;
+                updateDisplay();
+            }
+        }
+
+        function jumpToRow() {
+            const rowNumber = parseInt(document.getElementById('jumpInput').value);
+            if (rowNumber >= 1 && rowNumber <= data.length) {
+                currentRow = rowNumber - 1;
+                updateDisplay();
+            } else {
+                alert('Invalid row number');
+            }
+        }
+
+        function updateDisplay() {
+            if (data.length === 0) return;
+
+            document.getElementById('rowInfo').textContent = `Row ${currentRow + 1} of ${data.length}`;
+            
+            const infoColumn = document.getElementById('infoColumn');
+            const textColumn = document.getElementById('textColumn');
+            infoColumn.innerHTML = '';
+            textColumn.innerHTML = '';
+
+            headers.forEach((header, index) => {
+                if (selectedFields.includes(header)) {
+                    if (longFields.includes(index)) {
+                        const textarea = document.createElement('textarea');
+                        textarea.value = data[currentRow][index] || '';
+                        textarea.readOnly = true;
+                        textarea.placeholder = header;
+                        const label = document.createElement('h3');
+                        label.textContent = header;
+                        textColumn.appendChild(label);
+                        textColumn.appendChild(textarea);
+                    } else {
+                        const p = document.createElement('p');
+                        p.innerHTML = `<strong>${header}:</strong> ${data[currentRow][index] || ''}`;
+                        infoColumn.appendChild(p);
+                    }
+                }
+            });
+        }
+
+        function toggleFieldSelect() {
+            const fieldSelect = document.getElementById('fieldSelect');
+            fieldSelect.classList.toggle('active');
+        }
+
+        function updateFieldSelect() {
+            const fieldCheckboxes = document.getElementById('fieldCheckboxes');
+            fieldCheckboxes.innerHTML = '';
+            headers.forEach(header => {
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = header;
+                checkbox.checked = selectedFields.includes(header);
+                checkbox.addEventListener('change', () => {
+                    if (checkbox.checked) {
+                        selectedFields.push(header);
+                    } else {
+                        selectedFields = selectedFields.filter(f => f !== header);
+                    }
+                    saveSelectedFields();
+                    updateDisplay();
+                });
+                const label = document.createElement('label');
+                label.htmlFor = header;
+                label.textContent = header;
+                fieldCheckboxes.appendChild(checkbox);
+                fieldCheckboxes.appendChild(label);
+                fieldCheckboxes.appendChild(document.createElement('br'));
+            });
+        }
+
+        function saveSelectedFields() {
+            localStorage.setItem('selectedFields', JSON.stringify(selectedFields));
+        }
+
+        function loadSelectedFields() {
+            const saved = localStorage.getItem('selectedFields');
+            if (saved) {
+                selectedFields = JSON.parse(saved);
+            } else {
+                selectedFields = headers;
+            }
+            selectedFields = selectedFields.filter(field => headers.includes(field));
+        }
+
+        // Initialize
+        loadSelectedFields();
+    </script>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced TSV Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .info-column {
+            flex: 0 0 30%;
+            font-size: 15px;
+        }
+        .text-column {
+            flex: 1;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: vertical;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+        #fieldSelect {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        #fieldSelect.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="file" id="fileInput" accept=".tsv" style="display: none;">
+            <button onclick="document.getElementById('fileInput').click()">Upload TSV</button>
+            <button onclick="reloadFile()">Reload</button>
+            <button onclick="toggleFieldSelect()">Select Fields</button>
+            <div>
+                <button onclick="prevRow()">&lt; Previous</button>
+                <span id="rowInfo">Row 0 of 0</span>
+                <button onclick="nextRow()">Next &gt;</button>
+            </div>
+            <div>
+                <input type="number" id="jumpInput" min="1" step="1">
+                <button onclick="jumpToRow()">Go</button>
+            </div>
+        </div>
+        <div class="content">
+            <div id="infoColumn" class="info-column"></div>
+            <div id="textColumn" class="text-column"></div>
+        </div>
+    </div>
+    <div id="fieldSelect"></div>
+
+    <script>
+        let data = [];
+        let headers = [];
+        let currentRow = 0;
+        let longFields = [];
+        let selectedFields = [];
+
+        document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                parseCSV(text);
+                determineLongFields();
+                loadSelectedFields();
+                updateFieldSelect();
+                updateDisplay();
+            };
+            reader.readAsText(file);
+        }
+
+        function parseCSV(text) {
+            const lines = text.split('\n');
+            const result = [];
+            let insideQuotes = false;
+            let currentLine = [];
+            let currentField = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                for (let j = 0; j < line.length; j++) {
+                    const char = line[j];
+                    if (char === '"') {
+                        insideQuotes = !insideQuotes;
+                    } else if (char === '\t' && !insideQuotes) {
+                        currentLine.push(currentField.trim());
+                        currentField = '';
+                    } else {
+                        currentField += char;
+                    }
+                }
+                if (!insideQuotes) {
+                    currentLine.push(currentField.trim());
+                    result.push(currentLine);
+                    currentLine = [];
+                    currentField = '';
+                } else {
+                    currentField += '\n';
+                }
+            }
+
+            headers = result.shift();
+            data = result;
+        }
+
+        function determineLongFields() {
+            longFields = data[0].map((cell, index) => cell.length > 500 ? index : -1).filter(index => index !== -1);
+        }
+
+        function reloadFile() {
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length > 0) {
+                handleFileUpload({ target: fileInput });
+            } else {
+                alert('No file has been uploaded yet.');
+            }
+        }
+
+        function prevRow() {
+            if (currentRow > 0) {
+                currentRow--;
+                updateDisplay();
+            }
+        }
+
+        function nextRow() {
+            if (currentRow < data.length - 1) {
+                currentRow++;
+                updateDisplay();
+            }
+        }
+
+        function jumpToRow() {
+            const rowNumber = parseInt(document.getElementById('jumpInput').value);
+            if (rowNumber >= 1 && rowNumber <= data.length) {
+                currentRow = rowNumber - 1;
+                updateDisplay();
+            } else {
+                alert('Invalid row number');
+            }
+        }
+
+        function updateDisplay() {
+            if (data.length === 0) return;
+
+            document.getElementById('rowInfo').textContent = `Row ${currentRow + 1} of ${data.length}`;
+            
+            const infoColumn = document.getElementById('infoColumn');
+            const textColumn = document.getElementById('textColumn');
+            infoColumn.innerHTML = '';
+            textColumn.innerHTML = '';
+
+            headers.forEach((header, index) => {
+                if (selectedFields.includes(header)) {
+                    if (longFields.includes(index)) {
+                        const textarea = document.createElement('textarea');
+                        textarea.value = data[currentRow][index] || '';
+                        textarea.readOnly = true;
+                        textarea.placeholder = header;
+                        const label = document.createElement('h3');
+                        label.textContent = header;
+                        textColumn.appendChild(label);
+                        textColumn.appendChild(textarea);
+                    } else {
+                        const p = document.createElement('p');
+                        p.innerHTML = `<strong>${header}:</strong> ${data[currentRow][index] || ''}`;
+                        infoColumn.appendChild(p);
+                    }
+                }
+            });
+        }
+
+        function toggleFieldSelect() {
+            const fieldSelect = document.getElementById('fieldSelect');
+            fieldSelect.classList.toggle('active');
+        }
+
+        function updateFieldSelect() {
+            const fieldSelect = document.getElementById('fieldSelect');
+            fieldSelect.innerHTML = '';
+            headers.forEach(header => {
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = header;
+                checkbox.checked = selectedFields.includes(header);
+                checkbox.addEventListener('change', () => {
+                    if (checkbox.checked) {
+                        selectedFields.push(header);
+                    } else {
+                        selectedFields = selectedFields.filter(f => f !== header);
+                    }
+                    saveSelectedFields();
+                    updateDisplay();
+                });
+                const label = document.createElement('label');
+                label.htmlFor = header;
+                label.textContent = header;
+                fieldSelect.appendChild(checkbox);
+                fieldSelect.appendChild(label);
+                fieldSelect.appendChild(document.createElement('br'));
+            });
+        }
+
+        function saveSelectedFields() {
+            localStorage.setItem('selectedFields', JSON.stringify(selectedFields));
+        }
+
+        function loadSelectedFields() {
+            const saved = localStorage.getItem('selectedFields');
+            if (saved) {
+                selectedFields = JSON.parse(saved);
+            } else {
+                selectedFields = headers;
+            }
+            selectedFields = selectedFields.filter(field => headers.includes(field));
+        }
+
+        // Initialize
+        loadSelectedFields();
+    </script>
+</body>
+</html> -->
