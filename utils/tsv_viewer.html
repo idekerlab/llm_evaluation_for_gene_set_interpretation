@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhanced TSV Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,6 +81,15 @@
             cursor: pointer;
             font-size: 1.5em;
         }
+        #notesArea {
+            width: 100%;
+            height: 100px;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+        .save-button {
+            margin-left: 10px;
+}
     </style>
 </head>
 <body>
@@ -89,6 +99,7 @@
             <button onclick="document.getElementById('fileInput').click()">Upload TSV</button>
             <button onclick="reloadFile()">Reload</button>
             <button onclick="toggleFieldSelect()">Select Fields</button>
+            <button onclick="saveData()" class="save-button">Save TSV</button>
             <div>
                 <button onclick="prevRow()">&lt; Previous</button>
                 <span id="rowInfo">Row 0 of 0</span>
@@ -101,7 +112,10 @@
         </div>
         <div class="content">
             <div id="infoColumn" class="info-column"></div>
-            <div id="textColumn" class="text-column"></div>
+            <div id="textColumn" class="text-column">
+                <textarea id="notesArea" placeholder="Notes"></textarea>
+                <div id="fieldsArea"></div>
+            </div>
         </div>
     </div>
     <div id="fieldSelect">
@@ -116,15 +130,39 @@
         let currentRow = 0;
         let longFields = [];
         let selectedFields = [];
+        let uploadedFileName = '';
 
         document.getElementById('fileInput').addEventListener('change', handleFileUpload);
 
+        // function handleFileUpload(event) {
+        //     const file = event.target.files[0];
+        //     const reader = new FileReader();
+        //     reader.onload = function(e) {
+        //         const text = e.target.result;
+        //         parseCSV(text);
+        //         if (!headers.includes('Notes')) {
+        //             headers.push('Notes');
+        //             data.forEach(row => row.push(''));
+        //         }
+        //         determineLongFields();
+        //         loadSelectedFields();
+        //         updateFieldSelect();
+        //         updateDisplay();
+        //     };
+        //     reader.readAsText(file);
+        // }
+
         function handleFileUpload(event) {
             const file = event.target.files[0];
+            uploadedFileName = file.name; // Store the uploaded file name
             const reader = new FileReader();
             reader.onload = function(e) {
                 const text = e.target.result;
                 parseCSV(text);
+                if (!headers.includes('Notes')) {
+                    headers.push('Notes');
+                    data.forEach(row => row.push(''));
+                }
                 determineLongFields();
                 loadSelectedFields();
                 updateFieldSelect();
@@ -204,18 +242,52 @@
             }
         }
 
+        // function updateDisplay() {
+        //     if (data.length === 0) return;
+
+        //     document.getElementById('rowInfo').textContent = `Row ${currentRow + 1} of ${data.length}`;
+            
+        //     const infoColumn = document.getElementById('infoColumn');
+        //     const textColumn = document.getElementById('textColumn');
+        //     infoColumn.innerHTML = '';
+        //     textColumn.innerHTML = '';
+
+        //     headers.forEach((header, index) => {
+        //         if (selectedFields.includes(header)) {
+        //             if (longFields.includes(index)) {
+        //                 const textarea = document.createElement('textarea');
+        //                 textarea.value = data[currentRow][index] || '';
+        //                 textarea.readOnly = true;
+        //                 textarea.placeholder = header;
+        //                 const label = document.createElement('h3');
+        //                 label.textContent = header;
+        //                 textColumn.appendChild(label);
+        //                 textColumn.appendChild(textarea);
+        //             } else {
+        //                 const p = document.createElement('p');
+        //                 p.innerHTML = `<strong>${header}:</strong> ${data[currentRow][index] || ''}`;
+        //                 infoColumn.appendChild(p);
+        //             }
+        //         }
+        //     });
+        // }
+
         function updateDisplay() {
             if (data.length === 0) return;
 
             document.getElementById('rowInfo').textContent = `Row ${currentRow + 1} of ${data.length}`;
             
             const infoColumn = document.getElementById('infoColumn');
-            const textColumn = document.getElementById('textColumn');
+            const fieldsArea = document.getElementById('fieldsArea');
             infoColumn.innerHTML = '';
-            textColumn.innerHTML = '';
+            fieldsArea.innerHTML = '';
+
+            // Load notes
+            const notesArea = document.getElementById('notesArea');
+            notesArea.value = data[currentRow][headers.indexOf('Notes')] || '';
 
             headers.forEach((header, index) => {
-                if (selectedFields.includes(header)) {
+                if (selectedFields.includes(header) && header !== 'Notes') {
                     if (longFields.includes(index)) {
                         const textarea = document.createElement('textarea');
                         textarea.value = data[currentRow][index] || '';
@@ -223,8 +295,8 @@
                         textarea.placeholder = header;
                         const label = document.createElement('h3');
                         label.textContent = header;
-                        textColumn.appendChild(label);
-                        textColumn.appendChild(textarea);
+                        fieldsArea.appendChild(label);
+                        fieldsArea.appendChild(textarea);
                     } else {
                         const p = document.createElement('p');
                         p.innerHTML = `<strong>${header}:</strong> ${data[currentRow][index] || ''}`;
@@ -277,6 +349,80 @@
                 selectedFields = headers;
             }
             selectedFields = selectedFields.filter(field => headers.includes(field));
+        }
+
+        // function saveData() {
+        //     // Update the current row's Notes field
+        //     const notesIndex = headers.indexOf('Notes');
+        //     if (notesIndex === -1) {
+        //         headers.push('Notes');
+        //         data.forEach(row => row.push(''));
+        //     }
+        //     data[currentRow][headers.indexOf('Notes')] = document.getElementById('notesArea').value;
+
+        //     // Prepare the TSV content
+        //     let tsvContent = headers.join('\t') + '\n';
+        //     tsvContent += data.map(row => 
+        //         row.map(cell => cell.replace(/\n/g, '||')).join('\t')
+        //     ).join('\n');
+
+        //     // Create a Blob with the TSV content
+        //     const blob = new Blob([tsvContent], { type: 'text/tab-separated-values' });
+
+        //     // Create a download link and trigger the download
+        //     const a = document.createElement('a');
+        //     a.href = URL.createObjectURL(blob);
+        //     a.download = 'data.tsv';
+        //     document.body.appendChild(a);
+        //     a.click();
+        //     document.body.removeChild(a);
+        // }  
+        
+        function saveData() {
+            // Update the current row's Notes field
+            const notesIndex = headers.indexOf('Notes');
+            if (notesIndex === -1) {
+                headers.push('Notes');
+                data.forEach(row => row.push(''));
+            }
+            data[currentRow][headers.indexOf('Notes')] = document.getElementById('notesArea').value;
+
+            // Prepare the TSV content
+            let tsvContent = headers.join('\t') + '\n';
+            tsvContent += data.map(row => 
+                row.map(cell => cell.replace(/\n/g, '||')).join('\t')
+            ).join('\n');
+
+                // Use the uploaded file name as the placeholder, or 'data.tsv' if no file was uploaded
+            const placeholderName = uploadedFileName || 'data.tsv';
+
+            // Prompt the user for a filename
+            let filename = prompt("Please enter a filename for your TSV file:", placeholderName);
+
+                // If the user didn't change the filename, use the placeholder
+            if (filename === '') {
+                filename = placeholderName;
+            }
+            
+            if (filename) {
+                // Create a Blob with the TSV content
+                const blob = new Blob([tsvContent], { type: 'text/tab-separated-values' });
+
+                // Create a temporary URL for the Blob
+                const url = window.URL.createObjectURL(blob);
+
+                // Create a link element and trigger a click
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+
+                // Clean up
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+            }
         }
 
         // Initialize
