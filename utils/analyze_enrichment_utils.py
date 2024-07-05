@@ -148,7 +148,6 @@ def coverage_thresholding(df, col, coverage_thresh_list = np.arange(0.0, 1.1, 0.
         coverage_thresh_eval_DF.loc[i, 'num_meetsThresh'] = sum(coverage_threshOnlyCol)
         
         coverage_thresh_eval_DF.loc[i, 'perc_meetsThresh'] = (sum(coverage_threshOnlyCol) / len(df)) * 100
-        
     return coverage_thresh_eval_DF
 
 
@@ -173,13 +172,16 @@ def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlig
         plt.axvline(x=thresh, color='red', linestyle='dotted')
         
         # label the line as the percentage/number of omics gene sets that meet the threshold
-        enrich_meetsThresh = GO_thresh_eval_DF.loc[GO_thresh_eval_DF['coverage_thresh'] == thresh, 'num_success'].values[0]
-        plt.text(thresh + 0.02, enrich_meetsThresh, f'{int(enrich_meetsThresh)}', color='black', ha='left')
+         
+        # Use np.isclose to safely access the value
+        enrich_meetsThresh = GO_thresh_eval_DF.loc[np.isclose(GO_thresh_eval_DF['coverage_thresh'], thresh), 'num_success']
+        if not enrich_meetsThresh.empty:
+            plt.text(thresh + 0.02, enrich_meetsThresh.values[0], f'{int(enrich_meetsThresh.values[0])}', color='black', ha='left')
         
-        llm_meetsThresh = LLM_thresh_eval_DF.loc[LLM_thresh_eval_DF['coverage_thresh'] == thresh, 'num_success'].values[0]
-        plt.text(thresh + 0.02, llm_meetsThresh, f'{int(llm_meetsThresh)}', color='blue', ha='left')
-        
-        print(f'coverage threshold: {thresh}, enrichment: {enrich_meetsThresh}, LLM: {llm_meetsThresh}')
+        llm_meetsThresh = LLM_thresh_eval_DF.loc[np.isclose(LLM_thresh_eval_DF['coverage_thresh'], thresh), 'num_success']
+        if not llm_meetsThresh.empty:
+            plt.text(thresh + 0.02, llm_meetsThresh.values[0], f'{int(llm_meetsThresh.values[0])}', color='black', ha='left')
+        print(f'coverage threshold: {thresh}, enrichment: {enrich_meetsThresh.values[0]}, LLM: {llm_meetsThresh.values[0]}')
     
     # Adding labels and title
     plt.xlabel(f'Required {ax_label_keyword} threshold')
