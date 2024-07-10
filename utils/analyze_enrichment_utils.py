@@ -152,7 +152,7 @@ def coverage_thresholding(df, col, coverage_thresh_list = np.arange(0.0, 1.1, 0.
 
 
 ## function for plot the coverage thresholding results
-def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlight_coverage = [0.0, 0.2,0.5], figsize=(3, 2), ax_label_keyword= 'coverage', save_file=None):
+def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlight_coverage = [0.0, 0.2,0.5], figsize=(3, 2), ax_label_keyword= 'coverage', log_scale = False, save_file=None):
     plt.figure(figsize=figsize)
     
     # plot for enrichr coverage thresholding
@@ -163,8 +163,7 @@ def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlig
     sns.scatterplot(data=LLM_thresh_eval_DF, x='coverage_thresh', y='num_success', s=20, color='blue')
     sns.lineplot(data=LLM_thresh_eval_DF, x='coverage_thresh', y='num_success', color='blue', label='GPT-4')
 
-    # Setting the y-axis limits make sure all points are visible
-    plt.ylim(-8, 300)
+  
     
     # Adding vertical lines at specific thresholds
     coverage_thresh = highlight_coverage 
@@ -180,10 +179,16 @@ def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlig
         
         llm_meetsThresh = LLM_thresh_eval_DF.loc[np.isclose(LLM_thresh_eval_DF['coverage_thresh'], thresh), 'num_success']
         if not llm_meetsThresh.empty:
-            plt.text(thresh + 0.02, llm_meetsThresh.values[0], f'{int(llm_meetsThresh.values[0])}', color='black', ha='left')
+            plt.text(thresh + 0.02, llm_meetsThresh.values[0], f'{int(llm_meetsThresh.values[0])}', color='blue', ha='left')
         print(f'coverage threshold: {thresh}, enrichment: {enrich_meetsThresh.values[0]}, LLM: {llm_meetsThresh.values[0]}')
     
     # Adding labels and title
+    if log_scale:
+        plt.yscale('log')
+   
+    # Setting the y-axis limits make sure all points are visible
+    plt.ylim(-8, 300)
+    
     plt.xlabel(f'Required {ax_label_keyword} threshold')
     plt.ylabel(f'Number of omics gene sets with\nrequired {ax_label_keyword} and significance')
     plt.legend()
@@ -193,7 +198,7 @@ def plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF, highlig
     # Display the plot
     plt.show()
 
-def plot_thresholding_res(df, enrich_coverage_col, llm_coverage_col, coverage_thresh_list = np.arange(0.0, 1.1, 0.1), enrich_adj_pval_thresh = 0.05, LLM_score_thresh = 0.01,  highlight_coverage = [0.0, 0.2,0.5], figsize=(3, 2), ax_label_keyword = 'coverage', save_file=None):
+def plot_thresholding_res(df, enrich_coverage_col, llm_coverage_col, coverage_thresh_list = np.arange(0.0, 1.1, 0.1), enrich_adj_pval_thresh = 0.05, LLM_score_thresh = 0.01,  highlight_coverage = [0.0, 0.2,0.5], figsize=(3, 2), ax_label_keyword = 'coverage',log_scale = False, save_file=None):
     '''
     df: DataFrame with LLM terms, LLM confidence, enriched terms, coverages and adjusted p-values
     enrich_coverage_col: Column name for the 'coverage' value of enriched terms (e.g., 'gprofiler_coverage' or 'gprofiler_JI')
@@ -210,4 +215,4 @@ def plot_thresholding_res(df, enrich_coverage_col, llm_coverage_col, coverage_th
     GO_thresh_eval_DF = coverage_thresholding(df, enrich_coverage_col, coverage_thresh_list, 'enrich_terms', enrich_adj_pval_thresh, LLM_score_thresh)
     LLM_thresh_eval_DF = coverage_thresholding(df, llm_coverage_col, coverage_thresh_list, 'LLM_terms', enrich_adj_pval_thresh, LLM_score_thresh)
     # Plot the coverage thresholding results
-    plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF,highlight_coverage = highlight_coverage, figsize=figsize, ax_label_keyword=ax_label_keyword, save_file=save_file)
+    plot_coverage_threshold_curve(GO_thresh_eval_DF, LLM_thresh_eval_DF,highlight_coverage = highlight_coverage, figsize=figsize, ax_label_keyword=ax_label_keyword,log_scale=log_scale,  save_file=save_file)
