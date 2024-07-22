@@ -51,7 +51,6 @@ def getNameSimilarities_noExpertName(names_DF, LLM_name_col, GO_name_col, tokeni
     names_DF['LLM_name_GO_term_sim'] = None;
     
     nSystems = names_DF.shape[0]
-    
     for systemInd in range(nSystems):
         print(systemInd)
         systemRow = names_DF.iloc[systemInd]
@@ -67,7 +66,49 @@ def getNameSimilarities_noExpertName(names_DF, LLM_name_col, GO_name_col, tokeni
     return names_DF
     
 
+def getNameSimilarities_no_repeat(names_DF, LLM_name_col, GO_name_col, tokenizer, model, llm_name_embedding_dict = {},
+    go_term_embedding_dict = {}, simMetric = 'cosine_similarity', epsilon= 0.05):
+    """
+    names_DF: data frame with columns containing the names from various sources (each row is a different gene set)
+    *_name_col: strings of column names """
+    
+    
+    ## Initialize columns
+    names_DF['LLM_name_GO_term_sim'] = None
+    # reset df index
+    names_DF = names_DF.reset_index(drop = True)
+
+    nSystems = names_DF.shape[0]
+    
+    for systemInd in range(nSystems):
+        print(systemInd)
+        systemRow = names_DF.iloc[systemInd]
+        # get the llm and go names from their respective columns
+        LLM_name = systemRow[LLM_name_col]
+        GO_term = systemRow[GO_name_col]
+        # get sentence embeddings from dict if they exist, otherwise compute and add to dict
+        if LLM_name in llm_name_embedding_dict:
+            LLM_name_embedding = llm_name_embedding_dict[LLM_name]
+        else:
+            LLM_name_embedding = getSentenceEmbedding(LLM_name, tokenizer, model)
+            llm_name_embedding_dict[LLM_name] = LLM_name_embedding
+        # same with GO term name
+        if GO_term in go_term_embedding_dict:
+            GO_term_embedding = go_term_embedding_dict[GO_term]
+        else:
+            GO_term_embedding = getSentenceEmbedding(GO_term, tokenizer, model)
+            go_term_embedding_dict[GO_term] = GO_term_embedding
+        
+        LLM_name_GO_term_sim = cosine_similarity(LLM_name_embedding, GO_term_embedding)[0][0]
+        # print(LLM_name_GO_term_sim)
+        # write the similarity value to the dataframe
+        names_DF.loc[systemInd, 'LLM_name_GO_term_sim']  = LLM_name_GO_term_sim
+    
+    return names_DF, llm_name_embedding_dict, go_term_embedding_dict
+  
+
 def getNameSimilarities(names_DF, LLM_name_col, GO_name_col, human_name_col, tokenizer, model, simMetric, epsilon= 0.05):
+
     """
     names_DF: data frame with columns containing the names from various sources (each row is a different gene set)
     *_name_col: strings of column names """

@@ -1,8 +1,9 @@
 from transformers import AutoTokenizer, AutoModel
-from semanticSimFunctions import getSentenceEmbedding, getSentenceSimilarity, getNameSimilarities, getNameSimilarities_noExpertName
+from semanticSimFunctions import getNameSimilarities_no_repeat
 
 import pandas as pd
 import numpy as np
+import pickle
 
 ## Load the sapbert model and tokenizer
 SapBERT_tokenizer = AutoTokenizer.from_pretrained('cambridgeltl/SapBERT-from-PubMedBERT-fulltext')
@@ -27,15 +28,27 @@ reduced_LLM_genes_DF[nameCol_GO] = reduced_LLM_genes_DF[nameCol_GO].replace(np.n
 new_DF = reduced_LLM_genes_DF.copy()
 new_DF['LLM_name_GO_term_sim'] = None
 
-# skip rows with LLM Name as 'system of unrelated proteins'
-filtered_DF = reduced_LLM_genes_DF[reduced_LLM_genes_DF[nameCol_LLM] != 'System of unrelated proteins'].reset_index(drop = True)
-skipped_rows = reduced_LLM_genes_DF[reduced_LLM_genes_DF[nameCol_LLM] == 'System of unrelated proteins'].reset_index(drop = True)
+# skip rows with LLM Name as 'system of unrelated proteins' ignore cases
 
-names_DF = getNameSimilarities_noExpertName(filtered_DF, nameCol_LLM, nameCol_GO, SapBERT_tokenizer, SapBERT_model, "cosine_similarity")
+filtered_DF = reduced_LLM_genes_DF[reduced_LLM_genes_DF[nameCol_LLM].str.lower() != 'system of unrelated proteins'].reset_index(drop = True)
+skipped_rows = reduced_LLM_genes_DF[reduced_LLM_genes_DF[nameCol_LLM].str.lower() == 'system of unrelated proteins'].reset_index(drop = True)
+
+llm_name_embedding_dict = {}
+go_term_embedding_dict = {}
+names_DF, llm_emb_dict, go_emb_dict = getNameSimilarities_no_repeat(filtered_DF, nameCol_LLM, nameCol_GO, 
+SapBERT_tokenizer, SapBERT_model,llm_name_embedding_dict,
+    go_term_embedding_dict, "cosine_similarity")
 
 # add back the rows with LLM Name as 'system of unrelated proteins'
 names_DF = pd.concat([names_DF, skipped_rows]).reset_index(drop = True)
 
 
+def save_emb_dict(emb_dict, file_name):
+    with open(file_name, 'wb') as handle:  
+        pickle.dump(emb_dict, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+save_emb_dict(llm_emb_dict, inputFile.replace(".tsv", "_llm_emb_dict.pkl"))
+save_emb_dict(go_emb_dict, inputFile.replace(".tsv", "_go_emb_dict.pkl"))
+
 names_DF.to_csv(inputFile.replace(".tsv", "_simVals_DF.tsv"), sep = "\t", index = False)
-print("Done with ", inputFile)
+print("Done with ", inputFile.replace(".tsv", "_simVals_DF.tsv"))
