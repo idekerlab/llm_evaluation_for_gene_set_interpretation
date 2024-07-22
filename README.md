@@ -57,13 +57,6 @@ cd ddot
 python setup.py bdist_wheel
 pip install dist/ddot*py3*whl
 ```
-### R requirements:
-The code was developed using R 4.2.2.
-To install the R packages required, please run R_requirements.R
-
-```
-Rscript R_requirements.R
-```
 
 ## Documentation
 The notebooks are numbered according to the evaluation steps 
@@ -95,7 +88,9 @@ The notebooks are numbered according to the evaluation steps
    Batch run 1000 GO terms using [slurm job](thousandGOsets_GPT4Run.sh) with the [parameter file](thousandGOsets_GPT4Run_params.txt) 
 
 
-    [omic gene set GPT-4 analysis](1A.[Omics_revamped]GenerateLLM_analysis.ipynb) and [omics gene set Enrichr](1B.[Omics_revamped]run_Enrichr.ipynb)
+    [omic gene set GPT-4 analysis](1A.[Omics_revamped]GenerateLLM_analysis.ipynb) and [omics gene set gProfiler](1B-2.[Omics_revamped]run_gProfiler.ipynb)
+
+  
 
     ``` 
     ## example code to process from 1st to 5th terms in the table
@@ -123,11 +118,9 @@ The notebooks are numbered according to the evaluation steps
                 --output_file $out_file
     ```
 
-3. Semantic Similarity evaluation of names
+2. Semantic Similarity evaluation of names
 
     [GO gene set analysis evalution](2.[GO%20set]Rank_LLM_GO_term_pair_sim.ipynb)
-
-    [omic gene set analysis evaluation](2.[Omics_revamped]RunSemanticSimEval.ipynb)
 
     ```
     # get the ranking of similarities from the GO gene set analysis
@@ -135,7 +128,7 @@ The notebooks are numbered according to the evaluation steps
     python rank_GOterm_LLM_sim_rand.py --input_file ./data/GO_term_analysis/LLM_processed_toy_example_w_contamination_gpt_4.tsv --emb_file data/all_go_terms_embeddings_dict.pkl --topn 3 --output_file ./data/GO_term_analysis/simrank_LLM_processed_toy_example.tsv --background_file data/GO_term_analysis/all_go_sim_scores_toy.txt
     ```
 
-4. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
+3. Further evaluation of the performance: model comparison evaluation, gene set functional enrichment, and gene set similarity comparison
     **Evaluation Task 1 related**
     
     *Model Comparison*
@@ -155,7 +148,15 @@ The notebooks are numbered according to the evaluation steps
     [Analysis for whether the best matching GO term is a broader concept as the queried term](3C.[GO set]Evaluate_gene_set_similarity.ipynb)
 
     **Evaluation Task 2 related**
-    [Omics data annotation evaluation](3A.[Omics_revamped]_AnayseAnnotation.ipynb)
+    [Count genes supporting LLM name](2A.[Omics_revamped]_CountSupportingGenes.ipynb), then [calculate LLM name Jaccard Index](2B.[Omics_revampled]Calculate_LLM_JI.ipynb)
+
+    Analysis related to Fig.4 
+
+    [Omics data naming evaluation](3A.[omics_revamped]Analyze_gprofiler_annotation.ipynb)
+
+    Evaluate LLM name matching with any significantly enriched GO term name, use [this notebook](3B[Omics_revamped]Compare_enriched_GO_and_LLM_name_sim.ipynb)
+
+
 
 
 6. Development and assessment of the [citation module](4.Reference%20search%20and%20validation.ipynb)
@@ -163,15 +164,13 @@ The notebooks are numbered according to the evaluation steps
 
 7. Quantification of citation module [check citation module](5.Quantify%20reference%20checking.ipynb)
 
-8. Further analyses and visualization of results
-9. 
+8. Visualization of results
+
     [extended data fig.1 + Fig.2 + Fig.3](6.[GO%20set]Plot_GO_analysis_figs.ipynb)
    
     [extract sub hierarchy (Fig.2e)](6.[GO%20set]%20subhierarchy_GO_example.ipynb)
    
-    [Further omics analyses](6A.[Omics_revamped]Revamped_success_analyses.ipynb)
-   
-    [Omics figures](6B.[Omics_revamped]GenerateOmicsFigures.ipynb)
+    [Omics figures (Fig 4, Extended Data Fig.5)](6B.[Omics_revamped]GenerateOmicsFigures.ipynb)
 
 ## License
 
