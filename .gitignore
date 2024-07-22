@@ -33,7 +33,7 @@ data/GO_term_analysis/900_selected_go_contaminated.csv
 data/omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF_with_potential_novel.tsv
 #too big
 data/GO_term_analysis/all_go_sim_scores_gpt4.txt 
-data/omics_revamped_LLM_DF.tsv
+
 data/omics_revamped_LLM_gprofiler_new_gene_name_*
 
 #obsolete 
@@ -76,3 +76,4 @@ figures/LLM_name_GO_term_sim_against_random_cdf_response to X-ray.svg
 figures/LLM_name_GO_term_sim_against_random_pdf_response to X-ray.svg
 figures/LLM_GO_gene_mention_percentage.svg
 figures/GO_0010897_with_bestmatch_vennDiagram.svg
+figures/omics_LLM_JI_vs_gprofiler_JI_sep_by_similarity.svg
