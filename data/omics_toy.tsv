@@ -1,0 +1,146 @@
+GeneSetName	Unnamed: 0.1	Unnamed: 0	Source	GeneSetID	GeneList	n_Genes	LLM Name	LLM Analysis	Score	Rank	Overlap	P-value	Adjusted P-value	Genes	Term	GO term	GO ID	GO_term_genes	LLM_name_GO_term_sim	referenced_analysis
+Cluster1-10	0	0	NeST	Cluster1-10	CTRL HSD17B14 KIAA0232 PAQR8 PLA2G1B RNF145 SGMS1 SLC7A8 TBC1D12 TMCC1 UBE2Q2 WDR47	12	Lipid Metabolism and Membrane Dynamics	"1. CTRL, or carboxyl-terminal esterase/lipase, is involved in lipid metabolism, particularly in the hydrolysis of triglycerides and cholesteryl esters. This activity is crucial for lipid digestion and the subsequent absorption and processing within cells.
+
+2. HSD17B14, a member of the hydroxysteroid (17-beta) dehydrogenase family, is implicated in steroid metabolism, where it may function in the inactivation of estradiol. Steroid hormones play a role in a wide array of physiological processes, including lipid metabolism and homeostasis.
+
+3. KIAA0232's function is not well characterized, but it is believed to be involved in intracellular transport mechanisms, which could indirectly affect lipid distribution and signaling within the cell.
+
+4. PAQR8, part of the progestin and adipoQ receptor family, is involved in various cellular processes, including membrane receptor activity and possibly signaling pathways related to lipid metabolism.
+
+5. PLA2G1B, or phospholipase A2, catalyzes the hydrolysis of glycerophospholipids to produce free fatty acids and lysophospholipids, which are important for membrane dynamics and the production of lipid mediators.
+
+6. RNF145 is an E3 ubiquitin-protein ligase that is involved in the regulation of lipid metabolism, particularly in the degradation of enzymes involved in lipid biosynthesis.
+
+7. SGMS1, sphingomyelin synthase 1, is involved in sphingolipid metabolism, catalyzing the formation of sphingomyelin from ceramide. Sphingolipids are essential components of cell membranes and play a role in signal transduction.
+
+8. SLC7A8, a system L amino acid transporter, is involved in the transport of large neutral amino acids across the cell membrane. While not directly involved in lipid metabolism, amino acid transport can influence cellular growth and metabolism, which may indirectly affect lipid dynamics.
+
+9. TBC1D12 is a member of the Tre-2/Bub2/Cdc16 (TBC) domain family and is implicated in intracellular trafficking. Its role may intersect with lipid membrane composition and signaling pathways.
+
+10. TMCC1, transmembrane and coiled-coil domain family 1, is involved in the regulation of intracellular trafficking and membrane organization, which can influence lipid distribution and signaling.
+
+11. UBE2Q2, an E2 ubiquitin-conjugating enzyme, is involved in the ubiquitin-proteasome system, which can regulate the turnover of proteins involved in lipid metabolism.
+
+12. WDR47, a WD repeat-containing protein, is involved in vesicular trafficking, which is essential for the transport of lipids and other macromolecules within the cell.
+
+In summary, the proteins in this system are primarily involved in lipid metabolism and the dynamics of cellular membranes. They participate in the synthesis, modification, transport, and breakdown of lipids and are also involved in the regulation of membrane composition and signaling. The interplay between these proteins supports the maintenance of lipid homeostasis and the structural integrity of cellular membranes."	0.85	0	2/21	6.886279771921025e-05	0.0082635357263052	PLA2G1B;HSD17B14	Lipid Catabolic Process (GO:0016042)	Lipid Catabolic Process 	GO:0016042	CES1 PNLIPRP1 PLA2G1B CES1P1 AOAH HSD17B14 APOA4 CYP3A4 PLAAT3 LIPC SIRT2 LIPG STS LIPE LCP1 LIPI CYP1A2 PPT1 PLA1A HSD11B1 PNLIP	0.6035734	"1. CTRL, or carboxyl-terminal esterase/lipase, is involved in lipid metabolism, particularly in the hydrolysis of triglycerides and cholesteryl esters. This activity is crucial for lipid digestion and the subsequent absorption and processing within cells.
+
+2. HSD17B14, a member of the hydroxysteroid (17-beta) dehydrogenase family, is implicated in steroid metabolism, where it may function in the inactivation of estradiol. Steroid hormones play a role in a wide array of physiological processes, including lipid metabolism and homeostasis.[1][2]
+
+3. KIAA0232's function is not well characterized, but it is believed to be involved in intracellular transport mechanisms, which could indirectly affect lipid distribution and signaling within the cell.
+
+4. PAQR8, part of the progestin and adipoQ receptor family, is involved in various cellular processes, including membrane receptor activity and possibly signaling pathways related to lipid metabolism.[3]
+
+5. PLA2G1B, or phospholipase A2, catalyzes the hydrolysis of glycerophospholipids to produce free fatty acids and lysophospholipids, which are important for membrane dynamics and the production of lipid mediators.[4][5][6]
+
+6. RNF145 is an E3 ubiquitin-protein ligase that is involved in the regulation of lipid metabolism, particularly in the degradation of enzymes involved in lipid biosynthesis.[7][8][9]
+
+7. SGMS1, sphingomyelin synthase 1, is involved in sphingolipid metabolism, catalyzing the formation of sphingomyelin from ceramide. Sphingolipids are essential components of cell membranes and play a role in signal transduction.[10][11][12]
+
+8. SLC7A8, a system L amino acid transporter, is involved in the transport of large neutral amino acids across the cell membrane. While not directly involved in lipid metabolism, amino acid transport can influence cellular growth and metabolism, which may indirectly affect lipid dynamics.[13][14][15]
+
+9. TBC1D12 is a member of the Tre-2/Bub2/Cdc16 (TBC) domain family and is implicated in intracellular trafficking. Its role may intersect with lipid membrane composition and signaling pathways.
+
+10. TMCC1, transmembrane and coiled-coil domain family 1, is involved in the regulation of intracellular trafficking and membrane organization, which can influence lipid distribution and signaling.
+
+11. UBE2Q2, an E2 ubiquitin-conjugating enzyme, is involved in the ubiquitin-proteasome system, which can regulate the turnover of proteins involved in lipid metabolism.[16][17]
+
+12. WDR47, a WD repeat-containing protein, is involved in vesicular trafficking, which is essential for the transport of lipids and other macromolecules within the cell.
+
+In summary, the proteins in this system are primarily involved in lipid metabolism and the dynamics of cellular membranes. They participate in the synthesis, modification, transport, and breakdown of lipids and are also involved in the regulation of membrane composition and signaling. The interplay between these proteins supports the maintenance of lipid homeostasis and the structural integrity of cellular membranes.
+
+========================================================================================================================================================================================================
+[1] Qureshi, Rehana, Picon-Ruiz, Manuel, Aurrekoetxea-Rodriguez, Iskander, Nunes de Paiva, Vanessa, D'Amico, Massimo, Yoon, Hyunho, Radhakrishnan, Ramya, Morata-Tarifa, Cynthia, Ince, Tan, Lippman, Marc E, Thaller, Seth R, Rodgers, Steven E, Kesmodel, Susan, Vivanco, Maria Del Mar, Slingerland, Joyce M. ""The Major Pre- and Postmenopausal Estrogens Play Opposing Roles in Obesity-Driven Mammary Inflammation and Breast Cancer Development."" Cell metabolism, 2020, pp. 1154-1172.e9, doi: https://doi.org/10.1016/j.cmet.2020.05.008
+[2] Sivik, T, Vikingsson, S, Gréen, H, Jansson, A. ""Expression patterns of 17β-hydroxysteroid dehydrogenase 14 in human tissues."" Hormone and metabolic research = Hormon- und Stoffwechselforschung = Hormones et metabolisme, 2012, pp. 949-56, doi: https://doi.org/10.1055/s-0032-1321815
+[3] Charles, Nathan J, Thomas, Peter, Lange, Carol A. ""Expression of membrane progesterone receptors (mPR/PAQR) in ovarian cancer cells: implications for progesterone-induced signaling events."" Hormones & cancer, 2010, pp. 167-76, doi: https://doi.org/10.1007/s12672-010-0023-9
+[4] Labonté, Eric D, Kirby, R Jason, Schildmeyer, Nicholas M, Cannon, April M, Huggins, Kevin W, Hui, David Y. ""Group 1B phospholipase A2-mediated lysophospholipid absorption directly contributes to postprandial hyperglycemia."" Diabetes, 2006, pp. 935-41, doi: https://doi.org/10.2337/diabetes.55.04.06.db05-1286
+[5] Hui, D Y, Cope, M J, Labonté, E D, Chang, H-T, Shao, J, Goka, E, Abousalham, A, Charmot, D, Buysse, J. ""The phospholipase A(2) inhibitor methyl indoxam suppresses diet-induced obesity and glucose intolerance in mice."" British journal of pharmacology, 2009, pp. 1263-9, doi: https://doi.org/10.1111/j.1476-5381.2009.00308.x
+[6] Hui, David Y. ""Group 1B phospholipase A<sub>2</sub> in metabolic and inflammatory disease modulation."" Biochimica et biophysica acta. Molecular and cell biology of lipids, 2019, pp. 784-788, doi: https://doi.org/10.1016/j.bbalip.2018.07.001
+[7] Menzies, Sam A, Volkmar, Norbert, van den Boomen, Dick Jh, Timms, Richard T, Dickson, Anna S, Nathan, James A, Lehner, Paul J. ""The sterol-responsive RNF145 E3 ubiquitin ligase mediates the degradation of HMG-CoA reductase together with gp78 and Hrd1."" eLife, 2018, pp.  , doi: https://doi.org/10.7554/eLife.40009
+[8] Jiang, Lu-Yi, Jiang, Wei, Tian, Na, Xiong, Yan-Ni, Liu, Jie, Wei, Jian, Wu, Kai-Yue, Luo, Jie, Shi, Xiong-Jie, Song, Bao-Liang. ""Ring finger protein 145 (RNF145) is a ubiquitin ligase for sterol-induced degradation of HMG-CoA reductase."" The Journal of biological chemistry, 2018, pp. 4047-4055, doi: https://doi.org/10.1074/jbc.RA117.001260
+[9] Cook, Emma C L, Nelson, Jessica K, Sorrentino, Vincenzo, Koenis, Duco, Moeton, Martina, Scheij, Saskia, Ottenhoff, Roelof, Bleijlevens, Boris, Loregger, Anke, Zelcer, Noam. ""Identification of the ER-resident E3 ubiquitin ligase RNF145 as a novel LXR-regulated gene."" PloS one, 2017, pp. e0172721, doi: https://doi.org/10.1371/journal.pone.0172721
+[10] Hirata, Yuichi, Ikeda, Kazutaka, Sudoh, Masayuki, Tokunaga, Yuko, Suzuki, Akemi, Weng, Leiyun, Ohta, Masatoshi, Tobita, Yoshimi, Okano, Ken, Ozeki, Kazuhisa, Kawasaki, Kenichi, Tsukuda, Takuo, Katsume, Asao, Aoki, Yuko, Umehara, Takuya, Sekiguchi, Satoshi, Toyoda, Tetsuya, Shimotohno, Kunitada, Soga, Tomoyoshi, Nishijima, Masahiro, Taguchi, Ryo, Kohara, Michinori. ""Self-enhancement of hepatitis C virus replication by promotion of specific sphingolipid biosynthesis."" PLoS pathogens, 2012, pp. e1002860, doi: https://doi.org/10.1371/journal.ppat.1002860
+[11] Jęśko, Henryk, Wencel, Przemysław L, Wójtowicz, Sylwia, Strosznajder, Joanna, Lukiw, Walter J, Strosznajder, Robert P. ""Fingolimod Affects Transcription of Genes Encoding Enzymes of Ceramide Metabolism in Animal Model of Alzheimer's Disease."" Molecular neurobiology, 2020, pp. 2799-2811, doi: https://doi.org/10.1007/s12035-020-01908-3
+[12] Komuro, Mariko, Nagane, Masaki, Fukuyama, Tomoki, Luo, Xiaolin, Hiraki, Shinobu, Miyanabe, Masakatsu, Ishikawa, Miyuki, Niwa, Chiaki, Murakami, Hironobu, Okamoto, Mariko, Yamashita, Tadashi. ""Sphingomyelin maintains the cutaneous barrier via regulation of the STAT3 pathway."" FASEB journal : official publication of the Federation of American Societies for Experimental Biology, 2022, pp. e22111, doi: https://doi.org/10.1096/fj.202100721RR
+[13] Gaccioli, Francesca, Aye, Irving L M H, Roos, Sara, Lager, Susanne, Ramirez, Vanessa I, Kanai, Yoshikatsu, Powell, Theresa L, Jansson, Thomas. ""Expression and functional characterisation of System L amino acid transporters in the human term placenta."" Reproductive biology and endocrinology : RB&E, 2015, pp. 57, doi: https://doi.org/10.1186/s12958-015-0054-8
+[14] Espino Guarch, Meritxell, Font-Llitjós, Mariona, Murillo-Cuesta, Silvia, Errasti-Murugarren, Ekaitz, Celaya, Adelaida M, Girotto, Giorgia, Vuckovic, Dragana, Mezzavilla, Massimo, Vilches, Clara, Bodoy, Susanna, Sahún, Ignasi, González, Laura, Prat, Esther, Zorzano, Antonio, Dierssen, Mara, Varela-Nieto, Isabel, Gasparini, Paolo, Palacín, Manuel, Nunes, Virginia. ""Mutations in L-type amino acid transporter-2 support <i>SLC7A8</i> as a novel gene involved in age-related hearing loss."" eLife, 2018, pp.  , doi: https://doi.org/10.7554/eLife.31511
+[15] Zaugg, Jonas, Huang, Xiao, Ziegler, Fabian, Rubin, Matthias, Graff, Julien, Müller, Jennifer, Moser-Hässig, Ruedi, Powell, Theresa, Gertsch, Jürg, Altmann, Karl-Heinz, Albrecht, Christiane. ""Small molecule inhibitors provide insights into the relevance of LAT1 and LAT2 in materno-foetal amino acid transport."" Journal of cellular and molecular medicine, 2020, pp. 12681-12693, doi: https://doi.org/10.1111/jcmm.15840
+[16] Nikseresht, Mohsen, Seghatoleslam, Atefeh, Monabati, Ahmad, Talei, Abdolrassul, Ghalati, Farzaneh Bozorg, Owji, Ali Akbar. ""Overexpression of the novel human gene, UBE2Q2, in breast cancer."" Cancer genetics and cytogenetics, 2010, pp. 101-6, doi: https://doi.org/10.1016/j.cancergencyto.2009.11.020
+[17] Wang, Zheng, Dong, Hao, Li, Min, Liang, Xiu-Bin. ""[Ubiquitin-conjugating enzyme UBE2Q2 participates in HUWE1-mediated protection on renal tubulointerstitial fibrosis]."" Sheng li xue bao : [Acta physiologica Sinica], 2022, pp. 117-124.
+"
+Cluster1-11	1	0	NeST	Cluster1-11	LMF1 MFHAS1 MR1 PLA2G1B RASL11A RNF145 SLC2A6 SNX25 SPIRE1 TTPAL USP38 ZYG11B	12	Lipid Metabolism and Membrane Trafficking	"1. LMF1 (Lipase Maturation Factor 1) is crucial for the proper folding and maturation of lipoprotein lipase (LPL) and hepatic lipase (HL), enzymes that are essential for lipid metabolism. LMF1 deficiency can lead to hypertriglyceridemia due to impaired lipase function.
+
+2. MFHAS1 (Malignant Fibrous Histiocytoma Amplified Sequence 1) is an oncogene with a role in macrophage activation and may be involved in lipid signaling pathways, although its precise biological function is not well characterized.
+
+3. MR1 (Major Histocompatibility Complex, Class I-Related) presents microbial vitamin B metabolites to mucosal-associated invariant T (MAIT) cells. While not directly involved in lipid metabolism, it is part of the immune response in the gut where nutrient absorption and metabolism occur.
+
+4. PLA2G1B (Phospholipase A2 Group IB) is an enzyme that hydrolyzes glycerophospholipids to produce free fatty acids and lysophospholipids, which are important for digestion and cell membrane maintenance.
+
+5. RASL11A (RAS Like, Family 11, Member A) is a small GTPase within the RAS superfamily, which is known to be involved in various cellular processes including growth, cytoskeletal organization, and potentially membrane trafficking.
+
+6. RNF145 (Ring Finger Protein 145) is an E3 ubiquitin-protein ligase that may be involved in the regulation of lipid metabolism through the ubiquitination of proteins involved in lipid biosynthesis and transport.
+
+7. SLC2A6 (Solute Carrier Family 2, Member 6) is a facilitative glucose transporter, which may play a role in glucose sensing and homeostasis, although it is less characterized compared to other members of the GLUT family.
+
+8. SNX25 (Sorting Nexin 25) is part of the sorting nexin family, which is involved in endosomal sorting and signaling. It may play a role in membrane trafficking and protein sorting within the cell.
+
+9. SPIRE1 (Spire Type Actin Nucleation Factor 1) is involved in actin filament organization and is implicated in vesicle transport processes, which are essential for membrane trafficking and cellular logistics.
+
+10. TTPAL (Tocopherol (Alpha) Transfer Protein-Like) is a protein with a potential role in the metabolism of vitamin E, an antioxidant that protects polyunsaturated fatty acids within membrane phospholipids.
+
+11. USP38 (Ubiquitin Specific Peptidase 38) is a deubiquitinating enzyme that may regulate protein stability and function through the removal of ubiquitin, potentially influencing membrane protein trafficking.
+
+12. ZYG11B (Zyg-11 Family Member B, Cell Cycle Regulator) is involved in cell cycle regulation and may indirectly affect lipid metabolism and membrane dynamics through the regulation of cell proliferation.
+
+In summary, the proteins in this set are involved in various aspects of lipid metabolism, including the maturation and function of lipases, the hydrolysis of phospholipids, and the regulation of lipid biosynthesis and transport. Additionally, several proteins are implicated in membrane trafficking and protein sorting, which are processes that are closely linked to lipid metabolism due to the role of lipids in membrane structure and function. The interplay between these proteins suggests a system that integrates lipid metabolism with membrane dynamics and cellular trafficking."	0.85	0	2/85	0.0011459814528415	0.050873294856146	PLA2G1B;MR1	Defense Response To Gram-positive Bacterium (GO:0050830)	Defense Response To Gram-positive Bacterium 	GO:0050830	GBP7 CHGA GBP6 GSDMD DEFB104A H2BC8 RNASE12 RNASE11 DEFA5 PLA2G2A RNASE10 DEFA6 RARRES2 DEFA3 DEFA4 MPEG1 DEFA1 DEFB135 H2BC12L IL18 RNASE13 LYZ TLR2 IL1B IL6 LYG2 LYG1 H2BC11 H2BC12 FAU DEFB4A REG3G EHHADH HMGB2 DEFB1 TRAV27 KRT6A CASP4 NLRP6 DROSHA ROMO1 CTSG SPRR2A GBP2 TNFRSF14 CAMP GBP4 GPR15LG DEFB119 DEFB118 RNASE7 DEFB114 RNASE6 TIRAP HLA-A MR1 DEFB106A RNASE3 RNASE2 HLA-E RNASE1 FGR MYD88 ANG FCN2 CRP PGLYRP4 DEFB103A PGLYRP3 PLA2G1B PPP1R11 DEFB128 DEFB107A LCE3B LCE3C H2BC21 LCE3A DMBT1 RNASE8 STAB2 RPL39 IL12A PGLYRP2 PGLYRP1 MBL2	0.31706327	"1. LMF1 (Lipase Maturation Factor 1) is crucial for the proper folding and maturation of lipoprotein lipase (LPL) and hepatic lipase (HL), enzymes that are essential for lipid metabolism. LMF1 deficiency can lead to hypertriglyceridemia due to impaired lipase function.[1][2][3]
+
+2. MFHAS1 (Malignant Fibrous Histiocytoma Amplified Sequence 1) is an oncogene with a role in macrophage activation and may be involved in lipid signaling pathways, although its precise biological function is not well characterized.[4][5][6]
+
+3. MR1 (Major Histocompatibility Complex, Class I-Related) presents microbial vitamin B metabolites to mucosal-associated invariant T (MAIT) cells. While not directly involved in lipid metabolism, it is part of the immune response in the gut where nutrient absorption and metabolism occur.[7][8][9]
+
+4. PLA2G1B (Phospholipase A2 Group IB) is an enzyme that hydrolyzes glycerophospholipids to produce free fatty acids and lysophospholipids, which are important for digestion and cell membrane maintenance.[10][11][12]
+
+5. RASL11A (RAS Like, Family 11, Member A) is a small GTPase within the RAS superfamily, which is known to be involved in various cellular processes including growth, cytoskeletal organization, and potentially membrane trafficking.
+
+6. RNF145 (Ring Finger Protein 145) is an E3 ubiquitin-protein ligase that may be involved in the regulation of lipid metabolism through the ubiquitination of proteins involved in lipid biosynthesis and transport.[13][14][15]
+
+7. SLC2A6 (Solute Carrier Family 2, Member 6) is a facilitative glucose transporter, which may play a role in glucose sensing and homeostasis, although it is less characterized compared to other members of the GLUT family.[16]
+
+8. SNX25 (Sorting Nexin 25) is part of the sorting nexin family, which is involved in endosomal sorting and signaling. It may play a role in membrane trafficking and protein sorting within the cell.[17][18][19]
+
+9. SPIRE1 (Spire Type Actin Nucleation Factor 1) is involved in actin filament organization and is implicated in vesicle transport processes, which are essential for membrane trafficking and cellular logistics.
+
+10. TTPAL (Tocopherol (Alpha) Transfer Protein-Like) is a protein with a potential role in the metabolism of vitamin E, an antioxidant that protects polyunsaturated fatty acids within membrane phospholipids.
+
+11. USP38 (Ubiquitin Specific Peptidase 38) is a deubiquitinating enzyme that may regulate protein stability and function through the removal of ubiquitin, potentially influencing membrane protein trafficking.[20][21][22]
+
+12. ZYG11B (Zyg-11 Family Member B, Cell Cycle Regulator) is involved in cell cycle regulation and may indirectly affect lipid metabolism and membrane dynamics through the regulation of cell proliferation.[23][24]
+
+In summary, the proteins in this set are involved in various aspects of lipid metabolism, including the maturation and function of lipases, the hydrolysis of phospholipids, and the regulation of lipid biosynthesis and transport. Additionally, several proteins are implicated in membrane trafficking and protein sorting, which are processes that are closely linked to lipid metabolism due to the role of lipids in membrane structure and function. The interplay between these proteins suggests a system that integrates lipid metabolism with membrane dynamics and cellular trafficking.
+
+========================================================================================================================================================================================================
+[1] Wu, Shuangcheng Alivia, Kersten, Sander, Qi, Ling. ""Lipoprotein Lipase and Its Regulators: An Unfolding Story."" Trends in endocrinology and metabolism: TEM, 2021, pp. 48-61, doi: https://doi.org/10.1016/j.tem.2020.11.005
+[2] Dron, Jacqueline S, Hegele, Robert A. ""Genetics of Hypertriglyceridemia."" Frontiers in endocrinology, 2020, pp. 455, doi: https://doi.org/10.3389/fendo.2020.00455
+[3] Alves, Mara, Laranjeira, Francisco, Correia-da-Silva, Georgina. ""Understanding Hypertriglyceridemia: Integrating Genetic Insights."" Genes, 2024, pp.  , doi: https://doi.org/10.3390/genes15020190
+[4] Zhong, Jing, Wang, Huihui, Chen, Wankun, Sun, Zhirong, Chen, Jiawei, Xu, Yajun, Weng, Meilin, Shi, Qiqing, Ma, Duan, Miao, Changhong. ""Ubiquitylation of MFHAS1 by the ubiquitin ligase praja2 promotes M1 macrophage polarization by activating JNK and p38 pathways."" Cell death & disease, 2017, pp. e2763, doi: https://doi.org/10.1038/cddis.2017.102
+[5] Chen, Wankun, Xu, Yajun, Zhong, Jing, Wang, Huihui, Weng, Meilin, Cheng, Qian, Wu, Qichao, Sun, Zhirong, Jiang, Hui, Zhu, Minmin, Ren, Yu, Xu, Pingbo, Chen, Jiawei, Miao, Changhong. ""MFHAS1 promotes colorectal cancer progress by regulating polarization of tumor-associated macrophages via STAT6 signaling pathway."" Oncotarget, 2016, pp. 78726-78735, doi: https://doi.org/10.18632/oncotarget.12807
+[6] Zhong, Jing, Shi, Qi-Qing, Zhu, Min-Min, Shen, Jian, Wang, Hui-Hui, Ma, Duan, Miao, Chang-Hong. ""MFHAS1 Is Associated with Sepsis and Stimulates TLR2/NF-κB Signaling Pathway Following Negative Regulation."" PloS one, 2015, pp. e0143662, doi: https://doi.org/10.1371/journal.pone.0143662
+[7] Godfrey, Dale I, Koay, Hui-Fern, McCluskey, James, Gherardin, Nicholas A. ""The biology and functional importance of MAIT cells."" Nature immunology, 2019, pp. 1110-1128, doi: https://doi.org/10.1038/s41590-019-0444-8
+[8] Hinks, Timothy S C, Zhang, Xia-Wei. ""MAIT Cell Activation and Functions."" Frontiers in immunology, 2020, pp. 1014, doi: https://doi.org/10.3389/fimmu.2020.01014
+[9] Meermeier, Erin W, Harriff, Melanie J, Karamooz, Elham, Lewinsohn, David M. ""MAIT cells and microbial immunity."" Immunology and cell biology, 2018, pp. 607-617, doi: https://doi.org/10.1111/imcb.12022
+[10] Labonté, Eric D, Kirby, R Jason, Schildmeyer, Nicholas M, Cannon, April M, Huggins, Kevin W, Hui, David Y. ""Group 1B phospholipase A2-mediated lysophospholipid absorption directly contributes to postprandial hyperglycemia."" Diabetes, 2006, pp. 935-41, doi: https://doi.org/10.2337/diabetes.55.04.06.db05-1286
+[11] Hui, David Y. ""Group 1B phospholipase A<sub>2</sub> in metabolic and inflammatory disease modulation."" Biochimica et biophysica acta. Molecular and cell biology of lipids, 2019, pp. 784-788, doi: https://doi.org/10.1016/j.bbalip.2018.07.001
+[12] Ewers, Maren, Epple, Denise, Bugert, Peter, Rosendahl, Jonas, Witt, Heiko. ""Genetic analysis of pancreatic phospholipase A2 (PLA2G1B) in patients with chronic pancreatitis."" Pancreatology : official journal of the International Association of Pancreatology (IAP) ... [et al.], 2022, pp. 244-247, doi: https://doi.org/10.1016/j.pan.2022.01.003
+[13] Menzies, Sam A, Volkmar, Norbert, van den Boomen, Dick Jh, Timms, Richard T, Dickson, Anna S, Nathan, James A, Lehner, Paul J. ""The sterol-responsive RNF145 E3 ubiquitin ligase mediates the degradation of HMG-CoA reductase together with gp78 and Hrd1."" eLife, 2018, pp.  , doi: https://doi.org/10.7554/eLife.40009
+[14] Jiang, Lu-Yi, Jiang, Wei, Tian, Na, Xiong, Yan-Ni, Liu, Jie, Wei, Jian, Wu, Kai-Yue, Luo, Jie, Shi, Xiong-Jie, Song, Bao-Liang. ""Ring finger protein 145 (RNF145) is a ubiquitin ligase for sterol-induced degradation of HMG-CoA reductase."" The Journal of biological chemistry, 2018, pp. 4047-4055, doi: https://doi.org/10.1074/jbc.RA117.001260
+[15] Cook, Emma C L, Nelson, Jessica K, Sorrentino, Vincenzo, Koenis, Duco, Moeton, Martina, Scheij, Saskia, Ottenhoff, Roelof, Bleijlevens, Boris, Loregger, Anke, Zelcer, Noam. ""Identification of the ER-resident E3 ubiquitin ligase RNF145 as a novel LXR-regulated gene."" PloS one, 2017, pp. e0172721, doi: https://doi.org/10.1371/journal.pone.0172721
+[16] Chen, Sing-Young, Olzomer, Ellen M, Beretta, Martina, Cantley, James, Nunemaker, Craig S, Hoehn, Kyle L, Byrne, Frances L. ""Investigating the Expression and Function of the Glucose Transporter GLUT6 in Obesity."" International journal of molecular sciences, 2022, pp.  , doi: https://doi.org/10.3390/ijms23179798
+[17] Mas, Caroline, Norwood, Suzanne J, Bugarcic, Andrea, Kinna, Genevieve, Leneva, Natalya, Kovtun, Oleksiy, Ghai, Rajesh, Ona Yanez, Lorena E, Davis, Jasmine L, Teasdale, Rohan D, Collins, Brett M. ""Structural basis for different phosphoinositide specificities of the PX domains of sorting nexins regulating G-protein signaling."" The Journal of biological chemistry, 2014, pp. 28554-68, doi: https://doi.org/10.1074/jbc.M114.595959
+[18] Du, Yingshi, Zou, Yan, Yu, Weihua, Shi, Rui, Zhang, Man, Yang, Wenxiu, Duan, Jingxi, Deng, Yongtao, Wang, Xuefeng, Lü, Yang. ""Expression pattern of sorting Nexin 25 in temporal lobe epilepsy: a study on patients and pilocarpine-induced rats."" Brain research, 2013, pp. 79-85, doi: https://doi.org/10.1016/j.brainres.2013.03.005
+[19] Zhang, Yulong, Chen, Rui, Dong, Yan, Zhu, Jiabin, Su, Kai, Liu, Jinsong, Xu, Jinxin. ""Structural Studies Reveal Unique Non-canonical Regulators of G Protein Signaling Homology (RH) Domains in Sorting Nexins."" Journal of molecular biology, 2022, pp. 167823, doi: https://doi.org/10.1016/j.jmb.2022.167823
+[20] Yang, Yongfeng, Yang, Chuanzhen, Li, Tingting, Yu, Shuyu, Gan, Tingting, Hu, Jiazhi, Cui, Jun, Zheng, Xiaofeng. ""The Deubiquitinase USP38 Promotes NHEJ Repair through Regulation of HDAC1 Activity and Regulates Cancer Cell Response to Genotoxic Insults."" Cancer research, 2020, pp. 719-731, doi: https://doi.org/10.1158/0008-5472.CAN-19-2149
+[21] Liu, Wenbin, Zhang, Qi, Fang, Yuanyuan, Wang, Yanan. ""The deubiquitinase USP38 affects cellular functions through interacting with LSD1."" Biological research, 2018, pp. 53, doi: https://doi.org/10.1186/s40659-018-0201-8
+[22] Zhang, Tao, Su, Fei, Wang, Bofang, Liu, Lixin, Lu, Yongbin, Su, Hongxin, Ling, Ruijiang, Yue, Peng, Dai, Huanyu, Yang, Tianning, Yang, Jingru, Chen, Rui, Wu, Ruiyue, Zhu, Kaili, Zhao, Da, Hou, Xiaoming. ""Ubiquitin specific peptidase 38 epigenetically regulates KLF transcription factor 5 to augment malignant progression of lung adenocarcinoma."" Oncogene, 2024, pp. 1190-1202, doi: https://doi.org/10.1038/s41388-024-02985-7
+[23] Yan, Xiaojie, Li, Yao, Wang, Guobin, Zhou, Zhili, Song, Guangyong, Feng, Qiqi, Zhao, Yueling, Mi, Wenyi, Ma, Zhenyi, Dong, Cheng. ""Molecular basis for recognition of Gly/N-degrons by CRL2<sup>ZYG11B</sup> and CRL2<sup>ZER1</sup>."" Molecular cell, 2021, pp. 3262-3274.e3, doi: https://doi.org/10.1016/j.molcel.2021.06.010
+[24] Zhang, Bing, Li, Yao, Feng, Qiqi, Song, Lili, Dong, Cheng, Yan, Xiaojie. ""Structural insights into ORF10 recognition by ZYG11B."" Biochemical and biophysical research communications, 2022, pp. 14-18, doi: https://doi.org/10.1016/j.bbrc.2022.05.069
+"

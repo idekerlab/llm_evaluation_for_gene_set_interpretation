@@ -8,7 +8,8 @@ data/Omics_data/L1000__gene_attribute_edges.txt
 errfile
 outfile
 3A.\[Omics_revamped\]_AnayseAnnotation_original.ipynb
-
+data/0628_*
+data/Omics_data/L1000_gene_attribute_edges.txt
 data/new_GO_BP/
 data/GO_term_analysis/100_GO_terms_gprofiler_res.tsv
 data/CH_omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF.json
@@ -33,10 +34,12 @@ data/omics_revamped_LLM_Enrichr_simVals_failure_refs_newThresh_DF_with_potential
 #too big
 data/GO_term_analysis/all_go_sim_scores_gpt4.txt 
 
+data/omics_revamped_LLM_gprofiler_new_gene_name_*
+
 #obsolete 
 data/GO_term_analysis/name_only
 data/GO_term_analysis/simrank_pval_LLM_processed_selected_1000_go_terms_return_huge_matches.tsv
-
+archived/*
 logs/*
 data/omics_LLM_Enrichr_DF.tsv
 data/GO_term_analysis/all_go_sim_scores.txt
@@ -73,3 +76,4 @@ figures/LLM_name_GO_term_sim_against_random_cdf_response to X-ray.svg
 figures/LLM_name_GO_term_sim_against_random_pdf_response to X-ray.svg
 figures/LLM_GO_gene_mention_percentage.svg
 figures/GO_0010897_with_bestmatch_vennDiagram.svg
+figures/omics_LLM_JI_vs_gprofiler_JI_sep_by_similarity.svg
