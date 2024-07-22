@@ -145,7 +145,7 @@ The notebooks are numbered according to the evaluation steps
    
     Analysis for Fig. 2d
    
-    [Analysis for whether the best matching GO term is a broader concept as the queried term](3C.[GO set]Evaluate_gene_set_similarity.ipynb)
+    [Analysis for whether the best matching GO term is a broader concept as the queried term](3C.[GO%20set]Evaluate_gene_set_similarity.ipynb)
 
     **Evaluation Task 2 related**
     [Count genes supporting LLM name](2A.[Omics_revamped]_CountSupportingGenes.ipynb), then [calculate LLM name Jaccard Index](2B.[Omics_revampled]Calculate_LLM_JI.ipynb)
