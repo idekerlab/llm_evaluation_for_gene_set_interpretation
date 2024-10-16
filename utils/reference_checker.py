@@ -409,7 +409,6 @@ def search_pubmed(keywords, email, sort_by='relevance', retmax=10): ### CH: sort
     search_handle = Entrez.esearch(db='pubmed', term=search_query, sort=sort_by, retmax=retmax)
     search_results = Entrez.read(search_handle)
     search_handle.close()
-
     id_list = search_results['IdList']
 
     if not id_list:
@@ -557,7 +556,7 @@ def get_references_for_paragraphs(paragraphs, email, config, n=5, papers_query=2
     else:
         return referenced_paragraphs
 
-def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, return_paragraph_ref_data=False, id_col='ID', paragraph_col='paragraph', runVersion = "initial", save_path = None):
+def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, id_col='ID', paragraph_col='paragraph', runVersion = "initial", save_path = None):
     df.set_index(id_col, inplace=True)
     if runVersion == "initial":
         df.loc[:,'referenced_analysis'] = None
@@ -565,7 +564,9 @@ def iter_dataframe(df, email, config, n=5, papers_query=20, verbose=False, retur
     result_dict = {}
     i = 0
     for paragraph_id, paragraphs in zip(df.index.values, df[paragraph_col].values):
-        
+        # if analysis is None, skip
+        if pd.isna(df.loc[paragraph_id, paragraph_col]):
+            continue
         if not pd.isna(df.loc[paragraph_id, 'referenced_analysis']):
             continue # skip this row because already done
         paragraph_list = list(filter(lambda p: len(p.split()) > 5, paragraphs.split("\n")))
