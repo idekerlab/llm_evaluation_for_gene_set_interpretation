@@ -156,23 +156,36 @@ def get_mla_citation(doi):
 def get_mla_citation_from_pubmed_id(paper_dict):
     article = paper_dict['MedlineCitation']['Article']
     #print(article.keys())
-    authors = article['AuthorList']
-    formatted_authors = []
-    for author in authors:
-        try:
-            last_name = author['LastName'] if author['LastName'] is not None else ''
-        except:
-            last_name = ''
-        try:
-            first_name = author['ForeName'] if author['ForeName'] is not None else ''
-        except:
-            first_name = ''
-        formatted_authors.append(f"{last_name}, {first_name}")
-    authors_str = ', '.join(formatted_authors)
-
+    # Check if 'AuthorList' exists in the article
+    if 'AuthorList' in article:
+        authors = article['AuthorList']
+   
+        formatted_authors = []
+        for author in authors:
+            try:
+                last_name = author['LastName'] if author['LastName'] is not None else ''
+            except:
+                last_name = ''
+            try:
+                first_name = author['ForeName'] if author['ForeName'] is not None else ''
+            except:
+                first_name = ''
+            formatted_authors.append(f"{last_name}, {first_name}")
+        authors_str = ', '.join(formatted_authors)
+    else:
+        authors_str = 'Unknown'
     title = article['ArticleTitle']
     journal = article['Journal']['Title']
-    year = article['Journal']['JournalIssue']['PubDate']['Year']
+    # Safely retrieve the 'Year' key or any fallback if it doesn't exist
+    journal_issue = article.get('Journal', {}).get('JournalIssue', {})
+    pub_date = journal_issue.get('PubDate', {})
+
+    # Now check if 'Year' exists and handle the missing case
+    if 'Year' in pub_date:
+        year = pub_date['Year']
+    else:
+        # Fallback to 'MedlineDate' or handle as 'Unknown'
+        year = pub_date.get('MedlineDate', 'Unknown')
     try:
         page = article['Pagination']['MedlinePgn']
     except:

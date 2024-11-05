@@ -159,7 +159,7 @@ def main(df):
         i += 1
         if i % 10 == 0:
             # bin scores into no score, low, medium, high confidence
-            bins = [-np.inf, 0, 0.81, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.79 is low confidence, between 0.82 to 0.86 is medium confidence, above 0.87 is high confidence
+            bins = [-np.inf, 0, 0.81, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.8 is low confidence, between 0.82 to 0.86 is medium confidence, above 0.87 is high confidence
             labels = ['Name not assigned', 'Low Confidence', 'Medium Confidence', 'High Confidence']  # Define the corresponding labels
             
             df[f'{column_prefix} Score bins'] = pd.cut(df[f'{column_prefix} Score'], bins=bins, labels=labels)
@@ -167,6 +167,11 @@ def main(df):
             # df.to_csv(f'{out_file}.tsv', sep='\t', index=True)
             print(f"Saved progress for {i} genesets")
     # save the final file
+    # bin scores into no score, low, medium, high confidence
+    bins = [-np.inf, 0, 0.81, 0.86, np.inf] # 0 is no score (name not assigned), between 0 to 0.8 is low confidence, between 0.82 to 0.86 is medium confidence, above 0.87 is high confidence
+    labels = ['Name not assigned', 'Low Confidence', 'Medium Confidence', 'High Confidence']  # Define the corresponding labels
+    
+    df[f'{column_prefix} Score bins'] = pd.cut(df[f'{column_prefix} Score'], bins=bins, labels=labels)
     save_progress(df, analysis_dict, out_file)
 
 
