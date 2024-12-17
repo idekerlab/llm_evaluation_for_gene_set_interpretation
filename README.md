@@ -39,6 +39,13 @@ cd llm_evaluation_for_gene_set_interpretation
 pip install -r requirements.txt
 ```
 
+UPDATE 12/17/2024: openai package requires an httpx version that is not compatible with their function, manually downgrade httpx to 0.27.2 until OpenAI fixed their bug
+
+```
+pip uninstall httpx
+pip install httpx==0.27.2
+```
+
 DDOT is required for downloading GO and can be installed in one of two ways:
 
 To install DDOT by downloading the zip file of the source tree:
