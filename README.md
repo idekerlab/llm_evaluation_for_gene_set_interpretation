@@ -185,6 +185,6 @@ The notebooks are numbered according to the evaluation steps
 
 ## Citing
 
-Hu, M., Alkhairy, S., Lee, I. et al. Evaluation of large language models for discovery of gene set function. Nat Methods (2024). https://doi.org/10.1038/s41592-024-02525-x
+Hu, M., Alkhairy, S., Lee, I. et al. Evaluation of large language models for discovery of gene set function. *Nat Methods* (2024). https://doi.org/10.1038/s41592-024-02525-x
 
 
