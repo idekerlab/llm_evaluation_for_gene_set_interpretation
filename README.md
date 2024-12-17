@@ -2,7 +2,7 @@
 
 
 ## Description
-Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://arxiv.org/abs/2309.04019v2)
+Code associated with paper ["Evaluation of large language models for discovery of gene set function"](https://www.nature.com/articles/s41592-024-02525-x)
 
 ## Dependencies
 ### Set up an environment
@@ -37,6 +37,13 @@ git clone git@github.com:idekerlab/llm_evaluation_for_gene_set_interpretation.gi
 cd llm_evaluation_for_gene_set_interpretation
 
 pip install -r requirements.txt
+```
+
+UPDATE 12/17/2024: openai package requires an httpx version that is not compatible with their function, manually downgrade httpx to 0.27.2 until OpenAI fixed their bug
+
+```
+pip uninstall httpx
+pip install httpx==0.27.2
 ```
 
 DDOT is required for downloading GO and can be installed in one of two ways:
@@ -178,6 +185,6 @@ The notebooks are numbered according to the evaluation steps
 
 ## Citing
 
-Hu M, Alkhairy S, Lee I, Pillich RT, Bachelder R, Ideker T, Pratt D. Evaluation of large language models for discovery of gene set function. Preprint at https://doi.org/10.48550/arXiv.2309.04019 (2023)
+Hu, M., Alkhairy, S., Lee, I. et al. Evaluation of large language models for discovery of gene set function. *Nat Methods* (2024). https://doi.org/10.1038/s41592-024-02525-x
 
 
